@@ -4,7 +4,7 @@
 //  - detail výrobku: video namiesto fotky, úvodná snímka firmy: video na pozadí ľavého panela,
 //  - videá bežia stlmené a dokola, len keď sú na obrazovke (šetrí batériu); plagát = rovnaký názov .webp,
 //  - galéria „Fotky a videá“: videá stlmené, dokola, s plagátom,
-//  - pri každom videu štítok s názvom výrobku (content.json → videoNames), na celej obrazovke v hlavičke.
+//  - pri videách výrobkov štítok s názvom (content.json → videoNames; nie na úvodnej snímke firmy), na celej obrazovke v hlavičke.
 (() => {
   const poster = (src) => src.replace(/\.mp4$/, ".webp");
   let byName = new Map(), brands = new Map(), names = new Map();
@@ -148,7 +148,6 @@
         side.prepend(v);
         auto(v);
       }
-      if (bv && side) tag(side, bv.src);
     });
     // galéria – stlmené, dokola, s plagátom
     document.querySelectorAll(".mg__thumb").forEach((t) => { const v = t.querySelector(":scope > video"); tag(t, v ? rel(v.getAttribute("src")) : ""); });
