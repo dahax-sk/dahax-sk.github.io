@@ -4,7 +4,15 @@
 // nahraté v režime správy), nerobí unregister.
 // Druhá karta „Offline“: stav pamäte PDF a videí (dahax-media v sw.js) a tlačidlo „Stiahnuť pre offline“.
 // V nainštalovanej aplikácii (display-mode standalone) sa offline režim zapne sám.
+// LEN_WEB (27. 10. 2026, želanie používateľa „v nastaveniach len načítať novú verziu a súčasná verzia, nič iné“ –
+// aplikácia na tablete len z webu): v nastaveniach ostane iba „Verzia aplikácie: … · obsah …“ a „Načítať novú verziu“;
+// PIN a režim správy, karty Bez internetu, Dokumenty v tablete, Verzia obsahu a Offline – PDF a videá sú skryté
+// (kód ostáva), offline režim sa nezapína ani v nainštalovanej aplikácii. Inštalácia na plochu (celý displej – manifest
+// display: fullscreen) je povolená; vypínač na diaľku je v assets/dahax-stav.js.
+// Vrátiť: LEN_WEB = false tu aj OFFLINE_MEDIA = true v sw.js.
 (() => {
+  const LEN_WEB = true;
+  if (LEN_WEB) document.documentElement.classList.add("dx-len-web");
   const S = {
     work: "Hľadám novú verziu…",
     down: "Sťahujem novú verziu…",
@@ -16,8 +24,10 @@
   const appVersion = async () => {
     try {
       const k = (await caches.keys()).find((x) => x.startsWith("dahax-") && x !== "dahax-runtime" && x !== "dahax-media");
-      return k ? k.slice(6) : "–";
-    } catch { return "–"; }
+      if (k) return k.slice(6);
+    } catch {}
+    // bez service workera (napr. prvé spustenie) – verzia priamo zo sw.js
+    try { return (await (await fetch("sw.js", { cache: "no-store" })).text()).match(/const VERSION = "([^"]+)"/)[1]; } catch { return "–"; }
   };
   const cacheCount = async (name) => {
     try { return (await (await caches.open(name)).keys()).length; } catch { return 0; }
@@ -74,14 +84,16 @@
       window.__dxVersion = card.querySelector("p:not(.eyebrow)")?.textContent.trim() || "";
       const box = document.createElement("div");
       box.className = "set__card dxu";
-      box.innerHTML = `<p class="eyebrow eyebrow--muted">Aktualizácia</p><p class="dxu__v">Verzia aplikácie: <b>…</b></p>` +
+      box.innerHTML = `<p class="eyebrow eyebrow--muted">Aktualizácia</p><p class="dxu__v">Verzia aplikácie: <b>…</b>${LEN_WEB ? " · obsah <b>" + window.__dxVersion + "</b>" : ""}</p>` +
         `<button type="button" class="btn btn--line dxu__btn">Načítať novú verziu</button><p class="dxu__s" aria-live="polite"></p>`;
       card.after(box);
+      box.classList.add("dxu--hlavna");
+      const h2 = LEN_WEB && card.closest(".sheet--settings")?.querySelector("h2");
+      if (h2) h2.textContent = "Aktualizácia";
       appVersion().then((v) => (box.querySelector("b").textContent = v));
       const btn = box.querySelector("button"), out = box.querySelector(".dxu__s");
       btn.addEventListener("click", () => run(btn, out));
-      box.after(offlineCard());
-      paint();
+      if (!LEN_WEB) { box.after(offlineCard()); paint(); }
     }
   };
 
@@ -123,7 +135,7 @@
   });
   // nainštalovaná aplikácia na tablete: PDF a videá sa uložia offline samy (doťahujú sa len chýbajúce)
   const standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
-  if (standalone && navigator.serviceWorker) navigator.serviceWorker.ready.then(() => setTimeout(() => ask("dahax-offline-on"), 4000));
+  if (!LEN_WEB && standalone && navigator.serviceWorker) navigator.serviceWorker.ready.then(() => setTimeout(() => ask("dahax-offline-on"), 4000));
   let q = false;
   new MutationObserver(() => {
     if (q) return;

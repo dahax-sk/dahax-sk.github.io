@@ -394,3 +394,10 @@
 .dxg__all{margin-top:14px;display:inline-flex;align-items:center;height:40px;padding:0 16px;border:1.5px solid rgba(255,255,255,.22);background:#0e0f12;color:#fff;font:700 13px/1 var(--f-d);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
 .dxg__all:hover{background:var(--red,#de1f26);border-color:var(--red,#de1f26)}
 .dxg-fig{cursor:zoom-in}
+/* nastavenia len s verziou a „Načítať novú verziu“ (aplikácia len z webu – LEN_WEB v dahax-verzia.js): PIN a režim správy,
+   karty Bez internetu, Dokumenty v tablete, Verzia obsahu a poznámka skryté (kód ostáva) */
+.dx-len-web .sheet--settings .set{display:block}
+.dx-len-web .sheet--settings .set__l,.dx-len-web .sheet--settings .set__note,.dx-len-web .sheet--settings .set__card:not(.dxu--hlavna){display:none}
+.dx-len-web .sheet--settings .dxu--hlavna{max-width:560px}
+.dx-len-web .sheet--settings .dxu--hlavna>.eyebrow{display:none}
+.dx-len-web .sheet--settings .dxu__v{font-size:18px;line-height:1.5}
