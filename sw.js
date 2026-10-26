@@ -7,7 +7,7 @@
      zo siete na požiadanie a nič veľké sa neukladá.
    content.json a index.html: najprv sieť, pri výpadku uložená verzia.
    Písma z Google Fonts sa uložia pri prvom online spustení. */
-const VERSION = "2026-10-26-doprava";
+const VERSION = "2026-10-26-doprava-b";
 const PRECACHE = "dahax-" + VERSION;
 const RUNTIME = "dahax-runtime";
 const MEDIA_CACHE = "dahax-media";
@@ -62,9 +62,10 @@ self.addEventListener("activate", (e) => {
       const old = (await caches.keys()).filter((k) => k.startsWith("dahax-") && ![PRECACHE, RUNTIME, MEDIA_CACHE].includes(k));
       await migrate(old).catch(() => 0);
       await Promise.all(old.map((k) => caches.delete(k)));
-      // runtime pamäť nesmie držať PDF a videá (staršie verzie ich tam mohli uložiť)
+      // runtime pamäť drží len cudzie súbory (písma); súbory aplikácie, PDF a videá z nej preč – inak by stará
+      // kópia (uložená, keď ich predošlá verzia ešte nepoznala) prekryla novú z pamäte aplikácie
       const rt = await caches.open(RUNTIME);
-      for (const req of await rt.keys()) if (isMedia(pathOf(req.url))) await rt.delete(req);
+      for (const req of await rt.keys()) if (new URL(req.url).origin === location.origin) await rt.delete(req);
       await self.clients.claim();
       if (await offlineMode()) sync(); // aktualizácia: dotiahnuť len nové a zmenené médiá
     })()
@@ -164,8 +165,9 @@ const mediaResponse = async (req, path) => {
   return req.headers.has("range") ? rangeResponse(req, hit) : hit;
 };
 
+// najprv pamäť aplikácie tejto verzie, až potom runtime pamäť
 const cacheFirst = async (req) => {
-  const hit = await caches.match(req, { ignoreSearch: true });
+  const hit = (await (await caches.open(PRECACHE)).match(req, { ignoreSearch: true })) || (await (await caches.open(RUNTIME)).match(req, { ignoreSearch: true }));
   if (hit) return hit;
   const res = await fetch(req);
   if (res.ok) (await caches.open(RUNTIME)).put(req, res.clone());
