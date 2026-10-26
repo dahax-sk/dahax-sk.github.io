@@ -175,3 +175,5 @@
 
 /* dotyk: vodorovný ťah prstom na ploche snímky patrí aplikácii (prepínanie snímok), zvislé posúvanie zostáva */
 .screen{touch-action:pan-y}
+/* aj na vnútorných prvkoch snímky (karty, dlaždice, fotky) – inak by si prehliadač ťah vzal ako posúvanie */
+.screen *:not(.pdf__pages, .pdf__pages *){touch-action:pan-y}
