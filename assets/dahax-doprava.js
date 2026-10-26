@@ -1,4 +1,4 @@
-/* DAHAX – strana 2 (Prečo DAHAX): vysokozdvižný vozík nakladá palety do kamiónu; strana 3 (Doprava a sklad): dva rôzne realistické čierne kamióny DAHAX (typ Actros, bez značky výrobcu) idú po ceste dole na snímke.
+/* DAHAX – strana 2 (Prečo DAHAX): vysokozdvižný vozík vozí palety z malého skladu DAHAX do kamiónu (stále otočený ku kamiónu, do skladu cúva), šofér paletu v návese odtiahne paletákom a na konci nasadne do kabíny; strana 3 (Doprava a sklad): dva rôzne realistické čierne kamióny DAHAX (typ Actros, bez značky výrobcu) idú po ceste dole na snímke.
    Vektorová ilustrácia: lesklý čierny lak s odleskom hrán, rebrá návesu, sklá s odrazom, chróm, svetlá, blatníky,
    pneumatiky s ráfikmi (točia sa), tieň. Skutočné logo DAHAX (img/logo/dahax-white.svg – biele s červeným X)
    len na návese / skrini, malé; súbor zostavuje scripts/zostav-doprava.mjs. 1) ťahač s návesom, 2) solo kamión.
@@ -170,10 +170,65 @@
     '<path d="M4,7 L12,37" stroke="#fff" stroke-width="2" opacity=".16"/>' +
     "</svg>";
 
-  // geometria scény (px, zem = spodok 6 px): stoh 2 × 5 paliet, kamión pri rampe vpravo
-  var ZEM = 6, STOH_X = 150, KROK = 44, RAD = [ZEM, ZEM + 46], KAMION_X = 1000, PODLAHA = ZEM + 37;
+  // malý sklad DAHAX (bočný pohľad), 300 × 140, zem y = 140; brána vpravo (x 160–285) – vozík do nej cúvne a zmizne vnútri.
+  // SKLAD_DNU = tmavý interiér s regálom (za vozíkom), SKLAD = fasáda s otvorom brány (pred vozíkom)
+  var SKLAD_DNU =
+    '<svg viewBox="0 0 300 140" width="300" height="140">' +
+    '<rect x="160" y="34" width="125" height="106" fill="#0a0b0d"/>' +
+    '<ellipse cx="222" cy="40" rx="48" ry="10" fill="#fff4cc" opacity=".08"/><rect x="212" y="34" width="20" height="3" rx="1" fill="#fff4cc" opacity=".55"/>' +
+    '<path d="M168,52 V140 M206,52 V140" stroke="#3a3e45" stroke-width="3"/><path d="M166,96 H208 M166,138 H208" stroke="#a8121a" stroke-width="3"/>' +
+    '<svg x="170" y="58" width="34" height="39" viewBox="0 0 40 46" opacity=".7">' + "__PALETA__" + "</svg>" +
+    '<rect x="160" y="136" width="125" height="4" fill="#15171a"/>' +
+    "</svg>";
+  var SKLAD =
+    '<svg viewBox="0 0 300 140" width="300" height="140">' +
+    '<defs><linearGradient id="dxr-brana" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".78"/><stop offset=".6" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity=".1"/></linearGradient></defs>' +
+    '<ellipse cx="150" cy="138" rx="160" ry="5" fill="url(#dxr-tien)"/>' +
+    // strecha s miernym sklonom a hranou
+    '<path d="M0,24 L150,6 L300,24 V30 H0 Z" fill="#1d2025"/><path d="M0,24 L150,6 L300,24" fill="none" stroke="#5a5f67" stroke-width="1.2"/>' +
+    // stena z trapézového plechu s otvorom brány
+    '<path d="M6,30 H294 V140 H285 V34 H160 V140 H6 Z" fill="url(#dxr-lak)"/>' +
+    '<path d="' + (function () { var s = ""; for (var x = 14; x < 160; x += 8) s += "M" + x + ",32 V140 "; for (var y = 290; y > 285; y -= 8) s += "M" + y + ",32 V140 "; return s; })() + '" stroke="#000" stroke-width="1" opacity=".45"/>' +
+    '<path d="M6,30 H294" stroke="#fff" stroke-width="1" opacity=".18"/>' +
+    // brána: rám, zvinutá rolovacia brána hore, tieň dovnútra
+    '<rect x="160" y="34" width="125" height="106" fill="url(#dxr-brana)"/>' +
+    '<rect x="157" y="30" width="131" height="6" rx="1" fill="#2a2d32"/><path d="M160,36 V140 M285,36 V140" stroke="#3a3e45" stroke-width="3"/>' +
+    '<path d="M160,140 V128 M285,140 V128" stroke="#f5a623" stroke-width="3" stroke-dasharray="3 3"/>' +
+    '<rect x="288" y="70" width="4" height="7" rx="1" fill="#de1f26"/>' +
+    // logo DAHAX a červená linka
+    logo(26, 52, 108) + '<rect x="26" y="74" width="108" height="2" fill="#de1f26"/>' +
+    '<text x="80" y="94" fill="#fff" fill-opacity=".7" font-family="Montserrat,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="3" text-anchor="middle">SKLAD</text>' +
+    '<rect x="6" y="132" width="154" height="8" fill="#0b0c0e" opacity=".8"/>' +
+    "</svg>";
+
+  // šofér (bočný pohľad, otočený doľava k palete), 50 × 54, spodok y = 54; vľavo oje paletového vozíka (.dxn-oje)
+  // vedie k pravej hrane palety – vidlice paletáka sú pod paletou
+  var SOFER =
+    '<svg viewBox="0 0 50 54" width="50" height="54">' +
+    '<path class="dxn-oje" d="M27,28 L2,50" stroke="#3a3e45" stroke-width="2.6" stroke-linecap="round"/>' +
+    '<g class="dxn-postava">' +
+    '<rect class="dxn-noha" x="36" y="33" width="5" height="19" rx="2" fill="#15171a"/>' +
+    '<rect class="dxn-noha dxn-noha--2" x="31" y="33" width="5" height="19" rx="2" fill="#23262b"/>' +
+    '<path d="M29,52 H36 V54 H28 Z M34,52 H41 V54 H33 Z" fill="#0b0c0e"/>' +
+    '<rect x="29" y="14" width="14" height="21" rx="3" fill="#de1f26"/>' +
+    '<rect x="29" y="25" width="14" height="2.4" fill="#d7dbe0"/><rect x="29" y="30" width="14" height="1.6" fill="#d7dbe0" opacity=".7"/>' +
+    '<path d="M32,17 L27,28" stroke="#2a2d32" stroke-width="4" stroke-linecap="round"/>' +
+    '<circle cx="36" cy="8" r="5.5" fill="#d9a77f"/>' +
+    '<path d="M30.5,7 Q36,0 41.5,7 Z" fill="#15171a"/><path d="M31,7 H26.5" stroke="#15171a" stroke-width="2" stroke-linecap="round"/>' +
+    "</g></svg>";
+
+  // geometria scény (px, zem = spodok 6 px): sklad vľavo, kamión hneď vedľa (zadnou časťou k bráne skladu)
+  var ZEM = 6, SKLAD_X = 120, KAMION_X = 660, PODLAHA = ZEM + 37;
   var VIDLA = 8;             // vrch vidlice nad spodkom vozíka pri spustenej vidlici (paleta sedí 5 px pod vrchom – vidlica je v medzere palety)
   var POCET = 10;
+  var VNUTRI = SKLAD_X + 20;          // vozík celý za stenou skladu (nie je ho vidno)
+  var ZADOK = KAMION_X + 4 - 111;     // vozík pri zadných dverách návesu (vidlica končí pri zadnej hrane)
+  var CAKA = ZADOK - 40;              // vozík čaká pred kamiónom
+  // miesta v návese (súradnice kamiónu): od kabíny dozadu, paleta 40 px, podlaha 40 px nad spodkom kamiónu
+  var MIESTO = function (k) { return 408 - 40 * (k + 1); };
+  var ZLOZI = ZADOK + 98 - KAMION_X;  // kde vozík položí paletu v návese (pri zadných dverách)
+  var STOJI = ZLOZI + 40;             // šofér čaká s paletákom hneď pred ňou (oje pri hrane palety)
+  var DVERE = 440;                    // dvere kabíny (súradnice kamiónu)
   var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
 
   function vlozNakladku(sec) {
@@ -181,87 +236,118 @@
     var d = document.createElement("div");
     d.className = "dxn";
     d.setAttribute("aria-hidden", "true");
-    var html = DEFS + '<div class="dxd-cesta"></div>';
-    for (var i = 0; i < POCET; i++) {
-      var c = i % 5, r = i < 5 ? 0 : 1;
-      html += '<div class="dxn-p" style="left:' + (STOH_X + c * KROK) + "px;bottom:" + RAD[r] + 'px">' + PALETA + "</div>";
-    }
-    html += '<div class="dxn-dnu">' + PALETA + "</div>" +
-      '<div class="dxn-kamion" style="left:' + KAMION_X + 'px">' + KAMION + '<p class="dxn-pocet">Naložené: <b>0</b> / ' + POCET + "</p></div>" +
-      '<div class="dxn-vozik"><div class="dxn-naklad">' + PALETA + "</div>" + VOZIK + "</div>";
-    d.innerHTML = html;
+    var vnutri = "";
+    for (var k = 0; k < POCET; k++) vnutri += '<div class="dxn-in" style="left:' + MIESTO(k) + 'px">' + PALETA + "</div>";
+    d.innerHTML = DEFS + '<div class="dxd-cesta"></div>' +
+      '<div class="dxn-sklad dxn-sklad--dnu" style="left:' + SKLAD_X + 'px">' + SKLAD_DNU.replace("__PALETA__", PALETA.replace(/^<svg[^>]*>|<\/svg>$/g, "")) + "</div>" +
+      '<div class="dxn-vozik"><div class="dxn-naklad">' + PALETA + "</div>" + VOZIK + "</div>" +
+      '<div class="dxn-sklad" style="left:' + SKLAD_X + 'px">' + SKLAD + "</div>" +
+      '<div class="dxn-kamion" style="left:' + KAMION_X + 'px">' + vnutri + '<div class="dxn-sofer">' + SOFER + "</div>" + KAMION + "</div>";
     sec.appendChild(d);
     if (!matchMedia("(prefers-reduced-motion: reduce)").matches) nakladaj(d);
-    else { var v0 = d.querySelector(".dxn-vozik"); v0.style.left = "560px"; }
+    else {
+      d.querySelector(".dxn-vozik").style.left = CAKA + "px";
+      d.querySelector(".dxn-sofer").style.left = STOJI + "px";
+      [].slice.call(d.querySelectorAll(".dxn-in")).slice(0, 4).forEach(function (q) { q.style.visibility = "visible"; });
+    }
   }
 
-  // postup nakladania – riadi ho časovač, prechody (transition) robí CSS
+  // postup nakladania – riadi ho časovač, prechody (transition) robí CSS; vozík je stále otočený vidlicou ku kamiónu
+  // (do skladu cúva, von ide dopredu s paletou), pokojné tempo ~15 s na paletu
   async function nakladaj(d) {
     var voz = d.querySelector(".dxn-vozik"), vidly = voz.querySelector(".dxn-vidly"), naklad = voz.querySelector(".dxn-naklad");
-    var kam = d.querySelector(".dxn-kamion"), dnu = d.querySelector(".dxn-dnu"), pocet = kam.querySelector("b");
-    var palety = [].slice.call(d.querySelectorAll(".dxn-p"));
+    var kam = d.querySelector(".dxn-kamion");
+    var vnutri = [].slice.call(d.querySelectorAll(".dxn-in"));
     var zive = function () { return d.isConnected; };
-    // pohyb vozíka: x = ľavý okraj, smer 1 = vidlica vpravo (ku kamiónu), -1 = vľavo (k stohu), zdvih = px
-    var stav = { x: 420, smer: -1, zdvih: 0 };
+    // šofér: x = ľavý okraj (oje), hore = v návese / dole na zemi, ide = kráča, taha = drží paleták, vpravo = otočený ku kabíne
+    var sof = d.querySelector(".dxn-sofer");
+    var krok = function (ms, o) {
+      sof.style.transitionDuration = ms + "ms";
+      if ("x" in o) sof.style.left = o.x + "px";
+      if ("hore" in o) sof.style.bottom = (o.hore ? 40 : 2) + "px";
+      ["ide", "taha", "vpravo", "dole"].forEach(function (k) { if (k in o) sof.classList.toggle("is-" + k, !!o[k]); });
+      if ("vidno" in o) sof.style.opacity = o.vidno ? 1 : 0;
+      return wait(ms + 60);
+    };
+    // odtiahne paletu q z miesta pri dverách na jej miesto v návese a vráti sa k dverám
+    var tahaj = async function (q, ciel) {
+      var ms = Math.max(900, (ciel - ZLOZI) * 16);
+      await krok(500, { taha: true });
+      q.style.transition = "left " + ms + "ms ease-in-out";
+      q.style.left = ciel + "px";
+      await krok(ms, { x: ciel + 40, ide: true });
+      await krok(600, { taha: false, ide: false });
+      if (ciel > ZLOZI + 4) await krok(Math.max(700, (ciel - ZLOZI) * 11), { x: STOJI, ide: true });
+      await krok(0, { ide: false });
+    };
+    // vystúpi z kabíny, prejde k zadným dverám a vylezie do návesu
+    var nastup = async function () {
+      await krok(0, { x: DVERE, hore: false, dole: true, vpravo: false, vidno: false });
+      await krok(500, { vidno: true });
+      await krok(4200, { x: -6, ide: true });
+      await krok(700, { hore: true, ide: false });
+      await krok(0, { dole: false });
+      await krok(1300, { x: STOJI, ide: true });
+      await krok(0, { ide: false });
+    };
+    // zoskočí z návesu, prejde ku kabíne a nasadne
+    var odchod = async function () {
+      await krok(1100, { x: -6, ide: true });
+      await krok(0, { dole: true });
+      await krok(700, { hore: false, ide: false, vpravo: true });
+      await krok(4200, { x: DVERE, ide: true });
+      await krok(500, { ide: false, vidno: false });
+    };
+    var sofer = nastup();
+    // pohyb vozíka: x = ľavý okraj, zdvih = px
+    var stav = { x: CAKA, zdvih: 0 };
     var nastav = function (ms, o) {
       for (var k in o) stav[k] = o[k];
       voz.style.transitionDuration = ms + "ms";
       vidly.style.transitionDuration = naklad.style.transitionDuration = ms + "ms";
       voz.style.left = stav.x + "px";
-      voz.style.transform = "scaleX(" + stav.smer + ")";
       vidly.style.transform = "translateY(" + -stav.zdvih + "px)";
       naklad.style.bottom = VIDLA - 5 + stav.zdvih + "px";
-      return wait(ms + 60);
+      return wait(ms + 80);
     };
     nastav(0, {});
     while (zive()) {
       for (var i = 0; i < POCET && zive(); i++) {
-        // vrchný rad sprava doľava, potom spodný
-        var idx = i < 5 ? 9 - i : 4 - (i - 5), p = palety[idx];
-        var px = STOH_X + (idx % 5) * KROK, dno = RAD[idx < 5 ? 0 : 1];
-        var zdvihPick = Math.max(0, dno + 5 - ZEM - VIDLA);
-        // k stohu: vidlica vľavo, zdvihnúť na výšku palety, zajsť pod ňu
-        await nastav(1300, { smer: -1, x: px + 50 });
-        await nastav(450, { zdvih: zdvihPick });
-        await nastav(550, { x: px - 1 });
-        // naložiť
-        p.style.visibility = "hidden";
+        // cúvne do skladu, vnútri naberie paletu (nie je ho vidno) a vyjde dopredu ku kamiónu
+        await nastav(3600, { x: VNUTRI });
+        await wait(1400);
         naklad.style.visibility = "visible";
-        await nastav(300, { zdvih: zdvihPick + 5 });
-        await nastav(600, { x: px + 70 });
-        await nastav(400, { zdvih: 4 });
-        // otočiť a ku kamiónu
-        await nastav(400, { smer: 1 });
-        await nastav(1500, { x: KAMION_X + 4 - 111 });
-        await nastav(550, { zdvih: PODLAHA + 1 - ZEM - (VIDLA - 5) });
-        // zasunúť do návesu: paleta prejde do vrstvy pod kamiónom a zmizne za bočnicou
-        await nastav(350, { x: KAMION_X + 4 - 111 + 26 });
+        await nastav(700, { zdvih: 4 });
+        await nastav(3800, { x: ZADOK });
+        // zdvihnúť na výšku podlahy a zasunúť zadnými dverami do návesu
+        await nastav(1200, { zdvih: PODLAHA + 1 - ZEM - (VIDLA - 5) });
+        await sofer;   // šofér musí byť späť pri dverách
+        await nastav(800, { x: ZADOK + 26 });
+        // paleta je v návese (za polopriehľadnou bočnicou), šofér ju odtiahne paletákom na jej miesto
         naklad.style.visibility = "hidden";
-        dnu.style.transition = "none";
-        dnu.style.left = KAMION_X - 9 + "px";
-        dnu.style.bottom = PODLAHA + 1 + "px";
-        dnu.style.visibility = "visible";
-        void dnu.offsetWidth;
-        dnu.style.transition = "left .6s ease-in";
-        dnu.style.left = KAMION_X + 60 + "px";
-        pocet.textContent = i + 1;
-        await nastav(500, { x: KAMION_X + 4 - 111 - 30 });
-        dnu.style.visibility = "hidden";
-        await nastav(400, { zdvih: 0, smer: -1 });
+        var q = vnutri[i];
+        q.style.transition = "none";
+        q.style.left = ZLOZI + "px";
+        q.style.visibility = "visible";
+        void q.offsetWidth;
+        await nastav(1100, { x: CAKA });
+        sofer = tahaj(q, MIESTO(i));
+        await nastav(900, { zdvih: 0 });
       }
       if (!zive()) return;
-      // plný kamión odchádza na rozvoz (pokračuje na snímke 3)
-      await nastav(1500, { x: 560, smer: -1 });
+      // plný kamión odchádza na rozvoz aj s nákladom (pokračuje na snímke 3), vozík čaká v bráne skladu
+      await nastav(2600, { x: SKLAD_X + 150 });
+      await sofer;
+      await odchod();
       kam.classList.add("is-odchod");
-      await wait(3400);
-      // reset: nový prázdny kamión cúva k rampe, stoh sa doplní
+      await wait(9600);
+      // reset: nový prázdny kamión cúva k skladu
       kam.classList.remove("is-odchod");
+      vnutri.forEach(function (q) { q.style.transition = "none"; q.style.visibility = "hidden"; });
       kam.classList.add("is-prichod");
-      pocet.textContent = "0";
-      palety.forEach(function (q) { q.style.visibility = "visible"; q.classList.add("is-nove"); });
-      await wait(2800);
+      await wait(8400);
       kam.classList.remove("is-prichod");
-      palety.forEach(function (q) { q.classList.remove("is-nove"); });
+      sofer = nastup();
     }
   }
 
@@ -277,8 +363,9 @@
   }
 
   function kontrola() {
-    document.querySelectorAll("section.s:has(> .s__in.logi)").forEach(vloz);
+    // strana 2: nakladanie s čiernym kamiónom (.dxn); strana 3 má mapu v dahax-uvod.js – scéna .dxd sa nevkladá
     document.querySelectorAll("section.s:has(> .s__in.why)").forEach(vlozNakladku);
+    if (window.__dxDopravaScény) document.querySelectorAll("section.s:has(> .s__in.logi)").forEach(vloz);
     setTimeout(kontrola, 400);
   }
   kontrola();

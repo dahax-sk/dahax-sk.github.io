@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.29",
+  "version": "2026-10-26.35",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -11,11 +11,11 @@
     "warehouses": [
       {
         "city": "Prešov",
-        "address": "Zlatobanská 12242, Solivar, 080 05 Prešov"
+        "address": "Zlatobanská 12242, Solivar, 080 05 Prešov"
       },
       {
         "city": "Levice – Čajkov",
-        "address": "Areál bývalého poľnohospodárskeho družstva, 935 24 Čajkov, okr. Levice"
+        "address": "Areál bývalého poľnohospodárskeho družstva, 935 24 Čajkov, okr. Levice"
       }
     ],
     "delivery": "Doprava po celom Slovensku a Česku"
@@ -1072,6 +1072,103 @@
           "note": "Terasy: WN, HNT, WT (nerez A2) · podložka PWKCS · SQ Ceramic – 10× väčšia antikorózna ochrana ako zinok 5 µm."
         },
         {
+          "id": "top-univerzalne-ramove",
+          "name": "Univerzálne a rámové",
+          "eyebrow": "KLIMAS – TOP doplnky",
+          "title": "Univerzálne a rámové kotviace systémy",
+          "intro": "Natĺkacie hmoždinky SM a SMK na rýchlu sériovú montáž a univerzálne uzlovacie hmoždinky SFX do všetkých typov podkladov – v tenkostennom podklade sa hmoždinka bezpečne zauzlí na opačnej strane. Na lišty, profily sadrokartónu, káblové trasy, svietidlá aj bytové zariadenie.",
+          "image": "img/klimas/doplnky/panel-ramove-univerzalne.webp",
+          "products": [
+            {
+              "id": "sm",
+              "name": "SM",
+              "type": "Natĺkacia · zápustný límec",
+              "description": "Sériová montáž – podlahové lišty, drevené a drevu podobné prvky.",
+              "specs": [
+                {
+                  "value": "Ø 5 – 10 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "40 – 220 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            },
+            {
+              "id": "smk",
+              "name": "SMK",
+              "type": "Natĺkacia · hríbový límec",
+              "description": "Profily sadrokartónových stien a stropov, oceľové prvky – sériová montáž.",
+              "specs": [
+                {
+                  "value": "Ø 6 / 8 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "40 – 120 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            },
+            {
+              "id": "sfxp",
+              "name": "SFXP",
+              "type": "Uzlovacia · zápustná skrutka PZ",
+              "description": "Do všetkých podkladov – v tenkostennom podklade sa hmoždinka zauzlí na opačnej strane.",
+              "specs": [
+                {
+                  "value": "Ø 5 – 10 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "25 – 60 mm",
+                  "label": "dĺžky hmoždinky"
+                }
+              ],
+              "video": "video/klimas/klimas-sfx.mp4"
+            },
+            {
+              "id": "sfxk",
+              "name": "SFXK",
+              "type": "Uzlovacia · šesťhranná skrutka",
+              "description": "Káblové trasy, svietidlá a elektroinštalácie; šesťhranná hlava pre kľúč a väčší prítlak.",
+              "specs": [
+                {
+                  "value": "Ø 10 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "50 – 60 mm",
+                  "label": "dĺžky hmoždinky"
+                }
+              ]
+            },
+            {
+              "id": "sfxo-sfxc-sfxl",
+              "name": "SFXO · SFXC · SFXL",
+              "type": "Uzlovacia s okom, kruhovým a rovným hákom",
+              "description": "Svietidlá a bytové zariadenie – oko alebo hák do plného aj dutého podkladu.",
+              "specs": [
+                {
+                  "value": "Ø 6 / 8 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "30 – 40 mm",
+                  "label": "dĺžky hmoždinky"
+                }
+              ]
+            }
+          ],
+          "note": "SFX – 100 % nylon, aj do sadrokartónu · rámové hmoždinky Ø 10 / 12 / 14 mm · povlaky zinok, zinkové vločky, SQ Ceramic a nerez A4."
+        },
+        {
           "id": "top-etics-natlkacie",
           "name": "ETICS natĺkacie",
           "eyebrow": "KLIMAS – TOP doplnky",
@@ -1168,103 +1265,6 @@
             }
           ],
           "note": "Kategórie podkladov A – E podľa ETAG 014."
-        },
-        {
-          "id": "top-univerzalne-ramove",
-          "name": "Univerzálne a rámové",
-          "eyebrow": "KLIMAS – TOP doplnky",
-          "title": "Univerzálne a rámové kotviace systémy",
-          "intro": "Natĺkacie hmoždinky SM a SMK na rýchlu sériovú montáž a univerzálne uzlovacie hmoždinky SFX do všetkých typov podkladov – v tenkostennom podklade sa hmoždinka bezpečne zauzlí na opačnej strane. Na lišty, profily sadrokartónu, káblové trasy, svietidlá aj bytové zariadenie.",
-          "image": "img/klimas/doplnky/panel-ramove-univerzalne.webp",
-          "products": [
-            {
-              "id": "sm",
-              "name": "SM",
-              "type": "Natĺkacia · zápustný límec",
-              "description": "Sériová montáž – podlahové lišty, drevené a drevu podobné prvky.",
-              "specs": [
-                {
-                  "value": "Ø 5 – 10 mm",
-                  "label": "priemery",
-                  "accent": true
-                },
-                {
-                  "value": "40 – 220 mm",
-                  "label": "dĺžky"
-                }
-              ]
-            },
-            {
-              "id": "smk",
-              "name": "SMK",
-              "type": "Natĺkacia · hríbový límec",
-              "description": "Profily sadrokartónových stien a stropov, oceľové prvky – sériová montáž.",
-              "specs": [
-                {
-                  "value": "Ø 6 / 8 mm",
-                  "label": "priemery",
-                  "accent": true
-                },
-                {
-                  "value": "40 – 120 mm",
-                  "label": "dĺžky"
-                }
-              ]
-            },
-            {
-              "id": "sfxp",
-              "name": "SFXP",
-              "type": "Uzlovacia · zápustná skrutka PZ",
-              "description": "Do všetkých podkladov – v tenkostennom podklade sa hmoždinka zauzlí na opačnej strane.",
-              "specs": [
-                {
-                  "value": "Ø 5 – 10 mm",
-                  "label": "priemery",
-                  "accent": true
-                },
-                {
-                  "value": "25 – 60 mm",
-                  "label": "dĺžky hmoždinky"
-                }
-              ],
-              "video": "video/klimas/klimas-sfx.mp4"
-            },
-            {
-              "id": "sfxk",
-              "name": "SFXK",
-              "type": "Uzlovacia · šesťhranná skrutka",
-              "description": "Káblové trasy, svietidlá a elektroinštalácie; šesťhranná hlava pre kľúč a väčší prítlak.",
-              "specs": [
-                {
-                  "value": "Ø 10 mm",
-                  "label": "priemer",
-                  "accent": true
-                },
-                {
-                  "value": "50 – 60 mm",
-                  "label": "dĺžky hmoždinky"
-                }
-              ]
-            },
-            {
-              "id": "sfxo-sfxc-sfxl",
-              "name": "SFXO · SFXC · SFXL",
-              "type": "Uzlovacia s okom, kruhovým a rovným hákom",
-              "description": "Svietidlá a bytové zariadenie – oko alebo hák do plného aj dutého podkladu.",
-              "specs": [
-                {
-                  "value": "Ø 6 / 8 mm",
-                  "label": "priemery",
-                  "accent": true
-                },
-                {
-                  "value": "30 – 40 mm",
-                  "label": "dĺžky hmoždinky"
-                }
-              ]
-            }
-          ],
-          "note": "SFX – 100 % nylon, aj do sadrokartónu · rámové hmoždinky Ø 10 / 12 / 14 mm · povlaky zinok, zinkové vločky, SQ Ceramic a nerez A4."
         },
         {
           "id": "fasady-etics",
@@ -1441,7 +1441,7 @@
           "name": "Predajné miesto",
           "eyebrow": "KLIMAS – podpora predaja",
           "title": "Predajné miesto, ktoré predáva",
-          "image": "img/photo/regal-03.webp",
+          "image": "img/klimas/predajne/predajna-15.webp",
           "features": [
             {
               "title": "Regál na kľúč",
@@ -1466,28 +1466,76 @@
           ],
           "gallery": [
             {
-              "src": "img/photo/regal-04.webp",
+              "src": "img/klimas/predajne/predajna-14.webp",
+              "caption": "Realizácia DAHAX – 7 farebných sekcií"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-19.webp",
+              "caption": "Wkręt-met KLIMAS – predajný pult"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-18.webp",
+              "caption": "Firemná predajňa Wkręt-met KLIMAS"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-12.webp",
+              "caption": "Regál KLIMAS – natĺkacie hmoždinky a kotvenie"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-02.webp",
+              "caption": "Regál KLIMAS – skrutky do dreva"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-08.webp",
+              "caption": "Regál s farebnými hlavičkami sortimentu"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-01.webp",
+              "caption": "Ulička KLIMAS – kotvenie a hmoždinky"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-03.webp",
+              "caption": "Farebné podlahové pásy navigujú zákazníka"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-09.webp",
+              "caption": "KLIMAS na celej dĺžke uličky"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-04.webp",
+              "caption": "Spojovací materiál na váhu aj v balení"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-05.webp",
+              "caption": "Zásobníky so spojovacím materiálom"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-07.webp",
+              "caption": "Boxy a balenia na jednom regáli"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-06.webp",
+              "caption": "Predajné miesto KLIMAS"
+            },
+            {
+              "src": "img/klimas/predajne/predajna-16.webp",
               "caption": "KLIMAS v stavebninách"
             },
             {
-              "src": "img/photo/regal-05.webp",
-              "caption": "KLIMAS v stavebninách"
+              "src": "img/klimas/predajne/predajna-17.webp",
+              "caption": "Realizácia DAHAX"
             },
             {
               "src": "img/photo/regal-06.webp",
               "caption": "Každá realizácia je šitá na mieru predajni"
             },
             {
-              "src": "img/photo/regal-01.webp",
-              "caption": "Realizácia DAHAX"
+              "src": "img/klimas/predajne/predajna-20.webp",
+              "caption": "Stojan s fasádnymi kotvami"
             },
             {
-              "src": "img/photo/regal-02.webp",
-              "caption": "Realizácia DAHAX"
-            },
-            {
-              "src": "img/photo/regal-03.webp",
-              "caption": "Realizácia DAHAX"
+              "src": "img/klimas/predajne/predajna-15.webp",
+              "caption": "Realizácia DAHAX – navigácia na podlahe"
             }
           ],
           "products": []
@@ -1714,7 +1762,7 @@
       },
       "media": [
         {
-          "src": "img/photo/regal-04.webp",
+          "src": "img/klimas/predajne/predajna-14.webp",
           "caption": "KLIMAS v stavebninách"
         },
         {
@@ -1722,11 +1770,11 @@
           "caption": "Každá realizácia je šitá na mieru predajni"
         },
         {
-          "src": "img/photo/regal-05.webp",
+          "src": "img/klimas/predajne/predajna-16.webp",
           "caption": "KLIMAS v stavebninách"
         },
         {
-          "src": "img/photo/regal-03.webp",
+          "src": "img/klimas/predajne/predajna-15.webp",
           "caption": "Predajné miesto KLIMAS"
         },
         {
@@ -2039,7 +2087,11 @@
           "kind": "technicky-list"
         }
       ],
-      "video": "video/klimas/klimas-firma-prezentacia.mp4"
+      "video": "video/klimas/klimas-firma-prezentacia.mp4",
+      "videoRange": [
+        1.6,
+        223
+      ]
     },
     {
       "id": "izovat",
@@ -2056,7 +2108,7 @@
       ],
       "eyebrow": "Tepelné izolácie",
       "tagline": "Čadičová vlna pre fasády a ploché strechy.",
-      "theme": "light",
+      "theme": "red",
       "categories": [
         {
           "id": "fasady",
@@ -2113,231 +2165,11 @@
               "description": "Spádové dosky podľa návrhu strechy"
             }
           ]
-        },
-        {
-          "id": "podkrovia-a-pricky",
-          "name": "Podkrovia, priečky",
-          "eyebrow": "IZOVAT – šikmé strechy a konštrukcie",
-          "title": "Vlna do šikmých striech a priečok",
-          "intro": "Dosky pre konštrukcie, kde izolácia nenesie vonkajšie zaťaženie – krovy, podkrovia, rámové steny a priečky.",
-          "products": [
-            {
-              "id": "izovat-30",
-              "name": "IZOVAT 30",
-              "description": "Šikmé strechy, podkrovia, stropy medzi trámami a podlahy na trámoch. Podľa výrobcu pre sklony do 60 %.",
-              "specs": [
-                {
-                  "value": "0,036",
-                  "label": "λD [W/(m·K)]",
-                  "accent": true
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň",
-                  "accent": true
-                },
-                {
-                  "value": "50–300 mm",
-                  "label": "hrúbky dosiek"
-                },
-                {
-                  "value": "≤ 1 kg/m²",
-                  "label": "krátkodobá nasiakavosť WS"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "izovat-40",
-              "name": "IZOVAT 40",
-              "description": "Šikmé strechy so sklonom nad 60 %, rámové priečky a obvodové rámové steny.",
-              "specs": [
-                {
-                  "value": "0,035",
-                  "label": "λD [W/(m·K)]",
-                  "accent": true
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň",
-                  "accent": true
-                },
-                {
-                  "value": "50–300 mm",
-                  "label": "hrúbky dosiek"
-                },
-                {
-                  "value": "≤ 1 kg/m²",
-                  "label": "krátkodobá nasiakavosť WS"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "izovat-45",
-              "name": "IZOVAT 45",
-              "description": "Tepelná a zvuková izolácia rámových priečok a obvodových rámových stien medzi prvkami konštrukcie.",
-              "specs": [
-                {
-                  "value": "0,035",
-                  "label": "λD [W/(m·K)]",
-                  "accent": true
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň",
-                  "accent": true
-                },
-                {
-                  "value": "50–300 mm",
-                  "label": "hrúbky dosiek"
-                },
-                {
-                  "value": "≤ 1 kg/m²",
-                  "label": "krátkodobá nasiakavosť WS"
-                }
-              ],
-              "documents": []
-            }
-          ],
-          "specs": [
-            {
-              "value": "0,035",
-              "label": "λD [W/(m·K)] – IZOVAT 40 a 45",
-              "accent": true
-            },
-            {
-              "value": "A1",
-              "label": "nehorľavé – všetky dosky",
-              "accent": true
-            },
-            {
-              "value": "50–300 mm",
-              "label": "rozsah hrúbok"
-            }
-          ],
-          "image": "img/sortiment/izovat-podkrovia-a-pricky.webp",
-          "imageOnWhite": true
-        },
-        {
-          "id": "podlahy",
-          "name": "Podlahy",
-          "eyebrow": "IZOVAT – podlahy",
-          "title": "Plávajúce podlahy a podlahy pod poter",
-          "intro": "Tuhé dosky pod poter: tepelná izolácia aj útlm kročajového hluku, pevnosť v tlaku podľa zaťaženia podlahy.",
-          "products": [
-            {
-              "id": "izovat-acoustic-floor-r20",
-              "name": "IZOVAT Acoustic Floor R20",
-              "description": "Doska pre plávajúce podlahy – izolácia proti vzduchovému aj kročajovému hluku.",
-              "specs": [
-                {
-                  "value": "7 MN/m³",
-                  "label": "dynamická tuhosť SD",
-                  "accent": true
-                },
-                {
-                  "value": "≥ 20 kPa",
-                  "label": "pevnosť v tlaku CS(10)"
-                },
-                {
-                  "value": "0,036",
-                  "label": "λD [W/(m·K)]"
-                },
-                {
-                  "value": "20 · 30 · 50",
-                  "label": "hrúbky [mm]"
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "izovat-100-podlahy",
-              "name": "IZOVAT 100",
-              "description": "Podlahy pod poter a stropy s bežným zaťažením; výrobca ho uvádza pre systém plávajúcej podlahy.",
-              "specs": [
-                {
-                  "value": "≥ 30 kPa",
-                  "label": "pevnosť v tlaku CS(10)",
-                  "accent": true
-                },
-                {
-                  "value": "≥ 250 N",
-                  "label": "bodové zaťaženie PL(5)"
-                },
-                {
-                  "value": "0,035",
-                  "label": "λD [W/(m·K)]"
-                },
-                {
-                  "value": "50–90 mm",
-                  "label": "hrúbky podľa DoP-452"
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "izovat-160-podlahy",
-              "name": "IZOVAT 160",
-              "description": "Najtuhšia doska pre podlahy pod poter s vyšším zaťažením.",
-              "specs": [
-                {
-                  "value": "≥ 60 kPa",
-                  "label": "pevnosť v tlaku CS(10)",
-                  "accent": true
-                },
-                {
-                  "value": "≥ 600 N",
-                  "label": "bodové zaťaženie PL(5)"
-                },
-                {
-                  "value": "0,037",
-                  "label": "λD [W/(m·K)]"
-                },
-                {
-                  "value": "50–90 mm",
-                  "label": "hrúbky podľa DoP-549"
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň"
-                }
-              ],
-              "documents": []
-            }
-          ],
-          "specs": [
-            {
-              "value": "7 MN/m³",
-              "label": "dynamická tuhosť – Acoustic Floor R20",
-              "accent": true
-            },
-            {
-              "value": "30–60 kPa",
-              "label": "CS(10) – IZOVAT 100 až 160"
-            },
-            {
-              "value": "A1",
-              "label": "nehorľavé – všetky dosky",
-              "accent": true
-            }
-          ],
-          "image": "img/sortiment/izovat-podlahy.webp",
-          "imageOnWhite": true
         }
       ],
       "profile": {
-        "country": "Ukrajina",
         "hq": "Žitomir, Promyslova 6",
-        "about": "Čadičovú vlnu IZOVAT vyrába spoločnosť OBIO v Žitomire na modernej výrobnej linke z čadičovej horniny, so spojivom bez voľného fenolu. Hustoty 30–225 kg/m³ a hrúbky 20–300 mm – dosky, lamely, lamelové rohože a valce. Systém kvality EN ISO 9001:2015 (CQS, IQNet), člen asociácie výrobcov izolácií Ukrima. Výhradný distribútor pre SK a CZ: DAHAX.",
+        "about": "Čadičovú vlnu IZOVAT vyrába spoločnosť OBIO v Žitomire na modernej výrobnej linke z čadičovej horniny, so spojivom bez voľného fenolu. DAHAX dodáva dosky pre fasády – kontaktné zatepľovacie systémy ETICS aj odvetrávané fasády – a pre ploché strechy v jednovrstvovej aj dvojvrstvovej skladbe. Systém kvality EN ISO 9001:2015, výhradný distribútor pre SK a CZ: DAHAX.",
         "facts": [
           {
             "value": "A1",
@@ -2345,7 +2177,7 @@
           },
           {
             "value": "λD 0,035",
-            "label": "fasádne dosky (podľa podkladov DAHAX)"
+            "label": "fasádne dosky FASAD 10, 80, 80 FG (vyhlásenie o parametroch)"
           },
           {
             "value": "SK + CZ",
@@ -2355,10 +2187,7 @@
         "makes": [
           "ETICS – IZOVAT 90 L, 115 až 145",
           "Odvetrávané fasády – IZOVAT 65, 80, 80 FG",
-          "Ploché strechy – IZOVAT 100/110 + 160/180",
-          "Lamely – IZOVAT 75/100/125 LR",
-          "Trojvrstvové murivo – IZOVAT 40, 45",
-          "Potrubia a VZT – valce, rohože"
+          "Ploché strechy – IZOVAT 100/110 + 160/180"
         ],
         "sources": [
           {
@@ -2370,18 +2199,19 @@
             "url": "https://www.izovat.ua/en/"
           },
           {
-            "title": "EPD IZOVAT Light (EPD-IES-0027479)",
-            "url": "https://www.environdec.com/library/epd27479"
-          },
-          {
             "title": "IZOVAT – fasády (oficiálny web)",
             "url": "https://www.izovat.ua/en/facade-thermal-insulation/"
           },
           {
             "title": "IZOVAT – ploché strechy (oficiálny web)",
             "url": "https://www.izovat.ua/en/flat-roofing-thermal-insulation/"
+          },
+          {
+            "title": "IZOVAT – vyhlásenia o parametroch (Google Drive výrobcu)",
+            "url": "https://drive.google.com/drive/folders/13cjIvyoflj4gq-WI8j0JZMxZ426KWr1b"
           }
-        ]
+        ],
+        "headLogo": "img/brand/izovat.webp"
       },
       "media": [
         {
@@ -2398,24 +2228,89 @@
       "tier": "core",
       "documents": [
         {
+          "title": "Vyhlásenie o parametroch – IZOVAT FASAD 10, 50–90 mm (SK)",
+          "href": "docs/izovat/dop-605-izovat-fasad-10-50-90mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT FASAD 10, 100–240 mm (SK)",
+          "href": "docs/izovat/dop-606-izovat-fasad-10-100-240mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT FASAD COTTAGE, 50–90 mm (SK)",
+          "href": "docs/izovat/dop-634-izovat-fasad-cottage-50-90mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT FASAD COTTAGE, 100–270 mm (SK)",
+          "href": "docs/izovat/dop-635-izovat-fasad-cottage-100-270mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 65, 100–300 mm (SK)",
+          "href": "docs/izovat/dop-413-izovat-65-100-300mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 80, 100–300 mm (SK)",
+          "href": "docs/izovat/dop-429-izovat-80-100-300mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 80 FG, 100–300 mm (SK)",
+          "href": "docs/izovat/dop-431-izovat-80fg-100-300mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 90, 100–270 mm (SK)",
+          "href": "docs/izovat/dop-441-izovat-90-100-270mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 125, 30–190 mm (CZ)",
+          "href": "docs/izovat/dop-522-izovat-125-30-190mm-cz.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 135, 30–180 mm (SK)",
+          "href": "docs/izovat/dop-535-izovat-135-30-180mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 100, 100–240 mm, plochá strecha (SK)",
+          "href": "docs/izovat/dop-453-izovat-100-100-240mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 110, 100–220 mm, plochá strecha (CZ)",
+          "href": "docs/izovat/dop-470-izovat-110-100-220mm-cz.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 160, 100–150 mm, plochá strecha (SK)",
+          "href": "docs/izovat/dop-550-izovat-160-100-150mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 160 WED, spádové dosky (SK)",
+          "href": "docs/izovat/dop-552-izovat-160-wed-20-150mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 160 INC, spádové dosky (SK)",
+          "href": "docs/izovat/dop-553-izovat-160-inc-20-150mm-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
           "title": "EPD – IZOVAT fasádna izolácia (environmentálne vyhlásenie)",
           "href": "https://www.environdec.com/library/epd27478",
           "kind": "ine",
           "external": true
-        },
-        {
-          "title": "EPD – IZOVAT Light 25–45 kg/m³ (EN, platné do 2030)",
-          "href": "docs/izovat/epd-izovat-light-25-45-kg-m-en-platne-do-2030.pdf",
-          "kind": "ine"
-        },
-        {
-          "title": "Certifikáty EÚ, vyhlásenia o parametroch a ISO (Google Drive výrobcu)",
-          "href": "https://drive.google.com/drive/folders/13XyN2Ol5ycW2jbtFIFswuyiE3rDT4N4e",
-          "kind": "certifikat",
-          "external": true
         }
       ],
-      "website": "https://www.izovat.ua/en/"
+      "website": "https://www.izovat.ua/en/",
+      "video": "video/izovat/izovat-firma.mp4"
     },
     {
       "id": "holcim",
@@ -8263,32 +8158,145 @@
   "realizations": {
     "eyebrow": "Naše realizácie",
     "title": "KLIMAS v stavebninách",
-    "intro": "Skutočné predajne, ktoré DAHAX vybavil sortimentom KLIMAS.",
+    "intro": "Skutočné predajne, ktoré DAHAX vybavil sortimentom KLIMAS – všetky fotky na jednom mieste.",
     "statement": "Každá realizácia je šitá na mieru predajni",
     "photos": [
       {
-        "src": "img/photo/regal-04.webp",
+        "src": "img/klimas/predajne/predajna-02.webp",
         "caption": "KLIMAS v stavebninách"
       },
       {
-        "src": "img/photo/regal-05.webp",
+        "src": "img/klimas/predajne/predajna-17.webp",
         "caption": "KLIMAS v stavebninách"
       },
       {
+        "src": "img/klimas/predajne/predajna-19.webp",
+        "caption": "Realizácia DAHAX"
+      },
+      {
+        "src": "img/klimas/predajne/predajna-20.webp",
+        "caption": "Realizácia DAHAX"
+      },
+      {
+        "src": "img/klimas/predajne/predajna-06.webp",
+        "caption": "Realizácia DAHAX"
+      },
+      {
+        "src": "img/klimas/predajne/predajna-09.webp",
+        "caption": "Realizácia DAHAX"
+      }
+    ],
+    "firmy": {
+      "klimas": "KLIMAS"
+    },
+    "galeria": [
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-01.webp",
+        "popis": "Ulička KLIMAS – kotvenie a hmoždinky",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-02.webp",
+        "popis": "Regál KLIMAS – skrutky do dreva",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-03.webp",
+        "popis": "Farebné podlahové pásy navigujú zákazníka",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-04.webp",
+        "popis": "Spojovací materiál na váhu aj v balení",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-05.webp",
+        "popis": "Zásobníky so spojovacím materiálom",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-06.webp",
+        "popis": "Predajné miesto KLIMAS",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-07.webp",
+        "popis": "Boxy a balenia na jednom regáli",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-08.webp",
+        "popis": "Regál s farebnými hlavičkami sortimentu",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-09.webp",
+        "popis": "KLIMAS na celej dĺžke uličky",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-12.webp",
+        "popis": "Regál KLIMAS – natĺkacie hmoždinky a kotvenie",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-14.webp",
+        "popis": "Realizácia DAHAX – 7 farebných sekcií",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-15.webp",
+        "popis": "Realizácia DAHAX – navigácia na podlahe",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-16.webp",
+        "popis": "KLIMAS v stavebninách",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-17.webp",
+        "popis": "Realizácia DAHAX",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-18.webp",
+        "popis": "Firemná predajňa Wkręt-met KLIMAS",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-19.webp",
+        "popis": "Wkręt-met KLIMAS – predajný pult",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
+        "src": "img/klimas/predajne/predajna-20.webp",
+        "popis": "Stojan s fasádnymi kotvami",
+        "firma": "klimas"
+      },
+      {
+        "typ": "foto",
         "src": "img/photo/regal-06.webp",
-        "caption": "Realizácia DAHAX"
-      },
-      {
-        "src": "img/photo/regal-01.webp",
-        "caption": "Realizácia DAHAX"
-      },
-      {
-        "src": "img/photo/regal-02.webp",
-        "caption": "Realizácia DAHAX"
-      },
-      {
-        "src": "img/photo/regal-03.webp",
-        "caption": "Realizácia DAHAX"
+        "popis": "Každá realizácia je šitá na mieru predajni",
+        "firma": "klimas"
       }
     ]
   },

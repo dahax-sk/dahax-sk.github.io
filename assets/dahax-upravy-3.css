@@ -302,7 +302,7 @@
 .dxk-msg.is-on{opacity:1}
 .dxk-pan__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;align-content:start}
 /* pravá lišta firiem: skrytá za okrajom, vysúva sa pri okraji (dahax-lista.js); snímky majú celú šírku */
-.screen{width:1600px}
+.screen{width:var(--stage-w,1600px)} /* celá šírka plochy – prispôsobuje sa zariadeniu (--stage-w) */
 .rail{transform:translateX(100%);transition:transform .35s var(--ease),box-shadow .35s;box-shadow:none}
 .deck.dxr-open .rail{transform:none;box-shadow:-18px 0 50px rgba(0,0,0,.55)}
 .deck::after{content:"";position:absolute;right:0;top:50%;z-index:29;width:4px;height:88px;margin-top:-4px;background:var(--red);opacity:.55;pointer-events:none;transition:opacity .3s}
@@ -310,11 +310,32 @@
 /* číslo snímky vpravo dole („12 / 72“) – dahax-cislo.js */
 .dxc{position:absolute;right:14px;bottom:12px;z-index:28;padding:4px 9px 3px;background:rgba(10,11,13,.62);color:rgba(255,255,255,.78);font:600 13px/1 var(--f-d);letter-spacing:.08em;font-variant-numeric:tabular-nums;pointer-events:none}
 
-/* KLIMAS – TOP doplnky (panely z regálu): širší stĺpec s celou fotkou panelu, riadky výrobkov bez popisu – návrh Programátora 2 */
-.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) { grid-template-columns: 780px 1fr; gap: 48px; }
+/* KLIMAS – TOP doplnky (panely z regálu) a snímka 6 – návrh 2 Programátora 2: panel 980 px s bežiacou bielou linkou, menšie texty, Video pri šípke */
+@property --dxa { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) { grid-template-columns: 980px 1fr; gap: 40px; }
 .media__img:has(img[src*="/doplnky/panel-"]) { justify-content: center; }
-.media__img:has(img[src*="/doplnky/panel-"]) img { object-fit: contain; height: auto; }
+.media__img:has(img[src*="/doplnky/panel-"]) img {
+  object-fit: contain; height: auto; padding: 3px;
+  background: conic-gradient(from var(--dxa), rgba(255,255,255,.14) 0 72%, #fff 86%, rgba(255,255,255,.14) 100%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .media__img:has(img[src*="/doplnky/panel-"]) img { animation: dxa-beh 7s linear infinite; }
+}
+@keyframes dxa-beh { to { --dxa: 360deg; } }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .media__text { align-self: center; }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .cat__title { font-size: 42px; }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .media__text .lead { font-size: 18px; line-height: 1.45; }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .row { position: relative; }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .row__name { font-size: 22px; }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .row__type { font-size: 14px; }
 .s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .row__desc { display: none; }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .row:has(.dxv-badge) .row__txt { padding-right: 112px; position: static; }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .row .dxv-badge { position: absolute; left: auto; bottom: auto; right: 44px; top: 50%; transform: translateY(-50%); margin: 0; }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .row:has(.dxv-badge) .pc__docs { margin-right: 100px; }
+
+/* Snímka 6 (Katalóg výrobkov): text vpravo na 2 riadky, blok obrázkov vyššie a s okrajom dole. */
+.tiles:has(>.dxk) .tiles__head { grid-template-columns: 1fr 860px; }
+.tiles:has(>.dxk) { padding-bottom: 28px; }
 /* Katalóg výrobkov bez nadpisu (title "") – prázdny nadpis nezaberá miesto */
 .tiles:has(>.dxk) .cat__title:empty{display:none}
 
@@ -325,3 +346,33 @@
 .ptile__logo img[src$=".svg"]{width:72%;height:auto}
 .ptile--lead .ptile__logo img[src$=".svg"]{width:70%}
 .brand__logo img[src$=".svg"]{width:72%;height:auto}
+/* Realizácie – kompletná galéria fotiek a videí (assets/dahax-realizacie.js): filtre, mriežka náhľadov, prehliadač na celú obrazovku */
+.s__in.real:has(>.dxr){display:flex;flex-direction:column;height:100%;min-height:0}
+.s__in.real:has(>.dxr)>.real__grid{display:none}
+.dxr{flex:1;min-height:0;display:flex;flex-direction:column;gap:18px;margin-top:22px}
+.dxr-filtre{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
+.dxr-f__sk{display:flex;flex-wrap:wrap;gap:8px}
+.dxr-f{display:inline-flex;align-items:center;gap:10px;height:40px;padding:0 16px;border:1.5px solid rgba(255,255,255,.22);background:#0e0f12;color:rgba(255,255,255,.82);font:700 13px/1 var(--f-d);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.dxr-f b{font-weight:800;color:rgba(255,255,255,.5);letter-spacing:0}
+.dxr-f.is-on{background:var(--red,#de1f26);border-color:var(--red,#de1f26);color:#fff}
+.dxr-f.is-on b{color:rgba(255,255,255,.85)}
+.dxr-grid{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:min-content;gap:10px;padding:0 6px 6px 0;align-content:start;padding-bottom:44px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.3) transparent;touch-action:pan-y}
+.dxr-t{position:relative;display:block;aspect-ratio:4/3;padding:0;border:0;background:#15171b;overflow:hidden;cursor:pointer}
+.dxr-t img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.dxr-t:hover img{transform:scale(1.04)}
+.dxr-t::after{content:"";position:absolute;inset:auto 0 0;height:55%;background:linear-gradient(transparent,rgba(5,6,8,.85));pointer-events:none}
+.dxr-t__popis{position:absolute;left:12px;right:12px;bottom:10px;z-index:1;color:#fff;font:600 13px/1.3 var(--f-b,inherit);text-align:left;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.dxr-t--video{border-bottom:3px solid var(--red,#de1f26)}
+.dxr-t__play{position:absolute;left:50%;top:44%;width:52px;height:52px;transform:translate(-50%,-50%);z-index:1}
+.dxr-t__play svg{width:100%;height:100%;display:block}
+.dxr-t__znak{position:absolute;left:0;top:12px;z-index:1;padding:4px 10px 3px;background:var(--red,#de1f26);color:#fff;font:800 11px/1 var(--f-d);letter-spacing:.12em;text-transform:uppercase}
+.dxr-prazdne{grid-column:1/-1;color:rgba(255,255,255,.6)}
+.dxr-ov{position:fixed;inset:0;z-index:1000;background:rgba(4,5,6,.96);display:flex;align-items:center;justify-content:center;touch-action:none}
+.dxr-ov__scena{position:absolute;inset:70px 110px 96px;display:flex;align-items:center;justify-content:center}
+.dxr-ov__scena img,.dxr-ov__scena video{max-width:100%;max-height:100%;object-fit:contain;display:block;background:#000}
+.dxr-ov__popis{position:absolute;left:110px;right:110px;bottom:34px;margin:0;color:#fff;font:600 18px/1.35 var(--f-b,inherit);text-align:center}
+.dxr-ov__cislo{position:absolute;left:32px;top:26px;margin:0;padding-left:12px;border-left:2px solid var(--red,#de1f26);color:rgba(255,255,255,.8);font:700 14px/1 var(--f-d);letter-spacing:.1em}
+.dxr-ov__x{position:absolute;right:24px;top:18px;width:48px;height:48px;border:1.5px solid rgba(255,255,255,.3);background:#0e0f12;color:#fff;font:300 30px/1 sans-serif;cursor:pointer}
+.dxr-ov__sip{position:absolute;top:50%;width:64px;height:96px;margin-top:-48px;border:0;background:rgba(14,15,18,.7);color:#fff;font:300 54px/1 sans-serif;cursor:pointer}
+.dxr-ov__sip--l{left:24px}.dxr-ov__sip--r{right:24px}
+.dxr-ov__sip:hover,.dxr-ov__x:hover{background:var(--red,#de1f26)}
