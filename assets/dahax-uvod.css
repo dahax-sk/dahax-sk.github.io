@@ -55,3 +55,22 @@
   85%  { opacity: 1; }
   100% { offset-distance: 100%; opacity: 0; }
 }
+
+/* strana 3 – dva kreslené kamióny DAHAX na ceste dole (dahax-doprava.js) */
+.dxd{position:absolute;left:0;right:0;bottom:16px;z-index:1;height:160px;overflow:hidden;pointer-events:none}
+.dxd-cesta{position:absolute;left:0;right:0;bottom:12px;height:2px;background:linear-gradient(90deg,rgba(222,31,38,0) 0%,rgba(222,31,38,.7) 12%,rgba(222,31,38,.7) 88%,rgba(222,31,38,0) 100%)}
+.dxd-cesta::after{content:"";position:absolute;left:0;right:0;top:9px;height:1px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.2) 0 28px,transparent 28px 64px);animation:dxd-pruhy 2.4s linear infinite}
+.dxd-v{position:absolute;left:0;bottom:6px;will-change:transform}
+.dxd-v svg{display:block;overflow:visible}
+.dxd-v--kamion{animation:dxd-jazda 32s linear infinite;animation-delay:-9s}
+.dxd-v--solo{animation:dxd-jazda 32s linear infinite;animation-delay:-22s}
+.dxd-v--kamion .dxd-rot{animation:dxd-koleso 1.45s linear infinite}
+.dxd-v--solo .dxd-rot{animation:dxd-koleso 1.36s linear infinite}
+@keyframes dxd-jazda{from{transform:translateX(-560px)}to{transform:translateX(1660px)}}
+@keyframes dxd-koleso{to{transform:rotate(360deg)}}
+@keyframes dxd-pruhy{to{background-position:-64px 0}}
+@media (prefers-reduced-motion:reduce){
+  .dxd-v,.dxd-rot,.dxd-cesta::after{animation:none!important}
+  .dxd-v--kamion{transform:translateX(900px)}
+  .dxd-v--solo{transform:translateX(260px)}
+}
