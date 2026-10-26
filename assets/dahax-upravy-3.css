@@ -213,3 +213,5 @@
 .dxu__btn{justify-self:start;min-height:52px;padding:0 22px;font-size:16px}
 .dxu__btn:disabled{opacity:.5}
 .dxu__s{min-height:1.4em;font-size:16px;color:var(--txt-2)}
+/* video firmy bez anglických popisov: výrez vľavo od popisov (sú vpravo hore) a horná štvrtina prechádza do čistej červenej */
+.brand--red .dxv-bg{object-position:28% 50%;-webkit-mask-image:linear-gradient(180deg,transparent 0,transparent 22%,#000 40%);mask-image:linear-gradient(180deg,transparent 0,transparent 22%,#000 40%)}

@@ -13,7 +13,7 @@
     byName = new Map();
     brands = new Map();
     for (const m of c.manufacturers || []) {
-      if (m.video) brands.set(norm(m.name), m.video);
+      if (m.video) brands.set(norm(m.name), { src: m.video, range: m.videoRange, rate: m.videoRate });
       for (const cat of m.categories || []) {
         for (const t of cat.tiles || []) if (t.video) byName.set(norm(t.name), t.video);
         for (const p of cat.products || []) if (p.video) byName.set(norm(p.name), p.video);
@@ -45,6 +45,21 @@
     return v;
   };
   const auto = (v) => { v.classList.add("dxv-auto"); io ? io.observe(v) : v.play().catch(() => {}); };
+  // úsek videa [od, do] v sekundách dokola a rýchlosť (napr. bez úvodného a záverečného loga, 1,5×)
+  const segment = (v, range, rate) => {
+    if (rate) {
+      v.defaultPlaybackRate = rate;
+      const r = () => { if (v.playbackRate !== rate) v.playbackRate = rate; };
+      v.addEventListener("play", r);
+      v.addEventListener("loadedmetadata", r);
+    }
+    if (!range) return;
+    const [a, b] = range;
+    v.loop = false;
+    v.addEventListener("loadedmetadata", () => { if (v.currentTime < a) v.currentTime = a; });
+    v.addEventListener("timeupdate", () => { if (v.currentTime < a - 0.5 || v.currentTime >= b) v.currentTime = a; });
+    v.addEventListener("ended", () => { v.currentTime = a; v.play().catch(() => {}); });
+  };
 
   // celá obrazovka
   let ov = null;
@@ -111,9 +126,10 @@
     });
     // úvodná snímka firmy – video na pozadí ľavého panela
     document.querySelectorAll(".screen .brand").forEach((b) => {
-      const n = b.querySelector(".brand__name"), side = b.querySelector(".brand__side"), src = n && side && brands.get(norm(n.textContent));
-      if (src && side && !side.querySelector(":scope > video.dxv-bg")) {
-        const v = make(src, "dxv-bg");
+      const n = b.querySelector(".brand__name"), side = b.querySelector(".brand__side"), bv = n && side && brands.get(norm(n.textContent));
+      if (bv && side && !side.querySelector(":scope > video.dxv-bg")) {
+        const v = make(bv.src, "dxv-bg");
+        segment(v, bv.range, bv.rate);
         side.prepend(v);
         auto(v);
       }

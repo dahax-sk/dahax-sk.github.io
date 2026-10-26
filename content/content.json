@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.11",
+  "version": "2026-10-26.12",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -1217,7 +1217,12 @@
           "kind": "technicky-list"
         }
       ],
-      "video": "video/klimas/klimas-firma.mp4"
+      "video": "video/klimas/klimas-firma.mp4",
+      "videoRange": [
+        19,
+        338
+      ],
+      "videoRate": 1.5
     },
     {
       "id": "izovat",
