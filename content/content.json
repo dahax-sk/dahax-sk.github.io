@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.15",
+  "version": "2026-10-26.16",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -7497,5 +7497,16 @@
     "video/klimas/klimas-chemicke-kotvy.mp4": "chemické kotvy",
     "video/klimas/klimas-firma.mp4": "KLIMAS – profil firmy",
     "video/klimas/klimas-drevostavba.mp4": "drevostavby (realizácia)"
+  },
+  "videoPosters": {
+    "video/klimas/klimas-thermodrive-v2.mp4": "img/klimas/produkty/klimas-thermodrive-v2-8.webp",
+    "video/klimas/klimas-eco-drive-w.mp4": "img/product/klimas-eco-drive-w-8.webp",
+    "video/klimas/klimas-eco-drive-s.mp4": "img/klimas/produkty/klimas-eco-drive-8.webp",
+    "video/klimas/klimas-le.mp4": "img/klimas/produkty/klimas-le-zn.webp",
+    "video/klimas/klimas-kpr-kps-fast.mp4": "img/klimas/produkty/klimas-kpr-fast-k.webp",
+    "video/klimas/klimas-lino.mp4": "img/klimas/produkty/klimas-lino-13.webp",
+    "video/klimas/klimas-ws.mp4": "img/klimas/produkty/klimas-ws.webp",
+    "video/klimas/klimas-wkcp-wkcs.mp4": "img/klimas/produkty/klimas-wkcp.webp",
+    "video/klimas/klimas-skrutky-do-dreva.mp4": "img/klimas/produkty/klimas-wkch.webp"
   }
 }

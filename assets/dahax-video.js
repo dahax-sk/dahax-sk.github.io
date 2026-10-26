@@ -1,19 +1,21 @@
 // DAHAX – videá k výrobkom (scripts/update-2026-10-26-klimas-videa.mjs).
 // Údaje z content.json: `video` pri výrobku / dlaždici a pri firme. Na snímkach:
 //  - výrobok s videom (dlaždica, karta, riadok) dostane tlačidlo „Video“ → video cez celú obrazovku,
-//  - detail výrobku: video namiesto fotky, úvodná snímka firmy: video na pozadí ľavého panela,
+//  - detail výrobku a galéria: najprv obrázok výrobku so šípkou (content.json → videoPosters), video sa spustí
+//    po kliknutí, počas prehrávania je vľavo hore logo DAHAX; úvodná snímka firmy: video na pozadí ľavého panela,
 //  - videá bežia stlmené a dokola, len keď sú na obrazovke (šetrí batériu); plagát = rovnaký názov .webp,
 //  - galéria „Fotky a videá“: videá stlmené, dokola, s plagátom,
 //  - pri videách výrobkov štítok s názvom (content.json → videoNames; nie na úvodnej snímke firmy), na celej obrazovke v hlavičke.
 (() => {
   const poster = (src) => src.replace(/\.mp4$/, ".webp");
-  let byName = new Map(), brands = new Map(), names = new Map();
+  let byName = new Map(), brands = new Map(), names = new Map(), posters = new Map();
   const norm = (s) => (s || "").split("\n")[0].replace(/\s+/g, " ").trim().toUpperCase();
 
   const load = (c) => {
     byName = new Map();
     brands = new Map();
     names = new Map(Object.entries(c.videoNames || {}));
+    posters = new Map(Object.entries(c.videoPosters || {}));
     for (const m of c.manufacturers || []) {
       if (m.video) brands.set(norm(m.name), { src: m.video, range: m.videoRange, rate: m.videoRate });
       for (const cat of m.categories || []) {
@@ -75,6 +77,7 @@
     const v = make(src, "dxv-ov__v", true);
     v.autoplay = true;
     ov.appendChild(v);
+    ov.appendChild(logo());
     ov.querySelector("button").addEventListener("click", close);
     ov.addEventListener("click", (e) => { if (e.target === ov) close(); });
     document.body.appendChild(ov);
@@ -107,6 +110,38 @@
     t.textContent = name;
     host.appendChild(t);
   };
+  // logo DAHAX počas prehrávania – prezentujeme výrobcu, ale za DAHAX
+  const LOGO = "img/logo/dahax-white.svg";
+  const logo = () => {
+    const i = document.createElement("img");
+    i.className = "dxv-logo";
+    i.src = LOGO;
+    i.alt = "DAHAX";
+    return i;
+  };
+  // obrázok výrobku so šípkou – video sa spustí až po kliknutí
+  const cover = (host, v, src) => {
+    const photo = posters.get(src), b = document.createElement("button");
+    b.type = "button";
+    b.className = "dxv-cover" + (photo ? " is-photo" : "");
+    b.setAttribute("aria-label", "Prehrať video" + (names.get(src) ? " – " + names.get(src) : ""));
+    b.innerHTML = '<img alt=""><i></i>';
+    b.querySelector("img").src = photo || poster(src);
+    const stop = (e) => e.stopPropagation();
+    b.addEventListener("pointerdown", stop);
+    b.addEventListener("pointerup", stop);
+    b.addEventListener("touchstart", stop, { passive: true });
+    b.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      b.remove();
+      v.controls = true;
+      v.play().catch(() => {});
+    });
+    v.addEventListener("play", () => host.classList.add("dxv-playing"));
+    v.addEventListener("pause", () => host.classList.remove("dxv-playing"));
+    host.append(b, logo());
+  };
   const rel = (src) => (src || "").replace(location.href.replace(/[#?].*$/, "").replace(/[^/]*$/, ""), "");
 
   const decorate = () => {
@@ -128,16 +163,20 @@
     // detail výrobku – video namiesto fotky
     document.querySelectorAll(".sheet").forEach((s) => {
       const n = s.querySelector(".ps__name"), box = s.querySelector(".ps__img"), src = n && box && byName.get(norm(n.textContent));
-      const cur = box && box.querySelector(":scope > video.dxv-sheet");
-      if (cur && cur.dataset.src !== src) cur.remove();
-      if (src && box && !box.querySelector(":scope > video.dxv-sheet")) {
-        const v = make(src, "dxv-sheet");
-        v.dataset.src = src;
-        v.addEventListener("click", (e) => { e.stopPropagation(); open(src, norm(n.textContent)); });
-        box.appendChild(v);
-        auto(v);
+      const cur = box && box.querySelector(":scope > .dxv-sheet");
+      if (cur && cur.dataset.src !== src) { cur.querySelector("video").pause(); cur.remove(); }
+      if (src && box && !box.querySelector(":scope > .dxv-sheet")) {
+        const w = document.createElement("div"), v = make(src, "dxv-v");
+        w.className = "dxv-sheet";
+        w.dataset.src = src;
+        w.addEventListener("click", (e) => e.stopPropagation());
+        v.preload = "none";
+        v.poster = posters.get(src) || poster(src);
+        w.appendChild(v);
+        cover(w, v, src);
+        tag(w, src);
+        box.appendChild(w);
       }
-      if (box) tag(box, src);
     });
     // úvodná snímka firmy – video na pozadí ľavého panela
     document.querySelectorAll(".screen .brand").forEach((b) => {
@@ -151,7 +190,19 @@
     });
     // galéria – stlmené, dokola, s plagátom
     document.querySelectorAll(".mg__thumb").forEach((t) => { const v = t.querySelector(":scope > video"); tag(t, v ? rel(v.getAttribute("src")) : ""); });
-    document.querySelectorAll(".gal__stage").forEach((g) => { const v = g.querySelector("video"); tag(g, v ? rel(v.getAttribute("src")) : ""); });
+    document.querySelectorAll(".gal__stage").forEach((g) => {
+      const v = g.querySelector("video"), src = v ? rel(v.getAttribute("src")) : "";
+      tag(g, src);
+      if (g.dataset.dxc === src) return;
+      g.dataset.dxc = src;
+      g.classList.remove("dxv-playing");
+      g.querySelectorAll(":scope > .dxv-cover, :scope > .dxv-logo").forEach((x) => x.remove());
+      if (!v) return;
+      v.autoplay = false;
+      v.pause();
+      v.controls = false;
+      cover(g, v, src);
+    });
     document.querySelectorAll(".gal__stage video, .mg__thumb video").forEach((v) => {
       if (v.dataset.dxv) return;
       v.dataset.dxv = "1";
@@ -159,7 +210,8 @@
       v.defaultMuted = true;
       v.loop = true;
       const s = v.getAttribute("src") || "";
-      if (/\.mp4$/.test(s) && !v.poster) v.poster = poster(s);
+      if (/\.mp4$/.test(s) && !v.poster) v.poster = posters.get(rel(s)) || poster(s);
+      if (posters.has(rel(s))) v.classList.add("dxv-photo");
     });
   };
 
@@ -167,7 +219,7 @@
   new MutationObserver(() => {
     if (queued) return;
     queued = true;
-    requestAnimationFrame(() => { queued = false; decorate(); });
+    setTimeout(() => { queued = false; decorate(); }, 40);
   }).observe(document.documentElement, { childList: true, subtree: true });
 
   if (window.__DAHAX_CONTENT__) load(window.__DAHAX_CONTENT__);
