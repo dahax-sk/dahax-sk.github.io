@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.38",
+  "version": "2026-10-26.40",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -2513,7 +2513,7 @@
           "name": "Ploché strechy",
           "eyebrow": "HOLCIM – ploché strechy",
           "title": "Systém HOLCIM ROOF",
-          "intro": "Spodná vrstva BASE, vrchná vrstva TOP, jednovrstvová SOLO a spádové dosky TAPERED – od rodinného domu po logistickú halu.",
+          "intro": "Spodná vrstva BASE, vrchná vrstva TOP a jednovrstvová SOLO – od rodinného domu po logistickú halu.",
           "image": "img/holcim/holcim-hala-strecha.webp",
           "numbered": true,
           "products": [
@@ -2656,56 +2656,6 @@
                   "external": true
                 }
               ]
-            },
-            {
-              "id": "roof-tapered",
-              "name": "HOLCIM ROOF TAPERED 40 · 50 · 60 · 70",
-              "description": "Spádové a protispádové dosky – tepelná izolácia a odvodnenie strechy v jednom.",
-              "specs": [
-                {
-                  "value": "40 – 70 kPa",
-                  "label": "pevnosť v tlaku CS(10)",
-                  "accent": true
-                },
-                {
-                  "value": "10 – 70 mm",
-                  "label": "hrúbky dosiek"
-                },
-                {
-                  "value": "1200 × 1000",
-                  "label": "formát dosky [mm], aj 1000 × 600"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Technický list – HOLCIM ROOF TAPERED 50 (PL)",
-                  "href": "docs/holcim/karta-techniczna-holcim-roof-tapered-50.pdf",
-                  "kind": "technicky-list"
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – HOLCIM ROOF TAPERED 50 (PL)",
-                  "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-tapered-50.pdf",
-                  "kind": "vyhlasenie"
-                },
-                {
-                  "title": "Technický list – HOLCIM ROOF TAPERED 40 (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-tapered-40.pdf",
-                  "kind": "technicky-list",
-                  "external": true
-                },
-                {
-                  "title": "Technický list – HOLCIM ROOF TAPERED 60 (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-tapered-60.pdf",
-                  "kind": "technicky-list",
-                  "external": true
-                },
-                {
-                  "title": "Technický list – HOLCIM ROOF TAPERED 70 (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-tapered-70.pdf",
-                  "kind": "technicky-list",
-                  "external": true
-                }
-              ]
             }
           ],
           "note": "Všetky dosky: reakcia na oheň A1, hydrofóbne, paropriepustné – dvojvrstvová skladba BASE + TOP.",
@@ -2748,8 +2698,7 @@
         ],
         "makes": [
           "Fasády ETICS – FACADE 34, 35, 39, S",
-          "Ploché strechy – ROOF BASE, TOP, SOLO",
-          "Spádové dosky – ROOF TAPERED"
+          "Ploché strechy – ROOF BASE, TOP, SOLO"
         ],
         "sources": [
           {
@@ -2797,11 +2746,6 @@
           "kind": "technicky-list"
         },
         {
-          "title": "Technický list – HOLCIM ROOF TAPERED 50 (PL)",
-          "href": "docs/holcim/karta-techniczna-holcim-roof-tapered-50.pdf",
-          "kind": "technicky-list"
-        },
-        {
           "title": "Vyhlásenie o parametroch – HOLCIM ROOF BASE 30 (PL)",
           "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-base-30.pdf",
           "kind": "vyhlasenie"
@@ -2809,11 +2753,6 @@
         {
           "title": "Vyhlásenie o parametroch – HOLCIM ROOF TOP 50 (PL)",
           "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-top-50.pdf",
-          "kind": "vyhlasenie"
-        },
-        {
-          "title": "Vyhlásenie o parametroch – HOLCIM ROOF TAPERED 50 (PL)",
-          "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-tapered-50.pdf",
           "kind": "vyhlasenie"
         },
         {
