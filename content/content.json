@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.7",
+  "version": "2026-10-26.8",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -129,7 +129,8 @@
               "name": "THERMODRIVE V2-8\nSkrutkovacia fasádna hmoždinka s kovovým tŕňom a univerzálnou expanznou zónou",
               "image": "img/klimas/produkty/klimas-thermodrive-v2-8.webp",
               "color": "#868686",
-              "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/thermodrive-v2-8/"
+              "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/thermodrive-v2-8/",
+              "video": "video/klimas/klimas-thermodrive-v2.mp4"
             },
             {
               "name": "ECO-DRIVE 8\nTeleskopická skrutkovacia fasádna hmoždinka s kovovým tŕňom",
@@ -147,7 +148,8 @@
               "name": "LE-ZN\nPozinkovaná mechanická kotva do betónu",
               "image": "img/klimas/produkty/klimas-le-zn.webp",
               "color": "#f29105",
-              "href": "https://sk.klimas.com/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/le-zn/"
+              "href": "https://sk.klimas.com/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/le-zn/",
+              "video": "video/klimas/klimas-le.mp4"
             },
             {
               "name": "LSI\nOceľová kotva pre stredné zaťaženie",
@@ -159,13 +161,15 @@
               "name": "KPS-FAST-S\nRámová hmoždinka so skrutkou so zápustnou hlavou TX30",
               "image": "img/klimas/produkty/klimas-kps-fast-s.webp",
               "color": "#1c9ad7",
-              "href": "https://sk.klimas.com/ramove-upevnenia/kps-fast-s-bkps/"
+              "href": "https://sk.klimas.com/ramove-upevnenia/kps-fast-s-bkps/",
+              "video": "video/klimas/klimas-kpr-kps-fast.mp4"
             },
             {
               "name": "KPR-FAST-K\nRámová hmoždinka s plochým límcom a šesťhrannou hlavou",
               "image": "img/klimas/produkty/klimas-kpr-fast-k.webp",
               "color": "#1c9ad7",
-              "href": "https://sk.klimas.com/ramove-upevnenia/kpr-fast-k-bkpk10-w-kpr-fast/"
+              "href": "https://sk.klimas.com/ramove-upevnenia/kpr-fast-k-bkpk10-w-kpr-fast/",
+              "video": "video/klimas/klimas-kpr-kps-fast.mp4"
             },
             {
               "name": "WKCH\nKonštrukčná skrutka do dreva so šesťhrannou hlavou",
@@ -177,19 +181,22 @@
               "name": "WKCP\nKonštrukčná skrutka s tanierovou hlavou TX",
               "image": "img/klimas/produkty/klimas-wkcp.webp",
               "color": "#fbc878",
-              "href": "https://sk.klimas.com/skrutky-a-spojovacie-prvky-pre-drevene-konstrukcie/wkcp/"
+              "href": "https://sk.klimas.com/skrutky-a-spojovacie-prvky-pre-drevene-konstrukcie/wkcp/",
+              "video": "video/klimas/klimas-wkcp-wkcs.mp4"
             },
             {
               "name": "WS\nSamovrtná skrutka na kotvenie plechu do ocele 2 – 7 mm",
               "image": "img/klimas/produkty/klimas-ws.webp",
               "color": "#485156",
-              "href": "https://sk.klimas.com/lahke-upevnovacie-systemy/ws-bws/"
+              "href": "https://sk.klimas.com/lahke-upevnovacie-systemy/ws-bws/",
+              "video": "video/klimas/klimas-ws.mp4"
             },
             {
               "name": "LINO-13\nPlastová kotva na izoláciu a hydroizoláciu plochých striech",
               "image": "img/klimas/produkty/klimas-lino-13.webp",
               "color": "#65b22e",
-              "href": "https://sk.klimas.com/systemy-upevnenia-termoizolacie-a-hydroizolacie-plochych-striech/lino-13/"
+              "href": "https://sk.klimas.com/systemy-upevnenia-termoizolacie-a-hydroizolacie-plochych-striech/lino-13/",
+              "video": "video/klimas/klimas-lino.mp4"
             },
             {
               "name": "KDH\nSkrutka do dreva so zápustnou hlavou a čiastočným závitom",
@@ -284,7 +291,8 @@
                   "href": "docs/klimas/technicky-list-thermodrive-v2-sk.pdf",
                   "kind": "technicky-list"
                 }
-              ]
+              ],
+              "video": "video/klimas/klimas-thermodrive-v2.mp4"
             },
             {
               "id": "eco-drive-w-8",
@@ -329,7 +337,8 @@
                   "href": "docs/klimas/technicky-list-eco-drive-w-8-sk.pdf",
                   "kind": "technicky-list"
                 }
-              ]
+              ],
+              "video": "video/klimas/klimas-eco-drive-w.mp4"
             },
             {
               "id": "lfmg-10",
@@ -437,7 +446,8 @@
                   "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-8-sk.pdf",
                   "kind": "certifikat"
                 }
-              ]
+              ],
+              "video": "video/klimas/klimas-wkcp-wkcs.mp4"
             },
             {
               "id": "wkcr",
@@ -540,7 +550,8 @@
                   "href": "docs/klimas/technicky-list-le-a4-sk.pdf",
                   "kind": "technicky-list"
                 }
-              ]
+              ],
+              "video": "video/klimas/klimas-le.mp4"
             },
             {
               "id": "wdbls",
@@ -598,7 +609,8 @@
               "id": "sfxp",
               "name": "SFXP",
               "type": "Uzlovacia hmoždinka · Ø 5 – 10 mm",
-              "description": "Do plných aj dutých materiálov – betón, tehla, sadrokartón."
+              "description": "Do plných aj dutých materiálov – betón, tehla, sadrokartón.",
+              "video": "video/klimas/klimas-sfx.mp4"
             }
           ],
           "note": "Ďalej v ponuke: chemické kotvy, kotvy s hákom a okom, rámové a univerzálne hmoždinky."
@@ -899,6 +911,96 @@
           "src": "img/product/klimas-beton.webp",
           "caption": "Kotvenie do betónu a muriva",
           "onWhite": true
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-thermodrive-v2.mp4",
+          "caption": "THERMODRIVE V2 – skrutkovacia fasádna kotva"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-eco-drive-w.mp4",
+          "caption": "ECO-DRIVE W – kotvenie minerálnej vlny"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-eco-drive-s.mp4",
+          "caption": "ECO-DRIVE S – teleskopická fasádna kotva"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-wktherm-s.mp4",
+          "caption": "WKTHERM S – skrutkovacia fasádna kotva"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-fixplug.mp4",
+          "caption": "FIXPLUG – natĺkacia fasádna kotva"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-le.mp4",
+          "caption": "LE – mechanické kotvy do betónu"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-kpr-kps-fast.mp4",
+          "caption": "KPR FAST a KPS FAST – rámové hmoždinky"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-sfx.mp4",
+          "caption": "SFX – nylonová hmoždinka"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-wfd.mp4",
+          "caption": "WFD – samovrtné strešné skrutky"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-lino.mp4",
+          "caption": "LINO – kotvy pre ploché strechy"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-ws.mp4",
+          "caption": "WS, WSB, WF, WSBP – strešné skrutky"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-wkcp-wkcs.mp4",
+          "caption": "WKCP a WKCS – tesárske skrutky"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-wkfc-wkfs.mp4",
+          "caption": "WKFC a WKFS – skrutky s celým závitom"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-wkss.mp4",
+          "caption": "WKSS – dištančná skrutka"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-skrutky-do-dreva.mp4",
+          "caption": "Skrutky do dreva s frézovacím hrotom"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-chemicke-kotvy.mp4",
+          "caption": "Chemické kotvy"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-firma.mp4",
+          "caption": "KLIMAS Wkręt-met – profil firmy"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-drevostavba.mp4",
+          "caption": "Kancelárska budova z dreva – realizácia"
         }
       ],
       "tier": "core",
@@ -1114,7 +1216,8 @@
           "href": "docs/klimas/technicky-list-wdblp-10-sk.pdf",
           "kind": "technicky-list"
         }
-      ]
+      ],
+      "video": "video/klimas/klimas-firma.mp4"
     },
     {
       "id": "izovat",
