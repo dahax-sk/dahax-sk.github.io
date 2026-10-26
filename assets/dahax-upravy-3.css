@@ -172,3 +172,6 @@
 /* údaje (hodnota + popis) v rade – hodnoty sa nelámu a popisy sedia na jednej línii (subgrid) */
 .specs--3 .spec__v{white-space:nowrap;overflow-wrap:normal}
 .specs>.spec{grid-row:span 2;grid-template-rows:subgrid;align-content:start}
+
+/* dotyk: vodorovný ťah prstom na ploche snímky patrí aplikácii (prepínanie snímok), zvislé posúvanie zostáva */
+.screen{touch-action:pan-y}
