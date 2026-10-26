@@ -3,15 +3,17 @@
 //  - výrobok s videom (dlaždica, karta, riadok) dostane tlačidlo „Video“ → video cez celú obrazovku,
 //  - detail výrobku: video namiesto fotky, úvodná snímka firmy: video na pozadí ľavého panela,
 //  - videá bežia stlmené a dokola, len keď sú na obrazovke (šetrí batériu); plagát = rovnaký názov .webp,
-//  - galéria „Fotky a videá“: videá stlmené, dokola, s plagátom.
+//  - galéria „Fotky a videá“: videá stlmené, dokola, s plagátom,
+//  - pri každom videu štítok s názvom výrobku (content.json → videoNames), na celej obrazovke v hlavičke.
 (() => {
   const poster = (src) => src.replace(/\.mp4$/, ".webp");
-  let byName = new Map(), brands = new Map();
+  let byName = new Map(), brands = new Map(), names = new Map();
   const norm = (s) => (s || "").split("\n")[0].replace(/\s+/g, " ").trim().toUpperCase();
 
   const load = (c) => {
     byName = new Map();
     brands = new Map();
+    names = new Map(Object.entries(c.videoNames || {}));
     for (const m of c.manufacturers || []) {
       if (m.video) brands.set(norm(m.name), { src: m.video, range: m.videoRange, rate: m.videoRate });
       for (const cat of m.categories || []) {
@@ -69,7 +71,7 @@
     ov = document.createElement("div");
     ov.className = "dxv-ov";
     ov.innerHTML = `<div class="dxv-ov__bar"><span></span><button type="button" aria-label="Zavrieť">✕</button></div>`;
-    ov.querySelector("span").textContent = title || "";
+    ov.querySelector("span").textContent = names.get(src) || title || "";
     const v = make(src, "dxv-ov__v", true);
     v.autoplay = true;
     ov.appendChild(v);
@@ -94,6 +96,18 @@
     b.addEventListener("click", (e) => { e.preventDefault(); e.stopPropagation(); open(src, title); });
     host.appendChild(b);
   };
+
+  // štítok s názvom výrobku (vľavo hore – titulky vo videách sú vpravo)
+  const tag = (host, src) => {
+    const name = names.get(src), cur = host.querySelector(":scope > .dxv-tag");
+    if (!name) return cur && cur.remove();
+    if (cur) { if (cur.textContent !== name) cur.textContent = name; return; }
+    const t = document.createElement("span");
+    t.className = "dxv-tag";
+    t.textContent = name;
+    host.appendChild(t);
+  };
+  const rel = (src) => (src || "").replace(location.href.replace(/[#?].*$/, "").replace(/[^/]*$/, ""), "");
 
   const decorate = () => {
     if (!byName.size && !brands.size) return;
@@ -123,6 +137,7 @@
         box.appendChild(v);
         auto(v);
       }
+      if (box) tag(box, src);
     });
     // úvodná snímka firmy – video na pozadí ľavého panela
     document.querySelectorAll(".screen .brand").forEach((b) => {
@@ -133,8 +148,11 @@
         side.prepend(v);
         auto(v);
       }
+      if (bv && side) tag(side, bv.src);
     });
     // galéria – stlmené, dokola, s plagátom
+    document.querySelectorAll(".mg__thumb").forEach((t) => { const v = t.querySelector(":scope > video"); tag(t, v ? rel(v.getAttribute("src")) : ""); });
+    document.querySelectorAll(".gal__stage").forEach((g) => { const v = g.querySelector("video"); tag(g, v ? rel(v.getAttribute("src")) : ""); });
     document.querySelectorAll(".gal__stage video, .mg__thumb video").forEach((v) => {
       if (v.dataset.dxv) return;
       v.dataset.dxv = "1";

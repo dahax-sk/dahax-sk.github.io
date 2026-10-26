@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.13",
+  "version": "2026-10-26.14",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -1217,12 +1217,7 @@
           "kind": "technicky-list"
         }
       ],
-      "video": "video/klimas/klimas-firma.mp4",
-      "videoRange": [
-        19,
-        338
-      ],
-      "videoRate": 1.5
+      "video": "video/klimas/klimas-firma.mp4"
     },
     {
       "id": "izovat",
@@ -7482,5 +7477,25 @@
       "href": "docs/DAHAX-prezentacia-2026.pdf",
       "kind": "ine"
     }
-  ]
+  ],
+  "videoNames": {
+    "video/klimas/klimas-thermodrive-v2.mp4": "THERMODRIVE V2-8",
+    "video/klimas/klimas-eco-drive-w.mp4": "ECO-DRIVE W 8",
+    "video/klimas/klimas-eco-drive-s.mp4": "ECO-DRIVE S",
+    "video/klimas/klimas-wktherm-s.mp4": "WKTHERM S",
+    "video/klimas/klimas-fixplug.mp4": "FIXPLUG",
+    "video/klimas/klimas-le.mp4": "LE-ZN (klinové kotvy)",
+    "video/klimas/klimas-kpr-kps-fast.mp4": "KPR FAST / KPS FAST",
+    "video/klimas/klimas-sfx.mp4": "SFX",
+    "video/klimas/klimas-wfd.mp4": "WFD",
+    "video/klimas/klimas-lino.mp4": "LINO 13",
+    "video/klimas/klimas-ws.mp4": "WS / BWS",
+    "video/klimas/klimas-wkcp-wkcs.mp4": "WKCP / WKCS",
+    "video/klimas/klimas-wkfc-wkfs.mp4": "WKFC / WKFS",
+    "video/klimas/klimas-wkss.mp4": "WKSS",
+    "video/klimas/klimas-skrutky-do-dreva.mp4": "skrutky do dreva (WKCH …)",
+    "video/klimas/klimas-chemicke-kotvy.mp4": "chemické kotvy",
+    "video/klimas/klimas-firma.mp4": "KLIMAS – profil firmy",
+    "video/klimas/klimas-drevostavba.mp4": "drevostavby (realizácia)"
+  }
 }

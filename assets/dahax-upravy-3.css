@@ -214,3 +214,9 @@
 .dxu__btn:disabled{opacity:.5}
 .dxu__s{min-height:1.4em;font-size:16px;color:var(--txt-2)}
 /* video firmy bez anglických popisov: výrez vľavo od popisov (sú vpravo hore) a horná štvrtina prechádza do čistej červenej */
+/* štítok s názvom výrobku pri videu (dahax-video.js) */
+.gal__stage:has(>.dxv-tag){position:relative}
+.dxv-tag{position:absolute;left:14px;top:14px;z-index:4;max-width:calc(100% - 28px);padding:7px 12px 7px 10px;background:rgba(10,11,13,.72);border-left:2px solid var(--red);color:#fff;font:600 14px/1.2 var(--f-b);letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:none;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.brand__side>.dxv-tag{left:24px;top:24px}
+.mg__thumb:has(>.dxv-tag){position:relative}
+.mg__thumb>.dxv-tag{left:6px;top:6px;max-width:calc(100% - 12px);padding:4px 7px 4px 6px;font-size:11px}
