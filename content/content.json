@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.8",
+  "version": "2026-10-26.10",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -114,7 +114,6 @@
       ],
       "eyebrow": "Nosný produkt DAHAX",
       "tagline": "Spojovací materiál, ktorý sa predáva celý rok – tovar aj predajné miesto na kľúč.",
-      "hero": "img/photo/regal-04.webp",
       "theme": "red",
       "categories": [
         {
@@ -888,7 +887,8 @@
             "title": "INCA – prezentácia KLIMAS ETICS (2024)",
             "url": "https://www.inca-ltd.org.uk/wp-content/uploads/2024/05/Etics-presentation-.pdf"
           }
-        ]
+        ],
+        "headLogo": "img/brand/klimas-35.svg"
       },
       "media": [
         {
