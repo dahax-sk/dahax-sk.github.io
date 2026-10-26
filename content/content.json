@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.23",
+  "version": "2026-10-26.25",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -23,7 +23,7 @@
   "why": {
     "eyebrow": "Veľkoobchodný partner",
     "title": "Prečo nakupovať od DAHAX?",
-    "image": "img/photo/regal-01.webp",
+    "image": "img/photo/dahax-bg-2.webp",
     "points": [
       {
         "title": "Priame zastúpenie výrobcov",

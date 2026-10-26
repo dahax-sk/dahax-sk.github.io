@@ -1,0 +1,57 @@
+/* DAHAX – strany 1 – 3 (Úvod, Prečo DAHAX, Doprava a sklad)
+   „Tok informácií“: svetelné impulzy bežia po červených líniách pozadia.
+   Vrstvu .dhx-tok vkladá assets/dahax-uvod.js; maska = presný tvar línií z obrázka pozadia. */
+
+.dhx-tok {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1920px;               /* súradnice obrázka pozadia */
+  height: 1080px;
+  transform: translate(-50%, -50%) scale(var(--dhx-tok-s, 1));
+  pointer-events: none;
+  mix-blend-mode: screen;
+  -webkit-mask: var(--dhx-tok-maska) center / 100% 100% no-repeat;
+          mask: var(--dhx-tok-maska) center / 100% 100% no-repeat;
+}
+
+/* text titulky nad vrstvou impulzov */
+.s--title .title { z-index: 1; }
+
+/* strana 2 – Prečo DAHAX: pozadie DAHAX (content.json → why.image) naplno, nie stlmené ako fotka */
+.s:has(> .s__in.why) > .s__bg--dim { opacity: 1; filter: none; }
+
+/* strana 3 – Doprava a sklad: bundle pozadie nemá, preto ::before */
+.s:has(> .s__in.logi)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000 url(../img/photo/dahax-bg-3.webp) center / cover no-repeat;
+}
+
+.dhx-tok i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, #fff 0%, #ffb3ab 18%, #ff3b2e 42%, rgba(227, 6, 19, .45) 68%, rgba(227, 6, 19, 0) 100%);
+  filter: brightness(1.4);
+  offset-path: var(--p);
+  offset-rotate: 0deg;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dhx-tok i {
+    animation: dhx-tok var(--t, 10s) linear var(--d, 0s) infinite;
+  }
+}
+
+@keyframes dhx-tok {
+  0%   { offset-distance: 0%;   opacity: 0; }
+  12%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { offset-distance: 100%; opacity: 0; }
+}
