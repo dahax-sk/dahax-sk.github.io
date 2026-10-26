@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.20",
+  "version": "2026-10-26.21",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -204,6 +204,13 @@
               "video": "video/klimas/klimas-ws.mp4"
             },
             {
+              "name": "WFD\nSamovrtná skrutka na plechové strešné krytiny do dreva",
+              "image": "img/klimas/produkty/klimas-wfd.webp",
+              "color": "#485156",
+              "href": "https://sk.klimas.com/lahke-upevnovacie-systemy/wfd/",
+              "video": "video/klimas/klimas-wfd.mp4"
+            },
+            {
               "name": "LINO-13\nPlastová kotva na izoláciu a hydroizoláciu plochých striech",
               "image": "img/klimas/produkty/klimas-lino-13.webp",
               "color": "#65b22e",
@@ -227,12 +234,6 @@
               "image": "img/klimas/produkty/klimas-pmpg.webp",
               "color": "#ffca00",
               "href": "https://sk.klimas.com/stavebna-chemia/pmpg/"
-            },
-            {
-              "name": "URG\nObjímka na potrubie s gumenou vložkou",
-              "image": "img/klimas/produkty/klimas-urg.webp",
-              "color": "#5ac0cc",
-              "href": "https://sk.klimas.com/sanitarne-upevnenia-pasky-a-naramky/urg/"
             }
           ],
           "products": []
@@ -7517,6 +7518,7 @@
     "video/klimas/klimas-wkcp-wkcs.mp4": "img/klimas/produkty/klimas-wkcp.webp",
     "video/klimas/klimas-skrutky-do-dreva.mp4": "img/klimas/produkty/klimas-wkch.webp",
     "video/klimas/klimas-sfx.mp4": "img/klimas/produkty/klimas-sfxp.webp",
-    "video/klimas/klimas-wktherm-s.mp4": "img/klimas/produkty/klimas-wktherm-s-8.webp"
+    "video/klimas/klimas-wktherm-s.mp4": "img/klimas/produkty/klimas-wktherm-s-8.webp",
+    "video/klimas/klimas-wfd.mp4": "img/klimas/produkty/klimas-wfd.webp"
   }
 }
