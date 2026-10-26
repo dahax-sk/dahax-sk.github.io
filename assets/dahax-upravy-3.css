@@ -205,3 +205,11 @@
 /* video pod červeným jasom: červená zostáva vždy viditeľná, video cez ňu presvitá; dole tmavší pás pre čitateľnosť */
 .brand--red .dxv-bg{opacity:.5;mix-blend-mode:normal;filter:grayscale(1) contrast(1.15) brightness(1.15)}
 .brand--red .brand__side:has(.dxv-bg)::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(222,31,38,.35) 0%,rgba(222,31,38,.45) 55%,rgba(170,18,24,.85) 100%)}
+
+/* nastavenia – karta Aktualizácia (assets/dahax-verzia.js) */
+.dxu{gap:10px}
+.dxu__v{color:var(--muted-d)}
+.dxu__v b{color:#fff;font-weight:600}
+.dxu__btn{justify-self:start;min-height:52px;padding:0 22px;font-size:16px}
+.dxu__btn:disabled{opacity:.5}
+.dxu__s{min-height:1.4em;font-size:16px;color:var(--txt-2)}
