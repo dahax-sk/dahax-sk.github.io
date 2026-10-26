@@ -309,3 +309,11 @@
 .deck.dxr-open::after{opacity:0}
 /* číslo snímky vpravo dole („12 / 72“) – dahax-cislo.js */
 .dxc{position:absolute;right:14px;bottom:12px;z-index:28;padding:4px 9px 3px;background:rgba(10,11,13,.62);color:rgba(255,255,255,.78);font:600 13px/1 var(--f-d);letter-spacing:.08em;font-variant-numeric:tabular-nums;pointer-events:none}
+
+/* KLIMAS – TOP doplnky (panely z regálu): širší stĺpec s celou fotkou panelu, riadky výrobkov bez popisu – návrh Programátora 2 */
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) { grid-template-columns: 780px 1fr; gap: 48px; }
+.media__img:has(img[src*="/doplnky/panel-"]) { justify-content: center; }
+.media__img:has(img[src*="/doplnky/panel-"]) img { object-fit: contain; height: auto; }
+.s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .row__desc { display: none; }
+/* Katalóg výrobkov bez nadpisu (title "") – prázdny nadpis nezaberá miesto */
+.tiles:has(>.dxk) .cat__title:empty{display:none}

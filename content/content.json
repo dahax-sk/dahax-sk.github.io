@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.26",
+  "version": "2026-10-26.27",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -119,8 +119,8 @@
         {
           "id": "katalog",
           "name": "Katalóg výrobkov",
-          "title": "Vyberte si kategóriu",
-          "intro": "16 kategórií a 3 886 výrobkov. Ťuknite na kategóriu – zobrazia sa podkategórie a prekliknutie na sk.e-klimas.com.",
+          "title": "",
+          "intro": "16 kategórií a 3 886 výrobkov – upevnenie tepelnej izolácie, drevených konštrukcií, betónu, sadrokartónu aj plochých striech, chemické kotvy a stavebná chémia od jedného výrobcu.",
           "tiles": [],
           "products": [],
           "katalog": {
@@ -641,126 +641,630 @@
           }
         },
         {
-          "id": "sortiment",
-          "name": "Kľúčové výrobky",
-          "eyebrow": "KLIMAS – sortiment",
-          "title": "Kľúčové výrobky",
-          "intro": "Najžiadanejšie výrobky zo všetkých skupín sortimentu – od kotiev pre zatepľovanie až po montážnu penu. Celý katalóg je na sk.klimas.com.",
-          "banners": [],
-          "tiles": [
+          "id": "top-konstrukcne-skrutky",
+          "name": "Konštrukčné skrutky",
+          "eyebrow": "KLIMAS – TOP doplnky",
+          "title": "Konštrukčné skrutky do drevených podkladov",
+          "intro": "Konštrukčné spoje, vystuženie dreva, nadkrokvová izolácia, vyrovnanie stien aj tesárske kovania. Voskový povlak a frézovací hrot – bez predvŕtania aj do tvrdého dreva.",
+          "image": "img/klimas/doplnky/panel-drevo-podklady.webp",
+          "products": [
             {
-              "name": "LFMG-10\nNatĺkacia fasádna hmoždinka s kovovým tŕňom",
-              "image": "img/klimas/produkty/klimas-lfmg-10.webp",
-              "color": "#868686",
-              "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/lfmg-10/"
+              "id": "wkfc",
+              "name": "WKFC",
+              "type": "Plný závit · valcová hlava TX · novinka",
+              "description": "Konštrukčné spoje a vystuženie drevených dielov; frézovací hrot má o 20 % menší odpor pri skrutkovaní.",
+              "specs": [
+                {
+                  "value": "Ø 6 / 8 / 10 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "80 – 600 mm",
+                  "label": "dĺžky"
+                }
+              ],
+              "video": "video/klimas/klimas-wkfc-wkfs.mp4"
             },
             {
-              "name": "THERMODRIVE V2-8\nSkrutkovacia fasádna hmoždinka s kovovým tŕňom",
-              "image": "img/klimas/produkty/klimas-thermodrive-v2-8.webp",
-              "color": "#868686",
-              "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/thermodrive-v2-8/",
-              "video": "video/klimas/klimas-thermodrive-v2.mp4"
+              "id": "wkfs",
+              "name": "WKFS",
+              "type": "Plný závit · zápustná hlava TX · novinka",
+              "description": "Konštrukčné spoje a vystuženie dreva; rezné zárezy na závite pretínajú vlákna dreva.",
+              "specs": [
+                {
+                  "value": "Ø 8 / 10 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "120 – 600 mm",
+                  "label": "dĺžky"
+                }
+              ],
+              "video": "video/klimas/klimas-wkfc-wkfs.mp4"
             },
             {
-              "name": "ECO-DRIVE 8\nTeleskopická fasádna hmoždinka s kovovým tŕňom",
-              "image": "img/klimas/produkty/klimas-eco-drive-8.webp",
-              "color": "#868686",
-              "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/eco-drive-8/"
+              "id": "wkpc",
+              "name": "WKPC",
+              "type": "Dvojitý závit · nadkrokvová izolácia",
+              "description": "Kontralaty cez izoláciu na krokvy – zaťaženie prenesie skrutka, izolácia ostane nepoškodená.",
+              "specs": [
+                {
+                  "value": "Ø 8 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "165 – 472 mm",
+                  "label": "dĺžky"
+                },
+                {
+                  "value": "ETA-18/0817",
+                  "label": "európske technické posúdenie"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
+                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKPC 8 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkpc-8-sk.pdf",
+                  "kind": "certifikat"
+                }
+              ]
             },
             {
-              "name": "LFN-10\nNatĺkacia fasádna hmoždinka s plastovým tŕňom",
-              "image": "img/klimas/produkty/klimas-lfn-10.webp",
-              "color": "#868686",
-              "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/lfn-10/"
+              "id": "wkss",
+              "name": "WKSS",
+              "type": "Dištančná skrutka · zápustná hlava TX",
+              "description": "Vyrovnávanie konštrukcií stien; dvojitý závit na špičke „chytí“ drevo menším tlakom.",
+              "specs": [
+                {
+                  "value": "Ø 6 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "60 – 160 mm",
+                  "label": "dĺžky"
+                }
+              ],
+              "video": "video/klimas/klimas-wkss.mp4"
             },
             {
-              "name": "LE-ZN\nPozinkovaná mechanická kotva do betónu",
-              "image": "img/klimas/produkty/klimas-le-zn.webp",
-              "color": "#f29105",
-              "href": "https://sk.klimas.com/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/le-zn/",
+              "id": "wklc",
+              "name": "WKLC",
+              "type": "Skrutka pre tesárske kovania · valcová hlava TX",
+              "description": "Perforované a trojrozmerné tesárske spojovacie prvky; zosilnenie pod hlavou proti zlomeniu.",
+              "specs": [
+                {
+                  "value": "Ø 5 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "30 – 70 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            }
+          ],
+          "note": "Novinka: plný závit WKFC a WKFS. Všetky veľkosti na sk.e-klimas.com."
+        },
+        {
+          "id": "top-klinove-kotvy",
+          "name": "Klinové kotvy",
+          "eyebrow": "KLIMAS – TOP doplnky",
+          "title": "Klinové expanzné kotvy",
+          "intro": "Klinové kotvy LE na oceľové konštrukcie, zábradlia, stroje a zariadenia aj spodné konštrukcie fasád. Montáž zatĺkaním a utiahnutím, okamžitá nosnosť a požiarna odolnosť R30 – R120.",
+          "image": "img/klimas/doplnky/panel-klinove-kotvy.webp",
+          "products": [
+            {
+              "id": "le-a4",
+              "name": "LE-A4",
+              "type": "Mechanická kotva · nerez A4",
+              "description": "Vonku aj v agresívnom a priemyselnom prostredí – fasády, zábradlia, stroje a zariadenia.",
+              "specs": [
+                {
+                  "value": "M8 – M16",
+                  "label": "veľkosti",
+                  "accent": true
+                },
+                {
+                  "value": "60 – 165 mm",
+                  "label": "dĺžky"
+                },
+                {
+                  "value": "R30 – R120",
+                  "label": "požiarna odolnosť"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-20/0641 – LE-A4 (SK)",
+                  "href": "docs/klimas/eta-20-0641-le-a4-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – LE-A4 (SK)",
+                  "href": "docs/klimas/technicky-list-le-a4-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ],
               "video": "video/klimas/klimas-le.mp4"
             },
             {
-              "name": "LSI\nOceľová kotva pre stredné zaťaženie",
-              "image": "img/klimas/produkty/klimas-lsi.webp",
-              "color": "#f29105",
-              "href": "https://sk.klimas.com/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/lsi/"
+              "id": "le-zna4",
+              "name": "LE-ZNA4",
+              "type": "Mechanická kotva · zinok + nerezový klin A4",
+              "description": "Vnútri budov a v neagresívnom prostredí; klin z nerezovej ocele A4.",
+              "specs": [
+                {
+                  "value": "M8 – M16",
+                  "label": "veľkosti",
+                  "accent": true
+                },
+                {
+                  "value": "60 – 165 mm",
+                  "label": "dĺžky"
+                },
+                {
+                  "value": "R30 – R120",
+                  "label": "požiarna odolnosť"
+                }
+              ]
             },
             {
-              "name": "SFXP\nUzlovacia hmoždinka do plných aj dutých materiálov",
-              "image": "img/klimas/produkty/klimas-sfxp.webp",
-              "color": "#1c9ad7",
-              "href": "https://sk.klimas.com/ramove-upevnenia/sfxp-bsfxp/",
-              "video": "video/klimas/klimas-sfx.mp4"
+              "id": "le-da4",
+              "name": "LE-DA4",
+              "type": "Mechanická kotva · Stal Ceramic + klin A4",
+              "description": "Viacvrstvový hliníkovo-zinkový povlak Stal Ceramic – ochrana C4 do 15 rokov; klin z nerezu A4.",
+              "specs": [
+                {
+                  "value": "Ø 8 – 16 mm",
+                  "label": "priemer vrtáka",
+                  "accent": true
+                },
+                {
+                  "value": "C4 · 15 rokov",
+                  "label": "ochrana proti korózii"
+                }
+              ]
             },
             {
-              "name": "KPS-FAST-S\nRámová hmoždinka so skrutkou so zápustnou hlavou TX30",
-              "image": "img/klimas/produkty/klimas-kps-fast-s.webp",
-              "color": "#1c9ad7",
-              "href": "https://sk.klimas.com/ramove-upevnenia/kps-fast-s-bkps/",
-              "video": "video/klimas/klimas-kpr-kps-fast.mp4"
+              "id": "le-zn",
+              "name": "LE-ZN",
+              "type": "Mechanická kotva · galvanický zinok",
+              "description": "Vnútri budov – oceľové doplnky, balustrády, ľahké a stredne veľké kovové konštrukcie.",
+              "specs": [
+                {
+                  "value": "M8 – M16",
+                  "label": "veľkosti",
+                  "accent": true
+                },
+                {
+                  "value": "60 – 165 mm",
+                  "label": "dĺžky"
+                },
+                {
+                  "value": "R30 – R120",
+                  "label": "požiarna odolnosť"
+                }
+              ],
+              "video": "video/klimas/klimas-le.mp4"
+            }
+          ],
+          "note": "Ochrana proti korózii: zinok 5 µm · Stal Ceramic C4 – 15 rokov · nerez A4 – 50 rokov."
+        },
+        {
+          "id": "top-etics-skrutkovacie",
+          "name": "ETICS skrutkovacie",
+          "eyebrow": "KLIMAS – TOP doplnky",
+          "title": "Skrutkovacie fasádne hmoždinky",
+          "intro": "Skrutkovacie hmoždinky s kovovým tŕňom pre polystyrén aj minerálnu vlnu – teleskopické ECO-DRIVE na zapustenú montáž bez frézy, DRIVE S na drevený podklad.",
+          "image": "img/klimas/doplnky/panel-etics-skrutkovacie.webp",
+          "products": [
+            {
+              "id": "eco-drive-w-8",
+              "name": "ECO-DRIVE W 8",
+              "type": "Teleskopická · minerálna vlna",
+              "description": "Kotúč z minerálnej vlny minimalizuje tepelné mosty; hmoždinka je predmontovaná s tŕňom.",
+              "specs": [
+                {
+                  "value": "Ø 8 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "150 – 430 mm",
+                  "label": "dĺžky"
+                }
+              ],
+              "video": "video/klimas/klimas-eco-drive-w.mp4"
             },
             {
-              "name": "KPR-FAST-K\nRámová hmoždinka s plochým límcom a šesťhrannou hlavou",
-              "image": "img/klimas/produkty/klimas-kpr-fast-k.webp",
-              "color": "#1c9ad7",
-              "href": "https://sk.klimas.com/ramove-upevnenia/kpr-fast-k-bkpk10-w-kpr-fast/",
-              "video": "video/klimas/klimas-kpr-kps-fast.mp4"
+              "id": "eco-drive-8",
+              "name": "ECO-DRIVE 8",
+              "type": "Teleskopická · prítlačný tanier · polystyrén",
+              "description": "Rezná príruba na zapustenú montáž bez frézy; tŕň TX-40 – vhodná aj do materiálov s dutinami.",
+              "specs": [
+                {
+                  "value": "Ø 8 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "150 – 430 mm",
+                  "label": "dĺžky"
+                }
+              ]
             },
             {
-              "name": "WKCH\nKonštrukčná skrutka do dreva so šesťhrannou hlavou",
-              "image": "img/klimas/produkty/klimas-wkch.webp",
-              "color": "#fbc878",
-              "href": "https://sk.klimas.com/skrutky-a-spojovacie-prvky-pre-drevene-konstrukcie/wkch/"
+              "id": "eco-drive-s-8",
+              "name": "ECO-DRIVE S 8",
+              "type": "Teleskopická · predmontovaná · polystyrén",
+              "description": "Predmontovaná s tŕňom – vždy správne zvolený spojovací prvok; polystyrénový krúžok proti tepelným mostom.",
+              "specs": [
+                {
+                  "value": "Ø 8 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "150 – 430 mm",
+                  "label": "dĺžky"
+                }
+              ],
+              "video": "video/klimas/klimas-eco-drive-s.mp4"
             },
             {
-              "name": "WKCP\nKonštrukčná skrutka s tanierovou hlavou TX",
-              "image": "img/klimas/produkty/klimas-wkcp.webp",
-              "color": "#fbc878",
-              "href": "https://sk.klimas.com/skrutky-a-spojovacie-prvky-pre-drevene-konstrukcie/wkcp/",
+              "id": "drive-s",
+              "name": "DRIVE S",
+              "type": "Kovový tŕň so závitom do dreva",
+              "description": "Polystyrén na drevený podklad; zátky z penového polystyrénu sú v súprave.",
+              "specs": [
+                {
+                  "value": "Ø 6 mm",
+                  "label": "priemer skrutky",
+                  "accent": true
+                },
+                {
+                  "value": "110 – 310 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            }
+          ],
+          "note": "Príslušenstvo: fréza WK-FT, zátky KS, KSG a EDMW, podložky DW, hmoždinky WK-DS, mriežka SWS."
+        },
+        {
+          "id": "top-skrutky-drevo",
+          "name": "Skrutky do dreva",
+          "eyebrow": "KLIMAS – TOP doplnky",
+          "title": "Skrutky pre drevené konštrukcie",
+          "intro": "Krovy, skelety budov, kontralaty, panely na báze dreva, nábytok aj terasy. Frézovací hrot, rezné hrany a voskový náter – rýchlo, bez predvŕtania a bez štiepenia dreva.",
+          "image": "img/klimas/doplnky/panel-drevo-konstrukcie.webp",
+          "products": [
+            {
+              "id": "wkcp",
+              "name": "WKCP",
+              "type": "Tanierová hlava TX",
+              "description": "Krovy, skelety budov, kontralaty a panely; hlava s podložkou zväčšuje prítlačnú plochu.",
+              "specs": [
+                {
+                  "value": "Ø 5 – 10 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "40 – 600 mm",
+                  "label": "dĺžky"
+                },
+                {
+                  "value": "ETA-18/0817",
+                  "label": "európske technické posúdenie"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
+                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
+                  "kind": "certifikat"
+                }
+              ],
               "video": "video/klimas/klimas-wkcp-wkcs.mp4"
             },
             {
-              "name": "WS\nSamovrtná skrutka na kotvenie plechu do ocele 2 – 7 mm",
-              "image": "img/klimas/produkty/klimas-ws.webp",
-              "color": "#485156",
-              "href": "https://sk.klimas.com/lahke-upevnovacie-systemy/ws-bws/",
-              "video": "video/klimas/klimas-ws.mp4"
+              "id": "wkcs",
+              "name": "WKCS",
+              "type": "Zápustná hlava TX",
+              "description": "Nábytok, lišty, panely a záhradná architektúra; hlava sa úplne zapustí, voskový náter.",
+              "specs": [
+                {
+                  "value": "Ø 3 – 10 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "30 – 400 mm",
+                  "label": "dĺžky"
+                },
+                {
+                  "value": "ETA-18/0817",
+                  "label": "európske technické posúdenie"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
+                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKCS 6 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-6-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKCS 8 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-8-sk.pdf",
+                  "kind": "certifikat"
+                }
+              ],
+              "video": "video/klimas/klimas-wkcp-wkcs.mp4"
             },
             {
-              "name": "WFD\nSamovrtná skrutka na plechové strešné krytiny do dreva",
-              "image": "img/klimas/produkty/klimas-wfd.webp",
-              "color": "#485156",
-              "href": "https://sk.klimas.com/lahke-upevnovacie-systemy/wfd/",
-              "video": "video/klimas/klimas-wfd.mp4"
+              "id": "kmwht",
+              "name": "KMWHT",
+              "type": "Zápustná hlava TX · dvojitý závit",
+              "description": "Nábytok, lišty a dosky na báze dreva; dvojitý závit na špičke uľahčí nasadenie skrutky.",
+              "specs": [
+                {
+                  "value": "Ø 3 – 6 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "30 – 300 mm",
+                  "label": "dĺžky"
+                }
+              ]
             },
             {
-              "name": "LINO-13\nPlastová kotva na izoláciu a hydroizoláciu plochých striech",
-              "image": "img/klimas/produkty/klimas-lino-13.webp",
-              "color": "#65b22e",
-              "href": "https://sk.klimas.com/systemy-upevnenia-termoizolacie-a-hydroizolacie-plochych-striech/lino-13/",
-              "video": "video/klimas/klimas-lino.mp4"
+              "id": "k",
+              "name": "K",
+              "type": "Šesťhranná hlava · DIN 571",
+              "description": "Kontralaty a laty, dosky na báze dreva; čiastočný závit zabraňuje trhlinám v dreve.",
+              "specs": [
+                {
+                  "value": "Ø 6 – 12 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "60 – 260 mm",
+                  "label": "dĺžky"
+                }
+              ]
             },
             {
-              "name": "KDH\nSkrutka do dreva so zápustnou hlavou a čiastočným závitom",
-              "image": "img/klimas/produkty/klimas-kdh.webp",
-              "color": "#8fafc7",
-              "href": "https://sk.klimas.com/skrutky-a-spojovaci-material-pre-stolarstvo/kdh-kmh-bwk/"
-            },
-            {
-              "name": "KGD\nSkrutka na upevnenie sadrokartónu do dreva",
-              "image": "img/klimas/produkty/klimas-kgd.webp",
-              "color": "#c2bfb7",
-              "href": "https://sk.klimas.com/upevnenia-technologiou-suchej-montaze/kgd-ksgd-kmgd-bgd/"
-            },
-            {
-              "name": "PMPG\nProfesionálna nízkoexpanzná montážna pena na pištoľ",
-              "image": "img/klimas/produkty/klimas-pmpg.webp",
-              "color": "#ffca00",
-              "href": "https://sk.klimas.com/stavebna-chemia/pmpg/"
+              "id": "kdh",
+              "name": "KDH",
+              "type": "Zápustná hlava PZ",
+              "description": "Drevo, prvky na báze dreva, oceľ aj PVC; čiastočný závit pre správne dotiahnutie.",
+              "specs": [
+                {
+                  "value": "Ø 3 – 6 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "12 – 200 mm",
+                  "label": "dĺžky"
+                }
+              ]
             }
           ],
-          "products": []
+          "note": "Terasy: WN, HNT, WT (nerez A2) · podložka PWKCS · SQ Ceramic – 10× väčšia antikorózna ochrana ako zinok 5 µm."
+        },
+        {
+          "id": "top-etics-natlkacie",
+          "name": "ETICS natĺkacie",
+          "eyebrow": "KLIMAS – TOP doplnky",
+          "title": "Natĺkacie fasádne hmoždinky",
+          "intro": "Natĺkacie hmoždinky s tŕňom vystuženým sklenenými vláknami – polystyrén do všetkých kategórií podkladov. „Lepiace kapsy“ zvyšujú priľnavosť malty, teleskopické FIXPLUG sa zarovnajú s izoláciou.",
+          "image": "img/klimas/doplnky/panel-etics-natlkacie.webp",
+          "products": [
+            {
+              "id": "lfn-10",
+              "name": "LFN-10",
+              "type": "Plastový tŕň · predĺžená expanzná zóna",
+              "description": "Dlhá expanzná zóna rovnomerne rozloží sily v podklade; tŕň vystužený sklenenými vláknami.",
+              "specs": [
+                {
+                  "value": "Ø 10 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "140 – 300 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            },
+            {
+              "id": "ltx-8",
+              "name": "LTX-8",
+              "type": "Plastový tŕň · skrátená expanzná zóna",
+              "description": "Do všetkých kategórií podkladov; „lepiace kapsy“ na tanieriku zvyšujú priľnavosť malty.",
+              "specs": [
+                {
+                  "value": "Ø 8 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "95 – 195 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            },
+            {
+              "id": "ltx-10",
+              "name": "LTX-10",
+              "type": "Plastový tŕň · skrátená expanzná zóna",
+              "description": "Nová rozperná časť – vysoké pevnostné parametre vo všetkých podkladoch; tuhší tanierik.",
+              "specs": [
+                {
+                  "value": "Ø 10 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "70 – 260 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            },
+            {
+              "id": "fixplug-8",
+              "name": "FIXPLUG-8",
+              "type": "Teleskopická · plastový tŕň",
+              "description": "Teleskopická konštrukcia zaručí správne usadenie a zarovnanie tanierika s izoláciou.",
+              "specs": [
+                {
+                  "value": "Ø 8 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "110 – 210 mm",
+                  "label": "dĺžky"
+                }
+              ],
+              "video": "video/klimas/klimas-fixplug.mp4"
+            },
+            {
+              "id": "fixplug-10",
+              "name": "FIXPLUG-10",
+              "type": "Teleskopická · plastový tŕň",
+              "description": "Tŕň vystužený sklenenými vláknami; lepiace kapsy a výstupky na tanieriku pre lepšiu priľnavosť malty.",
+              "specs": [
+                {
+                  "value": "Ø 10 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "120 – 260 mm",
+                  "label": "dĺžky"
+                }
+              ],
+              "video": "video/klimas/klimas-fixplug.mp4"
+            }
+          ],
+          "note": "Kategórie podkladov A – E podľa ETAG 014."
+        },
+        {
+          "id": "top-univerzalne-ramove",
+          "name": "Univerzálne a rámové",
+          "eyebrow": "KLIMAS – TOP doplnky",
+          "title": "Univerzálne a rámové kotviace systémy",
+          "intro": "Natĺkacie hmoždinky SM a SMK na rýchlu sériovú montáž a univerzálne uzlovacie hmoždinky SFX do všetkých typov podkladov – v tenkostennom podklade sa hmoždinka bezpečne zauzlí na opačnej strane. Na lišty, profily sadrokartónu, káblové trasy, svietidlá aj bytové zariadenie.",
+          "image": "img/klimas/doplnky/panel-ramove-univerzalne.webp",
+          "products": [
+            {
+              "id": "sm",
+              "name": "SM",
+              "type": "Natĺkacia · zápustný límec",
+              "description": "Sériová montáž – podlahové lišty, drevené a drevu podobné prvky.",
+              "specs": [
+                {
+                  "value": "Ø 5 – 10 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "40 – 220 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            },
+            {
+              "id": "smk",
+              "name": "SMK",
+              "type": "Natĺkacia · hríbový límec",
+              "description": "Profily sadrokartónových stien a stropov, oceľové prvky – sériová montáž.",
+              "specs": [
+                {
+                  "value": "Ø 6 / 8 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "40 – 120 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            },
+            {
+              "id": "sfxp",
+              "name": "SFXP",
+              "type": "Uzlovacia · zápustná skrutka PZ",
+              "description": "Do všetkých podkladov – v tenkostennom podklade sa hmoždinka zauzlí na opačnej strane.",
+              "specs": [
+                {
+                  "value": "Ø 5 – 10 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "25 – 60 mm",
+                  "label": "dĺžky hmoždinky"
+                }
+              ],
+              "video": "video/klimas/klimas-sfx.mp4"
+            },
+            {
+              "id": "sfxk",
+              "name": "SFXK",
+              "type": "Uzlovacia · šesťhranná skrutka",
+              "description": "Káblové trasy, svietidlá a elektroinštalácie; šesťhranná hlava pre kľúč a väčší prítlak.",
+              "specs": [
+                {
+                  "value": "Ø 10 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "50 – 60 mm",
+                  "label": "dĺžky hmoždinky"
+                }
+              ]
+            },
+            {
+              "id": "sfxo-sfxc-sfxl",
+              "name": "SFXO · SFXC · SFXL",
+              "type": "Uzlovacia s okom, kruhovým a rovným hákom",
+              "description": "Svietidlá a bytové zariadenie – oko alebo hák do plného aj dutého podkladu.",
+              "specs": [
+                {
+                  "value": "Ø 6 / 8 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "30 – 40 mm",
+                  "label": "dĺžky hmoždinky"
+                }
+              ]
+            }
+          ],
+          "note": "SFX – 100 % nylon, aj do sadrokartónu · rámové hmoždinky Ø 10 / 12 / 14 mm · povlaky zinok, zinkové vločky, SQ Ceramic a nerez A4."
         },
         {
           "id": "fasady-etics",
@@ -931,221 +1435,6 @@
             "TOOL THERMODRIVE V2",
             "KSV"
           ]
-        },
-        {
-          "id": "drevo",
-          "name": "Drevo",
-          "title": "Skrutky pre drevené konštrukcie",
-          "intro": "Celý rad na jednom regáli – celoročný predaj tesárom, stavebným firmám aj domácim majstrom.",
-          "image": "img/photo/regal-02.webp",
-          "imageCaption": "Foto regálu: realizácia DAHAX · Produkty: KLIMAS",
-          "products": [
-            {
-              "id": "wkcs",
-              "name": "WKCS",
-              "type": "Zápustná hlava TX · Ø 3 – 10 mm",
-              "description": "Univerzálne spájanie drevených prvkov – krovy, rámy a terasy; hlava sa zapustí do dreva.",
-              "image": "img/product/klimas-wkcs.webp",
-              "imageFit": "tall",
-              "specs": [
-                {
-                  "value": "Ø 3 – 10 mm",
-                  "label": "priemery",
-                  "accent": true
-                },
-                {
-                  "value": "30 – 600 mm",
-                  "label": "dĺžky skrutky"
-                },
-                {
-                  "value": "ETA-18/0817",
-                  "label": "európske technické posúdenie"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
-                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – WKCS 6 mm (SK)",
-                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-6-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – WKCS 8 mm (SK)",
-                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-8-sk.pdf",
-                  "kind": "certifikat"
-                }
-              ],
-              "video": "video/klimas/klimas-wkcp-wkcs.mp4"
-            },
-            {
-              "id": "wkcr",
-              "name": "WKCR",
-              "type": "Plný závit · Ø 8 a 10 mm",
-              "description": "Celozávitová skrutka na spájanie a zosilnenie nosníkov aj lepeného dreva; malá hlava sa zapustí.",
-              "image": "img/product/klimas-wkcr.webp",
-              "imageFit": "tall",
-              "specs": [
-                {
-                  "value": "Ø 8 a 10 mm",
-                  "label": "priemery",
-                  "accent": true
-                },
-                {
-                  "value": "40 – 200 mm",
-                  "label": "dĺžky skrutky"
-                },
-                {
-                  "value": "ETA-18/0817",
-                  "label": "európske technické posúdenie"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
-                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – WKCR 8 mm (SK)",
-                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-8-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – WKCR 10 mm (SK)",
-                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-10-sk.pdf",
-                  "kind": "certifikat"
-                }
-              ]
-            },
-            {
-              "id": "wkpc",
-              "name": "WKPC",
-              "type": "Dvojitý závit · Ø 8 mm",
-              "description": "Upevnenie kontraláty cez nadkrokvovú tepelnú izoláciu ku krokve.",
-              "image": "img/product/klimas-wkpc.webp",
-              "imageFit": "tall",
-              "specs": [
-                {
-                  "value": "Ø 8 mm",
-                  "label": "priemer",
-                  "accent": true
-                },
-                {
-                  "value": "165 – 472 mm",
-                  "label": "dĺžky skrutky"
-                },
-                {
-                  "value": "ETA-18/0817",
-                  "label": "európske technické posúdenie"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
-                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – WKPC 8 mm (SK)",
-                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkpc-8-sk.pdf",
-                  "kind": "certifikat"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "beton-a-ramove-upevnenia",
-          "name": "Betón a rámové upevnenia",
-          "title": "Kotvenie do betónu a muriva",
-          "intro": "Mechanické kotvy, skrutky do betónu a hmoždinky pre plné aj duté podklady – s európskym technickým posúdením ETA.",
-          "image": "img/product/klimas-beton.webp",
-          "imageOnWhite": true,
-          "products": [
-            {
-              "id": "le-a4",
-              "name": "LE-A4",
-              "type": "Mechanická kotva · nerez A4 · Ø 8 – 16 mm",
-              "description": "Do betónu s trhlinami aj bez – vonku aj v agresívnom prostredí; R30 – R120.",
-              "documents": [
-                {
-                  "title": "ETA-20/0641 – LE-A4 (SK)",
-                  "href": "docs/klimas/eta-20-0641-le-a4-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Technický list – LE-A4 (SK)",
-                  "href": "docs/klimas/technicky-list-le-a4-sk.pdf",
-                  "kind": "technicky-list"
-                }
-              ],
-              "video": "video/klimas/klimas-le.mp4"
-            },
-            {
-              "id": "wdbls",
-              "name": "WDBLS",
-              "type": "Skrutka do betónu · šesťhranná hlava s podložkou",
-              "description": "Bez hmoždinky priamo do betónu; Ø 7,5 – 14,3 mm, dĺžky 40 – 150 mm.",
-              "documents": [
-                {
-                  "title": "ETA-20/0768 – skrutky do betónu (SK)",
-                  "href": "docs/klimas/eta-20-0768-skrutky-do-betonu-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "ETA-20/0769 – skrutky do betónu (SK)",
-                  "href": "docs/klimas/eta-20-0769-skrutky-do-betonu-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Technický list – WDBLS 10 (SK)",
-                  "href": "docs/klimas/technicky-list-wdbls-10-sk.pdf",
-                  "kind": "technicky-list"
-                }
-              ]
-            },
-            {
-              "id": "wdblp",
-              "name": "WDBLP",
-              "type": "Skrutka do betónu · zápustná hlava TX",
-              "description": "Zapustená hlava, bez hmoždinky; Ø 7,5 – 12,5 mm, dĺžky 60 – 150 mm.",
-              "documents": [
-                {
-                  "title": "ETA-20/0768 – skrutky do betónu (SK)",
-                  "href": "docs/klimas/eta-20-0768-skrutky-do-betonu-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "ETA-20/0769 – skrutky do betónu (SK)",
-                  "href": "docs/klimas/eta-20-0769-skrutky-do-betonu-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Technický list – WDBLP 10 (SK)",
-                  "href": "docs/klimas/technicky-list-wdblp-10-sk.pdf",
-                  "kind": "technicky-list"
-                }
-              ]
-            },
-            {
-              "id": "tsw",
-              "name": "TSW",
-              "type": "Narážacia kotva · vnútorný závit M6 – M20",
-              "description": "Na závitové tyče a závesy v betóne."
-            },
-            {
-              "id": "sfxp",
-              "name": "SFXP",
-              "type": "Uzlovacia hmoždinka · Ø 5 – 10 mm",
-              "description": "Do plných aj dutých materiálov – betón, tehla, sadrokartón.",
-              "video": "video/klimas/klimas-sfx.mp4"
-            }
-          ],
-          "note": "Ďalej v ponuke: chemické kotvy, kotvy s hákom a okom, rámové a univerzálne hmoždinky."
         },
         {
           "id": "predajne-miesto",
