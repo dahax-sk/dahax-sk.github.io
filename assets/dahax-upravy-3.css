@@ -130,3 +130,45 @@
 
 /* počet dokumentov v zozname produktov – na tmavom svetlejšia červená (kontrast 4,5:1+) */
 .s--dark .rows .pc__docs,.s--navy .rows .pc__docs{color:var(--red-hi)}
+
+/* úvodná snímka firmy je len profil – kategórie sú ďalšie snímky, zoznam by ich iba opakoval */
+.brand__nav>.eyebrow,.brand__cats{display:none}
+.brand__btns{margin-top:0}
+/* profil bez kategórií – väčšia typografia a vzdušnejší rytmus, obsah vyplní plochu */
+.brand__since{margin-bottom:34px}
+.brand__about{font-size:23px;line-height:1.55;margin-bottom:40px}
+.brand__facts{margin-bottom:44px}
+.brand__facts>div{padding-top:20px;gap:10px}
+.brand__facts dt{font-size:58px}
+.brand__facts dd{font-size:17px}
+.brand__makes .eyebrow{margin-bottom:14px}
+.brand__makes li{min-height:54px;font-size:18px;padding:10px 0 10px 22px}
+
+/* KLIMAS – kľúčové výrobky: bez banneru, karta = fotka na bielom + kód a popis, farebná linka skupiny */
+.tiles{grid-template-rows:auto 1fr}
+.tiles .banner{display:none}
+.tiles__grid{gap:10px}
+.tile{display:grid;grid-template-rows:minmax(0,1fr) auto;background:#fff;border-bottom:3px solid var(--c)}
+.tile img{width:100%;height:100%;min-height:0;object-fit:contain;padding:16px 16px 8px;background:#fff}
+.tile:active img{transform:scale(1.03)}
+.tile__name{position:static;padding:10px 14px 12px;background:var(--surf-2);white-space:pre-line;font:500 13px/1.32 var(--f-b);letter-spacing:0;text-transform:none;color:var(--muted-d);text-wrap:pretty}
+.tile__name::first-line{font:800 21px/1.25 var(--f-d);letter-spacing:.02em;text-transform:uppercase;color:#fff}
+.tile__go{top:10px;right:10px}
+
+/* názvy výrobkov na kartách – menšie, aby sa nelámali za spojovníkom („ECO- / DRIVE W 8“) */
+.pc__name{font-size:34px}
+
+/* karty výrobkov v rade – spoločná mriežka (subgrid): fotka, text a päta majú vo všetkých kartách rovnakú výšku,
+   názvy sedia na jednej línii aj pri rôzne dlhom popise */
+.cards__grid{grid-template-rows:minmax(0,1fr) auto auto}
+.cards__grid>.pc{grid-row:span 3;grid-template-rows:subgrid}
+
+/* zoznam s 5+ položkami vedľa fotky (KLIMAS – betón) – ešte hustejší rytmus */
+.media__text:has(.rows>li:nth-child(5)){gap:12px}
+.media__text:has(.rows>li:nth-child(5)) .row{padding:6px 4px 6px 0}
+.media__text:has(.rows>li:nth-child(5)) .row__name{font-size:27px}
+.media__text:has(.rows>li:nth-child(5)) .cat__title{font-size:54px}
+
+/* údaje (hodnota + popis) v rade – hodnoty sa nelámu a popisy sedia na jednej línii (subgrid) */
+.specs--3 .spec__v{white-space:nowrap;overflow-wrap:normal}
+.specs>.spec{grid-row:span 2;grid-template-rows:subgrid;align-content:start}

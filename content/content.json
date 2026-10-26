@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-25.12",
+  "version": "2026-10-26.7",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -119,127 +119,101 @@
       "categories": [
         {
           "id": "sortiment",
-          "name": "Celý sortiment",
+          "name": "Kľúčové výrobky",
           "eyebrow": "KLIMAS – sortiment",
-          "title": "15 skupín, tisíce produktov",
-          "intro": "Celý sortiment KLIMAS cez DAHAX – od kotiev pre zatepľovanie až po stavebnú chémiu.",
-          "banners": [
-            {
-              "src": "img/klimas/banner-ramove.webp",
-              "caption": "Rámové upevnenia",
-              "href": "https://sk.klimas.com/produkty/ramove-upevnenia/"
-            },
-            {
-              "src": "img/klimas/banner-sdk.webp",
-              "caption": "Skrutky, upevňovacie prvky a závesy pre sadrokartón",
-              "href": "https://sk.klimas.com/produkty/"
-            },
-            {
-              "src": "img/klimas/banner-kotvy.webp",
-              "caption": "Mechanické kotvy",
-              "href": "https://sk.klimas.com/produkty/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/"
-            },
-            {
-              "src": "img/klimas/banner-strechy.webp",
-              "caption": "Hydro- a tepelné izolácie striech",
-              "href": "https://sk.klimas.com/produkty/systemy-upevnenia-termoizolacie-a-hydroizolacie-plochych-striech/"
-            },
-            {
-              "src": "img/klimas/banner-drevo.webp",
-              "caption": "Skrutky a spojovacie prvky pre drevené konštrukcie",
-              "href": "https://sk.klimas.com/produkty/skrutky-a-spojovacie-prvky-pre-drevene-konstrukcie/"
-            }
-          ],
+          "title": "Kľúčové výrobky",
+          "intro": "Najžiadanejšie výrobky zo všetkých skupín sortimentu – od kotiev pre zatepľovanie až po montážnu penu. Celý katalóg je na sk.klimas.com.",
+          "banners": [],
           "tiles": [
             {
-              "name": "Systémy kotvenia tepelnej izolácie stien",
-              "image": "img/klimas/kat-01.webp",
+              "name": "THERMODRIVE V2-8\nSkrutkovacia fasádna hmoždinka s kovovým tŕňom a univerzálnou expanznou zónou",
+              "image": "img/klimas/produkty/klimas-thermodrive-v2-8.webp",
               "color": "#868686",
-              "href": "https://sk.klimas.com/produkty/nastenne-tepelnoizolacne-fixacne-systemy/"
+              "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/thermodrive-v2-8/"
             },
             {
-              "name": "Skrutky a spojovací materiál pre drevené konštrukcie",
-              "image": "img/klimas/kat-02.webp",
-              "color": "#fbc878",
-              "href": "https://sk.klimas.com/produkty/skrutky-a-spojovacie-prvky-pre-drevene-konstrukcie/"
+              "name": "ECO-DRIVE 8\nTeleskopická skrutkovacia fasádna hmoždinka s kovovým tŕňom",
+              "image": "img/klimas/produkty/klimas-eco-drive-8.webp",
+              "color": "#868686",
+              "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/eco-drive-8/"
             },
             {
-              "name": "Rámové upevnenia",
-              "image": "img/klimas/kat-03.webp",
-              "color": "#1c9ad7",
-              "href": "https://sk.klimas.com/produkty/ramove-upevnenia/"
+              "name": "LFN-10\nNatĺkacia fasádna hmoždinka s plastovým tŕňom a predĺženou expanznou zónou",
+              "image": "img/klimas/produkty/klimas-lfn-10.webp",
+              "color": "#868686",
+              "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/lfn-10/"
             },
             {
-              "name": "Mechanické kotvy",
-              "image": "img/klimas/kat-04.webp",
+              "name": "LE-ZN\nPozinkovaná mechanická kotva do betónu",
+              "image": "img/klimas/produkty/klimas-le-zn.webp",
               "color": "#f29105",
-              "href": "https://sk.klimas.com/produkty/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/"
+              "href": "https://sk.klimas.com/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/le-zn/"
             },
             {
-              "name": "Skrutky do betónu",
-              "image": "img/klimas/kat-05.webp",
-              "color": "#c6c6c6",
-              "href": "https://sk.klimas.com/produkty/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/"
+              "name": "LSI\nOceľová kotva pre stredné zaťaženie",
+              "image": "img/klimas/produkty/klimas-lsi.webp",
+              "color": "#f29105",
+              "href": "https://sk.klimas.com/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/lsi/"
             },
             {
-              "name": "Upevňovacie systémy pre ľahké konštrukcie",
-              "image": "img/klimas/kat-06.webp",
+              "name": "KPS-FAST-S\nRámová hmoždinka so skrutkou so zápustnou hlavou TX30",
+              "image": "img/klimas/produkty/klimas-kps-fast-s.webp",
+              "color": "#1c9ad7",
+              "href": "https://sk.klimas.com/ramove-upevnenia/kps-fast-s-bkps/"
+            },
+            {
+              "name": "KPR-FAST-K\nRámová hmoždinka s plochým límcom a šesťhrannou hlavou",
+              "image": "img/klimas/produkty/klimas-kpr-fast-k.webp",
+              "color": "#1c9ad7",
+              "href": "https://sk.klimas.com/ramove-upevnenia/kpr-fast-k-bkpk10-w-kpr-fast/"
+            },
+            {
+              "name": "WKCH\nKonštrukčná skrutka do dreva so šesťhrannou hlavou",
+              "image": "img/klimas/produkty/klimas-wkch.webp",
+              "color": "#fbc878",
+              "href": "https://sk.klimas.com/skrutky-a-spojovacie-prvky-pre-drevene-konstrukcie/wkch/"
+            },
+            {
+              "name": "WKCP\nKonštrukčná skrutka s tanierovou hlavou TX",
+              "image": "img/klimas/produkty/klimas-wkcp.webp",
+              "color": "#fbc878",
+              "href": "https://sk.klimas.com/skrutky-a-spojovacie-prvky-pre-drevene-konstrukcie/wkcp/"
+            },
+            {
+              "name": "WS\nSamovrtná skrutka na kotvenie plechu do ocele 2 – 7 mm",
+              "image": "img/klimas/produkty/klimas-ws.webp",
               "color": "#485156",
-              "href": "https://sk.klimas.com/produkty/lahke-upevnovacie-systemy/"
+              "href": "https://sk.klimas.com/lahke-upevnovacie-systemy/ws-bws/"
             },
             {
-              "name": "Upevňovacie prvky pre sadrokartónové konštrukcie",
-              "image": "img/klimas/kat-07.webp",
-              "color": "#c2bfb7",
-              "href": "https://sk.klimas.com/produkty/"
-            },
-            {
-              "name": "Chemické kotviace systémy",
-              "image": "img/klimas/kat-08.webp",
-              "color": "#c99b57",
-              "href": "https://sk.klimas.com/produkty/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/"
-            },
-            {
-              "name": "Upevňovacie systémy na tepelnú izoláciu a hydroizoláciu plochých striech",
-              "image": "img/klimas/kat-09.webp",
+              "name": "LINO-13\nPlastová kotva na izoláciu a hydroizoláciu plochých striech",
+              "image": "img/klimas/produkty/klimas-lino-13.webp",
               "color": "#65b22e",
-              "href": "https://sk.klimas.com/produkty/systemy-upevnenia-termoizolacie-a-hydroizolacie-plochych-striech/"
+              "href": "https://sk.klimas.com/systemy-upevnenia-termoizolacie-a-hydroizolacie-plochych-striech/lino-13/"
             },
             {
-              "name": "Skrutky a spojovací materiál pre stolárstvo",
-              "image": "img/klimas/kat-10.webp",
+              "name": "KDH\nSkrutka do dreva so zápustnou hlavou a čiastočným závitom",
+              "image": "img/klimas/produkty/klimas-kdh.webp",
               "color": "#8fafc7",
-              "href": "https://sk.klimas.com/produkty/skrutky-a-spojovaci-material-pre-stolarstvo/"
+              "href": "https://sk.klimas.com/skrutky-a-spojovaci-material-pre-stolarstvo/kdh-kmh-bwk/"
             },
             {
-              "name": "Metrické skrutky, vruty, podložky",
-              "image": "img/klimas/kat-11.webp",
-              "color": "#9e1a18",
-              "href": "https://sk.klimas.com/produkty/metricke-skrutky-vruty-podlozky/"
+              "name": "KGD\nSkrutka na upevnenie sadrokartónu do dreva",
+              "image": "img/klimas/produkty/klimas-kgd.webp",
+              "color": "#c2bfb7",
+              "href": "https://sk.klimas.com/upevnenia-technologiou-suchej-montaze/kgd-ksgd-kmgd-bgd/"
             },
             {
-              "name": "Elektroinštalačné upevňovacie prvky",
-              "image": "img/klimas/kat-12.webp",
-              "color": "#d2df88",
-              "href": "https://sk.klimas.com/produkty/"
-            },
-            {
-              "name": "Upevnenia pre vodoinštalácie a sanitu",
-              "image": "img/klimas/kat-13.webp",
-              "color": "#5ac0cc",
-              "href": "https://sk.klimas.com/produkty/"
-            },
-            {
-              "name": "Stavebná chémia",
-              "image": "img/klimas/kat-14.webp",
+              "name": "PMPG\nProfesionálna nízkoexpanzná montážna pena na pištoľ",
+              "image": "img/klimas/produkty/klimas-pmpg.webp",
               "color": "#ffca00",
-              "href": "https://sk.klimas.com/produkty/"
+              "href": "https://sk.klimas.com/stavebna-chemia/pmpg/"
             },
             {
-              "name": "Príslušenstvo pre elektrické náradie",
-              "image": "img/klimas/kat-15.webp",
-              "color": "#49755d",
-              "href": "https://sk.klimas.com/produkty/"
+              "name": "URG\nObjímka na potrubie s gumenou vložkou",
+              "image": "img/klimas/produkty/klimas-urg.webp",
+              "color": "#5ac0cc",
+              "href": "https://sk.klimas.com/sanitarne-upevnenia-pasky-a-naramky/urg/"
             }
           ],
           "products": []
@@ -247,50 +221,38 @@
         {
           "id": "fasady-etics",
           "name": "Fasády ETICS",
-          "title": "Kotvenie tepelnej izolácie v kontaktných zatepľovacích systémoch",
+          "title": "Kotvenie tepelnej izolácie ETICS",
           "legend": [
             {
-              "term": "Natĺkacia",
-              "text": "rýchla montáž úderom."
+              "term": "Skrutkovacia",
+              "text": "oceľový tŕň sa zaskrutkuje – povrchová aj zapustená montáž."
             },
             {
-              "term": "Skrutkovacia",
-              "text": "montáž skrutkou."
+              "term": "Natĺkacia",
+              "text": "tŕň sa zatĺka – rýchla montáž na rovnom podklade."
+            },
+            {
+              "term": "Podklady A – E",
+              "text": "betón, plná a dierovaná tehla, ľahký betón, pórobetón (EAD 330196-01-0604)."
             }
           ],
           "products": [
             {
-              "id": "lfmg-10",
-              "name": "LFMG-10",
-              "type": "Natĺkacia · Ø 10 mm",
-              "description": "Kovový tŕň, predĺžená expanzná zóna",
-              "image": "img/product/klimas-lfmg-10.webp",
-              "imageFit": "tall"
-            },
-            {
-              "id": "wktherm-8s",
-              "name": "WKTHERM 8S",
-              "type": "Skrutkovacia · Ø 8 mm",
-              "description": "Skrutkovacia kotva s kovovou skrutkou",
-              "image": "img/product/klimas-wktherm-8s.webp",
-              "imageFit": "tall"
-            },
-            {
               "id": "thermodrive-v2-8",
               "name": "THERMODRIVE V2-8",
-              "type": "Skrutkovacia · Ø 8 mm",
-              "description": "Kovová skrutka, univerzálna expanzná zóna",
+              "type": "Skrutkovacia · Ø 8 mm · EPS, XPS, vlna",
+              "description": "Univerzálna kotviaca zóna 25 – 65 mm a bodový prestup tepla len 0,001 W/K pri zapustenej montáži.",
               "image": "img/product/klimas-thermodrive-v2-8.webp",
               "imageFit": "tall",
               "specs": [
                 {
-                  "value": "25–65 mm",
+                  "value": "25 – 65 mm",
                   "label": "univerzálna kotviaca zóna",
                   "accent": true
                 },
                 {
                   "value": "1,50 kN",
-                  "label": "NRk v betóne C12/15 až C50/60"
+                  "label": "NRk v betóne C16/20 až C50/60"
                 },
                 {
                   "value": "0,001 W/K",
@@ -299,88 +261,255 @@
                 },
                 {
                   "value": "1,0 kN/mm",
-                  "label": "tuhosť tanierika Ø 60 mm"
+                  "label": "tuhosť tanierika"
                 },
                 {
-                  "value": "do 44 cm",
-                  "label": "hrúbka tepelnej izolácie"
+                  "value": "135 – 455 mm",
+                  "label": "dĺžky kotvy"
                 }
               ],
               "documents": [
                 {
-                  "title": "ETA-22/0611 – ThermoDrive V2 (EN)",
-                  "href": "docs/klimas/eta-22-0611-thermodrive-v2-2026-en.pdf",
+                  "title": "ETA-22/0611 – THERMODRIVE V2 (SK)",
+                  "href": "docs/klimas/eta-22-0611-thermodrive-v2-sk.pdf",
                   "kind": "certifikat"
                 },
                 {
-                  "title": "Technický list – ThermoDrive V2 (EN)",
-                  "href": "docs/klimas/technicky-list-thermodrive-v2-en.pdf",
+                  "title": "Vyhlásenie o parametroch – THERMODRIVE V2 (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-thermodrive-v2-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – THERMODRIVE V2 (SK)",
+                  "href": "docs/klimas/technicky-list-thermodrive-v2-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ]
+            },
+            {
+              "id": "eco-drive-w-8",
+              "name": "ECO-DRIVE W 8",
+              "type": "Skrutkovacia teleskopická · Ø 8 mm · vlna",
+              "description": "Teleskopický tanier Ø 110 mm pre minerálnu a lamelovú vlnu – kratšia montáž a menej tepelných mostov.",
+              "image": "img/product/klimas-eco-drive-w-8.webp",
+              "imageFit": "tall",
+              "specs": [
+                {
+                  "value": "Ø 110 mm",
+                  "label": "teleskopický prítlačný tanier",
+                  "accent": true
+                },
+                {
+                  "value": "1,50 kN",
+                  "label": "NRk v betóne C16/20 až C50/60"
+                },
+                {
+                  "value": "0,002 W/K",
+                  "label": "bodový prestup tepla",
+                  "accent": true
+                },
+                {
+                  "value": "150 – 430 mm",
+                  "label": "dĺžky kotvy"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-13/0107 – ECO-DRIVE (SK)",
+                  "href": "docs/klimas/eta-13-0107-eco-drive-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – ECO-DRIVE W (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-eco-drive-w-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – ECO-DRIVE W 8 (SK)",
+                  "href": "docs/klimas/technicky-list-eco-drive-w-8-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ]
+            },
+            {
+              "id": "lfmg-10",
+              "name": "LFMG-10",
+              "type": "Natĺkacia · Ø 10 mm · EPS, XPS",
+              "description": "Kovový tŕň a predĺžená expanzná zóna; s podložkou TDX-90/TDX-140 aj pre minerálnu vlnu.",
+              "image": "img/product/klimas-lfmg-10.webp",
+              "imageFit": "tall",
+              "specs": [
+                {
+                  "value": "Ø 60 mm",
+                  "label": "prítlačný tanier"
+                },
+                {
+                  "value": "0,90 kN",
+                  "label": "NRk v betóne C16/20 až C50/60",
+                  "accent": true
+                },
+                {
+                  "value": "0,002 – 0,004 W/K",
+                  "label": "bodový prestup tepla"
+                },
+                {
+                  "value": "140 – 300 mm",
+                  "label": "dĺžky kotvy"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-17/0450 – LFMG-10 (SK)",
+                  "href": "docs/klimas/eta-17-0450-lfmg-10-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – LFMG-10 (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-lfmg-10-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – LFMG-10 (SK)",
+                  "href": "docs/klimas/technicky-list-lfmg-10-sk.pdf",
                   "kind": "technicky-list"
                 }
               ]
             }
           ],
-          "moreTitle": "Ďalšie kotvy",
+          "moreTitle": "Ďalšie kotvy a príslušenstvo",
           "more": [
+            "ECO-DRIVE 8",
             "ECO-DRIVE S 8",
-            "ECO-DRIVE W 8",
+            "WKTHERM S-8",
+            "WKTHERM 8",
+            "FIXPLUG-10",
             "LMX-10",
-            "LMX-8",
             "LTX-10",
-            "LTX-8",
-            "LFN-10"
+            "LFN-10",
+            "DRIVE S",
+            "TOOL THERMODRIVE V2",
+            "KSV"
           ]
         },
         {
           "id": "drevo",
           "name": "Drevo",
-          "title": "Skrutky do dreva",
-          "intro": "Celý rad prehľadne na jednom regáli – celoročný predaj tesárom aj domácim majstrom.",
+          "title": "Skrutky pre drevené konštrukcie",
+          "intro": "Celý rad na jednom regáli – celoročný predaj tesárom, stavebným firmám aj domácim majstrom.",
           "image": "img/photo/regal-02.webp",
           "imageCaption": "Foto regálu: realizácia DAHAX · Produkty: KLIMAS",
           "products": [
             {
-              "id": "kmwht",
-              "name": "KMWHT",
-              "type": "Zápustná hlava, TX",
-              "description": "Zapustenie hlavy do prvku. Latovanie a záhradné stavby.",
-              "image": "img/product/klimas-kmwht.webp",
-              "imageFit": "tall"
-            },
-            {
-              "id": "wkcp",
-              "name": "WKCP",
-              "type": "Tanierová hlava, TX",
-              "description": "Väčšia prítlačná plocha. Krovy, rámy a kontralaty.",
-              "image": "img/product/klimas-wkcp.webp",
+              "id": "wkcs",
+              "name": "WKCS",
+              "type": "Zápustná hlava TX · Ø 3 – 10 mm",
+              "description": "Univerzálne spájanie drevených prvkov – krovy, rámy a terasy; hlava sa zapustí do dreva.",
+              "image": "img/product/klimas-wkcs.webp",
               "imageFit": "tall",
               "specs": [
                 {
-                  "value": "5–10 mm",
-                  "label": "vonkajší priemer závitu d",
+                  "value": "Ø 3 – 10 mm",
+                  "label": "priemery",
                   "accent": true
                 },
                 {
-                  "value": "40–600 mm",
-                  "label": "dĺžky skrutky L"
+                  "value": "30 – 600 mm",
+                  "label": "dĺžky skrutky"
                 },
                 {
-                  "value": "12–25 mm",
-                  "label": "priemer tanierovej hlavy"
-                },
-                {
-                  "value": "12 N/mm²",
-                  "label": "fax,k pre d 5–8 mm (rastlé drevo)"
-                },
-                {
-                  "value": "50 rokov",
-                  "label": "predpokladaná životnosť podľa ETA"
+                  "value": "ETA-18/0817",
+                  "label": "európske technické posúdenie"
                 }
               ],
               "documents": [
                 {
-                  "title": "ETA-18/0817 – skrutky do dreva KLIMAS (EN)",
-                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-2023-en.pdf",
+                  "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
+                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKCS 6 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-6-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKCS 8 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-8-sk.pdf",
+                  "kind": "certifikat"
+                }
+              ]
+            },
+            {
+              "id": "wkcr",
+              "name": "WKCR",
+              "type": "Plný závit · Ø 8 a 10 mm",
+              "description": "Celozávitová skrutka na spájanie a zosilnenie nosníkov aj lepeného dreva; malá hlava sa zapustí.",
+              "image": "img/product/klimas-wkcr.webp",
+              "imageFit": "tall",
+              "specs": [
+                {
+                  "value": "Ø 8 a 10 mm",
+                  "label": "priemery",
+                  "accent": true
+                },
+                {
+                  "value": "40 – 200 mm",
+                  "label": "dĺžky skrutky"
+                },
+                {
+                  "value": "ETA-18/0817",
+                  "label": "európske technické posúdenie"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
+                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKCR 8 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-8-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKCR 10 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-10-sk.pdf",
+                  "kind": "certifikat"
+                }
+              ]
+            },
+            {
+              "id": "wkpc",
+              "name": "WKPC",
+              "type": "Dvojitý závit · Ø 8 mm",
+              "description": "Upevnenie kontraláty cez nadkrokvovú tepelnú izoláciu ku krokve.",
+              "image": "img/product/klimas-wkpc.webp",
+              "imageFit": "tall",
+              "specs": [
+                {
+                  "value": "Ø 8 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "165 – 472 mm",
+                  "label": "dĺžky skrutky"
+                },
+                {
+                  "value": "ETA-18/0817",
+                  "label": "európske technické posúdenie"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
+                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKPC 8 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkpc-8-sk.pdf",
                   "kind": "certifikat"
                 }
               ]
@@ -391,30 +520,88 @@
           "id": "beton-a-ramove-upevnenia",
           "name": "Betón a rámové upevnenia",
           "title": "Kotvenie do betónu a muriva",
-          "intro": "Ďalšie položky výrobcu dostupné cez DAHAX na dopyt.",
+          "intro": "Mechanické kotvy, skrutky do betónu a hmoždinky pre plné aj duté podklady – s európskym technickým posúdením ETA.",
           "image": "img/product/klimas-beton.webp",
           "imageOnWhite": true,
           "products": [
             {
-              "id": "le-zn",
-              "name": "LE-ZN",
-              "type": "Mechanická kotva",
-              "description": "Kotvenie do betónu"
+              "id": "le-a4",
+              "name": "LE-A4",
+              "type": "Mechanická kotva · nerez A4 · Ø 8 – 16 mm",
+              "description": "Do betónu s trhlinami aj bez – vonku aj v agresívnom prostredí; R30 – R120.",
+              "documents": [
+                {
+                  "title": "ETA-20/0641 – LE-A4 (SK)",
+                  "href": "docs/klimas/eta-20-0641-le-a4-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – LE-A4 (SK)",
+                  "href": "docs/klimas/technicky-list-le-a4-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ]
             },
             {
               "id": "wdbls",
               "name": "WDBLS",
-              "type": "Skrutka do betónu",
-              "description": "Šesťhranná hlava s podložkou, bez hmoždinky"
+              "type": "Skrutka do betónu · šesťhranná hlava s podložkou",
+              "description": "Bez hmoždinky priamo do betónu; Ø 7,5 – 14,3 mm, dĺžky 40 – 150 mm.",
+              "documents": [
+                {
+                  "title": "ETA-20/0768 – skrutky do betónu (SK)",
+                  "href": "docs/klimas/eta-20-0768-skrutky-do-betonu-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "ETA-20/0769 – skrutky do betónu (SK)",
+                  "href": "docs/klimas/eta-20-0769-skrutky-do-betonu-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – WDBLS 10 (SK)",
+                  "href": "docs/klimas/technicky-list-wdbls-10-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ]
             },
             {
-              "id": "kps-fast-s",
-              "name": "KPS-FAST-S",
-              "type": "Rámová hmoždinka",
-              "description": "Skrutka so zápustnou hlavou"
+              "id": "wdblp",
+              "name": "WDBLP",
+              "type": "Skrutka do betónu · zápustná hlava TX",
+              "description": "Zapustená hlava, bez hmoždinky; Ø 7,5 – 12,5 mm, dĺžky 60 – 150 mm.",
+              "documents": [
+                {
+                  "title": "ETA-20/0768 – skrutky do betónu (SK)",
+                  "href": "docs/klimas/eta-20-0768-skrutky-do-betonu-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "ETA-20/0769 – skrutky do betónu (SK)",
+                  "href": "docs/klimas/eta-20-0769-skrutky-do-betonu-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – WDBLP 10 (SK)",
+                  "href": "docs/klimas/technicky-list-wdblp-10-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ]
+            },
+            {
+              "id": "tsw",
+              "name": "TSW",
+              "type": "Narážacia kotva · vnútorný závit M6 – M20",
+              "description": "Na závitové tyče a závesy v betóne."
+            },
+            {
+              "id": "sfxp",
+              "name": "SFXP",
+              "type": "Uzlovacia hmoždinka · Ø 5 – 10 mm",
+              "description": "Do plných aj dutých materiálov – betón, tehla, sadrokartón."
             }
           ],
-          "note": "Ďalej v ponuke výrobcu: chemické kotvy, upevnenie plochých striech, suchá výstavba a stavebná chémia."
+          "note": "Ďalej v ponuke: chemické kotvy, kotvy s hákom a okom, rámové a univerzálne hmoždinky."
         },
         {
           "id": "predajne-miesto",
@@ -424,16 +611,24 @@
           "image": "img/photo/regal-03.webp",
           "features": [
             {
-              "title": "Celý sortiment na jednom mieste",
-              "text": "Regály, boxy a závesy s kompletnou ponukou KLIMAS."
+              "title": "Regál na kľúč",
+              "text": "DAHAX navrhne, dodá a zariadi regál KLIMAS podľa priestoru predajne."
             },
             {
-              "title": "Navigácia farbami",
-              "text": "Farebné hlavičky a podlahové pásy podľa použitia."
+              "title": "Vizualizácia vopred",
+              "text": "Vizuálny projekt predajného miesta ešte pred realizáciou."
             },
             {
-              "title": "Návrh pre vašu predajňu",
-              "text": "Usporiadanie podľa priestoru a zákazníkov."
+              "title": "Navigácia farbami a POS",
+              "text": "Toppery, farebné hlavičky, podlahové pásy a jednotná vizuálna reklama."
+            },
+            {
+              "title": "Školenia personálu",
+              "text": "Na mieste aj online – správny výber výrobku pre každého zákazníka."
+            },
+            {
+              "title": "Podklady pre e-shop",
+              "text": "Fotografie, výkresy a popisy výrobkov pripravené na použitie."
             }
           ],
           "gallery": [
@@ -468,143 +663,180 @@
           "id": "overene-eta",
           "name": "Overené ETA",
           "eyebrow": "KLIMAS – certifikácia",
-          "title": "Parametre overené v ETA (DIBt)",
+          "title": "Európske posúdenia ETA",
           "products": [
             {
-              "id": "thermodrive-v2-eta",
-              "name": "ThermoDrive V2",
-              "description": "Skrutkovacia kotva ETICS s kovovou skrutkou TX-30 – povrchová aj zapustená montáž, EPS/XPS aj minerálna vlna.",
-              "specs": [
-                {
-                  "value": "8 mm",
-                  "label": "priemer kotvy, tanierik Ø 60 mm"
-                },
-                {
-                  "value": "135–475 mm",
-                  "label": "dĺžky kotvy La"
-                },
-                {
-                  "value": "1,50 kN",
-                  "label": "NRk v betóne C16/20 až C50/60",
-                  "accent": true
-                },
-                {
-                  "value": "0,001 W/K",
-                  "label": "bodový prestup tepla, zapustená montáž",
-                  "accent": true
-                },
-                {
-                  "value": "A–E",
-                  "label": "skupiny podkladov (vrátane pórobetónu)"
-                }
-              ],
+              "id": "eta-22-0611",
+              "name": "ETA-22/0611",
+              "description": "THERMODRIVE V2 – skrutkovacia fasádna kotva pre ETICS.",
               "documents": [
                 {
-                  "title": "ETA-22/0611 – ThermoDrive V2 (EN)",
-                  "href": "docs/klimas/eta-22-0611-thermodrive-v2-2026-en.pdf",
+                  "title": "ETA-22/0611 – THERMODRIVE V2 (SK)",
+                  "href": "docs/klimas/eta-22-0611-thermodrive-v2-sk.pdf",
                   "kind": "certifikat"
                 },
                 {
-                  "title": "Technický list – ThermoDrive V2 (EN)",
-                  "href": "docs/klimas/technicky-list-thermodrive-v2-en.pdf",
+                  "title": "Vyhlásenie o parametroch – THERMODRIVE V2 (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-thermodrive-v2-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – THERMODRIVE V2 (SK)",
+                  "href": "docs/klimas/technicky-list-thermodrive-v2-sk.pdf",
                   "kind": "technicky-list"
                 }
               ]
             },
             {
-              "id": "eco-drive-eta",
-              "name": "ECO-DRIVE",
-              "description": "Skrutkovacia kotva ETICS s oceľovou skrutkou a izolačnou zátkou z EPS alebo minerálnej vlny.",
-              "specs": [
-                {
-                  "value": "8 mm",
-                  "label": "priemer kotvy, tanierik Ø 60 mm"
-                },
-                {
-                  "value": "130–490 mm",
-                  "label": "dĺžky kotvy La"
-                },
-                {
-                  "value": "35 / 55 mm",
-                  "label": "kotviaca hĺbka hef, podklad A–D / E"
-                },
-                {
-                  "value": "1,5 kN",
-                  "label": "NRk v betóne C16/20 až C50/60",
-                  "accent": true
-                },
-                {
-                  "value": "0,6 kN/mm",
-                  "label": "tuhosť tanierika"
-                }
-              ],
+              "id": "eta-13-0107",
+              "name": "ETA-13/0107",
+              "description": "ECO-DRIVE – teleskopické fasádne kotvy pre EPS a minerálnu vlnu.",
               "documents": [
                 {
-                  "title": "ETA-13/0107 – eco-drive (EN)",
-                  "href": "docs/klimas/eta-13-0107-eco-drive-2026-en.pdf",
+                  "title": "ETA-13/0107 – ECO-DRIVE (SK)",
+                  "href": "docs/klimas/eta-13-0107-eco-drive-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – ECO-DRIVE W (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-eco-drive-w-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – ECO-DRIVE W 8 (SK)",
+                  "href": "docs/klimas/technicky-list-eco-drive-w-8-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ]
+            },
+            {
+              "id": "eta-17-0450",
+              "name": "ETA-17/0450",
+              "description": "LFMG-10 – natĺkacia fasádna kotva s kovovým tŕňom.",
+              "documents": [
+                {
+                  "title": "ETA-17/0450 – LFMG-10 (SK)",
+                  "href": "docs/klimas/eta-17-0450-lfmg-10-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – LFMG-10 (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-lfmg-10-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – LFMG-10 (SK)",
+                  "href": "docs/klimas/technicky-list-lfmg-10-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ]
+            },
+            {
+              "id": "eta-18-0817",
+              "name": "ETA-18/0817",
+              "description": "Konštrukčné skrutky do dreva – WKCS, WKCR, WKPC a WKCP.",
+              "documents": [
+                {
+                  "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
+                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKCS 6 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-6-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKCS 8 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-8-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKCR 8 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-8-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKCR 10 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-10-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – WKPC 8 mm (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-wkpc-8-sk.pdf",
                   "kind": "certifikat"
                 }
               ]
             },
             {
-              "id": "wkcp-eta",
-              "name": "WKCP",
-              "description": "Samorezná skrutka do dreva s tanierovou hlavou pre nosné drevené konštrukcie; d ≥ 6 mm aj na izoláciu nad krokvami.",
-              "specs": [
-                {
-                  "value": "5–10 mm",
-                  "label": "vonkajší priemer závitu d"
-                },
-                {
-                  "value": "40–600 mm",
-                  "label": "dĺžky skrutky L"
-                },
-                {
-                  "value": "12 N/mm²",
-                  "label": "fax,k pre d 5–8 mm (rastlé drevo)",
-                  "accent": true
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň"
-                },
-                {
-                  "value": "50 rokov",
-                  "label": "predpokladaná životnosť podľa ETA"
-                }
-              ],
+              "id": "eta-20-0641",
+              "name": "ETA-20/0641",
+              "description": "LE-A4 – nerezová mechanická kotva do betónu s trhlinami aj bez.",
               "documents": [
                 {
-                  "title": "ETA-18/0817 – skrutky do dreva KLIMAS (EN)",
-                  "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-2023-en.pdf",
+                  "title": "ETA-20/0641 – LE-A4 (SK)",
+                  "href": "docs/klimas/eta-20-0641-le-a4-sk.pdf",
                   "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – LE-A4 (SK)",
+                  "href": "docs/klimas/technicky-list-le-a4-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ]
+            },
+            {
+              "id": "eta-20-0768",
+              "name": "ETA-20/0768 · ETA-20/0769",
+              "description": "Skrutky do betónu WDBLS a WDBLP – montáž bez hmoždinky.",
+              "documents": [
+                {
+                  "title": "ETA-20/0768 – skrutky do betónu (SK)",
+                  "href": "docs/klimas/eta-20-0768-skrutky-do-betonu-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "ETA-20/0769 – skrutky do betónu (SK)",
+                  "href": "docs/klimas/eta-20-0769-skrutky-do-betonu-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – WDBLS 10 (SK)",
+                  "href": "docs/klimas/technicky-list-wdbls-10-sk.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Technický list – WDBLP 10 (SK)",
+                  "href": "docs/klimas/technicky-list-wdblp-10-sk.pdf",
+                  "kind": "technicky-list"
                 }
               ]
             }
           ],
           "specs": [
             {
-              "value": "3 × ETA",
-              "label": "ETA-22/0611 · ETA-13/0107 · ETA-18/0817",
+              "value": "7 × ETA",
+              "label": "európske technické posúdenia",
               "accent": true
             },
             {
-              "value": "1,5 kN",
-              "label": "NRk kotiev ETICS v betóne C16/20+"
+              "value": "21",
+              "label": "dokumentov v slovenčine – ETA, vyhlásenia, technické listy"
             },
             {
-              "value": "0,001 W/K",
-              "label": "min. bodový prestup tepla ThermoDrive V2"
+              "value": "A – E",
+              "label": "skupiny podkladov fasádnych kotiev podľa EAD 330196-01-0604"
             }
           ],
-          "image": "img/sortiment/klimas-thermodrive-v2.webp"
+          "image": "img/sortiment/klimas-thermodrive-v2.webp",
+          "intro": "Kľúčové výrobky KLIMAS majú ETA a vyhlásenie o parametroch – všetky dokumenty v slovenčine."
         }
       ],
       "profile": {
         "since": "1990",
         "country": "Poľsko",
         "hq": "Kuźnica Kiedrzyńska pri Čenstochovej",
-        "about": "Poľský rodinný výrobca spojovacej a kotviacej techniky (Wkręt-met, Kuźnica Kiedrzyńska pri Čenstochovej), založený v roku 1990. Približne 6 500 produktov vyrába v areáli s rozlohou 80 000 m² – až 30 miliónov skrutiek denne. Kotvy pre ETICS (ThermoDrive V2, eco-drive) majú európske technické posúdenia ETA.",
+        "about": "Rodinná firma, ktorá pod značkou Wkręt-met vyrába spojovaciu a kotviacu techniku pre stavebníctvo. Vo výrobnom areáli s rozlohou 80 000 m² vznikne až 30 miliónov skrutiek denne a kotvy pre zatepľovacie systémy majú európske technické posúdenie ETA.",
         "facts": [
           {
             "value": "6 500",
@@ -673,29 +905,214 @@
       "website": "https://sk.klimas.com/",
       "documents": [
         {
-          "title": "Technický list ThermoDrive V2 (EN)",
-          "href": "docs/klimas/technicky-list-thermodrive-v2-en.pdf",
+          "title": "Technický list – THERMODRIVE V2 (SK)",
+          "href": "docs/klimas/technicky-list-thermodrive-v2-sk.pdf",
           "kind": "technicky-list"
         },
         {
-          "title": "ETA-22/0611 – ThermoDrive V2 (2026, EN)",
-          "href": "docs/klimas/eta-22-0611-thermodrive-v2-2026-en.pdf",
+          "title": "ETA-22/0611 – THERMODRIVE V2 (SK)",
+          "href": "docs/klimas/eta-22-0611-thermodrive-v2-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "ETA-13/0107 – eco-drive (2026, EN)",
-          "href": "docs/klimas/eta-13-0107-eco-drive-2026-en.pdf",
+          "title": "ETA-13/0107 – ECO-DRIVE (SK)",
+          "href": "docs/klimas/eta-13-0107-eco-drive-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "ETA-18/0817 – skrutky do dreva (2023, EN)",
-          "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-2023-en.pdf",
-          "kind": "certifikat"
-        },
-        {
-          "title": "Prezentácia KLIMAS – kotvenie ETICS (EN)",
+          "title": "KLIMAS – kotvenie ETICS (EN)",
           "href": "docs/klimas/prezentacia-klimas-kotvenie-etics-en.pdf",
           "kind": "ine"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – THERMODRIVE V2 (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-thermodrive-v2-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – ECO-DRIVE W (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-eco-drive-w-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Technický list – ECO-DRIVE W 8 (SK)",
+          "href": "docs/klimas/technicky-list-eco-drive-w-8-sk.pdf",
+          "kind": "technicky-list"
+        },
+        {
+          "title": "ETA-17/0450 – LFMG-10 (SK)",
+          "href": "docs/klimas/eta-17-0450-lfmg-10-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – LFMG-10 (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-lfmg-10-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Technický list – LFMG-10 (SK)",
+          "href": "docs/klimas/technicky-list-lfmg-10-sk.pdf",
+          "kind": "technicky-list"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCS 6 mm (SK)",
+          "href": "https://sk.klimas.com/download/8554/wkcs/63988/dop-wkcs-6_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCS 8 mm (SK)",
+          "href": "https://sk.klimas.com/download/8554/wkcs/63987/dop-wkcs-8_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCR 8 mm (SK)",
+          "href": "https://sk.klimas.com/download/8553/wkcr/64001/dop-wkcr-8_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCR 10 mm (SK)",
+          "href": "https://sk.klimas.com/download/8553/wkcr/64002/dop-wkcr-10_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKPC 8 mm (SK)",
+          "href": "https://sk.klimas.com/download/8558/wkpc/64010/dop-wkpc-8_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCS 6 mm (SK)",
+          "href": "https://sk.klimas.com/download/8554/wkcs/63988/dop-wkcs-6_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCS 8 mm (SK)",
+          "href": "https://sk.klimas.com/download/8554/wkcs/63987/dop-wkcs-8_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCR 8 mm (SK)",
+          "href": "https://sk.klimas.com/download/8553/wkcr/64001/dop-wkcr-8_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCR 10 mm (SK)",
+          "href": "https://sk.klimas.com/download/8553/wkcr/64002/dop-wkcr-10_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKPC 8 mm (SK)",
+          "href": "https://sk.klimas.com/download/8558/wkpc/64010/dop-wkpc-8_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCS 6 mm (SK)",
+          "href": "https://sk.klimas.com/download/8554/wkcs/63988/dop-wkcs-6_23_sk",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCS 8 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-8-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCR 8 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-8-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCR 10 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-10-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKPC 8 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkpc-8-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "ETA-18/0817 – konštrukčné skrutky do dreva (SK)",
+          "href": "docs/klimas/eta-18-0817-skrutky-do-dreva-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCS 6 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-6-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCS 8 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-8-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCR 8 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-8-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCR 10 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-10-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKPC 8 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkpc-8-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCS 6 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-6-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCS 8 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcs-8-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCR 8 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-8-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKCR 10 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkcr-10-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – WKPC 8 mm (SK)",
+          "href": "docs/klimas/vyhlasenie-o-parametroch-wkpc-8-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "ETA-20/0641 – LE-A4 (SK)",
+          "href": "docs/klimas/eta-20-0641-le-a4-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Technický list – LE-A4 (SK)",
+          "href": "docs/klimas/technicky-list-le-a4-sk.pdf",
+          "kind": "technicky-list"
+        },
+        {
+          "title": "ETA-20/0768 – skrutky do betónu (SK)",
+          "href": "docs/klimas/eta-20-0768-skrutky-do-betonu-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "ETA-20/0769 – skrutky do betónu (SK)",
+          "href": "docs/klimas/eta-20-0769-skrutky-do-betonu-sk.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Technický list – WDBLS 10 (SK)",
+          "href": "docs/klimas/technicky-list-wdbls-10-sk.pdf",
+          "kind": "technicky-list"
+        },
+        {
+          "title": "Technický list – WDBLP 10 (SK)",
+          "href": "docs/klimas/technicky-list-wdblp-10-sk.pdf",
+          "kind": "technicky-list"
         }
       ]
     },
