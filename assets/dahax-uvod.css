@@ -74,3 +74,18 @@
   .dxd-v--kamion{transform:translateX(900px)}
   .dxd-v--solo{transform:translateX(260px)}
 }
+/* strana 2 – vysokozdvižný vozík nakladá palety do kamiónu DAHAX (dahax-doprava.js), cyklus 12 s */
+.dxn{position:absolute;left:0;right:0;bottom:16px;z-index:1;height:160px;overflow:hidden;pointer-events:none}
+.dxn>div:not(.dxd-cesta){position:absolute;bottom:6px}
+.dxn svg{display:block;overflow:visible}
+.dxn-stoh{left:250px}
+.dxn-kamion{left:1000px}
+.dxn-vozik{left:420px;animation:dxn-vozik 12s ease-in-out infinite}
+.dxn-paleta{left:494px;bottom:18px!important;animation:dxn-paleta 12s ease-in-out infinite}
+@keyframes dxn-vozik{0%,8%{transform:translateX(0)}40%,52%{transform:translateX(472px)}88%,100%{transform:translateX(0)}}
+@keyframes dxn-paleta{0%,8%{transform:translateX(0);opacity:1}40%{transform:translateX(472px);opacity:1}50%{transform:translateX(560px);opacity:1}51%,90%{transform:translateX(560px);opacity:0}91%{transform:translateX(0);opacity:0}100%{transform:translateX(0);opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .dxn-vozik,.dxn-paleta{animation:none!important}
+  .dxn-vozik{transform:translateX(240px)}
+  .dxn-paleta{transform:translateX(240px)}
+}

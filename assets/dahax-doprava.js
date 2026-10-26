@@ -1,4 +1,4 @@
-/* DAHAX – strana 3 (Doprava a sklad): dva rôzne realistické čierne kamióny DAHAX (typ Actros, bez značky výrobcu) idú po ceste dole na snímke.
+/* DAHAX – strana 2 (Prečo DAHAX): vysokozdvižný vozík nakladá palety do kamiónu; strana 3 (Doprava a sklad): dva rôzne realistické čierne kamióny DAHAX (typ Actros, bez značky výrobcu) idú po ceste dole na snímke.
    Vektorová ilustrácia: lesklý čierny lak s odleskom hrán, rebrá návesu, sklá s odrazom, chróm, svetlá, blatníky,
    pneumatiky s ráfikmi (točia sa), tieň. Skutočné logo DAHAX (img/logo/dahax-white.svg – biele s červeným X)
    len na návese / skrini, malé; súbor zostavuje scripts/zostav-doprava.mjs. 1) ťahač s návesom, 2) solo kamión.
@@ -138,6 +138,56 @@
     ["dxd-v dxd-v--solo", SOLO]
   ];
 
+  // ---------- strana 2 (Prečo DAHAX): vysokozdvižný vozík nakladá palety do kamiónu (nadväzuje na rozvoz na strane 3) ----------
+  // vysokozdvižný vozík DAHAX (červený), 112 × 96, zem y = 92, vidlica vpravo
+  var VOZIK =
+    '<svg viewBox="0 0 112 96" width="112" height="96">' +
+    '<ellipse cx="56" cy="92" rx="54" ry="4" fill="url(#dxr-tien)"/>' +
+    '<rect x="66" y="4" width="7" height="80" rx="1" fill="#2a2d32"/><rect x="67" y="4" width="1.5" height="80" fill="#5a5f67"/>' +
+    '<rect x="72" y="60" width="5" height="24" rx="1" fill="#1a1c20"/>' +
+    '<rect x="74" y="79" width="35" height="3.5" rx="1" fill="#3a3e45"/><rect x="74" y="79" width="35" height="1" fill="#7a818a"/>' +
+    '<path d="M6,82 V52 Q6,44 14,44 H52 L61,62 V82 Z" fill="url(#dxr-cerv)"/>' +
+    '<path d="M8,50 Q8,46 13,46 H50" fill="none" stroke="#fff" stroke-width="1.5" opacity=".35"/>' +
+    '<path d="M6,70 H61" stroke="#7a0b10" stroke-width="1.2"/>' +
+    '<path d="M18,44 L24,9 H62 L66,60" fill="none" stroke="#15171a" stroke-width="3.5" stroke-linejoin="round"/>' +
+    '<rect x="22" y="6" width="44" height="4" rx="1" fill="#15171a"/><rect x="40" y="2.5" width="6" height="3.5" rx="1" fill="#f5a623"/>' +
+    '<path d="M28,44 V34 Q28,30 32,30 H38 V44 Z" fill="#101113"/>' +
+    '<circle cx="45" cy="23" r="5.5" fill="#2f3339"/><path d="M40,22 Q45,15 50,22" fill="#de1f26"/>' +
+    '<path d="M38,44 V33 Q38,29 42,29 H48 Q51,29 52,33 L55,44 Z" fill="#1f2227"/><rect x="39" y="36" width="14" height="2" fill="#d7dbe0" opacity=".8"/>' +
+    '<path d="M52,37 L59,41" stroke="#111" stroke-width="2.2" stroke-linecap="round"/>' +
+    '<rect x="58" y="64" width="5" height="4" rx="1" fill="#fff6d2"/>' +
+    koleso(18, 84, 8) + koleso(55, 82, 10) +
+    "</svg>";
+  // paleta s tovarom (kartóny, fólia), 40 × 46, spodok y = 46
+  var paleta = function (x, y) {
+    return '<g transform="translate(' + x + "," + y + ')">' +
+      '<rect x="1" y="39" width="38" height="7" fill="#7b5a34"/><rect x="1" y="39" width="38" height="1.5" fill="#a17a4b"/>' +
+      '<rect x="3" y="42" width="6" height="4" fill="#3b2a17"/><rect x="17" y="42" width="6" height="4" fill="#3b2a17"/><rect x="31" y="42" width="6" height="4" fill="#3b2a17"/>' +
+      '<rect x="2" y="5" width="36" height="34" fill="#b98b55"/>' +
+      '<path d="M2,16 H38 M2,27 H38 M14,5 V16 M26,16 V27 M14,27 V39" stroke="#8c6438" stroke-width="1"/>' +
+      '<rect x="2" y="5" width="36" height="3" fill="#d2a46b"/>' +
+      '<rect x="2" y="20" width="36" height="2.5" fill="#de1f26" opacity=".85"/>' +
+      '<path d="M4,7 L12,37" stroke="#fff" stroke-width="2" opacity=".16"/>' +
+      "</g>";
+  };
+  var PALETA = '<svg viewBox="0 0 40 46" width="40" height="46">' + paleta(0, 0) + "</svg>";
+  var STOH = '<svg viewBox="0 0 132 92" width="132" height="92">' +
+    '<ellipse cx="66" cy="90" rx="66" ry="3" fill="url(#dxr-tien)"/>' +
+    paleta(0, 46) + paleta(44, 46) + paleta(88, 46) + paleta(22, 0) + paleta(66, 0) + "</svg>";
+
+  function vlozNakladku(sec) {
+    if (sec.querySelector(":scope > .dxn")) return;
+    var d = document.createElement("div");
+    d.className = "dxn";
+    d.setAttribute("aria-hidden", "true");
+    d.innerHTML = DEFS + '<div class="dxd-cesta"></div>' +
+      '<div class="dxn-stoh">' + STOH + "</div>" +
+      '<div class="dxn-paleta">' + PALETA + "</div>" +
+      '<div class="dxn-kamion">' + KAMION + "</div>" +
+      '<div class="dxn-vozik">' + VOZIK + "</div>";
+    sec.appendChild(d);
+  }
+
   function vloz(sec) {
     if (sec.querySelector(":scope > .dxd")) return;
     var d = document.createElement("div");
@@ -151,6 +201,7 @@
 
   function kontrola() {
     document.querySelectorAll("section.s:has(> .s__in.logi)").forEach(vloz);
+    document.querySelectorAll("section.s:has(> .s__in.why)").forEach(vlozNakladku);
     setTimeout(kontrola, 400);
   }
   kontrola();
