@@ -138,14 +138,14 @@
     ["dxd-v dxd-v--solo", SOLO]
   ];
 
-  // ---------- strana 2 (Prečo DAHAX): vysokozdvižný vozík nakladá palety do kamiónu (nadväzuje na rozvoz na strane 3) ----------
-  // vysokozdvižný vozík DAHAX (červený), 112 × 96, zem y = 92, vidlica vpravo
+  // ---------- strana 2 (Prečo DAHAX): vysokozdvižný vozík nakladá 10 paliet do kamiónu, kamión odíde na rozvoz ----------
+  // vysokozdvižný vozík DAHAX (červený), 112 × 96, zem y = 92, vidlica vpravo; vidlica (.dxn-vidly) sa zdvíha
   var VOZIK =
     '<svg viewBox="0 0 112 96" width="112" height="96">' +
     '<ellipse cx="56" cy="92" rx="54" ry="4" fill="url(#dxr-tien)"/>' +
     '<rect x="66" y="4" width="7" height="80" rx="1" fill="#2a2d32"/><rect x="67" y="4" width="1.5" height="80" fill="#5a5f67"/>' +
-    '<rect x="72" y="60" width="5" height="24" rx="1" fill="#1a1c20"/>' +
-    '<rect x="74" y="79" width="35" height="3.5" rx="1" fill="#3a3e45"/><rect x="74" y="79" width="35" height="1" fill="#7a818a"/>' +
+    '<g class="dxn-vidly"><rect x="72" y="62" width="5" height="28" rx="1" fill="#1a1c20"/>' +
+    '<rect x="74" y="88" width="35" height="3.5" rx="1" fill="#3a3e45"/><rect x="74" y="88" width="35" height="1" fill="#7a818a"/></g>' +
     '<path d="M6,82 V52 Q6,44 14,44 H52 L61,62 V82 Z" fill="url(#dxr-cerv)"/>' +
     '<path d="M8,50 Q8,46 13,46 H50" fill="none" stroke="#fff" stroke-width="1.5" opacity=".35"/>' +
     '<path d="M6,70 H61" stroke="#7a0b10" stroke-width="1.2"/>' +
@@ -159,33 +159,110 @@
     koleso(18, 84, 8) + koleso(55, 82, 10) +
     "</svg>";
   // paleta s tovarom (kartóny, fólia), 40 × 46, spodok y = 46
-  var paleta = function (x, y) {
-    return '<g transform="translate(' + x + "," + y + ')">' +
-      '<rect x="1" y="39" width="38" height="7" fill="#7b5a34"/><rect x="1" y="39" width="38" height="1.5" fill="#a17a4b"/>' +
-      '<rect x="3" y="42" width="6" height="4" fill="#3b2a17"/><rect x="17" y="42" width="6" height="4" fill="#3b2a17"/><rect x="31" y="42" width="6" height="4" fill="#3b2a17"/>' +
-      '<rect x="2" y="5" width="36" height="34" fill="#b98b55"/>' +
-      '<path d="M2,16 H38 M2,27 H38 M14,5 V16 M26,16 V27 M14,27 V39" stroke="#8c6438" stroke-width="1"/>' +
-      '<rect x="2" y="5" width="36" height="3" fill="#d2a46b"/>' +
-      '<rect x="2" y="20" width="36" height="2.5" fill="#de1f26" opacity=".85"/>' +
-      '<path d="M4,7 L12,37" stroke="#fff" stroke-width="2" opacity=".16"/>' +
-      "</g>";
-  };
-  var PALETA = '<svg viewBox="0 0 40 46" width="40" height="46">' + paleta(0, 0) + "</svg>";
-  var STOH = '<svg viewBox="0 0 132 92" width="132" height="92">' +
-    '<ellipse cx="66" cy="90" rx="66" ry="3" fill="url(#dxr-tien)"/>' +
-    paleta(0, 46) + paleta(44, 46) + paleta(88, 46) + paleta(22, 0) + paleta(66, 0) + "</svg>";
+  var PALETA =
+    '<svg viewBox="0 0 40 46" width="40" height="46">' +
+    '<rect x="1" y="39" width="38" height="7" fill="#7b5a34"/><rect x="1" y="39" width="38" height="1.5" fill="#a17a4b"/>' +
+    '<rect x="3" y="42" width="6" height="4" fill="#3b2a17"/><rect x="17" y="42" width="6" height="4" fill="#3b2a17"/><rect x="31" y="42" width="6" height="4" fill="#3b2a17"/>' +
+    '<rect x="2" y="5" width="36" height="34" fill="#b98b55"/>' +
+    '<path d="M2,16 H38 M2,27 H38 M14,5 V16 M26,16 V27 M14,27 V39" stroke="#8c6438" stroke-width="1"/>' +
+    '<rect x="2" y="5" width="36" height="3" fill="#d2a46b"/>' +
+    '<rect x="2" y="20" width="36" height="2.5" fill="#de1f26" opacity=".85"/>' +
+    '<path d="M4,7 L12,37" stroke="#fff" stroke-width="2" opacity=".16"/>' +
+    "</svg>";
+
+  // geometria scény (px, zem = spodok 6 px): stoh 2 × 5 paliet, kamión pri rampe vpravo
+  var ZEM = 6, STOH_X = 150, KROK = 44, RAD = [ZEM, ZEM + 46], KAMION_X = 1000, PODLAHA = ZEM + 37;
+  var VIDLA = 8;             // vrch vidlice nad spodkom vozíka pri spustenej vidlici (paleta sedí 5 px pod vrchom – vidlica je v medzere palety)
+  var POCET = 10;
+  var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
 
   function vlozNakladku(sec) {
     if (sec.querySelector(":scope > .dxn")) return;
     var d = document.createElement("div");
     d.className = "dxn";
     d.setAttribute("aria-hidden", "true");
-    d.innerHTML = DEFS + '<div class="dxd-cesta"></div>' +
-      '<div class="dxn-stoh">' + STOH + "</div>" +
-      '<div class="dxn-paleta">' + PALETA + "</div>" +
-      '<div class="dxn-kamion">' + KAMION + "</div>" +
-      '<div class="dxn-vozik">' + VOZIK + "</div>";
+    var html = DEFS + '<div class="dxd-cesta"></div>';
+    for (var i = 0; i < POCET; i++) {
+      var c = i % 5, r = i < 5 ? 0 : 1;
+      html += '<div class="dxn-p" style="left:' + (STOH_X + c * KROK) + "px;bottom:" + RAD[r] + 'px">' + PALETA + "</div>";
+    }
+    html += '<div class="dxn-dnu">' + PALETA + "</div>" +
+      '<div class="dxn-kamion" style="left:' + KAMION_X + 'px">' + KAMION + '<p class="dxn-pocet">Naložené: <b>0</b> / ' + POCET + "</p></div>" +
+      '<div class="dxn-vozik"><div class="dxn-naklad">' + PALETA + "</div>" + VOZIK + "</div>";
+    d.innerHTML = html;
     sec.appendChild(d);
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) nakladaj(d);
+    else { var v0 = d.querySelector(".dxn-vozik"); v0.style.left = "560px"; }
+  }
+
+  // postup nakladania – riadi ho časovač, prechody (transition) robí CSS
+  async function nakladaj(d) {
+    var voz = d.querySelector(".dxn-vozik"), vidly = voz.querySelector(".dxn-vidly"), naklad = voz.querySelector(".dxn-naklad");
+    var kam = d.querySelector(".dxn-kamion"), dnu = d.querySelector(".dxn-dnu"), pocet = kam.querySelector("b");
+    var palety = [].slice.call(d.querySelectorAll(".dxn-p"));
+    var zive = function () { return d.isConnected; };
+    // pohyb vozíka: x = ľavý okraj, smer 1 = vidlica vpravo (ku kamiónu), -1 = vľavo (k stohu), zdvih = px
+    var stav = { x: 420, smer: -1, zdvih: 0 };
+    var nastav = function (ms, o) {
+      for (var k in o) stav[k] = o[k];
+      voz.style.transitionDuration = ms + "ms";
+      vidly.style.transitionDuration = naklad.style.transitionDuration = ms + "ms";
+      voz.style.left = stav.x + "px";
+      voz.style.transform = "scaleX(" + stav.smer + ")";
+      vidly.style.transform = "translateY(" + -stav.zdvih + "px)";
+      naklad.style.bottom = VIDLA - 5 + stav.zdvih + "px";
+      return wait(ms + 60);
+    };
+    nastav(0, {});
+    while (zive()) {
+      for (var i = 0; i < POCET && zive(); i++) {
+        // vrchný rad sprava doľava, potom spodný
+        var idx = i < 5 ? 9 - i : 4 - (i - 5), p = palety[idx];
+        var px = STOH_X + (idx % 5) * KROK, dno = RAD[idx < 5 ? 0 : 1];
+        var zdvihPick = Math.max(0, dno + 5 - ZEM - VIDLA);
+        // k stohu: vidlica vľavo, zdvihnúť na výšku palety, zajsť pod ňu
+        await nastav(1300, { smer: -1, x: px + 50 });
+        await nastav(450, { zdvih: zdvihPick });
+        await nastav(550, { x: px - 1 });
+        // naložiť
+        p.style.visibility = "hidden";
+        naklad.style.visibility = "visible";
+        await nastav(300, { zdvih: zdvihPick + 5 });
+        await nastav(600, { x: px + 70 });
+        await nastav(400, { zdvih: 4 });
+        // otočiť a ku kamiónu
+        await nastav(400, { smer: 1 });
+        await nastav(1500, { x: KAMION_X + 4 - 111 });
+        await nastav(550, { zdvih: PODLAHA + 1 - ZEM - (VIDLA - 5) });
+        // zasunúť do návesu: paleta prejde do vrstvy pod kamiónom a zmizne za bočnicou
+        await nastav(350, { x: KAMION_X + 4 - 111 + 26 });
+        naklad.style.visibility = "hidden";
+        dnu.style.transition = "none";
+        dnu.style.left = KAMION_X - 9 + "px";
+        dnu.style.bottom = PODLAHA + 1 + "px";
+        dnu.style.visibility = "visible";
+        void dnu.offsetWidth;
+        dnu.style.transition = "left .6s ease-in";
+        dnu.style.left = KAMION_X + 60 + "px";
+        pocet.textContent = i + 1;
+        await nastav(500, { x: KAMION_X + 4 - 111 - 30 });
+        dnu.style.visibility = "hidden";
+        await nastav(400, { zdvih: 0, smer: -1 });
+      }
+      if (!zive()) return;
+      // plný kamión odchádza na rozvoz (pokračuje na snímke 3)
+      await nastav(1500, { x: 560, smer: -1 });
+      kam.classList.add("is-odchod");
+      await wait(3400);
+      // reset: nový prázdny kamión cúva k rampe, stoh sa doplní
+      kam.classList.remove("is-odchod");
+      kam.classList.add("is-prichod");
+      pocet.textContent = "0";
+      palety.forEach(function (q) { q.style.visibility = "visible"; q.classList.add("is-nove"); });
+      await wait(2800);
+      kam.classList.remove("is-prichod");
+      palety.forEach(function (q) { q.classList.remove("is-nove"); });
+    }
   }
 
   function vloz(sec) {

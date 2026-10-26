@@ -7,7 +7,7 @@
      zo siete na požiadanie a nič veľké sa neukladá.
    content.json a index.html: najprv sieť, pri výpadku uložená verzia.
    Písma z Google Fonts sa uložia pri prvom online spustení. */
-const VERSION = "2026-10-26-nakladka";
+const VERSION = "2026-10-26-nakladka-b";
 const PRECACHE = "dahax-" + VERSION;
 const RUNTIME = "dahax-runtime";
 const MEDIA_CACHE = "dahax-media";
