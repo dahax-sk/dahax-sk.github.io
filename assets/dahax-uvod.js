@@ -215,3 +215,18 @@
   }
   kontrola();
 })();
+
+// strana 2 – prelesknutie červeného rámčeka 01 nepravidelne: o 3, 5, 8 s (dokola); štýl .why__feature.is-lesk v dahax-uvod.css
+(function () {
+  var ODSTUPY = [3000, 5000, 8000], k = 0; // dxl-lesk
+  function lesk() {
+    var f = document.querySelector(".s__in.why .why__feature");
+    if (f && document.visibilityState === "visible") {
+      f.classList.remove("is-lesk");
+      void f.offsetWidth;
+      f.classList.add("is-lesk");
+    }
+    setTimeout(lesk, ODSTUPY[k++ % ODSTUPY.length]);
+  }
+  setTimeout(lesk, 3000);
+})();

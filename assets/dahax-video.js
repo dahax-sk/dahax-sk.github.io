@@ -78,7 +78,7 @@
     const v = make(src, "dxv-ov__v", true);
     v.autoplay = true;
     ov.appendChild(v);
-    ov.appendChild(logo());
+    ov.appendChild(logo(v));
     ov.querySelector("button").addEventListener("click", close);
     ov.addEventListener("click", (e) => { if (e.target === ov) close(); });
     document.body.appendChild(ov);
@@ -111,13 +111,47 @@
     t.textContent = name;
     host.appendChild(t);
   };
-  // logo DAHAX počas prehrávania – prezentujeme výrobcu, ale za DAHAX
+  // logo DAHAX počas prehrávania – prezentujeme výrobcu, ale za DAHAX. Vpravo, v obraze videa (nie v ráme okolo):
+  // pri záberoch s logom KLIMAS vpravo hore je DAHAX tesne pod ním, pri animáciách (Wkręt-met vľavo hore,
+  // ikony vpravo hore, CE vpravo dole) na voľnom mieste vpravo. t = vrch, r = odstup sprava, w = šírka – % šírky/výšky obrazu;
+  // svetlé animácie majú tmavé logo (ink), inak by biele logo na bielom pozadí nebolo vidieť.
   const LOGO = "img/logo/dahax-white.svg";
-  const logo = () => {
+  const LOGO_TMAVE = "img/logo/dahax-ink.svg";
+  const POD_KLIMAS = { t: 12, r: 3.2, w: 10.5 };
+  const NAD_CE = { t: 66, r: 3.2, w: 10.5, ink: 1 };
+  const MIESTO = {
+    "klimas-drevostavba": POD_KLIMAS, "klimas-le": POD_KLIMAS, "klimas-skrutky-do-dreva": POD_KLIMAS,
+    "klimas-thermodrive-v2": POD_KLIMAS, "klimas-wkss": POD_KLIMAS, "klimas-wkfc-wkfs": POD_KLIMAS,
+    "klimas-wkcp-wkcs": POD_KLIMAS, "klimas-firma": POD_KLIMAS,
+    "klimas-eco-drive-s": NAD_CE, "klimas-eco-drive-w": NAD_CE,
+    "klimas-kpr-kps-fast": NAD_CE, "klimas-fixplug": NAD_CE,
+    "klimas-lino": NAD_CE, "klimas-sfx": NAD_CE,
+    "klimas-wktherm-s": NAD_CE, "klimas-wfd": NAD_CE,
+    "klimas-ws": { t: 6, r: 3.2, w: 10.5, ink: 1 }, "klimas-chemicke-kotvy": { t: 84, r: 3.2, w: 10.5, ink: 1 },
+  };
+  const umiestni = (v, i) => {
+    if (!i.isConnected) return;
+    const W = v.videoWidth, H = v.videoHeight, b = v.getBoundingClientRect();
+    if (W && H && b.width) {
+      const m = MIESTO[(rel(v.currentSrc || v.src).split("/").pop() || "").replace(/.mp4$/, "")] || POD_KLIMAS;
+      const fit = getComputedStyle(v).objectFit, k = fit === "cover" ? Math.max(b.width / W, b.height / H) : Math.min(b.width / W, b.height / H);
+      const w = W * k, h = H * k, x = b.left + (b.width - w) / 2, y = b.top + (b.height - h) / 2;
+      const fixed = getComputedStyle(i).position === "fixed", p = fixed ? { left: 0, top: 0 } : (i.offsetParent || v.parentNode).getBoundingClientRect();
+      const lw = Math.max(64, (w * m.w) / 100), src = m.ink ? LOGO_TMAVE : LOGO;
+      if (!i.src.endsWith(src)) i.src = src;
+      i.classList.toggle("is-ink", !!m.ink);
+      i.style.width = lw + "px";
+      i.style.left = x + w - (w * m.r) / 100 - lw - p.left + "px";
+      i.style.top = y + (h * m.t) / 100 - p.top + "px";
+    }
+    setTimeout(() => umiestni(v, i), 700);
+  };
+  const logo = (v) => {
     const i = document.createElement("img");
     i.className = "dxv-logo";
     i.src = LOGO;
     i.alt = "DAHAX";
+    if (v) setTimeout(() => umiestni(v, i), 0);
     return i;
   };
   // obrázok výrobku so šípkou – video sa spustí až po kliknutí
@@ -141,7 +175,7 @@
     });
     v.addEventListener("play", () => host.classList.add("dxv-playing"));
     v.addEventListener("pause", () => host.classList.remove("dxv-playing"));
-    host.append(b, logo());
+    host.append(b, logo(v));
   };
   const rel = (src) => (src || "").replace(location.href.replace(/[#?].*$/, "").replace(/[^/]*$/, ""), "");
 

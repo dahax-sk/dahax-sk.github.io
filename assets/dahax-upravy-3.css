@@ -247,6 +247,9 @@
 /* úvodná snímka KLIMAS: video výraznejšie a kontrastnejšie – čiernobiely obraz zafarbený do červenej (multiply) */
 .brand--red .dxv-bg{opacity:.92;filter:grayscale(1) contrast(1.5) brightness(1.08)}
 .brand--red .brand__side:has(.dxv-bg)::after{mix-blend-mode:multiply;background:linear-gradient(180deg,rgba(222,31,38,.92) 0%,rgba(222,31,38,.92) 50%,rgba(150,14,20,.97) 100%)}
+/* úvodná snímka HOLCIM (téma navy): video rovnako ako pri KLIMAS – čiernobiely obraz zafarbený do farieb Holcim #1D4370 → #117DAF (multiply), dole tmavší pás */
+.brand--navy .dxv-bg{opacity:.92;mix-blend-mode:normal;filter:grayscale(1) contrast(1.5) brightness(1.12)}
+.brand--navy .brand__side:has(.dxv-bg)::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:multiply;background:linear-gradient(180deg,rgba(17,125,175,.9) 0%,rgba(29,67,112,.92) 55%,rgba(16,40,70,.97) 100%)}
 /* dlaždice výrobkov: rovnaká výška textu (názov + 2 riadky popisu) → obrázky a názvy v riadku na jednej línii */
 .tile{grid-template-rows:minmax(0,1fr) 86px}
 .tile img{padding:18px 18px 10px}
@@ -376,3 +379,4 @@
 .dxr-ov__sip{position:absolute;top:50%;width:64px;height:96px;margin-top:-48px;border:0;background:rgba(14,15,18,.7);color:#fff;font:300 54px/1 sans-serif;cursor:pointer}
 .dxr-ov__sip--l{left:24px}.dxr-ov__sip--r{right:24px}
 .dxr-ov__sip:hover,.dxr-ov__x:hover{background:var(--red,#de1f26)}
+.dxv-logo.is-ink{filter:drop-shadow(0 0 3px rgba(255,255,255,.85))} /* tmavé logo DAHAX na svetlých animáciách KLIMAS */

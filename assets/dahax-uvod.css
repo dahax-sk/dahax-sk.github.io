@@ -189,11 +189,10 @@
 .dxn-sofer.is-ide .dxn-noha{animation:dxn-krok .6s ease-in-out infinite}
 .dxn-sofer.is-ide .dxn-noha--2{animation-delay:-.3s}
 @keyframes dxn-krok{0%,100%{transform:rotate(16deg)}50%{transform:rotate(-16deg)}}
-/* strana 2 – jemné biele prelesknutie nadpisu „Prečo nakupovať od DAHAX?“ a rámčeka „Priame zastúpenie výrobcov“ (sem-tam, pre pozornosť) */
-.s__in.why>header h1{background:linear-gradient(105deg,rgba(255,255,255,.9) 0 43%,#fff 48%,#fff 52%,rgba(255,255,255,.9) 57% 100%) 120% 0/260% 100% no-repeat;-webkit-background-clip:text;background-clip:text;color:transparent;
-  animation-name:rise,dxl-lesk-text;animation-duration:.7s,9s;animation-timing-function:cubic-bezier(.22,.8,.24,1),ease-in-out;animation-iteration-count:1,infinite;animation-fill-mode:both,none}
+/* strana 2 – jemné biele prelesknutie červeného rámčeka 01 „Priame zastúpenie výrobcov“ v nepravidelných odstupoch 3 / 5 / 8 s
+   (triedu .is-lesk prepína dahax-uvod.js); nadpis „Prečo nakupovať od DAHAX?“ bez lesku – želanie používateľa */
 .why__feature{position:relative}
-.why__feature::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 38%,rgba(255,255,255,.3) 50%,transparent 62%) 130% 0/260% 100% no-repeat;animation:dxl-lesk 9s ease-in-out 4.5s infinite}
-@keyframes dxl-lesk-text{0%,78%{background-position:120% 0;filter:none}86%{filter:drop-shadow(0 0 12px rgba(255,255,255,.45))}94%,100%{background-position:-20% 0;filter:none}}
-@keyframes dxl-lesk{0%,80%{background-position:130% 0}96%,100%{background-position:-30% 0}}
-@media (prefers-reduced-motion:reduce){.s__in.why>header h1{animation-name:rise}.why__feature::after{animation:none;display:none}}
+.why__feature::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 38%,rgba(255,255,255,.3) 50%,transparent 62%) 130% 0/260% 100% no-repeat}
+.why__feature.is-lesk::after{animation:dxl-lesk 1.3s ease-in-out}
+@keyframes dxl-lesk{from{background-position:130% 0}to{background-position:-30% 0}}
+@media (prefers-reduced-motion:reduce){.why__feature::after{display:none}}

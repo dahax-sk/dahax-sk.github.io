@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.35",
+  "version": "2026-10-26.38",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -756,192 +756,6 @@
           "note": "Novinka: plný závit WKFC a WKFS. Všetky veľkosti na sk.e-klimas.com."
         },
         {
-          "id": "top-klinove-kotvy",
-          "name": "Klinové kotvy",
-          "eyebrow": "KLIMAS – TOP doplnky",
-          "title": "Klinové expanzné kotvy",
-          "intro": "Klinové kotvy LE na oceľové konštrukcie, zábradlia, stroje a zariadenia aj spodné konštrukcie fasád. Montáž zatĺkaním a utiahnutím, okamžitá nosnosť a požiarna odolnosť R30 – R120.",
-          "image": "img/klimas/doplnky/panel-klinove-kotvy.webp",
-          "products": [
-            {
-              "id": "le-a4",
-              "name": "LE-A4",
-              "type": "Mechanická kotva · nerez A4",
-              "description": "Vonku aj v agresívnom a priemyselnom prostredí – fasády, zábradlia, stroje a zariadenia.",
-              "specs": [
-                {
-                  "value": "M8 – M16",
-                  "label": "veľkosti",
-                  "accent": true
-                },
-                {
-                  "value": "60 – 165 mm",
-                  "label": "dĺžky"
-                },
-                {
-                  "value": "R30 – R120",
-                  "label": "požiarna odolnosť"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "ETA-20/0641 – LE-A4 (SK)",
-                  "href": "docs/klimas/eta-20-0641-le-a4-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Technický list – LE-A4 (SK)",
-                  "href": "docs/klimas/technicky-list-le-a4-sk.pdf",
-                  "kind": "technicky-list"
-                }
-              ],
-              "video": "video/klimas/klimas-le.mp4"
-            },
-            {
-              "id": "le-zna4",
-              "name": "LE-ZNA4",
-              "type": "Mechanická kotva · zinok + nerezový klin A4",
-              "description": "Vnútri budov a v neagresívnom prostredí; klin z nerezovej ocele A4.",
-              "specs": [
-                {
-                  "value": "M8 – M16",
-                  "label": "veľkosti",
-                  "accent": true
-                },
-                {
-                  "value": "60 – 165 mm",
-                  "label": "dĺžky"
-                },
-                {
-                  "value": "R30 – R120",
-                  "label": "požiarna odolnosť"
-                }
-              ]
-            },
-            {
-              "id": "le-da4",
-              "name": "LE-DA4",
-              "type": "Mechanická kotva · Stal Ceramic + klin A4",
-              "description": "Viacvrstvový hliníkovo-zinkový povlak Stal Ceramic – ochrana C4 do 15 rokov; klin z nerezu A4.",
-              "specs": [
-                {
-                  "value": "Ø 8 – 16 mm",
-                  "label": "priemer vrtáka",
-                  "accent": true
-                },
-                {
-                  "value": "C4 · 15 rokov",
-                  "label": "ochrana proti korózii"
-                }
-              ]
-            },
-            {
-              "id": "le-zn",
-              "name": "LE-ZN",
-              "type": "Mechanická kotva · galvanický zinok",
-              "description": "Vnútri budov – oceľové doplnky, balustrády, ľahké a stredne veľké kovové konštrukcie.",
-              "specs": [
-                {
-                  "value": "M8 – M16",
-                  "label": "veľkosti",
-                  "accent": true
-                },
-                {
-                  "value": "60 – 165 mm",
-                  "label": "dĺžky"
-                },
-                {
-                  "value": "R30 – R120",
-                  "label": "požiarna odolnosť"
-                }
-              ],
-              "video": "video/klimas/klimas-le.mp4"
-            }
-          ],
-          "note": "Ochrana proti korózii: zinok 5 µm · Stal Ceramic C4 – 15 rokov · nerez A4 – 50 rokov."
-        },
-        {
-          "id": "top-etics-skrutkovacie",
-          "name": "ETICS skrutkovacie",
-          "eyebrow": "KLIMAS – TOP doplnky",
-          "title": "Skrutkovacie fasádne hmoždinky",
-          "intro": "Skrutkovacie hmoždinky s kovovým tŕňom pre polystyrén aj minerálnu vlnu – teleskopické ECO-DRIVE na zapustenú montáž bez frézy, DRIVE S na drevený podklad.",
-          "image": "img/klimas/doplnky/panel-etics-skrutkovacie.webp",
-          "products": [
-            {
-              "id": "eco-drive-w-8",
-              "name": "ECO-DRIVE W 8",
-              "type": "Teleskopická · minerálna vlna",
-              "description": "Kotúč z minerálnej vlny minimalizuje tepelné mosty; hmoždinka je predmontovaná s tŕňom.",
-              "specs": [
-                {
-                  "value": "Ø 8 mm",
-                  "label": "priemer",
-                  "accent": true
-                },
-                {
-                  "value": "150 – 430 mm",
-                  "label": "dĺžky"
-                }
-              ],
-              "video": "video/klimas/klimas-eco-drive-w.mp4"
-            },
-            {
-              "id": "eco-drive-8",
-              "name": "ECO-DRIVE 8",
-              "type": "Teleskopická · prítlačný tanier · polystyrén",
-              "description": "Rezná príruba na zapustenú montáž bez frézy; tŕň TX-40 – vhodná aj do materiálov s dutinami.",
-              "specs": [
-                {
-                  "value": "Ø 8 mm",
-                  "label": "priemer",
-                  "accent": true
-                },
-                {
-                  "value": "150 – 430 mm",
-                  "label": "dĺžky"
-                }
-              ]
-            },
-            {
-              "id": "eco-drive-s-8",
-              "name": "ECO-DRIVE S 8",
-              "type": "Teleskopická · predmontovaná · polystyrén",
-              "description": "Predmontovaná s tŕňom – vždy správne zvolený spojovací prvok; polystyrénový krúžok proti tepelným mostom.",
-              "specs": [
-                {
-                  "value": "Ø 8 mm",
-                  "label": "priemer",
-                  "accent": true
-                },
-                {
-                  "value": "150 – 430 mm",
-                  "label": "dĺžky"
-                }
-              ],
-              "video": "video/klimas/klimas-eco-drive-s.mp4"
-            },
-            {
-              "id": "drive-s",
-              "name": "DRIVE S",
-              "type": "Kovový tŕň so závitom do dreva",
-              "description": "Polystyrén na drevený podklad; zátky z penového polystyrénu sú v súprave.",
-              "specs": [
-                {
-                  "value": "Ø 6 mm",
-                  "label": "priemer skrutky",
-                  "accent": true
-                },
-                {
-                  "value": "110 – 310 mm",
-                  "label": "dĺžky"
-                }
-              ]
-            }
-          ],
-          "note": "Príslušenstvo: fréza WK-FT, zátky KS, KSG a EDMW, podložky DW, hmoždinky WK-DS, mriežka SWS."
-        },
-        {
           "id": "top-skrutky-drevo",
           "name": "Skrutky do dreva",
           "eyebrow": "KLIMAS – TOP doplnky",
@@ -1072,6 +886,111 @@
           "note": "Terasy: WN, HNT, WT (nerez A2) · podložka PWKCS · SQ Ceramic – 10× väčšia antikorózna ochrana ako zinok 5 µm."
         },
         {
+          "id": "top-klinove-kotvy",
+          "name": "Klinové kotvy",
+          "eyebrow": "KLIMAS – TOP doplnky",
+          "title": "Klinové expanzné kotvy",
+          "intro": "Klinové kotvy LE na oceľové konštrukcie, zábradlia, stroje a zariadenia aj spodné konštrukcie fasád. Montáž zatĺkaním a utiahnutím, okamžitá nosnosť a požiarna odolnosť R30 – R120.",
+          "image": "img/klimas/doplnky/panel-klinove-kotvy.webp",
+          "products": [
+            {
+              "id": "le-a4",
+              "name": "LE-A4",
+              "type": "Mechanická kotva · nerez A4",
+              "description": "Vonku aj v agresívnom a priemyselnom prostredí – fasády, zábradlia, stroje a zariadenia.",
+              "specs": [
+                {
+                  "value": "M8 – M16",
+                  "label": "veľkosti",
+                  "accent": true
+                },
+                {
+                  "value": "60 – 165 mm",
+                  "label": "dĺžky"
+                },
+                {
+                  "value": "R30 – R120",
+                  "label": "požiarna odolnosť"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-20/0641 – LE-A4 (SK)",
+                  "href": "docs/klimas/eta-20-0641-le-a4-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – LE-A4 (SK)",
+                  "href": "docs/klimas/technicky-list-le-a4-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ],
+              "video": "video/klimas/klimas-le.mp4"
+            },
+            {
+              "id": "le-zna4",
+              "name": "LE-ZNA4",
+              "type": "Mechanická kotva · zinok + nerezový klin A4",
+              "description": "Vnútri budov a v neagresívnom prostredí; klin z nerezovej ocele A4.",
+              "specs": [
+                {
+                  "value": "M8 – M16",
+                  "label": "veľkosti",
+                  "accent": true
+                },
+                {
+                  "value": "60 – 165 mm",
+                  "label": "dĺžky"
+                },
+                {
+                  "value": "R30 – R120",
+                  "label": "požiarna odolnosť"
+                }
+              ]
+            },
+            {
+              "id": "le-da4",
+              "name": "LE-DA4",
+              "type": "Mechanická kotva · Stal Ceramic + klin A4",
+              "description": "Viacvrstvový hliníkovo-zinkový povlak Stal Ceramic – ochrana C4 do 15 rokov; klin z nerezu A4.",
+              "specs": [
+                {
+                  "value": "Ø 8 – 16 mm",
+                  "label": "priemer vrtáka",
+                  "accent": true
+                },
+                {
+                  "value": "C4 · 15 rokov",
+                  "label": "ochrana proti korózii"
+                }
+              ]
+            },
+            {
+              "id": "le-zn",
+              "name": "LE-ZN",
+              "type": "Mechanická kotva · galvanický zinok",
+              "description": "Vnútri budov – oceľové doplnky, balustrády, ľahké a stredne veľké kovové konštrukcie.",
+              "specs": [
+                {
+                  "value": "M8 – M16",
+                  "label": "veľkosti",
+                  "accent": true
+                },
+                {
+                  "value": "60 – 165 mm",
+                  "label": "dĺžky"
+                },
+                {
+                  "value": "R30 – R120",
+                  "label": "požiarna odolnosť"
+                }
+              ],
+              "video": "video/klimas/klimas-le.mp4"
+            }
+          ],
+          "note": "Ochrana proti korózii: zinok 5 µm · Stal Ceramic C4 – 15 rokov · nerez A4 – 50 rokov."
+        },
+        {
           "id": "top-univerzalne-ramove",
           "name": "Univerzálne a rámové",
           "eyebrow": "KLIMAS – TOP doplnky",
@@ -1167,6 +1086,87 @@
             }
           ],
           "note": "SFX – 100 % nylon, aj do sadrokartónu · rámové hmoždinky Ø 10 / 12 / 14 mm · povlaky zinok, zinkové vločky, SQ Ceramic a nerez A4."
+        },
+        {
+          "id": "top-etics-skrutkovacie",
+          "name": "ETICS skrutkovacie",
+          "eyebrow": "KLIMAS – TOP doplnky",
+          "title": "Skrutkovacie fasádne hmoždinky",
+          "intro": "Skrutkovacie hmoždinky s kovovým tŕňom pre polystyrén aj minerálnu vlnu – teleskopické ECO-DRIVE na zapustenú montáž bez frézy, DRIVE S na drevený podklad.",
+          "image": "img/klimas/doplnky/panel-etics-skrutkovacie.webp",
+          "products": [
+            {
+              "id": "eco-drive-w-8",
+              "name": "ECO-DRIVE W 8",
+              "type": "Teleskopická · minerálna vlna",
+              "description": "Kotúč z minerálnej vlny minimalizuje tepelné mosty; hmoždinka je predmontovaná s tŕňom.",
+              "specs": [
+                {
+                  "value": "Ø 8 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "150 – 430 mm",
+                  "label": "dĺžky"
+                }
+              ],
+              "video": "video/klimas/klimas-eco-drive-w.mp4"
+            },
+            {
+              "id": "eco-drive-8",
+              "name": "ECO-DRIVE 8",
+              "type": "Teleskopická · prítlačný tanier · polystyrén",
+              "description": "Rezná príruba na zapustenú montáž bez frézy; tŕň TX-40 – vhodná aj do materiálov s dutinami.",
+              "specs": [
+                {
+                  "value": "Ø 8 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "150 – 430 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            },
+            {
+              "id": "eco-drive-s-8",
+              "name": "ECO-DRIVE S 8",
+              "type": "Teleskopická · predmontovaná · polystyrén",
+              "description": "Predmontovaná s tŕňom – vždy správne zvolený spojovací prvok; polystyrénový krúžok proti tepelným mostom.",
+              "specs": [
+                {
+                  "value": "Ø 8 mm",
+                  "label": "priemer",
+                  "accent": true
+                },
+                {
+                  "value": "150 – 430 mm",
+                  "label": "dĺžky"
+                }
+              ],
+              "video": "video/klimas/klimas-eco-drive-s.mp4"
+            },
+            {
+              "id": "drive-s",
+              "name": "DRIVE S",
+              "type": "Kovový tŕň so závitom do dreva",
+              "description": "Polystyrén na drevený podklad; zátky z penového polystyrénu sú v súprave.",
+              "specs": [
+                {
+                  "value": "Ø 6 mm",
+                  "label": "priemer skrutky",
+                  "accent": true
+                },
+                {
+                  "value": "110 – 310 mm",
+                  "label": "dĺžky"
+                }
+              ]
+            }
+          ],
+          "note": "Príslušenstvo: fréza WK-FT, zátky KS, KSG a EDMW, podložky DW, hmoždinky WK-DS, mriežka SWS."
         },
         {
           "id": "top-etics-natlkacie",
@@ -2327,18 +2327,59 @@
       ],
       "eyebrow": "Kamenná vlna",
       "tagline": "Kamenná vlna pre fasády ETICS a ploché strechy.",
-      "theme": "light",
+      "theme": "navy",
       "categories": [
         {
           "id": "fasady",
-          "name": "Fasády",
-          "title": "PRO FACADE 35",
+          "name": "Fasády ETICS",
+          "eyebrow": "HOLCIM – fasády ETICS",
+          "title": "Kamenná vlna pre fasády ETICS",
+          "intro": "Štyri fasádne dosky HOLCIM FACADE – od najnižšej λD 0,034 po tuhú dosku S. Všetky nehorľavé A1, hydrofóbne a paropriepustné.",
+          "image": "img/holcim/holcim-dom-fasada.webp",
+          "imageCaption": "Kontaktný zatepľovací systém ETICS s kamennou vlnou HOLCIM",
           "products": [
             {
-              "id": "pro-facade-35",
-              "name": "PRO FACADE 35",
-              "description": "Kamenná vlna pre náročné zatepľovacie systémy ETICS so zvýšenou mechanickou odolnosťou – aj pre sokle a nižšie podlažia.",
-              "image": "img/product/holcim-pro-facade-35.webp",
+              "id": "facade-34",
+              "name": "HOLCIM FACADE 34",
+              "description": "Vrchol línie – najlepšia izolácia pri najmenšej hrúbke steny.",
+              "specs": [
+                {
+                  "value": "0,034",
+                  "label": "λD [W/(m·K)]",
+                  "accent": true
+                },
+                {
+                  "value": "≥ 20 kPa",
+                  "label": "pevnosť v tlaku CS(10)"
+                },
+                {
+                  "value": "≥ 10 kPa",
+                  "label": "pevnosť v ťahu TR"
+                },
+                {
+                  "value": "50 – 250 mm",
+                  "label": "hrúbky, doska 1200 × 600 mm"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – HOLCIM FACADE 34 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-facade-34_0.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – HOLCIM FACADE 34 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-facade-34-pl.pdf",
+                  "kind": "vyhlasenie",
+                  "external": true
+                }
+              ]
+            },
+            {
+              "id": "facade-35",
+              "name": "HOLCIM FACADE 35",
+              "description": "Pre náročné systémy ETICS a nízkoenergetické domy – výrazne znižuje tepelné straty budovy.",
               "specs": [
                 {
                   "value": "0,035",
@@ -2346,35 +2387,124 @@
                   "accent": true
                 },
                 {
-                  "value": "≥ 30 kPa",
+                  "value": "≥ 20 kPa",
                   "label": "pevnosť v tlaku CS(10)"
                 },
                 {
-                  "value": "A1",
-                  "label": "nehorľavý výrobok",
-                  "accent": true
+                  "value": "≥ 200 N",
+                  "label": "bodové zaťaženie PL(5)"
                 },
                 {
-                  "value": "hydrofóbna",
-                  "label": "doska neabsorbuje vodu"
-                },
-                {
-                  "value": "50–250 mm",
+                  "value": "50 – 250 mm",
                   "label": "hrúbky, doska 1200 × 600 mm"
                 }
               ],
               "documents": [
                 {
-                  "title": "Vyhlásenie o parametroch (DoP) – PRO FACADE 35",
-                  "href": "docs/holcim/vyhlasenie-o-parametroch-dop-pro-facade-35.pdf",
-                  "kind": "vyhlasenie"
+                  "title": "Technický list – HOLCIM FACADE 35 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-facade-35.pdf",
+                  "kind": "technicky-list",
+                  "external": true
                 },
                 {
-                  "title": "Certifikát 1454-CPR-0292 – kamenná vlna",
-                  "href": "docs/holcim/certifikat-1454-cpr-0292-kamenna-vlna.pdf",
-                  "kind": "certifikat"
+                  "title": "Vyhlásenie o parametroch – HOLCIM FACADE 35 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-facade-35-pl.pdf",
+                  "kind": "vyhlasenie",
+                  "external": true
                 }
               ]
+            },
+            {
+              "id": "facade-39",
+              "name": "HOLCIM FACADE 39",
+              "description": "Overená doska pre bežné ETICS – tepelná aj zvuková izolácia, vyššia pevnosť.",
+              "specs": [
+                {
+                  "value": "0,039",
+                  "label": "λD [W/(m·K)]",
+                  "accent": true
+                },
+                {
+                  "value": "≥ 40 kPa",
+                  "label": "pevnosť v tlaku CS(10)"
+                },
+                {
+                  "value": "≥ 15 kPa",
+                  "label": "pevnosť v ťahu TR"
+                },
+                {
+                  "value": "20 – 200 mm",
+                  "label": "hrúbky, doska 1200 × 600 mm"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – HOLCIM FACADE 39 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-facade-39.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – HOLCIM FACADE 39 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-facade-39-pl.pdf",
+                  "kind": "vyhlasenie",
+                  "external": true
+                }
+              ]
+            },
+            {
+              "id": "facade-s",
+              "name": "HOLCIM FACADE S",
+              "description": "Tenká tuhá doska s nepravidelnou štruktúrou vlákien, odolnejšia voči poškodeniu.",
+              "specs": [
+                {
+                  "value": "0,037",
+                  "label": "λD [W/(m·K)], hrúbka < 50 mm",
+                  "accent": true
+                },
+                {
+                  "value": "≥ 30 kPa",
+                  "label": "pevnosť v tlaku CS(10)"
+                },
+                {
+                  "value": "≥ 15 kPa",
+                  "label": "pevnosť v ťahu TR"
+                },
+                {
+                  "value": "20 – 50 mm",
+                  "label": "hrúbky, doska 1200 × 600 mm"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – HOLCIM FACADE S (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-facade-s.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – HOLCIM FACADE S (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-facade-s-pl.pdf",
+                  "kind": "vyhlasenie",
+                  "external": true
+                }
+              ]
+            }
+          ],
+          "specs": [
+            {
+              "value": "0,034",
+              "label": "λD [W/(m·K)] – HOLCIM FACADE 34",
+              "accent": true
+            },
+            {
+              "value": "A1",
+              "label": "nehorľavé dosky",
+              "accent": true
+            },
+            {
+              "value": "20 – 250 mm",
+              "label": "rozsah hrúbok, doska 1200 × 600 mm"
             }
           ]
         },
@@ -2383,28 +2513,26 @@
           "name": "Ploché strechy",
           "eyebrow": "HOLCIM – ploché strechy",
           "title": "Systém HOLCIM ROOF",
-          "intro": "Dvojvrstvová skladba BASE + TOP a spádové dosky TAPERED – všetko nehorľavé A1 a hydrofóbne.",
+          "intro": "Spodná vrstva BASE, vrchná vrstva TOP, jednovrstvová SOLO a spádové dosky TAPERED – od rodinného domu po logistickú halu.",
+          "image": "img/holcim/holcim-hala-strecha.webp",
+          "numbered": true,
           "products": [
             {
-              "id": "roof-base-30",
-              "name": "HOLCIM ROOF BASE 30",
-              "description": "Spodná vrstva dvojvrstvovej izolácie plochých striech so štandardným zaťažením.",
+              "id": "roof-base",
+              "name": "HOLCIM ROOF BASE 30 · 40",
+              "description": "Spodná vrstva dvojvrstvovej izolácie; BASE 40 pre strechy s technológiami.",
               "specs": [
                 {
                   "value": "0,036",
-                  "label": "λD [W/(m·K)]",
+                  "label": "λD [W/(m·K)] – BASE 30",
                   "accent": true
                 },
                 {
-                  "value": "≥ 30 kPa",
+                  "value": "30 · 40 kPa",
                   "label": "pevnosť v tlaku CS(10)"
                 },
                 {
-                  "value": "≥ 7,5 kPa",
-                  "label": "pevnosť v ťahu TR"
-                },
-                {
-                  "value": "50–250 mm",
+                  "value": "50 – 250 mm",
                   "label": "hrúbky, doska 2400 × 1200 mm"
                 }
               ],
@@ -2415,33 +2543,41 @@
                   "kind": "technicky-list"
                 },
                 {
-                  "title": "Vyhlásenie o parametroch (DoP) – ROOF BASE 30",
+                  "title": "Vyhlásenie o parametroch – HOLCIM ROOF BASE 30 (PL)",
                   "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-base-30.pdf",
                   "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Technický list – HOLCIM ROOF BASE 40 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-base-40.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – HOLCIM ROOF BASE 40 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-roof-base-40-pl.pdf",
+                  "kind": "vyhlasenie",
+                  "external": true
                 }
               ]
             },
             {
-              "id": "roof-top-50",
-              "name": "HOLCIM ROOF TOP 50",
-              "description": "Vrchná vrstva pre bytové a komerčné budovy s miernou pochôdzkou a zaťažením strechy.",
+              "id": "roof-top",
+              "name": "HOLCIM ROOF TOP 50 · 60 · 70 · 80",
+              "description": "Vrchná vrstva – TOP 50 pre bytové budovy, TOP 80 pre priemyselné haly.",
               "specs": [
                 {
-                  "value": "≥ 50 kPa",
+                  "value": "50 – 80 kPa",
                   "label": "pevnosť v tlaku CS(10)",
                   "accent": true
                 },
                 {
+                  "value": "až 800 N",
+                  "label": "bodové zaťaženie PL(5), hrúbka ≥ 50 mm"
+                },
+                {
                   "value": "0,039",
                   "label": "λD [W/(m·K)]"
-                },
-                {
-                  "value": "≥ 15 kPa",
-                  "label": "pevnosť v ťahu TR"
-                },
-                {
-                  "value": "≥ 550 N",
-                  "label": "bodové zaťaženie PL(5)"
                 }
               ],
               "documents": [
@@ -2451,58 +2587,93 @@
                   "kind": "technicky-list"
                 },
                 {
-                  "title": "Vyhlásenie o parametroch (DoP) – ROOF TOP 50",
+                  "title": "Vyhlásenie o parametroch – HOLCIM ROOF TOP 50 (PL)",
                   "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-top-50.pdf",
                   "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Technický list – HOLCIM ROOF TOP 60 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-top-60.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Technický list – HOLCIM ROOF TOP 60 OPTIMA (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-top-60-optima.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Technický list – HOLCIM ROOF TOP 70 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-top-70.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Technický list – HOLCIM ROOF TOP 80 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-top-80.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – HOLCIM ROOF TOP 80 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-roof-top-80-pl.pdf",
+                  "kind": "vyhlasenie",
+                  "external": true
                 }
               ]
             },
             {
-              "id": "roof-top-80",
-              "name": "HOLCIM ROOF TOP 80",
-              "description": "Vrchná vrstva pre vysoko zaťažené strechy priemyselných, skladových a logistických hál.",
+              "id": "roof-solo-50",
+              "name": "HOLCIM ROOF SOLO 50",
+              "description": "Jednovrstvová izolácia plochej strechy alebo súčasť dvojvrstvovej skladby.",
               "specs": [
                 {
-                  "value": "≥ 80 kPa",
+                  "value": "≥ 50 kPa",
                   "label": "pevnosť v tlaku CS(10)",
                   "accent": true
                 },
                 {
-                  "value": "≥ 800 N",
-                  "label": "bodové zaťaženie PL(5), hrúbka ≥ 50 mm"
+                  "value": "≥ 450 N",
+                  "label": "bodové zaťaženie PL(5)"
                 },
                 {
-                  "value": "0,039",
-                  "label": "λD [W/(m·K)]"
-                },
-                {
-                  "value": "20–120 mm",
+                  "value": "30 – 180 mm",
                   "label": "hrúbky, doska 2400 × 1200 mm"
                 }
               ],
-              "documents": []
+              "documents": [
+                {
+                  "title": "Technický list – HOLCIM ROOF SOLO 50 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-solo-50.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – HOLCIM ROOF SOLO 50 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-roof-solo-50-pl.pdf",
+                  "kind": "vyhlasenie",
+                  "external": true
+                }
+              ]
             },
             {
-              "id": "roof-tapered-50",
-              "name": "HOLCIM ROOF TAPERED 50",
-              "description": "Spádové a protispádové dosky na vrstvu ROOF BASE – tepelná izolácia a odvodnenie v jednom.",
+              "id": "roof-tapered",
+              "name": "HOLCIM ROOF TAPERED 40 · 50 · 60 · 70",
+              "description": "Spádové a protispádové dosky – tepelná izolácia a odvodnenie strechy v jednom.",
               "specs": [
                 {
-                  "value": "2,5/3/5 %",
-                  "label": "sklony dosiek",
+                  "value": "40 – 70 kPa",
+                  "label": "pevnosť v tlaku CS(10)",
                   "accent": true
                 },
                 {
-                  "value": "≥ 50 kPa",
-                  "label": "pevnosť v tlaku CS(10)"
+                  "value": "10 – 70 mm",
+                  "label": "hrúbky dosiek"
                 },
                 {
-                  "value": "0,039",
-                  "label": "λD [W/(m·K)]"
-                },
-                {
-                  "value": "1000 × 1200",
-                  "label": "formát dosky [mm]"
+                  "value": "1200 × 1000",
+                  "label": "formát dosky [mm], aj 1000 × 600"
                 }
               ],
               "documents": [
@@ -2512,104 +2683,36 @@
                   "kind": "technicky-list"
                 },
                 {
-                  "title": "Vyhlásenie o parametroch (DoP) – ROOF TAPERED 50",
+                  "title": "Vyhlásenie o parametroch – HOLCIM ROOF TAPERED 50 (PL)",
                   "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-tapered-50.pdf",
                   "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Technický list – HOLCIM ROOF TAPERED 40 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-tapered-40.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Technický list – HOLCIM ROOF TAPERED 60 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-tapered-60.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Technický list – HOLCIM ROOF TAPERED 70 (PL)",
+                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-roof-tapered-70.pdf",
+                  "kind": "technicky-list",
+                  "external": true
                 }
               ]
             }
           ],
-          "image": "img/photo/holcim-roof.webp",
-          "numbered": true,
-          "note": "Všetky dosky: reakcia na oheň A1, vodoodpudivé, systémovo kompatibilné."
-        },
-        {
-          "id": "odvetravane-fasady",
-          "name": "Odvetrávané fasády",
-          "eyebrow": "HOLCIM – odvetrávané fasády",
-          "title": "HOLCIM VENT pre odvetrávané fasády",
-          "intro": "Dosky z kamennej vlny pod obklady HPL, cementovláknité dosky, hliník či drevo – aj pre rámové steny.",
-          "products": [
-            {
-              "id": "vent",
-              "name": "HOLCIM VENT",
-              "description": "Izolácia odvetrávaných fasád s rôznymi typmi obkladov a drevených či rámových stien.",
-              "specs": [
-                {
-                  "value": "0,034",
-                  "label": "λD [W/(m·K)], hrúbka ≥ 50 mm",
-                  "accent": true
-                },
-                {
-                  "value": "5 kPa·s/m²",
-                  "label": "odpor prúdeniu vzduchu AFr"
-                },
-                {
-                  "value": "≤ 1 kg/m²",
-                  "label": "krátkodobá nasiakavosť WS"
-                },
-                {
-                  "value": "40–200 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "vent-extra",
-              "name": "HOLCIM VENT EXTRA",
-              "description": "Fasádna doska pre odvetrávané fasády a drevené alebo oceľové rámové steny, novostavby aj obnovy.",
-              "specs": [
-                {
-                  "value": "0,034",
-                  "label": "λD [W/(m·K)], hrúbka ≥ 50 mm",
-                  "accent": true
-                },
-                {
-                  "value": "≤ 3 kg/m²",
-                  "label": "dlhodobá nasiakavosť WL(P)"
-                },
-                {
-                  "value": "5 kPa·s/m²",
-                  "label": "odpor prúdeniu vzduchu AFr"
-                },
-                {
-                  "value": "40–200 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "vent-extra-fb",
-              "name": "HOLCIM VENT EXTRA FB",
-              "description": "S čiernym skleným rúnom – pre obklady s otvorenými škárami, perforované panely a lamely.",
-              "specs": [
-                {
-                  "value": "čierne rúno",
-                  "label": "kašírovanie jednej strany (sklené rúno)",
-                  "accent": true
-                },
-                {
-                  "value": "0,034",
-                  "label": "λD [W/(m·K)]"
-                },
-                {
-                  "value": "5 kPa·s/m²",
-                  "label": "odpor prúdeniu vzduchu AFr"
-                },
-                {
-                  "value": "100–200 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                }
-              ],
-              "documents": []
-            }
-          ],
+          "note": "Všetky dosky: reakcia na oheň A1, hydrofóbne, paropriepustné – dvojvrstvová skladba BASE + TOP.",
           "specs": [
             {
-              "value": "0,034",
-              "label": "λD [W/(m·K)] – rad VENT",
+              "value": "80 kPa",
+              "label": "pevnosť v tlaku – ROOF TOP 80",
               "accent": true
             },
             {
@@ -2618,151 +2721,59 @@
               "accent": true
             },
             {
-              "value": "40–200 mm",
-              "label": "rozsah hrúbok"
+              "value": "2400 × 1200",
+              "label": "formát dosiek BASE, TOP, SOLO [mm]"
             }
-          ],
-          "image": "img/sortiment/holcim-balenie.webp",
-          "imageOnWhite": true
-        },
-        {
-          "id": "podkrovia-a-stropy",
-          "name": "Podkrovia a stropy",
-          "eyebrow": "HOLCIM – všeobecné stavebníctvo",
-          "title": "Podkrovia, priečky a stropy garáží",
-          "intro": "Ľahké dosky LITE do krovov a priečok, CEILING FW s bielym rúnom na stropy garáží a pivníc.",
-          "products": [
-            {
-              "id": "lite",
-              "name": "HOLCIM LITE",
-              "description": "Šikmé strechy, stropy podkroví, rámové steny a podlahy, ľahké priečky bez zaťaženia izolácie.",
-              "specs": [
-                {
-                  "value": "0,035",
-                  "label": "λD [W/(m·K)]",
-                  "accent": true
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň"
-                },
-                {
-                  "value": "5 kPa·s/m²",
-                  "label": "odpor prúdeniu vzduchu AFr"
-                },
-                {
-                  "value": "50–300 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "lite-extra",
-              "name": "HOLCIM LITE EXTRA",
-              "description": "Ako LITE – výrobca ju odporúča aj do ľahkých priečok s vyššími nárokmi na zvukovú izoláciu.",
-              "specs": [
-                {
-                  "value": "0,035",
-                  "label": "λD [W/(m·K)]",
-                  "accent": true
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň"
-                },
-                {
-                  "value": "5 kPa·s/m²",
-                  "label": "odpor prúdeniu vzduchu AFr"
-                },
-                {
-                  "value": "50–300 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "ceiling-fw",
-              "name": "HOLCIM CEILING FW",
-              "description": "Stropy podzemných a nadzemných garáží, pivníc a technických chodieb; biele sklené rúno ako finálny povrch.",
-              "specs": [
-                {
-                  "value": "0,034",
-                  "label": "λD [W/(m·K)]",
-                  "accent": true
-                },
-                {
-                  "value": "biele rúno",
-                  "label": "kašírovanie jednej strany (sklené rúno)"
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň"
-                },
-                {
-                  "value": "50–200 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                }
-              ],
-              "documents": []
-            }
-          ],
-          "specs": [
-            {
-              "value": "0,034",
-              "label": "λD [W/(m·K)] – CEILING FW",
-              "accent": true
-            },
-            {
-              "value": "A1",
-              "label": "nehorľavé dosky",
-              "accent": true
-            },
-            {
-              "value": "až 300 mm",
-              "label": "max. hrúbka dosiek LITE"
-            }
-          ],
-          "image": "img/sortiment/holcim-balenie.webp",
-          "imageOnWhite": true
+          ]
         }
       ],
       "profile": {
         "since": "1912",
         "country": "Švajčiarsko · Poľsko",
         "hq": "Zug (skupina) · kamenná vlna z Poľska",
-        "about": "Holcim je globálna skupina stavebných riešení. Pod značkou Holcim Polska vyrába kamennú vlnu pre fasády ETICS a ploché strechy. V roku 2025 Holcim Polska prevzal závod na kamennú vlnu vo Wykrotach v Dolnosliezskom vojvodstve.",
+        "about": "Holcim je globálna skupina stavebných riešení. Holcim Polska vyrába kamennú vlnu z prírodného kameňa – taví ho, rozvlákňuje a lisuje do dosiek pre fasády ETICS a ploché strechy. Od roku 2025 vlastní závod na kamennú vlnu vo Wykrotach v Dolnosliezskom vojvodstve.",
         "facts": [
           {
             "value": "A1",
-            "label": "reakcia na oheň – všetky dosky"
+            "label": "nehorľavé – všetky dosky"
           },
           {
-            "value": "0,035",
-            "label": "λD [W/(m·K)] – PRO FACADE 35"
+            "value": "0,034",
+            "label": "λD [W/(m·K)] – HOLCIM FACADE 34"
           },
           {
-            "value": "22 paliet",
-            "label": "plný kamión PRO FACADE 35"
+            "value": "80 kPa",
+            "label": "pevnosť v tlaku – HOLCIM ROOF TOP 80"
           }
         ],
         "makes": [
-          "Fasádne dosky ETICS",
-          "Ploché strechy – spodná a vrchná vrstva",
-          "Spádové dosky",
-          "Šikmé strechy a priečky"
+          "Fasády ETICS – FACADE 34, 35, 39, S",
+          "Ploché strechy – ROOF BASE, TOP, SOLO",
+          "Spádové dosky – ROOF TAPERED"
         ],
         "sources": [
           {
-            "title": "Holcim Polska – HOLCIM PRO FACADE 35",
-            "url": "https://www.holcim.pl/en/holcim-pro-facade-35"
+            "title": "Holcim Polska – kamenná vlna, výrobky",
+            "url": "https://www.holcim.pl/welna-skalna/produkty"
+          },
+          {
+            "title": "Holcim Polska – fasády ETICS",
+            "url": "https://www.holcim.pl/welna-skalna/produkty/fasady-etics"
+          },
+          {
+            "title": "Holcim Polska – ploché strechy",
+            "url": "https://www.holcim.pl/welna-skalna/produkty/dachy-plaskie"
+          },
+          {
+            "title": "Holcim Polska (YouTube) – Ako vzniká kamenná vlna",
+            "url": "https://www.youtube.com/watch?v=3qZwy77GwPo"
           },
           {
             "title": "Global Insulation: Holcim Polska acquires Wykroty plant (2025)",
             "url": "https://globalinsulation.com/news/2154-holcim-polska-acquires-former-technonicol-wykroty-stone-wool-insulation-plant"
           }
-        ]
+        ],
+        "headLogo": "img/brand/holcim-biele.svg"
       },
       "documents": [
         {
@@ -2776,9 +2787,14 @@
           "kind": "ine"
         },
         {
-          "title": "Vyhlásenie o parametroch (DoP) – PRO FACADE 35",
-          "href": "docs/holcim/vyhlasenie-o-parametroch-dop-pro-facade-35.pdf",
-          "kind": "vyhlasenie"
+          "title": "Technický list – HOLCIM ROOF BASE 30 (PL)",
+          "href": "docs/holcim/karta-techniczna-holcim-roof-base-30.pdf",
+          "kind": "technicky-list"
+        },
+        {
+          "title": "Technický list – HOLCIM ROOF TOP 50 (PL)",
+          "href": "docs/holcim/karta-techniczna-holcim-roof-top-50.pdf",
+          "kind": "technicky-list"
         },
         {
           "title": "Technický list – HOLCIM ROOF TAPERED 50 (PL)",
@@ -2786,23 +2802,75 @@
           "kind": "technicky-list"
         },
         {
-          "title": "Vyhlásenie o parametroch (DoP) – ROOF TAPERED 50",
+          "title": "Vyhlásenie o parametroch – HOLCIM ROOF BASE 30 (PL)",
+          "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-base-30.pdf",
+          "kind": "vyhlasenie"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – HOLCIM ROOF TOP 50 (PL)",
+          "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-top-50.pdf",
+          "kind": "vyhlasenie"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – HOLCIM ROOF TAPERED 50 (PL)",
           "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-tapered-50.pdf",
           "kind": "vyhlasenie"
+        },
+        {
+          "title": "Technické listy a vyhlásenia o parametroch – všetky dosky (holcim.pl)",
+          "href": "https://www.holcim.pl/welna-skalna/produkty",
+          "kind": "technicky-list",
+          "external": true
         }
       ],
       "media": [
         {
-          "src": "img/photo/holcim-roof.webp",
-          "caption": "HOLCIM ROOF – realizácia plochej strechy"
+          "kind": "video",
+          "src": "video/holcim/holcim-vyroba.mp4",
+          "caption": "Ako vzniká kamenná vlna HOLCIM"
         },
         {
-          "src": "img/product/holcim-pro-facade-35.webp",
-          "caption": "HOLCIM PRO FACADE 35",
+          "kind": "video",
+          "src": "video/holcim/holcim-ohen-a1.mp4",
+          "caption": "Skúška ohňom – trieda reakcie na oheň A1"
+        },
+        {
+          "src": "img/holcim/holcim-zavod.webp",
+          "caption": "Závod Holcim Polska na kamennú vlnu"
+        },
+        {
+          "src": "img/holcim/holcim-vyroba-kamen.webp",
+          "caption": "Surovina – prírodný kameň"
+        },
+        {
+          "src": "img/holcim/holcim-vyroba-balenie.webp",
+          "caption": "Balenie dosiek HOLCIM"
+        },
+        {
+          "src": "img/holcim/holcim-test-voda.webp",
+          "caption": "Hydrofóbna doska – voda nevsiakne"
+        },
+        {
+          "src": "img/holcim/holcim-test-ohen.webp",
+          "caption": "Nehorľavá kamenná vlna A1"
+        },
+        {
+          "src": "img/holcim/holcim-dom-fasada.webp",
+          "caption": "Fasáda ETICS s kamennou vlnou"
+        },
+        {
+          "src": "img/holcim/holcim-hala-strecha.webp",
+          "caption": "Plochá strecha logistickej haly"
+        },
+        {
+          "src": "img/holcim/holcim-paleta-dosky.webp",
+          "caption": "Dosky z kamennej vlny HOLCIM",
           "onWhite": true
         }
       ],
-      "tier": "core"
+      "tier": "core",
+      "website": "https://www.holcim.pl/welna-skalna",
+      "video": "video/holcim/holcim-firma-prezentacia.mp4"
     },
     {
       "id": "synthos",
@@ -8326,7 +8394,9 @@
     "video/klimas/klimas-skrutky-do-dreva.mp4": "skrutky do dreva (WKCH …)",
     "video/klimas/klimas-chemicke-kotvy.mp4": "chemické kotvy",
     "video/klimas/klimas-firma.mp4": "KLIMAS – profil firmy",
-    "video/klimas/klimas-drevostavba.mp4": "drevostavby (realizácia)"
+    "video/klimas/klimas-drevostavba.mp4": "drevostavby (realizácia)",
+    "video/holcim/holcim-vyroba.mp4": "Ako vzniká kamenná vlna",
+    "video/holcim/holcim-ohen-a1.mp4": "Skúška ohňom – A1"
   },
   "videoPosters": {
     "video/klimas/klimas-thermodrive-v2.mp4": "img/klimas/produkty/klimas-thermodrive-v2-8.webp",
