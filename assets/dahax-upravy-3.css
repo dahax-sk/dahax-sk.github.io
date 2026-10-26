@@ -380,3 +380,5 @@
 .dxr-ov__sip--l{left:24px}.dxr-ov__sip--r{right:24px}
 .dxr-ov__sip:hover,.dxr-ov__x:hover{background:var(--red,#de1f26)}
 .dxv-logo.is-ink{filter:drop-shadow(0 0 3px rgba(255,255,255,.85))} /* tmavé logo DAHAX na svetlých animáciách KLIMAS */
+/* okno „Fotky a videá“ s 16 a viac položkami (KLIMAS: 18 videí) v 6 stĺpcoch – celý zoznam na jednej obrazovke bez posúvania (návrh 3 Programátora 2) */
+.sheet--media .mg__grid:has(>.mg__i:nth-child(16)){grid-template-columns:repeat(6,minmax(0,1fr))}

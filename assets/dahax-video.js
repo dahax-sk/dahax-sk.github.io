@@ -7,18 +7,21 @@
 //  - videá bežia stlmené a dokola, len keď sú na obrazovke (šetrí batériu); plagát = rovnaký názov .webp,
 //  - galéria „Fotky a videá“: videá stlmené, dokola, s plagátom,
 //  - pri videách výrobkov štítok s názvom (content.json → videoNames; nie na úvodnej snímke firmy), na celej obrazovke v hlavičke.
+//  - firma, ktorá má v galérii len videá (KLIMAS): okno aj tlačidlo sa volajú „Videá“ namiesto „Fotky a videá“.
 (() => {
   const poster = (src) => src.replace(/\.mp4$/, ".webp");
-  let byName = new Map(), brands = new Map(), names = new Map(), posters = new Map();
+  let byName = new Map(), brands = new Map(), names = new Map(), posters = new Map(), onlyVideo = new Set();
   const norm = (s) => (s || "").split("\n")[0].replace(/\s+/g, " ").trim().toUpperCase();
 
   const load = (c) => {
     byName = new Map();
     brands = new Map();
+    onlyVideo = new Set();
     names = new Map(Object.entries(c.videoNames || {}));
     posters = new Map(Object.entries(c.videoPosters || {}));
     for (const m of c.manufacturers || []) {
       if (m.video) brands.set(norm(m.name), { src: m.video, range: m.videoRange, rate: m.videoRate });
+      if ((m.media || []).length && m.media.every((x) => x.kind === "video")) onlyVideo.add(norm(m.name));
       for (const cat of m.categories || []) {
         for (const t of cat.tiles || []) if (t.video) byName.set(norm(t.name), t.video);
         for (const p of cat.products || []) if (p.video) byName.set(norm(p.name), p.video);
@@ -218,6 +221,18 @@
         side.prepend(v);
         auto(v);
       }
+    });
+    // firma len s videami: tlačidlo na úvodnej snímke a nadpis okna „Videá“ (v okne sú len videá)
+    const VIDEA = "Videá";
+    document.querySelectorAll(".screen .brand").forEach((b) => {
+      const n = b.querySelector(".brand__name");
+      if (!n || !onlyVideo.has(norm(n.textContent))) return;
+      b.querySelectorAll("button.docbtn > span").forEach((s) => { if (s.textContent === "Fotky a videá") s.textContent = VIDEA; });
+    });
+    document.querySelectorAll(".sheet--media").forEach((s) => {
+      const it = s.querySelectorAll(".mg__i"), e = s.querySelector(":scope > .eyebrow");
+      const len = it.length && [...it].every((i) => i.querySelector(".mg__thumb video, .mg__play"));
+      if (e && len && e.textContent !== VIDEA) e.textContent = VIDEA;
     });
     // galéria – stlmené, dokola, s plagátom
     document.querySelectorAll(".mg__thumb").forEach((t) => { const v = t.querySelector(":scope > video"); tag(t, v ? rel(v.getAttribute("src")) : ""); });
