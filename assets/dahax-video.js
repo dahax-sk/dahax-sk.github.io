@@ -2,7 +2,7 @@
 // Údaje z content.json: `video` pri výrobku / dlaždici a pri firme. Na snímkach:
 //  - výrobok s videom (dlaždica, karta, riadok) dostane tlačidlo „Video“ → video cez celú obrazovku,
 //  - detail výrobku: najprv obrázok výrobku so šípkou (content.json → videoPosters), video sa spustí po kliknutí,
-//    počas prehrávania je vľavo hore logo DAHAX; úvodná snímka firmy: video na pozadí ľavého panela,
+//    počas prehrávania je vpravo dole logo DAHAX (≈ 3 cm nad spodnou hranou); úvodná snímka firmy: video na pozadí ľavého panela,
 //  - galéria: náhľady s obrázkom výrobku, po kliknutí sa video hneď spustí (logo DAHAX je pri názve v hlavičke),
 //  - videá bežia stlmené a dokola, len keď sú na obrazovke (šetrí batériu); plagát = rovnaký názov .webp,
 //  - galéria „Fotky a videá“: videá stlmené, dokola, s plagátom,
@@ -111,38 +111,34 @@
     t.textContent = name;
     host.appendChild(t);
   };
-  // logo DAHAX počas prehrávania – prezentujeme výrobcu, ale za DAHAX. Vpravo, v obraze videa (nie v ráme okolo):
-  // pri záberoch s logom KLIMAS vpravo hore je DAHAX tesne pod ním, pri animáciách (Wkręt-met vľavo hore,
-  // ikony vpravo hore, CE vpravo dole) na voľnom mieste vpravo. t = vrch, r = odstup sprava, w = šírka – % šírky/výšky obrazu;
-  // svetlé animácie majú tmavé logo (ink), inak by biele logo na bielom pozadí nebolo vidieť.
+  // logo DAHAX počas prehrávania – prezentujeme výrobcu, ale za DAHAX. Na každom videu rovnako: vpravo dole
+  // vo viditeľnom obraze videa, spodok loga 16 % výšky obrazu nad spodnou hranou (na tablete cez celú obrazovku ≈ 3 cm).
+  // b = odstup zdola, r = odstup sprava, w = šírka – % výšky/šírky viditeľného obrazu.
+  // Svetlé animácie majú tmavé logo (ink), inak by biele logo na bielom pozadí nebolo vidieť; majú vpravo dole značky ETA/CE
+  // (spodných ~22 % obrazu), preto je logo o kúsok vyššie – tesne nad nimi (DOLE_NAD_CE).
   const LOGO = "img/logo/dahax-white.svg";
   const LOGO_TMAVE = "img/logo/dahax-ink.svg";
-  const POD_KLIMAS = { t: 12, r: 3.2, w: 10.5 };
-  const NAD_CE = { t: 66, r: 3.2, w: 10.5, ink: 1 };
-  const MIESTO = {
-    "klimas-drevostavba": POD_KLIMAS, "klimas-le": POD_KLIMAS, "klimas-skrutky-do-dreva": POD_KLIMAS,
-    "klimas-thermodrive-v2": POD_KLIMAS, "klimas-wkss": POD_KLIMAS, "klimas-wkfc-wkfs": POD_KLIMAS,
-    "klimas-wkcp-wkcs": POD_KLIMAS, "klimas-firma": POD_KLIMAS,
-    "klimas-eco-drive-s": NAD_CE, "klimas-eco-drive-w": NAD_CE,
-    "klimas-kpr-kps-fast": NAD_CE, "klimas-fixplug": NAD_CE,
-    "klimas-lino": NAD_CE, "klimas-sfx": NAD_CE,
-    "klimas-wktherm-s": NAD_CE, "klimas-wfd": NAD_CE,
-    "klimas-ws": { t: 6, r: 3.2, w: 10.5, ink: 1 }, "klimas-chemicke-kotvy": { t: 84, r: 3.2, w: 10.5, ink: 1 },
-  };
+  const DOLE = { b: 16, r: 3.2, w: 10.5 };
+  const DOLE_NAD_CE = { b: 24, r: 3.2, w: 10.5 };
+  const SVETLE = ["klimas-eco-drive-s", "klimas-eco-drive-w", "klimas-kpr-kps-fast", "klimas-fixplug", "klimas-lino", "klimas-sfx",
+    "klimas-wktherm-s", "klimas-wfd", "klimas-ws", "klimas-chemicke-kotvy"];
   const umiestni = (v, i) => {
     if (!i.isConnected) return;
     const W = v.videoWidth, H = v.videoHeight, b = v.getBoundingClientRect();
     if (W && H && b.width) {
-      const m = MIESTO[(rel(v.currentSrc || v.src).split("/").pop() || "").replace(/.mp4$/, "")] || POD_KLIMAS;
+      const ink = SVETLE.includes((rel(v.currentSrc || v.src).split("/").pop() || "").replace(/.mp4$/, "")), m = ink ? DOLE_NAD_CE : DOLE;
       const fit = getComputedStyle(v).objectFit, k = fit === "cover" ? Math.max(b.width / W, b.height / H) : Math.min(b.width / W, b.height / H);
-      const w = W * k, h = H * k, x = b.left + (b.width - w) / 2, y = b.top + (b.height - h) / 2;
+      const x = b.left + (b.width - W * k) / 2, y = b.top + (b.height - H * k) / 2;
+      // viditeľná časť obrazu (pri cover je orezaná rámom videa)
+      const vl = Math.max(x, b.left), vr = Math.min(x + W * k, b.right), vt = Math.max(y, b.top), vb = Math.min(y + H * k, b.bottom);
+      const w = vr - vl, h = vb - vt;
       const fixed = getComputedStyle(i).position === "fixed", p = fixed ? { left: 0, top: 0 } : (i.offsetParent || v.parentNode).getBoundingClientRect();
-      const lw = Math.max(64, (w * m.w) / 100), src = m.ink ? LOGO_TMAVE : LOGO;
+      const lw = Math.max(64, (w * m.w) / 100), lh = lw * 107 / 867, src = ink ? LOGO_TMAVE : LOGO;
       if (!i.src.endsWith(src)) i.src = src;
-      i.classList.toggle("is-ink", !!m.ink);
+      i.classList.toggle("is-ink", ink);
       i.style.width = lw + "px";
-      i.style.left = x + w - (w * m.r) / 100 - lw - p.left + "px";
-      i.style.top = y + (h * m.t) / 100 - p.top + "px";
+      i.style.left = vr - (w * m.r) / 100 - lw - p.left + "px";
+      i.style.top = vb - (h * m.b) / 100 - lh - p.top + "px";
     }
     setTimeout(() => umiestni(v, i), 700);
   };
