@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.4",
+  "version": "2026-10-27.5",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -2118,6 +2118,13 @@
               "name": "IZOVAT 65 · 80 · 80 FG",
               "description": "Odvetrávané fasády – jednovrstvovo; 80 FG so sklenou rohožou nepotrebuje ďalšiu vetrovú zábranu."
             }
+          ],
+          "gallery": [
+            {
+              "src": "img/izovat/izovat-fasada-budova.webp",
+              "caption": "Fasáda administratívnej budovy",
+              "onWhite": true
+            }
           ]
         },
         {
@@ -2142,6 +2149,21 @@
               "id": "izovat-160-inc-wed",
               "name": "IZOVAT 160 INC / WED",
               "description": "Spádové dosky podľa návrhu strechy"
+            }
+          ],
+          "gallery": [
+            {
+              "src": "img/izovat/izovat-strecha-hala-1.webp",
+              "caption": "Plochá strecha haly počas montáže"
+            },
+            {
+              "src": "img/izovat/izovat-strecha-hala-2.webp",
+              "caption": "Plochá strecha haly – pohľad z druhej strany"
+            },
+            {
+              "src": "img/izovat/izovat-strecha-balik.webp",
+              "caption": "Strešné dosky IZOVAT z čadičovej vlny",
+              "onWhite": true
             }
           ]
         }

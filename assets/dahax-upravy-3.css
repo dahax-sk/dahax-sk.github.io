@@ -382,3 +382,15 @@
 .dxv-logo.is-ink{filter:drop-shadow(0 0 3px rgba(255,255,255,.85))} /* tmavé logo DAHAX na svetlých animáciách KLIMAS */
 /* okno „Fotky a videá“ s 16 a viac položkami (KLIMAS: 18 videí) v 6 stĺpcoch – celý zoznam na jednej obrazovke bez posúvania (návrh 3 Programátora 2) */
 .sheet--media .mg__grid:has(>.mg__i:nth-child(16)){grid-template-columns:repeat(6,minmax(0,1fr))}
+/* snímka kategórie s rozložením „media“ a galériou (assets/dahax-realizacie.js – IZOVAT): rad náhľadov pod zoznamom, hlavná fotka otvára galériu */
+.dxg{margin-top:28px}
+.dxg__h{margin:0 0 12px}
+.dxg__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.dxg__t{position:relative;aspect-ratio:4/3;padding:0;border:1px solid rgba(255,255,255,.14);background:#15171b;overflow:hidden;cursor:pointer}
+.dxg__t img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.dxg__t.is-white{background:#fff}
+.dxg__t.is-white img{object-fit:contain;padding:8px}
+.dxg__t:hover img{transform:scale(1.05)}
+.dxg__all{margin-top:14px;display:inline-flex;align-items:center;height:40px;padding:0 16px;border:1.5px solid rgba(255,255,255,.22);background:#0e0f12;color:#fff;font:700 13px/1 var(--f-d);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.dxg__all:hover{background:var(--red,#de1f26);border-color:var(--red,#de1f26)}
+.dxg-fig{cursor:zoom-in}

@@ -6,8 +6,12 @@
 //    video so zvukom vypnutým a ovládaním (zvuk sa dá zapnúť),
 //  - fotky nahraté v tablete v režime správy (IndexedDB „dahax-interactive“, sklad „media“) sú v galérii tiež.
 // Offline: fotky predajní a videá sú v trvalej pamäti médií (sw.js MEDIA).
+// Ďalej: snímky kategórií s rozložením „media“ (veľká fotka vľavo, zoznam vpravo), ktoré majú v content.json pole gallery
+// (zatiaľ IZOVAT Fasády a Ploché strechy) – pod zoznamom rad náhľadov „Fotografie“ a „Všetky fotografie (N)“,
+// ťuknutie na náhľad alebo hlavnú fotku otvorí ten istý prehliadač na celú obrazovku.
 (() => {
   let data = null;
+  const kat = new Map(); // "#/<firma>/<kategória>" → { titul, fotky: [{ typ, src, popis, biele }] }
   let miestne = []; // nahraté v tablete
   const stav = { typ: "vsetko", firma: "" };
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -183,19 +187,69 @@
       vykresli(box);
       s.append(box);
     });
-    // po odchode zo snímky zatvoriť prehliadač
-    if (ov && !document.querySelector(".s__in.real")) zavri();
+  };
+
+  // galéria na snímke kategórie (rozloženie „media“)
+  const ozdobMedia = () => {
+    const kluc = location.hash.split("?")[0], d = kat.get(kluc);
+    document.querySelectorAll(".s__in.media").forEach((s) => {
+      const cur = s.querySelector(".dxg");
+      if (cur && cur.dataset.k === kluc) return;
+      if (cur) cur.remove();
+      const text = s.querySelector(":scope > .media__text"), fig = s.querySelector(":scope > .media__img");
+      if (!d || !text) return;
+      const box = el("div", "dxg");
+      box.dataset.k = kluc;
+      ["pointerdown", "pointerup"].forEach((t) => box.addEventListener(t, stop));
+      box.append(el("p", "eyebrow dxg__h", "Fotografie"));
+      const grid = el("div", "dxg__grid");
+      d.fotky.slice(1, 5).forEach((g, n) => {
+        const b = el("button", "dxg__t" + (g.biele ? " is-white" : ""));
+        b.type = "button";
+        const img = el("img");
+        img.src = g.src;
+        img.alt = g.popis || "";
+        img.loading = "lazy";
+        b.append(img);
+        b.setAttribute("aria-label", "Otvoriť fotografiu – " + (g.popis || ""));
+        b.addEventListener("click", () => otvor(d.fotky, n + 1));
+        grid.append(b);
+      });
+      box.append(grid);
+      if (d.fotky.length > 2) {
+        const v = el("button", "dxg__all", "Všetky fotografie (" + d.fotky.length + ")");
+        v.type = "button";
+        v.addEventListener("click", () => otvor(d.fotky, 0));
+        box.append(v);
+      }
+      text.append(box);
+      if (fig && fig.dataset.dxg !== kluc) {
+        fig.dataset.dxg = kluc;
+        fig.classList.add("dxg-fig");
+        ["pointerdown", "pointerup"].forEach((t) => fig.addEventListener(t, stop));
+        fig.addEventListener("click", () => { const k = kat.get(location.hash.split("?")[0]); if (k) otvor(k.fotky, 0); });
+      }
+    });
   };
 
   let q = false;
   new MutationObserver(() => {
     if (q) return;
     q = true;
-    setTimeout(() => { q = false; ozdob(); }, 40);
+    setTimeout(() => { q = false; ozdob(); ozdobMedia(); }, 40);
   }).observe(document.documentElement, { childList: true, subtree: true });
-  addEventListener("hashchange", () => setTimeout(ozdob, 60));
+  // po odchode zo snímky zatvoriť prehliadač
+  addEventListener("hashchange", () => { zavri(); setTimeout(() => { ozdob(); ozdobMedia(); }, 60); });
 
   const nacitaj = (c) => {
+    kat.clear();
+    for (const m of (c && c.manufacturers) || []) for (const k of m.categories || []) {
+      if (!Array.isArray(k.gallery) || !k.gallery.length) continue;
+      const fotky = (k.image ? [{ typ: "foto", src: k.image, popis: k.imageCaption || k.title || "", biele: true }] : [])
+        .concat(k.gallery.filter((g) => g && g.src && g.kind !== "video").map((g) => ({ typ: "foto", src: g.src, popis: g.caption || "", biele: !!g.onWhite })));
+      kat.set("#/" + m.id + "/" + k.id, { titul: k.title, fotky });
+    }
+    ozdobMedia();
     const r = c && c.realizations;
     if (!r || !Array.isArray(r.galeria)) return;
     data = { galeria: r.galeria, firmy: r.firmy || {} };
