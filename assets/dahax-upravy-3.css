@@ -247,3 +247,7 @@
 /* úvodná snímka KLIMAS: video výraznejšie a kontrastnejšie – čiernobiely obraz zafarbený do červenej (multiply) */
 .brand--red .dxv-bg{opacity:.92;filter:grayscale(1) contrast(1.5) brightness(1.08)}
 .brand--red .brand__side:has(.dxv-bg)::after{mix-blend-mode:multiply;background:linear-gradient(180deg,rgba(222,31,38,.92) 0%,rgba(222,31,38,.92) 50%,rgba(150,14,20,.97) 100%)}
+/* dlaždice výrobkov: rovnaká výška textu (názov + 2 riadky popisu) → obrázky a názvy v riadku na jednej línii */
+.tile{grid-template-rows:minmax(0,1fr) 86px}
+.tile img{padding:18px 18px 10px}
+.tile__name{height:86px;overflow:hidden;padding:11px 14px 12px;color:#c3c8cf;border-top:1px solid rgba(255,255,255,.06)}
