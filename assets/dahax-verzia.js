@@ -128,6 +128,6 @@
   new MutationObserver(() => {
     if (q) return;
     q = true;
-    requestAnimationFrame(() => { q = false; decorate(); });
+    setTimeout(() => { q = false; decorate(); }, 40);
   }).observe(document.documentElement, { childList: true, subtree: true });
 })();
