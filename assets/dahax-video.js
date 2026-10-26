@@ -1,8 +1,9 @@
 // DAHAX – videá k výrobkom (scripts/update-2026-10-26-klimas-videa.mjs).
 // Údaje z content.json: `video` pri výrobku / dlaždici a pri firme. Na snímkach:
 //  - výrobok s videom (dlaždica, karta, riadok) dostane tlačidlo „Video“ → video cez celú obrazovku,
-//  - detail výrobku a galéria: najprv obrázok výrobku so šípkou (content.json → videoPosters), video sa spustí
-//    po kliknutí, počas prehrávania je vľavo hore logo DAHAX; úvodná snímka firmy: video na pozadí ľavého panela,
+//  - detail výrobku: najprv obrázok výrobku so šípkou (content.json → videoPosters), video sa spustí po kliknutí,
+//    počas prehrávania je vľavo hore logo DAHAX; úvodná snímka firmy: video na pozadí ľavého panela,
+//  - galéria: náhľady s obrázkom výrobku, po kliknutí sa video hneď spustí (logo DAHAX je pri názve v hlavičke),
 //  - videá bežia stlmené a dokola, len keď sú na obrazovke (šetrí batériu); plagát = rovnaký názov .webp,
 //  - galéria „Fotky a videá“: videá stlmené, dokola, s plagátom,
 //  - pri videách výrobkov štítok s názvom (content.json → videoNames; nie na úvodnej snímke firmy), na celej obrazovke v hlavičke.
@@ -190,19 +191,6 @@
     });
     // galéria – stlmené, dokola, s plagátom
     document.querySelectorAll(".mg__thumb").forEach((t) => { const v = t.querySelector(":scope > video"); tag(t, v ? rel(v.getAttribute("src")) : ""); });
-    document.querySelectorAll(".gal__stage").forEach((g) => {
-      const v = g.querySelector("video"), src = v ? rel(v.getAttribute("src")) : "";
-      tag(g, src);
-      if (g.dataset.dxc === src) return;
-      g.dataset.dxc = src;
-      g.classList.remove("dxv-playing");
-      g.querySelectorAll(":scope > .dxv-cover, :scope > .dxv-logo").forEach((x) => x.remove());
-      if (!v) return;
-      v.autoplay = false;
-      v.pause();
-      v.controls = false;
-      cover(g, v, src);
-    });
     document.querySelectorAll(".gal__stage video, .mg__thumb video").forEach((v) => {
       if (v.dataset.dxv) return;
       v.dataset.dxv = "1";

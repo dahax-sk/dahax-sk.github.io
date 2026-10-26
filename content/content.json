@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.16",
+  "version": "2026-10-26.17",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -914,6 +914,11 @@
         },
         {
           "kind": "video",
+          "src": "video/klimas/klimas-firma.mp4",
+          "caption": "KLIMAS Wkręt-met – profil firmy"
+        },
+        {
+          "kind": "video",
           "src": "video/klimas/klimas-thermodrive-v2.mp4",
           "caption": "THERMODRIVE V2 – skrutkovacia fasádna kotva"
         },
@@ -939,36 +944,6 @@
         },
         {
           "kind": "video",
-          "src": "video/klimas/klimas-le.mp4",
-          "caption": "LE – mechanické kotvy do betónu"
-        },
-        {
-          "kind": "video",
-          "src": "video/klimas/klimas-kpr-kps-fast.mp4",
-          "caption": "KPR FAST a KPS FAST – rámové hmoždinky"
-        },
-        {
-          "kind": "video",
-          "src": "video/klimas/klimas-sfx.mp4",
-          "caption": "SFX – nylonová hmoždinka"
-        },
-        {
-          "kind": "video",
-          "src": "video/klimas/klimas-wfd.mp4",
-          "caption": "WFD – samovrtné strešné skrutky"
-        },
-        {
-          "kind": "video",
-          "src": "video/klimas/klimas-lino.mp4",
-          "caption": "LINO – kotvy pre ploché strechy"
-        },
-        {
-          "kind": "video",
-          "src": "video/klimas/klimas-ws.mp4",
-          "caption": "WS, WSB, WF, WSBP – strešné skrutky"
-        },
-        {
-          "kind": "video",
           "src": "video/klimas/klimas-wkcp-wkcs.mp4",
           "caption": "WKCP a WKCS – tesárske skrutky"
         },
@@ -989,13 +964,38 @@
         },
         {
           "kind": "video",
+          "src": "video/klimas/klimas-le.mp4",
+          "caption": "LE – mechanické kotvy do betónu"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-kpr-kps-fast.mp4",
+          "caption": "KPR FAST a KPS FAST – rámové hmoždinky"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-sfx.mp4",
+          "caption": "SFX – nylonová hmoždinka"
+        },
+        {
+          "kind": "video",
           "src": "video/klimas/klimas-chemicke-kotvy.mp4",
           "caption": "Chemické kotvy"
         },
         {
           "kind": "video",
-          "src": "video/klimas/klimas-firma.mp4",
-          "caption": "KLIMAS Wkręt-met – profil firmy"
+          "src": "video/klimas/klimas-wfd.mp4",
+          "caption": "WFD – samovrtné strešné skrutky"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-ws.mp4",
+          "caption": "WS, WSB, WF, WSBP – strešné skrutky"
+        },
+        {
+          "kind": "video",
+          "src": "video/klimas/klimas-lino.mp4",
+          "caption": "LINO – kotvy pre ploché strechy"
         },
         {
           "kind": "video",
@@ -1217,7 +1217,11 @@
           "kind": "technicky-list"
         }
       ],
-      "video": "video/klimas/klimas-firma.mp4"
+      "video": "video/klimas/klimas-firma.mp4",
+      "videoRange": [
+        90,
+        271
+      ]
     },
     {
       "id": "izovat",

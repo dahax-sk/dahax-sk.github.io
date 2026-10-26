@@ -215,20 +215,16 @@
 .dxu__s{min-height:1.4em;font-size:16px;color:var(--txt-2)}
 /* video firmy bez anglických popisov: výrez vľavo od popisov (sú vpravo hore) a horná štvrtina prechádza do čistej červenej */
 /* štítok s názvom výrobku pri videu (dahax-video.js) */
-.gal__stage:has(>.dxv-tag){position:relative}
 .dxv-tag{position:absolute;left:14px;top:14px;z-index:4;max-width:calc(100% - 28px);padding:7px 12px 7px 10px;background:rgba(10,11,13,.72);border-left:2px solid var(--red);color:#fff;font:600 14px/1.2 var(--f-b);letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:none;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
 .mg__thumb:has(>.dxv-tag){position:relative}
 .mg__thumb>.dxv-tag{left:6px;top:6px;max-width:calc(100% - 12px);padding:4px 7px 4px 6px;font-size:11px}
 /* video výrobku: najprv obrázok so šípkou, počas prehrávania logo DAHAX (dahax-video.js) */
 .dxv-sheet{z-index:2;cursor:default}
 .dxv-sheet>.dxv-v{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
-.gal__stage{position:relative}
 .dxv-cover{position:absolute;inset:0;z-index:3;display:grid;place-items:center;background:#000;cursor:pointer;overflow:hidden}
 .dxv-cover>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85}
 .dxv-cover.is-photo{background:#fff}
 .dxv-cover.is-photo>img{inset:48px;width:calc(100% - 96px);height:calc(100% - 96px);object-fit:contain;opacity:1}
-.gal__stage>.dxv-cover.is-photo{background:#000}
-.gal__stage>.dxv-cover.is-photo>img{inset:auto;position:relative;width:auto;height:auto;max-width:min(560px,70%);max-height:78%;padding:32px;background:#fff}
 .dxv-cover>i{position:relative;width:84px;height:84px;border-radius:50%;background:var(--red);box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .2s var(--ease),background .2s}
 .dxv-cover>i::after{content:"";position:absolute;left:50%;top:50%;margin:-14px 0 0 -8px;border-style:solid;border-width:14px 0 14px 24px;border-color:transparent transparent transparent #fff}
 .dxv-cover:active>i{transform:scale(.94);background:var(--red-d)}
@@ -239,7 +235,12 @@
 .dxv-ov{position:fixed}
 .dxv-ov>.dxv-logo{position:fixed;left:20px;top:84px;opacity:.92}
 .mg__thumb video.dxv-photo{object-fit:contain;background:#fff}
-/* galéria: logo a názov v čiernej ploche vľavo od videa, nie cez obraz */
-.gal__stage>.dxv-logo{left:auto;right:calc(100% + 28px);top:2px;width:150px}
-.gal__stage>.dxv-tag,.gal__stage.dxv-playing>.dxv-tag{left:auto;right:calc(100% + 28px);top:38px;width:max-content;max-width:240px;white-space:normal;text-align:left}
-.gal__stage:not(.dxv-playing)>.dxv-tag{top:0}
+/* galéria „Fotky a videá“: video väčšie a v strede, logo DAHAX pri názve, šípka menšia a priehľadná */
+.gal__stage>video{width:100%;height:100%;object-fit:contain;background:#000}
+.ov--black:has(.gal__stage>video) .gal__stage{inset:96px 120px 76px}
+.ov--black:has(.gal__stage>video) .gal__bar::before{content:"";flex:none;width:128px;height:16px;background:url(../img/logo/dahax-white.svg) no-repeat left center/contain}
+.ov--black:has(.gal__stage>video) .gal__bar>span{padding-left:20px;border-left:1px solid rgba(255,255,255,.22)}
+.mg__play{width:40px;height:40px;margin:0;left:auto;top:auto;right:10px;bottom:10px;background:rgba(222,31,38,.72);box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.mg__play .icon{width:18px;height:18px;margin-left:3px}
+.dxv-cover>i{width:56px;height:56px;background:rgba(222,31,38,.72)}
+.dxv-cover>i::after{margin:-10px 0 0 -6px;border-width:10px 0 10px 17px}
