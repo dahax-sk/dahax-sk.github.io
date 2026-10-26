@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.27",
+  "version": "2026-10-26.28",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -102,7 +102,7 @@
     {
       "id": "klimas",
       "name": "KLIMAS",
-      "logo": "img/brand/klimas.webp",
+      "logo": "img/brand/klimas-logo-biele.svg",
       "tile": {
         "bg": "#DE1F26",
         "fit": "contain"
@@ -2912,9 +2912,9 @@
     {
       "id": "synthos",
       "name": "SYNTHOS",
-      "logo": "img/brand/tile-synthos.webp",
+      "logo": "img/brand/synthos-logo.svg",
       "tile": {
-        "bg": "#18223A",
+        "bg": "#FFFFFF",
         "fit": "contain"
       },
       "role": "Hlavný distribútor",
@@ -4449,10 +4449,10 @@
     },
     {
       "id": "sucha-vystavba",
-      "name": "Suchá výstavba",
-      "logo": "img/brand/dkmont.webp",
+      "name": "DK MONT",
+      "logo": "img/brand/dkmont-logo-tmave.webp",
       "tile": {
-        "bg": "#15171B",
+        "bg": "#FFFFFF",
         "fit": "contain"
       },
       "role": "Hlavný distribútor",

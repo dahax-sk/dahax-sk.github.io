@@ -317,3 +317,11 @@
 .s__in.media:has(> .media__img img[src*="/doplnky/panel-"]) .row__desc { display: none; }
 /* Katalóg výrobkov bez nadpisu (title "") – prázdny nadpis nezaberá miesto */
 .tiles:has(>.dxk) .cat__title:empty{display:none}
+
+/* strana 4 Nosné značky: rok „od …“ skrytý (IZOVAT ho na izovat.ua neuvádza), logá s jednotným okrajom */
+.ptile__meta em{display:none}
+.ptile__logo img{max-width:72%;max-height:46%;object-fit:contain}
+.ptile--lead .ptile__logo img{max-width:70%;max-height:22%}
+.ptile__logo img[src$=".svg"]{width:72%;height:auto}
+.ptile--lead .ptile__logo img[src$=".svg"]{width:70%}
+.brand__logo img[src$=".svg"]{width:72%;height:auto}
