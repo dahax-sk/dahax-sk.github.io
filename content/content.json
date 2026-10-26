@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.19",
+  "version": "2026-10-26.20",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -125,6 +125,12 @@
           "banners": [],
           "tiles": [
             {
+              "name": "LFMG-10\nNatĺkacia fasádna hmoždinka s kovovým tŕňom",
+              "image": "img/klimas/produkty/klimas-lfmg-10.webp",
+              "color": "#868686",
+              "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/lfmg-10/"
+            },
+            {
               "name": "THERMODRIVE V2-8\nSkrutkovacia fasádna hmoždinka s kovovým tŕňom",
               "image": "img/klimas/produkty/klimas-thermodrive-v2-8.webp",
               "color": "#868686",
@@ -132,7 +138,7 @@
               "video": "video/klimas/klimas-thermodrive-v2.mp4"
             },
             {
-              "name": "ECO-DRIVE 8\nTeleskopická skrutkovacia fasádna hmoždinka s kovovým tŕňom",
+              "name": "ECO-DRIVE 8\nTeleskopická fasádna hmoždinka s kovovým tŕňom",
               "image": "img/klimas/produkty/klimas-eco-drive-8.webp",
               "color": "#868686",
               "href": "https://sk.klimas.com/nastenne-tepelnoizolacne-fixacne-systemy/eco-drive-8/"
@@ -155,6 +161,13 @@
               "image": "img/klimas/produkty/klimas-lsi.webp",
               "color": "#f29105",
               "href": "https://sk.klimas.com/mechanicke-kotvy-skrutky-do-betonu-chemicke-kotevne-systemy/lsi/"
+            },
+            {
+              "name": "SFXP\nUzlovacia hmoždinka do plných aj dutých materiálov",
+              "image": "img/klimas/produkty/klimas-sfxp.webp",
+              "color": "#1c9ad7",
+              "href": "https://sk.klimas.com/ramove-upevnenia/sfxp-bsfxp/",
+              "video": "video/klimas/klimas-sfx.mp4"
             },
             {
               "name": "KPS-FAST-S\nRámová hmoždinka so skrutkou so zápustnou hlavou TX30",
@@ -244,6 +257,91 @@
           ],
           "products": [
             {
+              "id": "lfmg-10",
+              "name": "LFMG-10",
+              "type": "Natĺkacia · Ø 10 mm · EPS, XPS",
+              "description": "Kovový tŕň a predĺžená expanzná zóna; s podložkou TDX-90/TDX-140 aj pre minerálnu vlnu.",
+              "image": "img/product/klimas-lfmg-10.webp",
+              "imageFit": "tall",
+              "specs": [
+                {
+                  "value": "Ø 60 mm",
+                  "label": "prítlačný tanier"
+                },
+                {
+                  "value": "0,90 kN",
+                  "label": "NRk v betóne C16/20 až C50/60",
+                  "accent": true
+                },
+                {
+                  "value": "0,002 – 0,004 W/K",
+                  "label": "bodový prestup tepla"
+                },
+                {
+                  "value": "140 – 300 mm",
+                  "label": "dĺžky kotvy"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-17/0450 – LFMG-10 (SK)",
+                  "href": "docs/klimas/eta-17-0450-lfmg-10-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – LFMG-10 (SK)",
+                  "href": "docs/klimas/vyhlasenie-o-parametroch-lfmg-10-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – LFMG-10 (SK)",
+                  "href": "docs/klimas/technicky-list-lfmg-10-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ]
+            },
+            {
+              "id": "wktherm-s-8",
+              "name": "WKTHERM S-8",
+              "type": "Skrutkovacia · Ø 8 mm · EPS, XPS, vlna",
+              "description": "Krátka expanzná zóna – menšia hĺbka vŕtania a rýchla montáž; s podložkou TDX-90/TDX-140 aj pre minerálnu vlnu.",
+              "image": "img/klimas/produkty/klimas-wktherm-s-8.webp",
+              "imageFit": "tall",
+              "specs": [
+                {
+                  "value": "Ø 60 mm",
+                  "label": "prítlačný tanier"
+                },
+                {
+                  "value": "1,50 kN",
+                  "label": "NRk v betóne C16/20 až C50/60",
+                  "accent": true
+                },
+                {
+                  "value": "0,002 W/K",
+                  "label": "bodový prestup tepla",
+                  "accent": true
+                },
+                {
+                  "value": "95 – 295 mm",
+                  "label": "dĺžky kotvy"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "ETA-13/0724 – WKTHERM S (SK)",
+                  "href": "docs/klimas/eta-13-0724-wktherm-s-sk.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – WKTHERM S-8 (SK)",
+                  "href": "docs/klimas/technicky-list-wktherm-s-8-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ],
+              "video": "video/klimas/klimas-wktherm-s.mp4"
+            },
+            {
               "id": "thermodrive-v2-8",
               "name": "THERMODRIVE V2-8",
               "type": "Skrutkovacia · Ø 8 mm · EPS, XPS, vlna",
@@ -292,103 +390,13 @@
                 }
               ],
               "video": "video/klimas/klimas-thermodrive-v2.mp4"
-            },
-            {
-              "id": "eco-drive-w-8",
-              "name": "ECO-DRIVE W 8",
-              "type": "Skrutkovacia teleskopická · Ø 8 mm · vlna",
-              "description": "Teleskopický tanier Ø 110 mm pre minerálnu a lamelovú vlnu – kratšia montáž a menej tepelných mostov.",
-              "image": "img/product/klimas-eco-drive-w-8.webp",
-              "imageFit": "tall",
-              "specs": [
-                {
-                  "value": "Ø 110 mm",
-                  "label": "teleskopický prítlačný tanier",
-                  "accent": true
-                },
-                {
-                  "value": "1,50 kN",
-                  "label": "NRk v betóne C16/20 až C50/60"
-                },
-                {
-                  "value": "0,002 W/K",
-                  "label": "bodový prestup tepla",
-                  "accent": true
-                },
-                {
-                  "value": "150 – 430 mm",
-                  "label": "dĺžky kotvy"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "ETA-13/0107 – ECO-DRIVE (SK)",
-                  "href": "docs/klimas/eta-13-0107-eco-drive-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – ECO-DRIVE W (SK)",
-                  "href": "docs/klimas/vyhlasenie-o-parametroch-eco-drive-w-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Technický list – ECO-DRIVE W 8 (SK)",
-                  "href": "docs/klimas/technicky-list-eco-drive-w-8-sk.pdf",
-                  "kind": "technicky-list"
-                }
-              ],
-              "video": "video/klimas/klimas-eco-drive-w.mp4"
-            },
-            {
-              "id": "lfmg-10",
-              "name": "LFMG-10",
-              "type": "Natĺkacia · Ø 10 mm · EPS, XPS",
-              "description": "Kovový tŕň a predĺžená expanzná zóna; s podložkou TDX-90/TDX-140 aj pre minerálnu vlnu.",
-              "image": "img/product/klimas-lfmg-10.webp",
-              "imageFit": "tall",
-              "specs": [
-                {
-                  "value": "Ø 60 mm",
-                  "label": "prítlačný tanier"
-                },
-                {
-                  "value": "0,90 kN",
-                  "label": "NRk v betóne C16/20 až C50/60",
-                  "accent": true
-                },
-                {
-                  "value": "0,002 – 0,004 W/K",
-                  "label": "bodový prestup tepla"
-                },
-                {
-                  "value": "140 – 300 mm",
-                  "label": "dĺžky kotvy"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "ETA-17/0450 – LFMG-10 (SK)",
-                  "href": "docs/klimas/eta-17-0450-lfmg-10-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – LFMG-10 (SK)",
-                  "href": "docs/klimas/vyhlasenie-o-parametroch-lfmg-10-sk.pdf",
-                  "kind": "certifikat"
-                },
-                {
-                  "title": "Technický list – LFMG-10 (SK)",
-                  "href": "docs/klimas/technicky-list-lfmg-10-sk.pdf",
-                  "kind": "technicky-list"
-                }
-              ]
             }
           ],
           "moreTitle": "Ďalšie kotvy a príslušenstvo",
           "more": [
             "ECO-DRIVE 8",
             "ECO-DRIVE S 8",
-            "WKTHERM S-8",
+            "ECO-DRIVE W 8",
             "WKTHERM 8",
             "FIXPLUG-10",
             "LMX-10",
@@ -7507,6 +7515,8 @@
     "video/klimas/klimas-lino.mp4": "img/klimas/produkty/klimas-lino-13.webp",
     "video/klimas/klimas-ws.mp4": "img/klimas/produkty/klimas-ws.webp",
     "video/klimas/klimas-wkcp-wkcs.mp4": "img/klimas/produkty/klimas-wkcp.webp",
-    "video/klimas/klimas-skrutky-do-dreva.mp4": "img/klimas/produkty/klimas-wkch.webp"
+    "video/klimas/klimas-skrutky-do-dreva.mp4": "img/klimas/produkty/klimas-wkch.webp",
+    "video/klimas/klimas-sfx.mp4": "img/klimas/produkty/klimas-sfxp.webp",
+    "video/klimas/klimas-wktherm-s.mp4": "img/klimas/produkty/klimas-wktherm-s-8.webp"
   }
 }

@@ -251,3 +251,7 @@
 .tile{grid-template-rows:minmax(0,1fr) 86px}
 .tile img{padding:18px 18px 10px}
 .tile__name{height:86px;overflow:hidden;padding:11px 14px 12px;color:#c3c8cf;border-top:1px solid rgba(255,255,255,.06)}
+/* Kľúčové výrobky KLIMAS: 6 × 3, LFMG-10 (najpredávanejšia kotva) na začiatku cez dva stĺpce */
+.tiles__grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+.tiles__grid>.tile:first-child{grid-column:span 2}
+.tiles__grid>.tile:first-child::before{content:"Najpredávanejšia kotva";position:absolute;left:10px;top:10px;z-index:2;padding:7px 10px 6px;background:var(--red);color:#fff;font:700 13px/1 var(--f-d);letter-spacing:.12em;text-transform:uppercase}
