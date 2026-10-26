@@ -244,3 +244,6 @@
 .mg__play .icon{width:18px;height:18px;margin-left:3px}
 .dxv-cover>i{width:56px;height:56px;background:rgba(222,31,38,.72)}
 .dxv-cover>i::after{margin:-10px 0 0 -6px;border-width:10px 0 10px 17px}
+/* úvodná snímka KLIMAS: video výraznejšie a kontrastnejšie – čiernobiely obraz zafarbený do červenej (multiply) */
+.brand--red .dxv-bg{opacity:.92;filter:grayscale(1) contrast(1.5) brightness(1.08)}
+.brand--red .brand__side:has(.dxv-bg)::after{mix-blend-mode:multiply;background:linear-gradient(180deg,rgba(222,31,38,.92) 0%,rgba(222,31,38,.92) 50%,rgba(150,14,20,.97) 100%)}
