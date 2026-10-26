@@ -7,7 +7,7 @@
   const off = (t) => !t || !t.closest || !t.closest(".screen") || t.closest(".ov, .pane, .sheet, .pdf, .dxk-car, input, textarea, select");
   const pos = (e) => (e.changedTouches && e.changedTouches[0]) || (e.touches && e.touches[0]);
   addEventListener("touchstart", (e) => {
-    if (e.touches.length !== 1 || off(e.target)) return void (s = null);
+    if (e.touches.length !== 1 || off(e.target) || e.touches[0].clientX >= innerWidth - 28) return void (s = null); // pri pravom okraji sa vysúva lišta firiem (dahax-lista.js)
     const p = e.touches[0];
     s = { x: p.clientX, y: p.clientY, lx: p.clientX, ly: p.clientY, t: Date.now() };
   }, { passive: true });

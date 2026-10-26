@@ -301,3 +301,9 @@
 .dxk-msg{position:absolute;left:50%;bottom:18px;z-index:6;transform:translateX(-50%);padding:12px 20px;background:#0a0b0d;border-left:2px solid var(--red);color:#fff;font:600 16px/1.2 var(--f-b);opacity:0;transition:opacity .3s;pointer-events:none}
 .dxk-msg.is-on{opacity:1}
 .dxk-pan__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;align-content:start}
+/* pravá lišta firiem: skrytá za okrajom, vysúva sa pri okraji (dahax-lista.js); snímky majú celú šírku */
+.screen{width:1600px}
+.rail{transform:translateX(100%);transition:transform .35s var(--ease),box-shadow .35s;box-shadow:none}
+.deck.dxr-open .rail{transform:none;box-shadow:-18px 0 50px rgba(0,0,0,.55)}
+.deck::after{content:"";position:absolute;right:0;top:50%;z-index:29;width:4px;height:88px;margin-top:-4px;background:var(--red);opacity:.55;pointer-events:none;transition:opacity .3s}
+.deck.dxr-open::after{opacity:0}
