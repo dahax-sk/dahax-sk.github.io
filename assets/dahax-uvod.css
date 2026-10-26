@@ -93,3 +93,67 @@
 @keyframes dxn-nove{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 .dxn-kamion.is-odchod .dxd-rot{animation:dxd-koleso 1.1s linear infinite}
 .dxn-kamion.is-prichod .dxd-rot{animation:dxd-koleso 1.3s linear infinite reverse}
+
+/* ---- grafická kontrola strán 1 – 3 (Programátor 2) ---- */
+/* strana 1: kontakt – malé písmená s bežným rozostupom (predtým .22em, zle sa čítalo) */
+.s--title .title__foot p{letter-spacing:.03em;font-size:18px}
+/* strana 1: nenápadná výzva na posun vpravo dole (nad číslom snímky) */
+.dhx-dalej{position:absolute;right:64px;bottom:58px;z-index:2;display:flex;align-items:center;gap:2px;color:rgba(255,255,255,.62);pointer-events:none}
+.dhx-dalej span{margin-right:12px;font:600 14px/1 var(--f-d);letter-spacing:.2em;text-transform:uppercase}
+.dhx-dalej i{width:10px;height:10px;border-top:2px solid var(--red);border-right:2px solid var(--red);transform:rotate(45deg);opacity:.35}
+@media (prefers-reduced-motion:no-preference){
+  .dhx-dalej i{animation:dhx-dalej 1.8s ease-in-out infinite}
+  .dhx-dalej i:nth-of-type(2){animation-delay:.2s}
+  .dhx-dalej i:nth-of-type(3){animation-delay:.4s}
+}
+@keyframes dhx-dalej{0%,100%{opacity:.2}40%{opacity:1}}
+
+/* strana 2: väčšia medzera medzi stĺpcami 02 – 06 */
+.why__cols{column-gap:44px}
+
+/* strana 3: mapa namiesto riadku s adresami; jeden kamión jazdí po trase na mape (kamióny dole skryté) */
+.s:has(> .s__in.logi) .logi__wh,.s:has(> .s__in.logi) > .dxd{display:none}
+.logi__band>div{align-self:start}
+.dhx-mapa{position:absolute;right:150px;bottom:52px;z-index:1;pointer-events:none}
+.dhx-mapa,.dhx-mapa__titul,.dhx-dalej{animation:dhx-nabeh .8s ease-out .9s both}
+@keyframes dhx-nabeh{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.dhx-mapa__svg{display:block;overflow:visible}
+.dhx-mapa__titul{position:absolute;left:64px;top:596px;z-index:1;padding-left:18px;border-left:2px solid var(--red);margin:0;font:700 14px/1 var(--f-d);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.dhx-mapa__krajina{fill:rgba(255,255,255,.035);stroke:rgba(255,255,255,.5);stroke-width:1.5;stroke-linejoin:round}
+.dhx-mapa__krajina--sk{fill:rgba(222,31,38,.08);stroke:rgba(255,255,255,.75)}
+.dhx-mapa__stat{font:600 13px var(--f-d);letter-spacing:.35em;fill:rgba(255,255,255,.38);text-anchor:middle}
+.dhx-mapa__trasa{fill:none;stroke:rgba(222,31,38,.45);stroke-width:1.5;stroke-dasharray:4 5}
+.dhx-mapa__tok{fill:none;stroke:#ff5a4f;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:6 94;stroke-dashoffset:100;opacity:0}
+.dhx-mapa__mesto{fill:#0b0c0e;stroke:rgba(255,255,255,.7);stroke-width:1.4}
+.dhx-mapa__sklad{fill:var(--red);stroke:#fff;stroke-width:2}
+.dhx-mapa__vlna{fill:none;stroke:var(--red);stroke-width:2;opacity:0}
+.dhx-mapa__popis{position:absolute;margin:0;display:grid;gap:4px;width:250px;padding:8px 12px;background:rgba(8,9,11,.78);border-left:2px solid var(--red)}
+.dhx-mapa__popis b{font:700 18px/1.1 var(--f-d);text-transform:uppercase;letter-spacing:.02em;color:#fff}
+.dhx-mapa__popis span{font-size:14px;line-height:1.35;color:var(--muted)}
+.dhx-mapa__popis--po{transform:translate(-16px,20px)}
+.dhx-mapa__popis--cj{transform:translate(-50%,16px)}
+.dhx-mapa__kamion{position:absolute;left:0;top:0;offset-rotate:0deg;offset-distance:0%;opacity:0}
+@media (prefers-reduced-motion:no-preference){
+  .dhx-mapa__tok{animation:dhx-mapa-tok var(--t,8s) linear var(--d,0s) infinite}
+  .dhx-mapa__vlna{animation:dhx-mapa-vlna 2.6s ease-out infinite}
+  .dhx-mapa__kamion{animation:dhx-mapa-kamion 22s ease-in-out infinite}
+}
+@media (prefers-reduced-motion:reduce){.dhx-mapa__kamion{opacity:1;offset-distance:30%}}
+@keyframes dhx-mapa-tok{0%{stroke-dashoffset:100;opacity:0}8%{opacity:1}92%{opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+@keyframes dhx-mapa-vlna{0%{r:7;opacity:.9}100%{r:22;opacity:0}}
+@keyframes dhx-mapa-kamion{0%{offset-distance:0%;opacity:0}6%{opacity:1}88%{offset-distance:100%;opacity:1}94%,100%{offset-distance:100%;opacity:0}}
+
+/* strana 2: líniová kresba namiesto kreslenej scény (pôvodná .dxn z dahax-doprava.js je tu skrytá, bez počítadla) */
+.s:has(> .s__in.why) .dxn{display:none}
+.dhx-nak{position:absolute;left:36px;width:940px;bottom:20px;z-index:1;height:140px;pointer-events:none;animation:dhx-nabeh .8s ease-out .9s both}
+.dhx-nak__svg{display:block;overflow:visible}
+.dhx-nak__logo{font:700 26px var(--f-d);letter-spacing:.18em;fill:#fff;text-anchor:middle}
+.dhx-nak__cesta{stroke:rgba(222,31,38,.6);stroke-width:1.5;fill:none}
+.dhx-nak__vozik{transform:translateX(220px)}
+.dhx-nak__naklad{opacity:0}
+@media (prefers-reduced-motion:no-preference){
+  .dhx-nak__vozik{animation:dhx-nak-jazda 12s ease-in-out infinite}
+  .dhx-nak__naklad{animation:dhx-nak-naklad 12s linear infinite}
+}
+@keyframes dhx-nak-jazda{0%,8%{transform:translateX(220px)}42%,50%{transform:translateX(392px)}88%,100%{transform:translateX(220px)}}
+@keyframes dhx-nak-naklad{0%,4%{opacity:0}6%,46%{opacity:1}48%,100%{opacity:0}}

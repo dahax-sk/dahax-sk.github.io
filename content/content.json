@@ -1,8 +1,8 @@
 {
-  "version": "2026-10-26.28",
+  "version": "2026-10-26.29",
   "company": {
     "name": "DAHAX SK, s.r.o.",
-    "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
+    "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
     "web": "www.dahax.sk",
     "phone": "+421 908 927 459",
     "email": "dahaxsk@dahaxsk.sk",
@@ -14,7 +14,7 @@
         "address": "Zlatobanská 12242, Solivar, 080 05 Prešov"
       },
       {
-        "city": "Levice",
+        "city": "Levice – Čajkov",
         "address": "Areál bývalého poľnohospodárskeho družstva, 935 24 Čajkov, okr. Levice"
       }
     ],
@@ -34,24 +34,24 @@
         "featured": true
       },
       {
-        "title": "Tovar skladom",
-        "text": "Vlastné sklady v Prešove a Leviciach – zásoby blízko vašich predajní."
+        "title": "Stabilné dodávky",
+        "text": "Zásoby na Slovensku vyrovnávajú výkyvy u výrobcov – plynulý predaj bez výpadkov."
       },
       {
-        "title": "Široký sortiment",
-        "text": "Kotvenie, izolácie, suchá výstavba a doplnky v jednej objednávke."
+        "title": "Stabilné ceny",
+        "text": "Dlhodobé podmienky s výrobcami – ceny, s ktorými môžete plánovať predaj aj maržu."
       },
       {
-        "title": "Doprava",
-        "text": "Kombinácia tovaru v jednej dodávke."
+        "title": "Jeden dodávateľ",
+        "text": "Kotvenie, izolácie, suchá výstavba a doplnky od jedného partnera – menej objednávok a faktúr."
       },
       {
-        "title": "Predajné miesto na kľúč",
-        "text": "Regál KLIMAS navrhneme, dodáme a zariadime – overené v predajniach."
+        "title": "Regál na kľúč",
+        "text": "Predajné miesto KLIMAS navrhneme, dodáme a zariadime – overené v predajniach."
       },
       {
-        "title": "Servis a jeden kontakt",
-        "text": "Technická podpora a obchodník pre centrálu aj každú pobočku."
+        "title": "Odborná podpora",
+        "text": "Poradíme s výberom systému a zaškolíme predajcov – lepšie rady pre vašich zákazníkov."
       }
     ]
   },
@@ -62,7 +62,7 @@
     "points": [
       {
         "title": "Široký sortiment",
-        "text": "Zásobovanie z jedného zdroja"
+        "text": "Zásobovanie z jedného zdroja."
       },
       {
         "title": "Centrálny sklad",
