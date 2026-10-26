@@ -177,3 +177,6 @@
 .screen{touch-action:pan-y}
 /* aj na vnútorných prvkoch snímky (karty, dlaždice, fotky) – inak by si prehliadač ťah vzal ako posúvanie */
 .screen *:not(.pdf__pages, .pdf__pages *){touch-action:pan-y}
+
+/* plocha snímky podľa pomeru strán zariadenia (scripts/update-2026-10-26-velkost.mjs) – lišta 80 px, pás značiek 120 px */
+.screen{width:calc(var(--stage-w,1600px) - 120px);height:calc(var(--stage-h,1000px) - 80px)}
