@@ -4,7 +4,7 @@
 // Katalóg, dokumenty, detail produktu a galéria majú vlastné ovládanie, tam sa ťah neprekladá.
 (() => {
   let s = null;
-  const off = (t) => !t || !t.closest || !t.closest(".screen") || t.closest(".ov, .pane, .sheet, .pdf, input, textarea, select");
+  const off = (t) => !t || !t.closest || !t.closest(".screen") || t.closest(".ov, .pane, .sheet, .pdf, .dxk-car, input, textarea, select");
   const pos = (e) => (e.changedTouches && e.changedTouches[0]) || (e.touches && e.touches[0]);
   addEventListener("touchstart", (e) => {
     if (e.touches.length !== 1 || off(e.target)) return void (s = null);

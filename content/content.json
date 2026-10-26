@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-26.21",
+  "version": "2026-10-26.22",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -116,6 +116,530 @@
       "tagline": "Spojovací materiál, ktorý sa predáva celý rok – tovar aj predajné miesto na kľúč.",
       "theme": "red",
       "categories": [
+        {
+          "id": "katalog",
+          "name": "Katalóg výrobkov",
+          "title": "Vyberte si kategóriu",
+          "intro": "16 kategórií a 3 886 výrobkov. Ťuknite na kategóriu – zobrazia sa podkategórie a prekliknutie na sk.e-klimas.com.",
+          "tiles": [],
+          "products": [],
+          "katalog": {
+            "zdroj": "https://sk.e-klimas.com/",
+            "banery": [
+              {
+                "nadpis": "Vysoká nosnosť",
+                "podnadpis": "Skrutky a spojovacie prvky pre drevené konštrukcie",
+                "farba": "#fbc878",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-drevene-konstrukcie",
+                "obrazok": "img/klimas/banery/baner-1.webp"
+              },
+              {
+                "nadpis": "Mnohostranné využitie – všetky stavebné podklady",
+                "podnadpis": "Rámové upevnenia",
+                "farba": "#1c9ad7",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/ramove-upevnenia",
+                "obrazok": "img/klimas/banery/baner-2.webp"
+              },
+              {
+                "nadpis": "Pre veľké aj menšie investície",
+                "podnadpis": "Nástenné tepelnoizolačné fixačné systémy",
+                "farba": "#868686",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/nastenne-tepelnoizolacne-fixacne-systemy",
+                "obrazok": "img/klimas/banery/baner-3.webp"
+              },
+              {
+                "nadpis": "Skrutky, upevňovacie prvky a závesy",
+                "podnadpis": "pre konštrukcie so sadrokartónovými doskami",
+                "farba": "#c2bfb7",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-prvky-v-technologii-sadrokartonu",
+                "obrazok": "img/klimas/banery/baner-4.webp"
+              },
+              {
+                "nadpis": "Solídne upevňovacie prvky vyrobené v Poľsku",
+                "podnadpis": "Mechanické kotvy",
+                "farba": "#f29105",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/mechanicke-kotvy",
+                "obrazok": "img/klimas/banery/baner-5.webp"
+              },
+              {
+                "nadpis": "Upevňovacie prvky pre haly s oceľovými a betónovými konštrukciami",
+                "podnadpis": "Ľahké upevňovacie systémy",
+                "farba": "#829199",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-pre-lahke-byvanie",
+                "obrazok": "img/klimas/banery/baner-6.webp"
+              },
+              {
+                "nadpis": "Hydro- a tepelné izolácie",
+                "podnadpis": "oceľových, betónových a drevených striech",
+                "farba": "#65b22e",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-na-tepelnu-izolaciu-a-hydroizolaciu-plochych-striech",
+                "obrazok": "img/klimas/banery/baner-7.webp"
+              }
+            ],
+            "kategorie": [
+              {
+                "dlazdica": "nástenné tepelnoizolačné fixačné systémy",
+                "nazov": "Upevňovacie systémy pre tepelnú izoláciu stien",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/nastenne-tepelnoizolacne-fixacne-systemy",
+                "farba": "#868686",
+                "vyrobkov": 187,
+                "obrazok": "img/klimas/kategorie/nastenne-tepelnoizolacne-fixacne-systemy.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Systémy upevnenia izolácie stien s plastovou hmoždinkou",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/nastenne-tepelnoizolacne-fixacne-systemy/systemy-upevnenia-izolacie-stien-s-plastovou-hmozdinkou",
+                    "vyrobkov": 36
+                  },
+                  {
+                    "nazov": "Systémy upevnenia izolácie stien s kovovými hmoždinkami",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/nastenne-tepelnoizolacne-fixacne-systemy/systemy-upevnenia-izolacie-stien-s-kovovymi-hmozdinkami",
+                    "vyrobkov": 113
+                  },
+                  {
+                    "nazov": "Upevňovacie prvky na upevnenie izolácie stien – špeciálne",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/nastenne-tepelnoizolacne-fixacne-systemy/upevnovacie-prvky-na-upevnenie-izolacie-stien-specialne",
+                    "vyrobkov": 9
+                  },
+                  {
+                    "nazov": "Montážne príslušenstvo",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/nastenne-tepelnoizolacne-fixacne-systemy/montazne-prislusenstvo",
+                    "vyrobkov": 29
+                  }
+                ]
+              },
+              {
+                "dlazdica": "skrutky a spojovací materiál pre drevené konštrukcie",
+                "nazov": "Skrutky a spojovací materiál pre drevené konštrukcie",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-drevene-konstrukcie",
+                "farba": "#fbc878",
+                "vyrobkov": 1104,
+                "obrazok": "img/klimas/kategorie/skrutky-a-spojovaci-material-pre-drevene-konstrukcie.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Stavebné skrutky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-drevene-konstrukcie/stavebne-skrutky",
+                    "vyrobkov": 793
+                  },
+                  {
+                    "nazov": "Skrutky pre podlahy a terasy",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-drevene-konstrukcie/skrutky-pre-podlahy-a-terasy",
+                    "vyrobkov": 13
+                  },
+                  {
+                    "nazov": "Ostatné skrutky do dreva",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-drevene-konstrukcie/ostatne-skrutky-do-dreva",
+                    "vyrobkov": 2
+                  },
+                  {
+                    "nazov": "Trojrozmerné tesárske spoje",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-drevene-konstrukcie/trojrozmerne-tesarske-spoje",
+                    "vyrobkov": 182
+                  },
+                  {
+                    "nazov": "Klince",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-drevene-konstrukcie/klince",
+                    "vyrobkov": 103
+                  },
+                  {
+                    "nazov": "Spony na klince",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-drevene-konstrukcie/spony-na-klince",
+                    "vyrobkov": 1
+                  },
+                  {
+                    "nazov": "Krytky a ozdobné rozety",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-drevene-konstrukcie/krytky-a-ozdobne-rozety",
+                    "vyrobkov": 8
+                  },
+                  {
+                    "nazov": "Rozpery pre stavebné skrutky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-drevene-konstrukcie/rozpery-pre-stavebne-skrutky",
+                    "vyrobkov": 2
+                  }
+                ]
+              },
+              {
+                "dlazdica": "rámové upevnenia",
+                "nazov": "Rámové a všeobecné upevnenie",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/ramove-upevnenia",
+                "farba": "#1c9ad7",
+                "vyrobkov": 573,
+                "obrazok": "img/klimas/kategorie/ramove-upevnenia.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Upevňovacie prvky rámu",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/ramove-upevnenia/upevnovacie-prvky-ramu",
+                    "vyrobkov": 122
+                  },
+                  {
+                    "nazov": "Kolíky na rýchlu montáž",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/ramove-upevnenia/koliky-na-rychlu-montaz",
+                    "vyrobkov": 121
+                  },
+                  {
+                    "nazov": "Univerzálny spojovací materiál",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/ramove-upevnenia/univerzalny-spojovaci-material",
+                    "vyrobkov": 93
+                  },
+                  {
+                    "nazov": "Všeobecný spojovací materiál",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/ramove-upevnenia/vseobecny-spojovaci-material",
+                    "vyrobkov": 159
+                  },
+                  {
+                    "nazov": "Plastové plášte pre hmoždinky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/ramove-upevnenia/plastove-plaste-pre-hmozdinky",
+                    "vyrobkov": 78
+                  },
+                  {
+                    "nazov": "Kovové kotvy",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/ramove-upevnenia/kovove-kotvy",
+                    "vyrobkov": 59
+                  }
+                ]
+              },
+              {
+                "dlazdica": "mechanické kotvy",
+                "nazov": "Mechanické kotvy",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/mechanicke-kotvy",
+                "farba": "#f29105",
+                "vyrobkov": 251,
+                "obrazok": "img/klimas/kategorie/mechanicke-kotvy.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Mechanické kotvy",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/mechanicke-kotvy/mechanicke-kotvy",
+                    "vyrobkov": 186
+                  },
+                  {
+                    "nazov": "Príslušenstvo",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/mechanicke-kotvy/prislusenstvo",
+                    "vyrobkov": 6
+                  }
+                ]
+              },
+              {
+                "dlazdica": "skrutky do betónu",
+                "nazov": "Skrutky do betónu",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-do-betonu",
+                "farba": "#c6c6c6",
+                "vyrobkov": 37,
+                "obrazok": "img/klimas/kategorie/skrutky-do-betonu.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "WDBLS -Skrutka do betónu s 6HR hlavou a vlisovanou podložkou",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-do-betonu/wdbls-skrutka-do-betonu-s-6hr-hlavou-a-vlisovanou-podlozkou",
+                    "vyrobkov": 21
+                  },
+                  {
+                    "nazov": "WDBLP – Skrutka do betónu so zápustnou hlavou TX",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-do-betonu/wdblp-skrutka-do-betonu-so-zapustnou-hlavou-tx",
+                    "vyrobkov": 9
+                  },
+                  {
+                    "nazov": "WDBLG – Skrutka do betónu s hríbovou hlavou TX",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-do-betonu/wdblg-skrutka-do-betonu-s-hribovou-hlavou-tx",
+                    "vyrobkov": 3
+                  },
+                  {
+                    "nazov": "WDBGZ – Skrutka do betónu s vonkajším závitom",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-do-betonu/wdbgz-skrutka-do-betonu-s-vonkajsim-zavitom",
+                    "vyrobkov": 2
+                  },
+                  {
+                    "nazov": "WDBGW -Skrutka do betónu s vonkajším závitom",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-do-betonu/wdbgw-skrutka-do-betonu-s-vonkajsim-zavitom",
+                    "vyrobkov": 2
+                  }
+                ]
+              },
+              {
+                "dlazdica": "upevňovacie systémy pre ľahké bývanie",
+                "nazov": "Upevňovacie systémy pre ľahké skrinky",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-pre-lahke-byvanie",
+                "farba": "#485156",
+                "vyrobkov": 590,
+                "obrazok": "img/klimas/kategorie/upevnovacie-systemy-pre-lahke-byvanie.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Samovrtné spojovacie prvky pre ľahké obklady stien a striech",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-pre-lahke-byvanie/samovrtne-spojovacie-prvky-pre-lahke-obklady-stien-a-striech",
+                    "vyrobkov": 528
+                  },
+                  {
+                    "nazov": "Príslušenstvo",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-pre-lahke-byvanie/prislusenstvo",
+                    "vyrobkov": 4
+                  },
+                  {
+                    "nazov": "Nity",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-pre-lahke-byvanie/nity",
+                    "vyrobkov": 58
+                  }
+                ]
+              },
+              {
+                "dlazdica": "upevňovacie prvky v technológii sadrokartónu",
+                "nazov": "Upevňovacie systémy pre sadrokartónové dosky",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-prvky-v-technologii-sadrokartonu",
+                "farba": "#c2bfb7",
+                "vyrobkov": 192,
+                "obrazok": "img/klimas/kategorie/upevnovacie-prvky-v-technologii-sadrokartonu.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Fosfátované skrutky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-prvky-v-technologii-sadrokartonu/fosfatovane-skrutky",
+                    "vyrobkov": 92
+                  },
+                  {
+                    "nazov": "Trojrozmerné kovové spojovacie prvky – závesy",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-prvky-v-technologii-sadrokartonu/trojrozmerne-kovove-spojovacie-prvky-zavesy",
+                    "vyrobkov": 19
+                  },
+                  {
+                    "nazov": "Kolíky a kotvy na upevňovanie v technológii suchej výstavby",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-prvky-v-technologii-sadrokartonu/koliky-a-kotvy-na-upevnovanie-v-technologii-suchej-vystavby",
+                    "vyrobkov": 70
+                  },
+                  {
+                    "nazov": "Spojovacie a opravné pásky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-prvky-v-technologii-sadrokartonu/spojovacie-a-opravne-pasky",
+                    "vyrobkov": 9
+                  },
+                  {
+                    "nazov": "Príslušenstvo",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-prvky-v-technologii-sadrokartonu/prislusenstvo",
+                    "vyrobkov": 2
+                  }
+                ]
+              },
+              {
+                "dlazdica": "chemické kotviace systémy",
+                "nazov": "Chemické kotviace systémy",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/chemicke-kotviace-systemy",
+                "farba": "#c99b57",
+                "vyrobkov": 27,
+                "obrazok": "img/klimas/kategorie/chemicke-kotviace-systemy.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Injekčné kotvy",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/chemicke-kotviace-systemy/injekcne-kotvy",
+                    "vyrobkov": 8
+                  },
+                  {
+                    "nazov": "Príslušenstvo",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/chemicke-kotviace-systemy/prislusenstvo",
+                    "vyrobkov": 19
+                  }
+                ]
+              },
+              {
+                "dlazdica": "upevňovacie systémy na tepelnú izoláciu a hydroizoláciu plochých striech",
+                "nazov": "Upevňovacie systémy pre tepelné a hydroizolačné aplikácie na plochých strechách",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-na-tepelnu-izolaciu-a-hydroizolaciu-plochych-striech",
+                "farba": "#65b22e",
+                "vyrobkov": 87,
+                "obrazok": "img/klimas/kategorie/upevnovacie-systemy-na-tepelnu-izolaciu-a-hydroizolaciu-plochych-striech.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Systémy upevnenia termoizolácie a hydroizolácie plochých striech",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-na-tepelnu-izolaciu-a-hydroizolaciu-plochych-striech/systemy-upevnenia-termoizolacie-a-hydroizolacie-plochych-striech",
+                    "vyrobkov": 79
+                  },
+                  {
+                    "nazov": "Inštalačné príslušenstvo",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-na-tepelnu-izolaciu-a-hydroizolaciu-plochych-striech/instalacne-prislusenstvo",
+                    "vyrobkov": 8
+                  }
+                ]
+              },
+              {
+                "dlazdica": "skrutky a spojovací materiál pre stolárstvo",
+                "nazov": "Skrutky a spojovací materiál pre stolárstvo",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-stolarstvo",
+                "farba": "#8fafc7",
+                "vyrobkov": 24,
+                "obrazok": "img/klimas/kategorie/skrutky-a-spojovaci-material-pre-stolarstvo.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Skrutky pre stolársku výrobu",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-a-spojovaci-material-pre-stolarstvo/skrutky-pre-stolarsku-vyrobu",
+                    "vyrobkov": 24
+                  }
+                ]
+              },
+              {
+                "dlazdica": "metrické skrutky, skrutky, podložky",
+                "nazov": "Metrické skrutky, skrutky a podložky",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/metricke-skrutky-skrutky-podlozky",
+                "farba": "#9e1a18",
+                "vyrobkov": 351,
+                "obrazok": "img/klimas/kategorie/metricke-skrutky-skrutky-podlozky.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Metrické skrutky a svorníky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/metricke-skrutky-skrutky-podlozky/metricke-skrutky-a-svorniky",
+                    "vyrobkov": 193
+                  },
+                  {
+                    "nazov": "Matice",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/metricke-skrutky-skrutky-podlozky/matice",
+                    "vyrobkov": 39
+                  },
+                  {
+                    "nazov": "Podložky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/metricke-skrutky-skrutky-podlozky/podlozky",
+                    "vyrobkov": 40
+                  },
+                  {
+                    "nazov": "Tyče",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/metricke-skrutky-skrutky-podlozky/tyce",
+                    "vyrobkov": 60
+                  },
+                  {
+                    "nazov": "Skrutky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/metricke-skrutky-skrutky-podlozky/skrutky",
+                    "vyrobkov": 19
+                  }
+                ]
+              },
+              {
+                "dlazdica": "elektrické upevňovacie prvky",
+                "nazov": "Upevňovacie prvky pre elektroinštalácie",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/elektricke-upevnovacie-prvky",
+                "farba": "#d2df88",
+                "vyrobkov": 22,
+                "obrazok": "img/klimas/kategorie/elektricke-upevnovacie-prvky.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Upínacie svorky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/elektricke-upevnovacie-prvky/upinacie-svorky",
+                    "vyrobkov": 13
+                  },
+                  {
+                    "nazov": "Upínacie svorky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/elektricke-upevnovacie-prvky/upinacie-svorky-1",
+                    "vyrobkov": 6
+                  },
+                  {
+                    "nazov": "Svorky závesného systému",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/elektricke-upevnovacie-prvky/svorky-zavesneho-systemu",
+                    "vyrobkov": 3
+                  }
+                ]
+              },
+              {
+                "dlazdica": "vodovodné a sanitárne zariadenia",
+                "nazov": "Upevňovacie prvky pre inštalatérske a sanitárne aplikácie",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/vodovodne-a-sanitarne-zariadenia",
+                "farba": "#5ac0cc",
+                "vyrobkov": 48,
+                "obrazok": "img/klimas/kategorie/vodovodne-a-sanitarne-zariadenia.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Sanitárne upevňovacie prvky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/vodovodne-a-sanitarne-zariadenia/sanitarne-upevnovacie-prvky",
+                    "vyrobkov": 7
+                  },
+                  {
+                    "nazov": "Potrubné svorky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/vodovodne-a-sanitarne-zariadenia/potrubne-svorky",
+                    "vyrobkov": 21
+                  },
+                  {
+                    "nazov": "Svorky a viazacie prostriedky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/vodovodne-a-sanitarne-zariadenia/svorky-a-viazacie-prostriedky",
+                    "vyrobkov": 20
+                  }
+                ]
+              },
+              {
+                "dlazdica": "stavebné chemikálie",
+                "nazov": "Stavebná chémia",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/stavebne-chemikalie",
+                "farba": "#ffca00",
+                "vyrobkov": 41,
+                "obrazok": "img/klimas/kategorie/stavebne-chemikalie.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Inštalačné peny",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/stavebne-chemikalie/instalacne-peny",
+                    "vyrobkov": 19
+                  },
+                  {
+                    "nazov": "Lepidlá, silikóny, tmely, akryláty",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/stavebne-chemikalie/lepidla-silikony-tmely-akrylaty",
+                    "vyrobkov": 17
+                  },
+                  {
+                    "nazov": "Príslušenstvo",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/stavebne-chemikalie/prislusenstvo",
+                    "vyrobkov": 5
+                  }
+                ]
+              },
+              {
+                "dlazdica": "príslušenstvo pre elektrické náradie",
+                "nazov": "Príslušenstvo pre elektrické náradie",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/prislusenstvo-pre-elektricke-naradie",
+                "farba": "#49755d",
+                "vyrobkov": 303,
+                "obrazok": "img/klimas/kategorie/prislusenstvo-pre-elektricke-naradie.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Diamantové kotúče",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/prislusenstvo-pre-elektricke-naradie/diamantove-kotuce",
+                    "vyrobkov": 32
+                  },
+                  {
+                    "nazov": "Korundové a lamelové kotúče",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/prislusenstvo-pre-elektricke-naradie/korundove-a-lamelove-kotuce",
+                    "vyrobkov": 32
+                  },
+                  {
+                    "nazov": "Vrtáky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/prislusenstvo-pre-elektricke-naradie/vrtaky",
+                    "vyrobkov": 202
+                  },
+                  {
+                    "nazov": "Bity",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/prislusenstvo-pre-elektricke-naradie/bity",
+                    "vyrobkov": 37
+                  }
+                ]
+              },
+              {
+                "dlazdica": "pásky a fólie",
+                "nazov": "Pásky a fólie",
+                "odkaz": "https://sk.e-klimas.com/katalog-produktov/pasky-a-filmy",
+                "farba": "#945d9e",
+                "vyrobkov": 49,
+                "obrazok": "img/klimas/kategorie/pasky-a-filmy.webp",
+                "podkategorie": [
+                  {
+                    "nazov": "Pásky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/pasky-a-filmy/pasky",
+                    "vyrobkov": 18
+                  },
+                  {
+                    "nazov": "Maliarske fólie",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/pasky-a-filmy/maliarske-folie",
+                    "vyrobkov": 3
+                  },
+                  {
+                    "nazov": "Stavebné a ochranné fólie",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/pasky-a-filmy/stavebne-a-ochranne-folie",
+                    "vyrobkov": 16
+                  },
+                  {
+                    "nazov": "Butylové pásky",
+                    "odkaz": "https://sk.e-klimas.com/katalog-produktov/pasky-a-filmy/butylove-pasky",
+                    "vyrobkov": 12
+                  }
+                ]
+              }
+            ]
+          }
+        },
         {
           "id": "sortiment",
           "name": "Kľúčové výrobky",
