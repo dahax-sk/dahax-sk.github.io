@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.11",
+  "version": "2026-10-27.19",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -1348,7 +1348,41 @@
               }
             ],
             "druhText": "tŕň sa zatĺka – rýchla montáž na rovnom podklade.",
-            "poradie": 1
+            "poradie": 1,
+            "top": {
+              "foto": "img/klimas/etics-top/foto-lfmg.webp",
+              "kotva": "img/klimas/etics-top/kotva-lfmg-10.webp",
+              "claim": "Najpredávanejšia natĺkacia kotva. Do každého podkladu.",
+              "sklad": {
+                "od": "140",
+                "do": "300"
+              },
+              "otocka": true,
+              "vyhody": [
+                {
+                  "t": "Dlhá expanzná zóna",
+                  "p": "Rovnomerné rozloženie síl v podklade."
+                },
+                {
+                  "t": "Hlava potiahnutá plastom",
+                  "p": "Menší tepelný most, tŕň bez korózie."
+                },
+                {
+                  "t": "Inovatívny prítlačný tanier",
+                  "p": "Lepšia priľnavosť malty, vyššia tuhosť."
+                }
+              ],
+              "cisla": [
+                {
+                  "v": "0,90 kN",
+                  "l": "NRk v betóne"
+                },
+                {
+                  "v": "0,002 W/K",
+                  "l": "bodový prestup tepla od"
+                }
+              ]
+            }
           }
         },
         {
@@ -1433,7 +1467,40 @@
             "poradie": 2,
             "video": "video/klimas/klimas-wktherm-s-montaz.mp4",
             "pomer": 1.7777777777777777,
-            "videoNazov": "Montáž WKTHERM S-8"
+            "videoNazov": "Montáž WKTHERM S-8",
+            "top": {
+              "foto": "img/klimas/etics-top/foto-wktherm.webp",
+              "kotva": "img/klimas/etics-top/kotva-wktherm-s-8.webp",
+              "claim": "Menej vŕtania, presné osadenie skrutkovaním.",
+              "sklad": {
+                "od": "95",
+                "do": "295"
+              },
+              "vyhody": [
+                {
+                  "t": "Krátka expanzná zóna",
+                  "p": "Menšia hĺbka vŕtania, úspora času."
+                },
+                {
+                  "t": "Hlava potiahnutá plastom",
+                  "p": "Menší tepelný most, tŕň bez korózie."
+                },
+                {
+                  "t": "Skrutkovací tŕň TX 40",
+                  "p": "Povrchová aj zapustená montáž."
+                }
+              ],
+              "cisla": [
+                {
+                  "v": "1,50 kN",
+                  "l": "NRk v betóne"
+                },
+                {
+                  "v": "0,002 W/K",
+                  "l": "bodový prestup tepla"
+                }
+              ]
+            }
           }
         },
         {
@@ -1527,7 +1594,44 @@
             "poradie": 3,
             "video": "video/klimas/klimas-thermodrive-v2-shorts.mp4",
             "pomer": 0.5625,
-            "videoNazov": "Montáž THERMODRIVE V2-8"
+            "videoNazov": "Montáž THERMODRIVE V2-8",
+            "top": {
+              "foto": "img/klimas/etics-top/foto-thermodrive.webp",
+              "kotva": "img/klimas/etics-top/kotva-thermodrive-v2-8.webp",
+              "claim": "Jedna kotva na všetko: zóna 25 – 65 mm a len 0,001 W/K.",
+              "sklad": {
+                "od": "135",
+                "do": "395"
+              },
+              "vyhodyNadpis": "3 spôsoby montáže",
+              "vyhody": [
+                {
+                  "t": "Viditeľná so zátkou KSV",
+                  "p": "Tanier v rovine izolácie.",
+                  "obr": "img/klimas/etics-top/thermodrive-montaz-1.webp"
+                },
+                {
+                  "t": "Zapustená s krytkou",
+                  "p": "Tanier skrytý v izolácii.",
+                  "obr": "img/klimas/etics-top/thermodrive-montaz-2.webp"
+                },
+                {
+                  "t": "Zapustená s TOOL THERMODRIVE V2",
+                  "p": "Rovnaká hĺbka pri každom kuse.",
+                  "obr": "img/klimas/etics-top/thermodrive-montaz-3.webp"
+                }
+              ],
+              "cisla": [
+                {
+                  "v": "1,50 kN",
+                  "l": "NRk v betóne"
+                },
+                {
+                  "v": "0,001 W/K",
+                  "l": "pri zapustenej montáži"
+                }
+              ]
+            }
           }
         },
         {
@@ -2194,7 +2298,7 @@
           "id": "fasady",
           "name": "Fasády",
           "title": "Čadičová vlna pre fasády",
-          "image": "img/product/izovat-fasad.webp",
+          "image": "img/izovat/izovat-fasady-zostava.webp",
           "imageOnWhite": true,
           "imageCaption": "Ohňovzdorná · z prírodných hornín · odolná voči hlodavcom",
           "highlight": "λD 0,035 · A1",
@@ -2208,23 +2312,6 @@
               "id": "fasad-cottage",
               "name": "FASAD COTTAGE",
               "description": "Fasádna doska z čadičovej vlny, nehorľavá."
-            },
-            {
-              "id": "izovat-90l-145",
-              "name": "IZOVAT 90 L · 115 · 125–145",
-              "description": "Omietané fasády (ETICS); IZOVAT 115 odporúča výrobca pre nízkopodlažné budovy."
-            },
-            {
-              "id": "izovat-65-80fg",
-              "name": "IZOVAT 65 · 80 · 80 FG",
-              "description": "Odvetrávané fasády – jednovrstvovo; 80 FG so sklenou rohožou nepotrebuje ďalšiu vetrovú zábranu."
-            }
-          ],
-          "gallery": [
-            {
-              "src": "img/izovat/izovat-fasada-budova.webp",
-              "caption": "Fasáda administratívnej budovy",
-              "onWhite": true
             }
           ]
         },
@@ -2232,7 +2319,7 @@
           "id": "ploche-strechy",
           "name": "Ploché strechy",
           "title": "Dvojvrstvová skladba",
-          "image": "img/product/izovat-strecha-skladba.webp",
+          "image": "img/izovat/izovat-strechy-zostava.webp",
           "imageOnWhite": true,
           "numbered": true,
           "products": [
@@ -2250,21 +2337,6 @@
               "id": "izovat-160-inc-wed",
               "name": "IZOVAT 160 INC / WED",
               "description": "Spádové dosky podľa návrhu strechy"
-            }
-          ],
-          "gallery": [
-            {
-              "src": "img/izovat/izovat-strecha-hala-1.webp",
-              "caption": "Plochá strecha haly počas montáže"
-            },
-            {
-              "src": "img/izovat/izovat-strecha-hala-2.webp",
-              "caption": "Plochá strecha haly – pohľad z druhej strany"
-            },
-            {
-              "src": "img/izovat/izovat-strecha-balik.webp",
-              "caption": "Strešné dosky IZOVAT z čadičovej vlny",
-              "onWhite": true
             }
           ]
         }
