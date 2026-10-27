@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.56",
+  "version": "2026-10-27.57",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -58,7 +58,7 @@
   "logistics": {
     "eyebrow": "Logistika",
     "title": "Doprava a sklad",
-    "intro": "Rýchla doprava materiálu s možnosťou kombinácie tovaru z našich skladov v Prešove a Leviciach.",
+    "intro": "Rýchla doprava materiálu s možnosťou kombinácie tovaru z našich skladov v Prešove a pri Leviciach.",
     "points": [
       {
         "title": "Široký sortiment",
@@ -66,7 +66,7 @@
       },
       {
         "title": "Centrálny sklad",
-        "text": "Zľavy z ceny pri centrálnom objednávaní."
+        "text": "Zľavy pri centrálnej objednávke."
       },
       {
         "title": "Závoz na predajne",
@@ -141,7 +141,7 @@
                 "obrazok": "img/klimas/banery/baner-2.webp"
               },
               {
-                "nadpis": "Pre veľké aj menšie investície",
+                "nadpis": "Pre veľké aj malé investície",
                 "podnadpis": "Nástenné tepelnoizolačné fixačné systémy",
                 "farba": "#868686",
                 "odkaz": "https://sk.e-klimas.com/katalog-produktov/nastenne-tepelnoizolacne-fixacne-systemy",
@@ -196,7 +196,7 @@
                     "vyrobkov": 113
                   },
                   {
-                    "nazov": "Upevňovacie prvky na upevnenie izolácie stien – špeciálne",
+                    "nazov": "Špeciálne prvky na upevnenie izolácie stien",
                     "odkaz": "https://sk.e-klimas.com/katalog-produktov/nastenne-tepelnoizolacne-fixacne-systemy/upevnovacie-prvky-na-upevnenie-izolacie-stien-specialne",
                     "vyrobkov": 9
                   },
@@ -271,7 +271,7 @@
                     "vyrobkov": 122
                   },
                   {
-                    "nazov": "Kolíky na rýchlu montáž",
+                    "nazov": "Natĺkacie hmoždinky na rýchlu montáž",
                     "odkaz": "https://sk.e-klimas.com/katalog-produktov/ramove-upevnenia/koliky-na-rychlu-montaz",
                     "vyrobkov": 121
                   },
@@ -326,7 +326,7 @@
                 "obrazok": "img/klimas/kategorie/skrutky-do-betonu.webp",
                 "podkategorie": [
                   {
-                    "nazov": "WDBLS -Skrutka do betónu s 6HR hlavou a vlisovanou podložkou",
+                    "nazov": "WDBLS – Skrutka do betónu so šesťhrannou hlavou a vlisovanou podložkou",
                     "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-do-betonu/wdbls-skrutka-do-betonu-s-6hr-hlavou-a-vlisovanou-podlozkou",
                     "vyrobkov": 21
                   },
@@ -346,15 +346,15 @@
                     "vyrobkov": 2
                   },
                   {
-                    "nazov": "WDBGW -Skrutka do betónu s vonkajším závitom",
+                    "nazov": "WDBGW – Skrutka do betónu s vonkajším závitom",
                     "odkaz": "https://sk.e-klimas.com/katalog-produktov/skrutky-do-betonu/wdbgw-skrutka-do-betonu-s-vonkajsim-zavitom",
                     "vyrobkov": 2
                   }
                 ]
               },
               {
-                "dlazdica": "upevňovacie systémy pre ľahké bývanie",
-                "nazov": "Upevňovacie systémy pre ľahké skrinky",
+                "dlazdica": "upevňovacie systémy pre ľahké konštrukcie",
+                "nazov": "Upevňovacie systémy pre ľahké konštrukcie",
                 "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-pre-lahke-byvanie",
                 "farba": "#485156",
                 "vyrobkov": 590,
@@ -396,7 +396,7 @@
                     "vyrobkov": 19
                   },
                   {
-                    "nazov": "Kolíky a kotvy na upevňovanie v technológii suchej výstavby",
+                    "nazov": "Hmoždinky a kotvy pre suchú výstavbu",
                     "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-prvky-v-technologii-sadrokartonu/koliky-a-kotvy-na-upevnovanie-v-technologii-suchej-vystavby",
                     "vyrobkov": 70
                   },
@@ -434,14 +434,14 @@
               },
               {
                 "dlazdica": "upevňovacie systémy na tepelnú izoláciu a hydroizoláciu plochých striech",
-                "nazov": "Upevňovacie systémy pre tepelné a hydroizolačné aplikácie na plochých strechách",
+                "nazov": "Upevňovacie systémy pre tepelné a hydroizolačné izoláciu plochých striech",
                 "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-na-tepelnu-izolaciu-a-hydroizolaciu-plochych-striech",
                 "farba": "#65b22e",
                 "vyrobkov": 87,
                 "obrazok": "img/klimas/kategorie/upevnovacie-systemy-na-tepelnu-izolaciu-a-hydroizolaciu-plochych-striech.webp",
                 "podkategorie": [
                   {
-                    "nazov": "Systémy upevnenia termoizolácie a hydroizolácie plochých striech",
+                    "nazov": "Systémy upevnenia tepelnej izolácie a hydroizolácie plochých striech",
                     "odkaz": "https://sk.e-klimas.com/katalog-produktov/upevnovacie-systemy-na-tepelnu-izolaciu-a-hydroizolaciu-plochych-striech/systemy-upevnenia-termoizolacie-a-hydroizolacie-plochych-striech",
                     "vyrobkov": 79
                   },
@@ -468,8 +468,8 @@
                 ]
               },
               {
-                "dlazdica": "metrické skrutky, skrutky, podložky",
-                "nazov": "Metrické skrutky, skrutky a podložky",
+                "dlazdica": "metrické skrutky, vruty, podložky",
+                "nazov": "Metrické skrutky, vruty a podložky",
                 "odkaz": "https://sk.e-klimas.com/katalog-produktov/metricke-skrutky-skrutky-podlozky",
                 "farba": "#9e1a18",
                 "vyrobkov": 351,
@@ -670,7 +670,7 @@
               "id": "wkfs",
               "name": "WKFS",
               "type": "Plný závit · zápustná hlava TX · novinka",
-              "description": "Konštrukčné spoje a vystuženie dreva; rezné zárezy na závite pretínajú vlákna dreva.",
+              "description": "Konštrukčné spoje a vystuženie dreva; zárezy na závite prerezávajú vlákna dreva.",
               "specs": [
                 {
                   "value": "Ø 8 / 10 mm",
@@ -883,7 +883,7 @@
               ]
             }
           ],
-          "note": "Terasy: WN, HNT, WT (nerez A2) · podložka PWKCS · SQ Ceramic – 10× väčšia antikorózna ochrana ako zinok 5 µm."
+          "note": "Terasy: WN, HNT, WT (nerez A2) · podložka PWKCS · SQ Ceramic – 10× vyššia antikorózna ochrana ako zinok 5 µm."
         },
         {
           "id": "top-klinove-kotvy",
@@ -969,7 +969,7 @@
               "id": "le-zn",
               "name": "LE-ZN",
               "type": "Mechanická kotva · galvanický zinok",
-              "description": "Vnútri budov – oceľové doplnky, balustrády, ľahké a stredne veľké kovové konštrukcie.",
+              "description": "Vnútri budov – oceľové doplnky, zábradlia, ľahké a stredne veľké kovové konštrukcie.",
               "specs": [
                 {
                   "value": "M8 – M16",
@@ -995,7 +995,7 @@
           "name": "Univerzálne a rámové",
           "eyebrow": "KLIMAS – TOP doplnky",
           "title": "Univerzálne a rámové kotviace systémy",
-          "intro": "Natĺkacie hmoždinky SM a SMK na rýchlu sériovú montáž a univerzálne uzlovacie hmoždinky SFX do všetkých typov podkladov – v tenkostennom podklade sa hmoždinka bezpečne zauzlí na opačnej strane. Na lišty, profily sadrokartónu, káblové trasy, svietidlá aj bytové zariadenie.",
+          "intro": "Natĺkacie hmoždinky SM a SMK na rýchlu sériovú montáž a univerzálne uzlovacie hmoždinky SFX do všetkých typov podkladov – v tenkostennom podklade sa hmoždinka bezpečne zauzlí na opačnej strane. Na lišty, sadrokartónové profily, káblové trasy, svietidlá aj bytové zariadenie.",
           "image": "img/klimas/doplnky/panel-ramove-univerzalne.webp",
           "products": [
             {
@@ -1424,7 +1424,7 @@
               ],
               "documents": [
                 {
-                  "title": "ETA-13/0724 – WKTHERM S (SK)",
+                  "title": "ETA-13/0724 – WKTHERM S (SK)",
                   "href": "docs/klimas/eta-13-0724-wktherm-s-sk.pdf",
                   "kind": "certifikat"
                 },
@@ -1756,7 +1756,7 @@
           "id": "overene-eta",
           "name": "Overené ETA",
           "eyebrow": "KLIMAS – certifikácia",
-          "title": "Európske posúdenia ETA",
+          "title": "Európske technické posúdenia ETA",
           "products": [
             {
               "id": "eta-22-0611",
@@ -1864,7 +1864,7 @@
             {
               "id": "eta-20-0641",
               "name": "ETA-20/0641",
-              "description": "LE-A4 – nerezová mechanická kotva do betónu s trhlinami aj bez.",
+              "description": "LE-A4 – nerezová mechanická kotva do betónu s trhlinami aj bez nich.",
               "documents": [
                 {
                   "title": "ETA-20/0641 – LE-A4 (SK)",
@@ -1929,7 +1929,7 @@
         "since": "1990",
         "country": "Poľsko",
         "hq": "Kuźnica Kiedrzyńska pri Čenstochovej",
-        "about": "Rodinná firma, ktorá pod značkou Wkręt-met vyrába spojovaciu a kotviacu techniku pre stavebníctvo. Vo výrobnom areáli s rozlohou 80 000 m² vznikne až 30 miliónov skrutiek denne a kotvy pre zatepľovacie systémy majú európske technické posúdenie ETA.",
+        "about": "Rodinná firma, ktorá pod značkou Wkręt-met vyrába spojovaciu a kotviacu techniku pre stavebníctvo. Vo výrobnom areáli s rozlohou 80 000 m² sa denne vyrobí až 30 miliónov skrutiek. Kotvy pre zatepľovacie systémy majú európske technické posúdenie ETA.",
         "facts": [
           {
             "value": "6 500",
@@ -1947,14 +1947,14 @@
         "makes": [
           "Kotvy pre ETICS (ThermoDrive V2, eco-drive)",
           "Skrutky do dreva (WKCH, WKCR, WKCP)",
-          "Betónové skrutky a kotvy",
+          "Skrutky do betónu a kotvy",
           "Rámové hmoždinky",
           "Strešné a SDK skrutky",
           "Chemické kotvy"
         ],
         "sources": [
           {
-            "title": "KLIMAS – O spoločnosti",
+            "title": "KLIMAS – O spoločnosti",
             "url": "https://lt-e-klimas.prod.merce.com/about-the-company"
           },
           {
@@ -2011,7 +2011,7 @@
         {
           "kind": "video",
           "src": "video/klimas/klimas-wkfc-wkfs.mp4",
-          "caption": "WKFC a WKFS – skrutky s celým závitom"
+          "caption": "WKFC a WKFS – skrutky s plným závitom"
         },
         {
           "kind": "video",
@@ -2364,7 +2364,7 @@
       ],
       "profile": {
         "hq": "Žitomir, Promyslova 6",
-        "about": "Čadičovú vlnu IZOVAT vyrába spoločnosť OBIO v Žitomire na modernej výrobnej linke z čadičovej horniny, so spojivom bez voľného fenolu. DAHAX dodáva dosky pre fasády – kontaktné zatepľovacie systémy ETICS aj odvetrávané fasády – a pre ploché strechy v jednovrstvovej aj dvojvrstvovej skladbe. Systém kvality EN ISO 9001:2015, výhradný distribútor pre SK a CZ: DAHAX.",
+        "about": "Čadičovú vlnu IZOVAT vyrába spoločnosť OBIO v Žitomire z čadičovej horniny na modernej výrobnej linke, so spojivom bez voľného fenolu. DAHAX dodáva dosky pre fasády – kontaktné zatepľovacie systémy ETICS aj odvetrávané fasády – a pre ploché strechy v jednovrstvovej aj dvojvrstvovej skladbe. Výroba má certifikovaný systém kvality podľa EN ISO 9001:2015.",
         "facts": [
           {
             "value": "A1",
@@ -2423,67 +2423,67 @@
       "tier": "core",
       "documents": [
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT FASAD 10, 50–90 mm (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT FASAD 10, 50 – 90 mm (SK)",
           "href": "docs/izovat/dop-605-izovat-fasad-10-50-90mm-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT FASAD 10, 100–240 mm (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT FASAD 10, 100 – 240 mm (SK)",
           "href": "docs/izovat/dop-606-izovat-fasad-10-100-240mm-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT FASAD COTTAGE, 50–90 mm (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT FASAD COTTAGE, 50 – 90 mm (SK)",
           "href": "docs/izovat/dop-634-izovat-fasad-cottage-50-90mm-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT FASAD COTTAGE, 100–270 mm (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT FASAD COTTAGE, 100 – 270 mm (SK)",
           "href": "docs/izovat/dop-635-izovat-fasad-cottage-100-270mm-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT 65, 100–300 mm (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT 65, 100 – 300 mm (SK)",
           "href": "docs/izovat/dop-413-izovat-65-100-300mm-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT 80, 100–300 mm (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT 80, 100 – 300 mm (SK)",
           "href": "docs/izovat/dop-429-izovat-80-100-300mm-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT 80 FG, 100–300 mm (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT 80 FG, 100 – 300 mm (SK)",
           "href": "docs/izovat/dop-431-izovat-80fg-100-300mm-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT 90, 100–270 mm (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT 90, 100 – 270 mm (SK)",
           "href": "docs/izovat/dop-441-izovat-90-100-270mm-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT 125, 30–190 mm (CZ)",
+          "title": "Vyhlásenie o parametroch – IZOVAT 125, 30 – 190 mm (CZ)",
           "href": "docs/izovat/dop-522-izovat-125-30-190mm-cz.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT 135, 30–180 mm (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT 135, 30 – 180 mm (SK)",
           "href": "docs/izovat/dop-535-izovat-135-30-180mm-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT 100, 100–240 mm, plochá strecha (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT 100, 100 – 240 mm, plochá strecha (SK)",
           "href": "docs/izovat/dop-453-izovat-100-100-240mm-sk.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT 110, 100–220 mm, plochá strecha (CZ)",
+          "title": "Vyhlásenie o parametroch – IZOVAT 110, 100 – 220 mm, plochá strecha (CZ)",
           "href": "docs/izovat/dop-470-izovat-110-100-220mm-cz.pdf",
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT 160, 100–150 mm, plochá strecha (SK)",
+          "title": "Vyhlásenie o parametroch – IZOVAT 160, 100 – 150 mm, plochá strecha (SK)",
           "href": "docs/izovat/dop-550-izovat-160-100-150mm-sk.pdf",
           "kind": "certifikat"
         },
@@ -2529,7 +2529,7 @@
           "name": "Fasády ETICS",
           "eyebrow": "HOLCIM – fasády ETICS",
           "title": "HOLCIM PRO FACADE 35",
-          "intro": "Doska, ktorú predávame na zateplenie fasád ETICS.",
+          "intro": "Doska na zateplenie fasád kontaktným systémom ETICS.",
           "image": "img/holcim/holcim-balik-fasada.webp",
           "imageCaption": "Kamenná vlna HOLCIM – balenie fasádnych dosiek",
           "products": [
@@ -2594,7 +2594,7 @@
             {
               "id": "roof-base",
               "name": "HOLCIM ROOF BASE 30 · 40",
-              "description": "Spodná vrstva dvojvrstvovej izolácie; BASE 40 pre strechy s technológiami.",
+              "description": "Spodná vrstva dvojvrstvovej izolácie; BASE 40 pre strechy s technologickými zariadeniami.",
               "specs": [
                 {
                   "value": "0,036",
@@ -2732,7 +2732,7 @@
               ]
             }
           ],
-          "note": "Všetky dosky: reakcia na oheň A1, hydrofóbne, paropriepustné – dvojvrstvová skladba BASE + TOP.",
+          "note": "Všetky dosky sú hydrofóbne a paropriepustné; dvojvrstvová skladba BASE + TOP.",
           "specs": [
             {
               "value": "80 kPa",
@@ -2757,7 +2757,7 @@
         "since": "1912",
         "country": "Švajčiarsko · Poľsko",
         "hq": "Zug (skupina) · kamenná vlna z Poľska",
-        "about": "Kamenná vlna HOLCIM z prírodného kameňa – z poľského závodu globálnej skupiny Holcim. Nosná doska PRO FACADE 35 spája λD 0,035 s pevnosťou 30 kPa pre náročné fasády ETICS, rad ROOF zvládne strechy až po 80 kPa. Všetko nehorľavé A1, hydrofóbne a paropriepustné; plný kamión 22 paliet.",
+        "about": "Kamennú vlnu HOLCIM z prírodného kameňa vyrába poľský závod globálnej skupiny Holcim. Doska PRO FACADE 35 je určená na náročné fasády ETICS, rad ROOF na ploché strechy od rodinného domu po logistickú halu. Dosky sú hydrofóbne a paropriepustné; plný kamión pojme 22 paliet.",
         "facts": [
           {
             "value": "0,035",
@@ -2855,7 +2855,7 @@
         },
         {
           "src": "img/holcim/holcim-zavod.webp",
-          "caption": "Závod Holcim Polska na kamennú vlnu"
+          "caption": "Závod Holcim Polska na výrobu kamennej vlny"
         },
         {
           "src": "img/holcim/holcim-vyroba-kamen.webp",
@@ -2912,7 +2912,7 @@
           "name": "XPS PRIME",
           "eyebrow": "SYNTHOS – extrudovaný polystyrén",
           "title": "XPS PRIME: S · G · D",
-          "intro": "Tri rady dosiek XPS pre základy, podlahy a obrátené strechy – strieborná S, G s triedou E a čierna D.",
+          "intro": "Tri rady dosiek XPS pre základy, podlahy a obrátené strechy – strieborné S a G (G s triedou reakcie na oheň E) a čierna D.",
           "products": [
             {
               "id": "xps-prime-s",
@@ -2926,7 +2926,7 @@
                   "accent": true
                 },
                 {
-                  "value": "300–700 kPa",
+                  "value": "300 – 700 kPa",
                   "label": "pevnosť v tlaku CS(10\\Y), S 30 až S 70"
                 },
                 {
@@ -2934,7 +2934,7 @@
                   "label": "dlhodobá nasiakavosť WL(T), S 30"
                 },
                 {
-                  "value": "40–120 mm",
+                  "value": "40 – 120 mm",
                   "label": "hrúbky, doska 1250 × 600 mm"
                 },
                 {
@@ -2976,11 +2976,11 @@
                   "label": "λD [W/(m·K)]"
                 },
                 {
-                  "value": "250–700 kPa",
+                  "value": "250 – 700 kPa",
                   "label": "pevnosť v tlaku, G 25 až G 70"
                 },
                 {
-                  "value": "20–120 mm",
+                  "value": "20 – 120 mm",
                   "label": "hrúbky, doska 1250 × 600 mm"
                 }
               ],
@@ -3017,7 +3017,7 @@
                   "label": "dlhodobá nasiakavosť WL(T)"
                 },
                 {
-                  "value": "40–200 mm",
+                  "value": "40 – 200 mm",
                   "label": "hrúbky D 30 a D 30 TB"
                 },
                 {
@@ -3080,15 +3080,15 @@
         "since": "1945",
         "country": "Poľsko · Česko",
         "hq": "Oświęcim · Kralupy nad Vltavou",
-        "about": "Synthos je poľský chemický koncern s tradíciou od roku 1945 a podľa vlastných údajov najväčší výrobca dosiek XPS v strednej Európe. XPS PRIME vyrába v dvoch závodoch – Oświęcim v Poľsku a Kralupy nad Vltavou v Česku. DAHAX dodáva dosky XPS PRIME S 30, S 50 a S 70 pre základy, podlahy a obrátené strechy.",
+        "about": "Synthos je poľský chemický koncern s tradíciou od roku 1945 a podľa vlastných údajov najväčší výrobca dosiek XPS v strednej Európe. Dosky XPS PRIME sa vyrábajú extrúziou, majú uzavretú bunkovú štruktúru a vysokú pevnosť v tlaku.",
         "facts": [
           {
             "value": "300 · 500 · 700",
-            "label": "kPa – XPS PRIME S 30, S 50, S 70"
+            "label": "kPa – XPS PRIME S 30, S 50, S 70"
           },
           {
             "value": "od 0,032",
-            "label": "λ [W/(m·K)] – XPS PRIME S"
+            "label": "λD [W/(m·K)] – XPS PRIME S"
           },
           {
             "value": "2 závody",
@@ -3262,7 +3262,7 @@
           "name": "styro XPS",
           "eyebrow": "STYROTRADE – extrudovaný polystyrén",
           "title": "styro XPS pre spodnú stavbu a strechy",
-          "intro": "XPS s uzavretými bunkami – vysoká pevnosť v tlaku, odolnosť voči vode a cyklom mrazu. Kladenie v jednej vrstve až do 400 mm.",
+          "intro": "XPS s uzavretými bunkami – vysoká pevnosť v tlaku, odolnosť proti vode a mrazu. Kladenie v jednej vrstve až do hrúbky 400 mm.",
           "products": [
             {
               "id": "styro-xps-300-hp-l",
@@ -3279,7 +3279,7 @@
                   "label": "pevnosť v tlaku pri 10 % deformácii"
                 },
                 {
-                  "value": "40–400 mm",
+                  "value": "40 – 400 mm",
                   "label": "hrúbky dosiek"
                 },
                 {
@@ -3315,7 +3315,7 @@
                   "label": "pevnosť v tlaku pri 10 % deformácii"
                 },
                 {
-                  "value": "40–400 mm",
+                  "value": "40 – 400 mm",
                   "label": "hrúbky dosiek"
                 },
                 {
@@ -3351,7 +3351,7 @@
                   "label": "súčiniteľ tepelnej vodivosti λD"
                 },
                 {
-                  "value": "50–200 mm",
+                  "value": "50 – 200 mm",
                   "label": "hrúbky dosiek"
                 },
                 {
@@ -3387,7 +3387,7 @@
                   "label": "pevnosť v tlaku pri 10 % deformácii"
                 },
                 {
-                  "value": "20–30 mm",
+                  "value": "20 – 30 mm",
                   "label": "hrúbky dosiek"
                 },
                 {
@@ -3416,18 +3416,18 @@
       "profile": {
         "since": "1990",
         "hq": "Čakovičky a Rýmařov",
-        "about": "Český výrobca tepelných izolácií, člen skupiny Styrogroup, so závodmi v Čakovičkách pri Prahe a v Rýmařove. Dosky styro XPS vznikajú extrúziou tvrdej polystyrénovej peny a potom sa presne frézujú a brúsia – majú uzavretú bunkovú štruktúru, sú rozmerovo stabilné, odolné voči vlhkosti a ich tepelnoizolačné vlastnosti sa časom nezhoršujú. DAHAX dodáva sortiment XPS: dosky s pevnosťou v tlaku 200, 300 a 500 kPa s hladkým alebo štruktúrovaným povrchom.",
+        "about": "Český výrobca tepelných izolácií, člen skupiny Styrogroup, so závodmi v Čakovičkách pri Prahe a v Rýmařove. Dosky styro XPS vznikajú extrúziou tvrdej polystyrénovej peny a potom sa presne frézujú a brúsia – majú uzavretú bunkovú štruktúru, sú rozmerovo stabilné, odolné voči vlhkosti a ich tepelnoizolačné vlastnosti sa časom nezhoršujú. DAHAX dodáva dosky STYRO XPS s hladkým alebo štruktúrovaným povrchom.",
         "facts": [
           {
             "value": "2",
             "label": "výrobné závody v ČR"
           },
           {
-            "value": "200–500 kPa",
+            "value": "200 – 500 kPa",
             "label": "pevnosť v tlaku styro XPS"
           },
           {
-            "value": "40–400 mm",
+            "value": "40 – 400 mm",
             "label": "hrúbky styro XPS 300 · λD 0,034"
           }
         ],
@@ -3558,7 +3558,7 @@
         },
         {
           "id": "spadove-strechy",
-          "name": "Spádové strechy",
+          "name": "Ploché strechy",
           "eyebrow": "POLYFORM – ploché strechy",
           "title": "Spádové dosky EPS a multi ROOF",
           "products": [
@@ -3573,11 +3573,11 @@
                   "accent": true
                 },
                 {
-                  "value": "20–300 mm",
+                  "value": "20 – 300 mm",
                   "label": "hrúbka dosky (do 600 mm na požiadanie)"
                 },
                 {
-                  "value": "100–200 kPa",
+                  "value": "100 – 200 kPa",
                   "label": "napätie v tlaku pri 10 % stlačení"
                 },
                 {
@@ -3609,7 +3609,7 @@
                   "accent": true
                 },
                 {
-                  "value": "100–200 kPa",
+                  "value": "100 – 200 kPa",
                   "label": "napätie v tlaku pri 10 % stlačení"
                 },
                 {
@@ -3649,7 +3649,7 @@
                   "label": "jedno- a dvojspádové riešenie"
                 },
                 {
-                  "value": "15–30 kg/m³",
+                  "value": "15 – 30 kg/m³",
                   "label": "objemová hmotnosť EPS skladby"
                 }
               ],
@@ -3722,7 +3722,7 @@
       "profile": {
         "since": "1993",
         "hq": "Podolínec, Prešovský kraj",
-        "about": "POLYFORM vyrába od roku 1993 v Podolínci tepelné a zvukové izolácie a obaly z EPS. Od januára 2006 je členom rakúskej HIRSCH Servo Group, zamestnáva viac ako 70 ľudí v dvoch závodoch. Dosky sú samozhášavé s retardérom PFR, sivý EPS 150 NEO dosahuje λD 0,031.",
+        "about": "POLYFORM vyrába v Podolínci tepelné a zvukové izolácie a obaly z EPS. Od januára 2006 je členom rakúskej HIRSCH Servo Group. Dosky sú samozhášavé s retardérom horenia PFR.",
         "facts": [
           {
             "value": "1993",
@@ -3834,7 +3834,7 @@
           "name": "Sortiment PROFIFIX",
           "eyebrow": "DK MONT – celý sortiment",
           "title": "Profesionálny SDK systém PROFIFIX®",
-          "intro": "Celý sortiment DK MONT na jednom plagáte, s kódmi výrobkov pre objednávku.",
+          "intro": "Všetky výrobky DK MONT na jednom plagáte s objednávacími kódmi.",
           "image": "img/dkmont/plagat-profifix-sdk-system.webp",
           "imageOnWhite": false,
           "products": [
@@ -3857,8 +3857,8 @@
                   "label": "vybrané diely s ochranou proti korózii"
                 },
                 {
-                  "value": "Made in EU",
-                  "label": "vyrobené v Európskej únii"
+                  "value": "EÚ",
+                  "label": "krajina výroby"
                 }
               ],
               "documents": [
@@ -3890,7 +3890,7 @@
       "profile": {
         "country": "Česko",
         "hq": "DK MONT · Mohelnice",
-        "about": "DK MONT je líder českého trhu s príslušenstvom k sadrokartónu a najväčší výrobca týchto dielov v strednej Európe. V Mohelnici lisuje závesy, spojky a kotviace prvky pre SDK konštrukcie a dodáva ich pod značkou PROFIFIX® – v profesionálnej kvalite a za férovú cenu.",
+        "about": "DK MONT je lídrom českého trhu s príslušenstvom k sadrokartónu a najväčší výrobca týchto dielov v strednej Európe. V Mohelnici lisuje závesy, spojky a kotviace prvky pre SDK konštrukcie a dodáva ich pod značkou PROFIFIX® – v profesionálnej kvalite a za výhodnú cenu.",
         "facts": [
           {
             "value": "č. 1",
@@ -3938,7 +3938,7 @@
         },
         {
           "src": "img/dkmont/spojka.webp",
-          "caption": "Spojky a kotvenie"
+          "caption": "Spojky a kotviace prvky"
         },
         {
           "src": "img/dkmont/profily.webp",
@@ -4151,7 +4151,7 @@
           "id": "sadrokarton-a-sadry",
           "name": "Sadrokartón a sadry",
           "eyebrow": "KNAUF – suchá výstavba",
-          "title": "Sadrokartón, suché a mokré sadrové tmely",
+          "title": "Sadrokartón, suché sadrové a pastovité tmely",
           "intro": "Sadrokartónové dosky pre priečky, podhľady a predsadené steny a k nim tmely na spoje a celoplošné stierky – suché sadrové na zamiešanie s vodou aj mokré pastovité, pripravené na okamžité použitie.",
           "image": "img/knauf/knauf-sadrokarton-a-sadry.webp",
           "imageOnWhite": false,
@@ -4334,7 +4334,7 @@
               "id": "knauf-fugenfuller-leicht",
               "name": "Knauf Fugenfüller leicht",
               "image": "img/knauf/knauf-fugenfuller-leicht.webp",
-              "description": "Svetlý práškový tmel na spoje s páskou a lepenie dosiek.",
+              "description": "Odľahčený práškový tmel na spoje s páskou a lepenie dosiek.",
               "specs": [
                 {
                   "value": "3B",
@@ -4383,7 +4383,7 @@
                   "label": "plošná hmotnosť"
                 },
                 {
-                  "value": "2000–3000 mm",
+                  "value": "2000 – 3000 mm",
                   "label": "dĺžka dosky"
                 },
                 {
@@ -4486,7 +4486,7 @@
         "since": "1665",
         "country": "Francúzsko · Slovensko",
         "hq": "Paríž (skupina) · Weber Bratislava",
-        "about": "Weber zo skupiny Saint-Gobain vyrába v Bratislave lepiace malty a omietky od roku 1991. Pre fasády ETICS od nás dostanete celú vrstvu nad izolantom: lepiace a výstužné malty webertherm KPS a leparm, najpredávanejšiu sklovláknitú mriežku Vertex a pastovité omietky weberpas.",
+        "about": "Weber zo skupiny Saint-Gobain vyrába v Bratislave lepiace malty a omietky od roku 1991. Pre fasády ETICS od nás dostanete všetky vrstvy nad izolantom: lepiace a výstužné malty webertherm KPS a leparm, najpredávanejšiu sklovláknitú mriežku Vertex a pastovité omietky weberpas.",
         "facts": [
           {
             "value": "od 1991",
@@ -4540,7 +4540,7 @@
       },
       "documents": [
         {
-          "title": "Katalóg WEBER (Saint-Gobain, EN)",
+          "title": "Katalóg Weber (Saint-Gobain, EN)",
           "href": "https://www.saint-gobain.com/sites/saint-gobain.com/files/media/document/260630_WEBER_catalogue_rgb_BD.pdf",
           "kind": "katalog",
           "external": true
@@ -4604,7 +4604,7 @@
                   "label": "vrece, 48 ks na palete"
                 },
                 {
-                  "value": "weber.therm",
+                  "value": "webertherm",
                   "label": "súčasť certifikovaného ETICS"
                 },
                 {
@@ -4903,12 +4903,12 @@
           "products": [
             {
               "id": "bauderthermofol-u",
-              "name": "THERMOFOL U 15 / 18 / 20",
-              "description": "PVC strešná fólia na voľné kladenie – mechanicky kotvená alebo pod priťaženie, pre novostavby aj sanácie",
+              "name": "THERMOFOL U 15 / 18 / 20",
+              "description": "PVC strešná fólia mechanicky kotvená alebo voľne kladená pod priťaženie, pre novostavby aj sanácie",
               "specs": [
                 {
                   "value": "1,5 · 1,8 · 2,0 mm",
-                  "label": "hrúbka U 15 / U 18 / U 20",
+                  "label": "hrúbka U 15 / U 18 / U 20",
                   "accent": true
                 },
                 {
@@ -4926,17 +4926,17 @@
               ],
               "documents": [
                 {
-                  "title": "Technický list – BauderTHERMOFOL U 15 (02/2021)",
+                  "title": "Technický list – BauderTHERMOFOL U 15 (02/2021)",
                   "href": "docs/bauder/technicky-list-bauderthermofol-u-15-0221-sk.pdf",
                   "kind": "technicky-list"
                 },
                 {
-                  "title": "Technický list – BauderTHERMOFOL U 18 (02/2021)",
+                  "title": "Technický list – BauderTHERMOFOL U 18 (02/2021)",
                   "href": "docs/bauder/technicky-list-bauderthermofol-u-18-0221-sk.pdf",
                   "kind": "technicky-list"
                 },
                 {
-                  "title": "Technický list – BauderTHERMOFOL U 20 (02/2021)",
+                  "title": "Technický list – BauderTHERMOFOL U 20 (02/2021)",
                   "href": "docs/bauder/technicky-list-bauderthermofol-u-20-0221-sk.pdf",
                   "kind": "technicky-list"
                 }
@@ -4994,12 +4994,12 @@
                   "label": "spriahnutá polyesterová vložka"
                 },
                 {
-                  "value": "≥155 °C",
+                  "value": "≥ 155 °C",
                   "label": "odolnosť pri zvýšenej teplote (horná strana)"
                 },
                 {
                   "value": "5 × 1 m",
-                  "label": "rozmer rolky"
+                  "label": "rozmer kotúča"
                 }
               ],
               "documents": [
@@ -5026,11 +5026,11 @@
                   "label": "hrúbka pásu"
                 },
                 {
-                  "value": "≥800 N",
+                  "value": "≥ 800 N",
                   "label": "najväčšia ťahová sila / 50 mm"
                 },
                 {
-                  "value": "≥40 %",
+                  "value": "≥ 40 %",
                   "label": "ťažnosť"
                 }
               ],
@@ -5113,7 +5113,7 @@
             {
               "id": "baudertec-ksd",
               "name": "BauderTEC KSD",
-              "description": "Za studena samolepiaca parozábrana bez horáka – rýchla pokládka na trapézový plech a drevo",
+              "description": "Za studena samolepiaca parozábrana bez horáka – rýchle kladenie na trapézový plech a drevo",
               "specs": [
                 {
                   "value": "za studena",
@@ -5180,11 +5180,11 @@
                   "label": "rozmer dosky (mm)"
                 },
                 {
-                  "value": "60–240 mm",
+                  "value": "60 – 240 mm",
                   "label": "štandardné hrúbky"
                 },
                 {
-                  "value": "≥120 kPa",
+                  "value": "≥ 120 kPa",
                   "label": "pevnosť v tlaku"
                 }
               ],
@@ -5211,7 +5211,7 @@
                   "label": "λD menovitá hodnota [W/(m·K)]"
                 },
                 {
-                  "value": "30–230 mm",
+                  "value": "30 – 230 mm",
                   "label": "hrúbka (počiatočná – max.)"
                 },
                 {
@@ -5242,7 +5242,7 @@
                   "label": "rozmer dosky (mm)"
                 },
                 {
-                  "value": "≥120 kPa",
+                  "value": "≥ 120 kPa",
                   "label": "pevnosť v tlaku"
                 },
                 {
@@ -5261,10 +5261,10 @@
             {
               "id": "bauderpir-kompakt",
               "name": "BauderPIR KOMPAKT",
-              "description": "Systém zlepený horúcim asfaltom, odolný proti podtekaniu, so spádom aj bez",
+              "description": "Systém zlepený horúcim asfaltom, odolný proti podtekaniu, so spádom aj bez neho",
               "specs": [
                 {
-                  "value": "≥150 kPa",
+                  "value": "≥ 150 kPa",
                   "label": "pevnosť v tlaku",
                   "accent": true
                 },
@@ -5313,7 +5313,7 @@
       "profile": {
         "country": "Fínsko",
         "hq": "Helsinki · skupina Owens Corning",
-        "about": "Fínsky výrobca izolácií z kamennej vlny so sídlom v Helsinkách, od roku 2018 v skupine Owens Corning. Pre Slovensko vyrába v poľskom závode Trzemeszno, kde sa hornina taví elektricky so 100 % elektriny z obnoviteľných zdrojov.",
+        "about": "Fínsky výrobca izolácií z kamennej vlny so sídlom v Helsinkách, od roku 2018 v skupine Owens Corning. Pre Slovensko vyrába v poľskom závode Trzemeszno, kde sa hornina taví v elektrických peciach výlučne elektrinou z obnoviteľných zdrojov.",
         "facts": [
           {
             "value": "A1",
@@ -5364,7 +5364,7 @@
           "name": "Stropy garáží a pivníc",
           "eyebrow": "PAROC – stropy garáží a pivníc",
           "title": "PAROC CGL 20cy",
-          "intro": "Stropná lamela z kamennej vlny, ktorú predávame na zateplenie stropov garáží a pivníc – lepí sa na betón a omietne nástrekom.",
+          "intro": "Stropná lamela z kamennej vlny, určená na zateplenie stropov garáží a pivníc – lepí sa na betón a omieta sa nástrekom.",
           "image": "img/paroc/paroc-cgl-20cy.webp",
           "imageOnWhite": true,
           "chips": [
@@ -5389,7 +5389,7 @@
                 },
                 {
                   "value": "50 – 250 mm",
-                  "label": "hrúbky, lamela 200 × 1200 mm"
+                  "label": "hrúbky"
                 },
                 {
                   "value": "5,40",
@@ -5509,7 +5509,7 @@
           "name": "Asfaltové pásy",
           "eyebrow": "NEXLER – ploché strechy",
           "title": "Asfaltové pásy NEXLER",
-          "intro": "Štyri pásy, ktoré predávame – vrchný, samolepiaci a dva podkladové.",
+          "intro": "Štyri asfaltové pásy – jeden vrchný a tri podkladové, z toho jeden samolepiaci.",
           "image": "img/nexler/medium-pye-pv250-s52h.webp",
           "products": [
             {
@@ -5776,7 +5776,7 @@
       "eyebrow": "Extrudovaný polystyrén",
       "tagline": "Poľský XPS 300, 500 a 700 kPa – základy, podlahy, parkoviská aj obrátené strechy.",
       "profile": {
-        "about": "Poľská rodinná firma z Kašúb, známa aj komínovými systémami. Dosky s uzavretými bunkami odolávajú vode, mrazu aj zaťaženiu – od základov rodinného domu po parkovisko, s hranou I, L alebo PW.",
+        "about": "Poľská rodinná firma z Kašúb, známa aj ako výrobca komínových systémov. Dosky s uzavretými bunkami odolávajú vode, mrazu aj zaťaženiu – od základov rodinného domu po parkovisko, s hranou I, L alebo PW.",
         "facts": [
           {
             "value": "20 – 200 mm",
@@ -5784,7 +5784,7 @@
           },
           {
             "value": "0,032",
-            "label": "λD [W/(m·K)] – XPS 300, 40–60 mm"
+            "label": "λD [W/(m·K)] – XPS 300, 40 – 60 mm"
           },
           {
             "value": "≤ 0,7 %",
@@ -5854,10 +5854,10 @@
                 },
                 {
                   "value": "0,032 W/mK",
-                  "label": "λD max. pri hrúbkach 40–60 mm"
+                  "label": "λD max. pri hrúbkach 40 – 60 mm"
                 },
                 {
-                  "value": "40–200 mm",
+                  "value": "40 – 200 mm",
                   "label": "hrúbky dosiek"
                 },
                 {
@@ -5897,10 +5897,10 @@
                 },
                 {
                   "value": "0,033 W/mK",
-                  "label": "λD max. pri hrúbkach 50–100 mm"
+                  "label": "λD max. pri hrúbkach 50 – 100 mm"
                 },
                 {
-                  "value": "50–120 mm",
+                  "value": "50 – 120 mm",
                   "label": "hrúbky dosiek"
                 },
                 {
@@ -5938,7 +5938,7 @@
                   "label": "súčiniteľ tepelnej vodivosti λD max."
                 },
                 {
-                  "value": "50–100 mm",
+                  "value": "50 – 100 mm",
                   "label": "hrúbky dosiek"
                 },
                 {
@@ -5999,7 +5999,7 @@
             },
             {
               "title": "Obrátená strecha",
-              "text": "Doska nad hydroizoláciou chráni ju pred mrazom aj poškodením."
+              "text": "Doska nad hydroizoláciou ju chráni pred mrazom aj poškodením."
             },
             {
               "title": "Tepelné mosty",
@@ -6133,7 +6133,7 @@
       "tagline": "Pozinkované profily CD, UD, CW a UW pre sadrokartónové konštrukcie.",
       "profile": {
         "hq": "Bruntál, Česko · Styroprofile SK od 2009",
-        "about": "Styroprofile, a. s. je významný český výrobca stavebných profilov pre zatepľovacie systémy ETICS, sadrokartónové konštrukcie a strojové omietanie, člen skupiny Styrogroup spolu so Styrotrade. Výrobný závod je v Bruntáli na Morave. Pre slovenský trh založil v roku 2009 spoločnosť Styroprofile SK. DAHAX dodáva pozinkované SDK profily CD, UD, CW a UW.",
+        "about": "Styroprofile, a. s., je významný český výrobca stavebných profilov pre zatepľovacie systémy ETICS, sadrokartónové konštrukcie a strojové omietanie, člen skupiny Styrogroup spolu so Styrotrade. Výrobný závod je v Bruntáli. Pre slovenský trh vznikla v roku 2009 spoločnosť Styroprofile SK. DAHAX dodáva pozinkované SDK profily CD, UD, CW a UW.",
         "facts": [
           {
             "value": "2008",
@@ -6180,7 +6180,7 @@
             "url": "https://styroprofile.cz/cs/produkty/steny/sadrokartonove-konstrukce/uw/"
           },
           {
-            "title": "Styroprofile – prehlásenia o vlastnostiach",
+            "title": "Styroprofile – vyhlásenia o parametroch",
             "url": "https://styroprofile.cz/cs/nas-obchod/dokumenty-ke-stazeni/prohlaseni-o-vlastnostech/"
           },
           {
@@ -6297,7 +6297,7 @@
               "description": "Centrálny profil pre sadrokartónové steny a priečky.",
               "specs": [
                 {
-                  "value": "50–150",
+                  "value": "50 – 150",
                   "label": "šírky CW 50, 75, 100, 125, 150",
                   "accent": true
                 },
@@ -6307,7 +6307,7 @@
                 },
                 {
                   "value": "120 / 72 ks",
-                  "label": "v autobalíku (CW 50–100 / 125–150)"
+                  "label": "v autobalíku (CW 50 – 100 / 125 – 150)"
                 },
                 {
                   "value": "0,57 ± 0,04 mm",
@@ -6343,7 +6343,7 @@
               "description": "Vodiaci stenový profil pre sadrokartónové steny a priečky.",
               "specs": [
                 {
-                  "value": "50–150",
+                  "value": "50 – 150",
                   "label": "šírky UW 50, 75, 100, 125, 150",
                   "accent": true
                 },
@@ -6353,7 +6353,7 @@
                 },
                 {
                   "value": "120 / 72 ks",
-                  "label": "v autobalíku (UW 50–100 / 125–150)"
+                  "label": "v autobalíku (UW 50 – 100 / 125 – 150)"
                 },
                 {
                   "value": "0,57 ± 0,04 mm",
@@ -6485,7 +6485,7 @@
       "tagline": "SDK profily CD, UD, CW a UW z Košíc – aj v neštandardných dĺžkach na objednávku.",
       "profile": {
         "country": "Slovensko",
-        "about": "Spracúva hutnícky materiál od roku 1992 a od roku 2002 pozdĺžne delí oceľové zvitky na pásy. Z nich na vlastných valcovacích linkách vyrába výrobky z pozinkovaného plechu podľa EN 14195.",
+        "about": "KODA spracúva hutnícky materiál od roku 1992 a od roku 2002 pozdĺžne delí oceľové zvitky na pásy. Z nich na vlastných valcovacích linkách vyrába profily z pozinkovaného plechu podľa EN 14195.",
         "facts": [
           {
             "value": "od 2006",
@@ -6541,7 +6541,7 @@
           "name": "SDK profily",
           "eyebrow": "KODA – profily pre sadrokartón",
           "title": "Profily CD, UD, CW a UW",
-          "intro": "Stropné a stenové profily z pozinkovaného plechu 0,55–0,6 mm.",
+          "intro": "Stropné a stenové profily z pozinkovaného plechu 0,55 – 0,6 mm.",
           "products": [
             {
               "id": "cd-60",
@@ -6596,7 +6596,7 @@
               "name": "UD 28",
               "type": "stropný profil",
               "image": "img/koda/koda-profil-ud-28.webp",
-              "description": "Obvodový profil podhľadu na stenu, vedenie CD.",
+              "description": "Obvodový profil podhľadu na stenu, vedenie pre profily CD.",
               "specs": [
                 {
                   "value": "28 mm",
@@ -6697,7 +6697,7 @@
               "name": "UW 50 · 75 · 100",
               "type": "stenový profil",
               "image": "img/koda/koda-profil-uw.webp",
-              "description": "Vodorovný profil k podlahe a stropu, vedenie CW.",
+              "description": "Vodorovný profil k podlahe a stropu, vedenie pre profily CW.",
               "specs": [
                 {
                   "value": "50 · 75 · 100 mm",
@@ -6847,7 +6847,7 @@
         },
         {
           "src": "img/koda/koda-deliaca-linka.webp",
-          "caption": "Deliaca linka NOP 1250 – pásy 15–600 mm"
+          "caption": "Deliaca linka NOP 1250 – pásy 15 – 600 mm"
         },
         {
           "src": "img/koda/koda-odvijac-zvitkov.webp",
@@ -6916,7 +6916,7 @@
         "name": "PAROC",
         "logo": "img/brand/paroc.webp",
         "category": "Kamenná vlna",
-        "text": "Systém pre stropy pivníc a garáží",
+        "text": "Systém pre stropy garáží a pivníc",
         "id": "paroc"
       },
       {
@@ -6939,7 +6939,7 @@
   "realizations": {
     "eyebrow": "Naše realizácie",
     "title": "KLIMAS v stavebninách",
-    "intro": "Skutočné predajne, ktoré DAHAX vybavil sortimentom KLIMAS – všetky fotky na jednom mieste.",
+    "intro": "Skutočné predajne, ktoré DAHAX vybavil sortimentom KLIMAS – všetky fotografie na jednom mieste.",
     "statement": "Každá realizácia je šitá na mieru predajni",
     "photos": [
       {
