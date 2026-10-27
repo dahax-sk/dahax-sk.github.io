@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.36",
+  "version": "2026-10-27.37",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -3826,57 +3826,226 @@
         "CZ"
       ],
       "eyebrow": "Suchá výstavba",
-      "tagline": "Profily, dosky a skrutky pre priečky, podhľady aj predsadené steny.",
-      "titleLong": "DK MONT – KNAUF – KODA – STYROPROFILE",
+      "tagline": "Závesy, spojky, profily a skrutky PROFIFIX® pre priečky, podhľady a predsadené steny.",
       "theme": "dark",
       "categories": [
         {
           "id": "kompletny-system",
-          "name": "Kompletný systém",
-          "title": "Kompletný systém pre suchú výstavbu",
-          "brandRows": true,
+          "name": "Spojky a profily",
+          "title": "Spojky, kotvenie a profily pre SDK",
           "products": [
             {
-              "id": "dk-mont",
-              "name": "DK MONT",
-              "logo": "img/brand/dkmont.webp",
-              "description": "Kovové profily, závesy, kotviace prvky, PROFIFIX® · český výrobca od 1994"
+              "id": "spojky-cd",
+              "name": "Spojky CD",
+              "description": "Rovné a prehnuté spojky na predĺženie CD profilov 100 a 80",
+              "specs": [
+                {
+                  "value": "CD 100 · CD 80",
+                  "label": "pre profily",
+                  "accent": true
+                },
+                {
+                  "value": "rovná / prehnutá",
+                  "label": "vyhotovenie"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg produktov PROFIFIX / DK MONT (CZ)",
+                  "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
+                  "kind": "katalog"
+                }
+              ]
             },
             {
-              "id": "knauf",
-              "name": "KNAUF",
-              "logo": "img/brand/knauf.webp",
-              "description": "Sadrokartónové dosky a systémy – priečky, podhľady, predsadené steny"
+              "id": "krizove-spojky",
+              "name": "Krížové a úrovňové spojky",
+              "description": "Spojenie CD profilov v jednej úrovni, krížom aj na UA profil, štvorbodová úrovňová spojka",
+              "specs": [
+                {
+                  "value": "CD – CD · CD – UA",
+                  "label": "spojenie",
+                  "accent": true
+                },
+                {
+                  "value": "rovná / ohnutá",
+                  "label": "vyhotovenie"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg produktov PROFIFIX / DK MONT (CZ)",
+                  "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
+                  "kind": "katalog"
+                }
+              ]
             },
             {
-              "id": "koda",
-              "name": "KODA",
-              "logo": "img/brand/koda.webp",
-              "description": "Výroba profilov CD, UD, CW, UW a ďalších profilov"
+              "id": "kotviace-uholniky",
+              "name": "Uholníky a úchyty",
+              "description": "Kotviace uholníky na UA profil, uhlová kotva, jazdec CD Klick Fix a držiak na trapézový plech",
+              "specs": [
+                {
+                  "value": "UA 50 / 75 / 100",
+                  "label": "uholníky pre profil",
+                  "accent": true
+                },
+                {
+                  "value": "Klick Fix",
+                  "label": "jazdec CD profilu"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg produktov PROFIFIX / DK MONT (CZ)",
+                  "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
+                  "kind": "katalog"
+                }
+              ]
             },
             {
-              "id": "styroprofile",
-              "name": "STYROPROFILE",
-              "logo": "img/brand/styroprofile.webp",
-              "description": "Profily pre suchú výstavbu"
+              "id": "klipy-na-nosnik",
+              "name": "Klipy na nosník",
+              "description": "Zavesenie podhľadu na oceľový I nosník bez vŕtania",
+              "specs": [
+                {
+                  "value": "1,5 – 15 mm",
+                  "label": "hrúbka príruby nosníka",
+                  "accent": true
+                },
+                {
+                  "value": "3 veľkosti",
+                  "label": "1,5 – 4 / 4 – 10 / 10 – 15 mm"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg produktov PROFIFIX / DK MONT (CZ)",
+                  "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            },
+            {
+              "id": "profily-sdk",
+              "name": "Profily CD, UD, CW, UW",
+              "description": "Kovové profily pre priečky, podhľady a predsadené steny",
+              "specs": [
+                {
+                  "value": "CD · UD · CW · UW",
+                  "label": "typy profilov",
+                  "accent": true
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg produktov PROFIFIX / DK MONT (CZ)",
+                  "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            },
+            {
+              "id": "hmozdinky",
+              "name": "Hmoždinky",
+              "description": "Natĺkacie a klinové hmoždinky na ukotvenie závesov do stropu",
+              "specs": [
+                {
+                  "value": "natĺkacia · klinová",
+                  "label": "typy",
+                  "accent": true
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg produktov PROFIFIX / DK MONT (CZ)",
+                  "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            },
+            {
+              "id": "akusticke-strmene",
+              "name": "Akustické strmene",
+              "description": "Pružné uloženie CD profilu pre zvukovo izolačné podhľady a steny",
+              "specs": [
+                {
+                  "value": "35 / 45 / 65 / 95 mm",
+                  "label": "veľkosti",
+                  "accent": true
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg produktov PROFIFIX / DK MONT (CZ)",
+                  "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            },
+            {
+              "id": "zavesne-droty",
+              "name": "Závesné drôty",
+              "description": "Drôt s hákom alebo okom, závesný kolík a spona na T profil",
+              "specs": [
+                {
+                  "value": "od 115 mm",
+                  "label": "dĺžka drôtu",
+                  "accent": true
+                },
+                {
+                  "value": "hák / oko",
+                  "label": "vyhotovenie"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg produktov PROFIFIX / DK MONT (CZ)",
+                  "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
+                  "kind": "katalog"
+                }
+              ]
             }
           ],
-          "gallery": [
+          "eyebrow": "DK MONT – sortiment PROFIFIX®",
+          "image": "img/dkmont/spojka.webp",
+          "skupiny": [
             {
-              "src": "img/dkmont/zaves-cd.webp",
-              "caption": "Závesy PROFIFIX®"
+              "od": 0,
+              "nazov": "Spojky a kotvenie"
             },
             {
+              "od": 4,
+              "nazov": "Profily a príslušenstvo"
+            }
+          ],
+          "plavajuce": [
+            {
               "src": "img/dkmont/spojka.webp",
-              "caption": "Spojky a kotvenie"
+              "x": 8,
+              "y": 4,
+              "w": 84,
+              "r": -8,
+              "d": 7.5,
+              "z": 2
             },
             {
               "src": "img/dkmont/profily.webp",
-              "caption": "Profily pre SDK"
+              "x": 6,
+              "y": 42,
+              "w": 70,
+              "r": 0,
+              "d": 8.5,
+              "z": 1
             },
             {
-              "src": "img/dkmont/skrutky-profifix.webp",
-              "caption": "Skrutky PROFIFIX®"
+              "src": "img/dkmont/hmozdinka-klinova.webp",
+              "x": 50,
+              "y": 70,
+              "w": 44,
+              "r": 10,
+              "d": 6.5,
+              "z": 3
             }
           ]
         },
@@ -4185,35 +4354,31 @@
         "since": "1994",
         "country": "Česko",
         "hq": "DK MONT · Mohelnice",
-        "about": "Kompletný systém pre suchú výstavbu z jedného miesta. DK MONT je český výrobca závesných a montážnych prvkov pre sadrokartón a minerálne podhľady (od roku 1994). Dopĺňajú ho KNAUF (rodinná firma od roku 1932) a profily KODA a STYROPROFILE.",
+        "about": "DK MONT je líder českého trhu s príslušenstvom k sadrokartónu a najväčší výrobca týchto dielov v strednej Európe. V Mohelnici lisuje závesy, spojky a kotviace prvky pre SDK konštrukcie a dodáva ich pod značkou PROFIFIX® – v profesionálnej kvalite a za férovú cenu.",
         "facts": [
           {
-            "value": "1994",
-            "label": "DK MONT – český výrobca"
+            "value": "č. 1",
+            "label": "v príslušenstve k SDK v Česku"
           },
           {
-            "value": "1932",
-            "label": "KNAUF – rok založenia"
+            "value": "EN 14195",
+            "label": "kovové diely pre SDK podľa normy"
           },
           {
-            "value": "4",
-            "label": "značky v jednom systéme"
+            "value": "ISO 9001",
+            "label": "certifikovaná výroba"
           }
         ],
         "makes": [
+          "Závesy a Nonius",
+          "Spojky a kotviace prvky",
           "Kovové profily CD, UD, CW, UW",
-          "Závesy a kotviace prvky",
-          "PROFIFIX® skrutky",
-          "Sadrokartónové dosky"
+          "Skrutky PROFIFIX®"
         ],
         "sources": [
           {
             "title": "ESTAV.cz – DK mont s.r.o.",
             "url": "https://www.estav.cz/dk-mont"
-          },
-          {
-            "title": "Knauf – Our History",
-            "url": "https://careers.knauf.co.uk/pages/history"
           },
           {
             "title": "DK mont – oficiálny web",
@@ -4222,6 +4387,10 @@
           {
             "title": "PROFIFIX – dokumenty",
             "url": "https://profifix.eu/documents.html"
+          },
+          {
+            "title": "DK mont – plagát Profesionální SDK systém PROFIFIX",
+            "url": "https://www.dkmont.cz/cz/images/pdf/produkt_01.jpg"
           }
         ]
       },
@@ -4274,11 +4443,6 @@
           "title": "Revízne dvierka a klapky (CZ)",
           "href": "docs/sucha-vystavba/revizne-dvierka-a-klapky-cz.pdf",
           "kind": "ine"
-        },
-        {
-          "title": "Katalóg profilov Styroprofile 2023 (CZ)",
-          "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-          "kind": "katalog"
         }
       ],
       "plavajuce": [
