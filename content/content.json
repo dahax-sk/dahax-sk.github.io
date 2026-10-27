@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.54",
+  "version": "2026-10-27.55",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -5776,11 +5776,11 @@
       "eyebrow": "Extrudovaný polystyrén",
       "tagline": "Poľský XPS 300, 500 a 700 kPa – základy, podlahy, parkoviská aj obrátené strechy.",
       "profile": {
-        "about": "HOCH XPS vyrába poľská rodinná firma HOCH z Nowého Barkoczyna na Kašubách, známa aj komínovými systémami. Dosky z extrudovaného polystyrénu s uzavretými bunkami takmer neprijímajú vodu, odolávajú mrazu a zaťaženiu – od základov rodinného domu po parkovisko. V ponuke sú pevnosti 300, 500 a 700 kPa s hranou I, L alebo PW.",
+        "about": "Poľská rodinná firma z Kašúb, známa aj komínovými systémami. Dosky s uzavretými bunkami odolávajú vode, mrazu aj zaťaženiu – od základov rodinného domu po parkovisko, s hranou I, L alebo PW.",
         "facts": [
           {
-            "value": "300 · 500 · 700",
-            "label": "kPa – pevnosť v tlaku CS(10/Y)"
+            "value": "20 – 200 mm",
+            "label": "hrúbky dosiek"
           },
           {
             "value": "0,032",
@@ -6485,19 +6485,19 @@
       "tagline": "SDK profily CD, UD, CW a UW z Košíc – aj v neštandardných dĺžkach na objednávku.",
       "profile": {
         "country": "Slovensko",
-        "about": "Košická firma KODA spol. s r.o. spracúva hutnícky materiál od roku 1992 – od roku 2002 pozdĺžne delí oceľové zvitky na pásy a od roku 2006 z nich vyrába profily pre sadrokartón. Stropné CD a UD a stenové CW a UW z pozinkovaného plechu 0,55–0,6 mm podľa EN 14195, na objednávku aj v neštandardných dĺžkach.",
+        "about": "Spracúva hutnícky materiál od roku 1992 a od roku 2002 pozdĺžne delí oceľové zvitky na pásy. Z nich na vlastných valcovacích linkách vyrába výrobky z pozinkovaného plechu podľa EN 14195.",
         "facts": [
           {
             "value": "od 2006",
-            "label": "výroba SDK profilov v Košiciach"
+            "label": "výroba SDK profilov"
           },
           {
             "value": "0,55 – 0,6 mm",
-            "label": "hrúbka pozinkovaného plechu"
+            "label": "hrúbka plechu"
           },
           {
             "value": "A1",
-            "label": "reakcia na oheň – EN 14195"
+            "label": "reakcia na oheň"
           }
         ],
         "makes": [
