@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.30",
+  "version": "2026-10-27.32",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -3067,21 +3067,21 @@
         "SK"
       ],
       "eyebrow": "Extrudovaný polystyrén",
-      "tagline": "XPS PRIME: S · G · D",
+      "tagline": "XPS PRIME: S · G · D",
       "theme": "navy",
       "categories": [
         {
           "id": "xps-prime",
           "name": "XPS PRIME",
           "eyebrow": "SYNTHOS – extrudovaný polystyrén",
-          "title": "XPS PRIME: S · G · D",
+          "title": "XPS PRIME: S · G · D",
           "intro": "Tri rady dosiek XPS pre základy, podlahy a obrátené strechy – strieborná S, G s triedou E a čierna D.",
           "products": [
             {
               "id": "xps-prime-s",
               "name": "XPS PRIME S",
               "description": "Najznámejší produkt radu – obvodová izolácia, podlahy, obrátené strechy, terasy a cesty.",
-              "image": "img/product/synthos-xps-prime-s.webp",
+              "image": "img/synthos/synthos-xps-prime-s.webp",
               "specs": [
                 {
                   "value": "od 0,032",
@@ -3090,11 +3090,11 @@
                 },
                 {
                   "value": "300–700 kPa",
-                  "label": "pevnosť v tlaku CS(10\\Y), S 30 až S 70"
+                  "label": "pevnosť v tlaku CS(10\\Y), S 30 až S 70"
                 },
                 {
                   "value": "≤ 0,7 %",
-                  "label": "dlhodobá nasiakavosť WL(T), S 30"
+                  "label": "dlhodobá nasiakavosť WL(T), S 30"
                 },
                 {
                   "value": "40–120 mm",
@@ -3107,12 +3107,12 @@
               ],
               "documents": [
                 {
-                  "title": "Technický list – SYNTHOS XPS PRIME S (PL)",
+                  "title": "Technický list – SYNTHOS XPS PRIME S (PL)",
                   "href": "docs/synthos/technicky-list-synthos-xps-prime-s-pl.pdf",
                   "kind": "technicky-list"
                 },
                 {
-                  "title": "Technický list – XPS PRIME S (SK, 09/2026)",
+                  "title": "Technický list – XPS PRIME S (SK, 09/2026)",
                   "href": "docs/synthos/technicky-list-xps-prime-s-sk-09-2026.pdf",
                   "kind": "technicky-list"
                 },
@@ -3127,7 +3127,7 @@
               "id": "xps-prime-g",
               "name": "XPS PRIME G",
               "description": "Strieborná doska s ekologickými prísadami proti horeniu – trieda reakcie na oheň E.",
-              "image": "img/product/synthos-xps-prime-g.webp",
+              "image": "img/synthos/synthos-xps-prime-g.webp",
               "specs": [
                 {
                   "value": "E",
@@ -3163,8 +3163,8 @@
             {
               "id": "xps-prime-d",
               "name": "XPS PRIME D",
-              "description": "Čierna doska s lepšími izolačnými vlastnosťami ako strieborná S pri zachovaní ostatných parametrov.",
-              "image": "img/product/synthos-xps-prime-d.webp",
+              "description": "Čierna doska s lepšími izolačnými vlastnosťami ako strieborná S pri zachovaní ostatných parametrov.",
+              "image": "img/synthos/synthos-xps-prime-d.webp",
               "specs": [
                 {
                   "value": "od 0,029",
@@ -3215,44 +3215,61 @@
             },
             {
               "value": "≥ 700 kPa",
-              "label": "pevnosť v tlaku – S 70 a G 70"
+              "label": "pevnosť v tlaku – S 70 a G 70"
             },
             {
               "value": "−60 / +70 °C",
               "label": "rozsah teplôt použitia"
             }
           ],
-          "note": "Použitie: obvodová izolácia základov · podlahy a potery · obrátené strechy"
+          "note": "Použitie: obvodová izolácia základov · podlahy a potery · obrátené strechy",
+          "legend": [
+            {
+              "term": "λD od 0,029",
+              "text": "čierna XPS PRIME D"
+            },
+            {
+              "term": "≥ 700 kPa",
+              "text": "pevnosť v tlaku S 70 a G 70"
+            },
+            {
+              "term": "−60 / +70 °C",
+              "text": "rozsah teplôt použitia"
+            }
+          ]
         }
       ],
       "profile": {
         "since": "1945",
-        "country": "Poľsko",
-        "hq": "Oświęcim",
-        "about": "Chemický koncern z Oświęcimu s tradíciou od roku 1945 – viac ako 3 600 zamestnancov, 6 závodov a dodávky do 100 krajín. O sebe uvádza, že je najväčším výrobcom a dodávateľom dosiek XPS v strednej Európe. XPS vyrába v Oświęcime a v Kralupoch nad Vltavou, bez retardéra HBCD.",
+        "country": "Poľsko · Česko",
+        "hq": "Oświęcim · Kralupy nad Vltavou",
+        "about": "Synthos je poľský chemický koncern s tradíciou od roku 1945 a podľa vlastných údajov najväčší výrobca dosiek XPS v strednej Európe. XPS PRIME vyrába v dvoch závodoch – Oświęcim v Poľsku a Kralupy nad Vltavou v Česku. DAHAX dodáva dosky XPS PRIME S 30, S 50 a S 70 pre základy, podlahy a obrátené strechy.",
         "facts": [
           {
-            "value": "80+",
-            "label": "rokov tradície"
+            "value": "300 · 500 · 700",
+            "label": "kPa – XPS PRIME S 30, S 50, S 70"
           },
           {
-            "value": "100",
-            "label": "krajín, kam Synthos dodáva"
+            "value": "od 0,032",
+            "label": "λ [W/(m·K)] – XPS PRIME S"
           },
           {
-            "value": "3 600+",
-            "label": "zamestnancov"
+            "value": "2 závody",
+            "label": "Oświęcim (PL) · Kralupy (CZ)"
           }
         ],
         "makes": [
-          "XPS PRIME S · G · D",
-          "EPS",
-          "Polystyrény",
-          "Syntetické kaučuky"
+          "Obvodová izolácia základov",
+          "Podlahy a potery",
+          "Obrátené strechy"
         ],
         "sources": [
           {
-            "title": "Synthos – O nás",
+            "title": "Synthos XPS – XPS PRIME S (SK)",
+            "url": "https://www.synthosxps.com/sk/products/xps-prime-s-sk/"
+          },
+          {
+            "title": "Synthos – O nás",
             "url": "https://www.synthosgroup.com/en/who-are-we/"
           },
           {
@@ -3266,20 +3283,63 @@
           {
             "title": "Synthos XPS PRIME G",
             "url": "https://www.synthosxps.com/products/xps-prime-g/"
+          },
+          {
+            "title": "Synthos (YouTube) – Akademia Synthos XPS",
+            "url": "https://www.youtube.com/watch?v=PuBG-T3fDvc"
+          },
+          {
+            "title": "Synthos – Chemical Innovations, firemný film (YouTube)",
+            "url": "https://www.youtube.com/watch?v=E1sLmLMpaZk"
+          },
+          {
+            "title": "Synthos (YouTube) – Izolácia základov doskami XPS PRIME S",
+            "url": "https://www.youtube.com/watch?v=pJeDxkKAGXc"
           }
-        ]
+        ],
+        "headLogo": "img/brand/synthos-biele.svg"
       },
       "media": [
         {
-          "src": "img/product/synthos-xps-prime-s.webp",
+          "kind": "video",
+          "src": "video/synthos/synthos-akademia-xps.mp4",
+          "caption": "Akadémia Synthos XPS – výroba dosiek XPS"
+        },
+        {
+          "kind": "video",
+          "src": "video/synthos/synthos-izolacia-zakladov.mp4",
+          "caption": "Izolácia základov doskami XPS PRIME S"
+        },
+        {
+          "src": "img/synthos/synthos-mapa-zavody.webp",
+          "caption": "Závody Synthos – Oświęcim (PL) a Kralupy nad Vltavou (CZ)"
+        },
+        {
+          "src": "img/synthos/synthos-zavod.webp",
+          "caption": "Závod Synthos"
+        },
+        {
+          "src": "img/synthos/synthos-areal.webp",
+          "caption": "Areál Synthos"
+        },
+        {
+          "src": "img/synthos/synthos-xps-rezanie.webp",
+          "caption": "Dosky XPS PRIME S na stavbe"
+        },
+        {
+          "src": "img/synthos/synthos-xps-zaklady.webp",
+          "caption": "Obvodová izolácia základov XPS PRIME S"
+        },
+        {
+          "src": "img/synthos/synthos-xps-prime-s.webp",
           "caption": "XPS PRIME S"
         },
         {
-          "src": "img/product/synthos-xps-prime-g.webp",
+          "src": "img/synthos/synthos-xps-prime-g.webp",
           "caption": "XPS PRIME G"
         },
         {
-          "src": "img/product/synthos-xps-prime-d.webp",
+          "src": "img/synthos/synthos-xps-prime-d.webp",
           "caption": "XPS PRIME D"
         }
       ],
@@ -3292,7 +3352,7 @@
           "kind": "katalog"
         },
         {
-          "title": "Technický list XPS PRIME S (SK, 09/2026)",
+          "title": "Technický list XPS PRIME S (SK, 09/2026)",
           "href": "docs/synthos/technicky-list-xps-prime-s-sk-09-2026.pdf",
           "kind": "technicky-list"
         },
@@ -3341,7 +3401,8 @@
           "href": "docs/synthos/epd-synthos-xps-en.pdf",
           "kind": "ine"
         }
-      ]
+      ],
+      "video": "video/synthos/synthos-firma-prezentacia.mp4"
     },
     {
       "id": "styrotrade",
@@ -3357,7 +3418,7 @@
       ],
       "eyebrow": "Dosky XPS",
       "tagline": "Český výrobca dosiek XPS.",
-      "theme": "light",
+      "theme": "green",
       "categories": [
         {
           "id": "styro-xps",
@@ -3391,12 +3452,12 @@
               ],
               "documents": [
                 {
-                  "title": "Vyhlásenie o parametroch – styro XPS 300 HP-L",
-                  "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-300-hp-l-cz.pdf",
+                  "title": "Vyhlásenie o parametroch – styro XPS 300 HP-L (CZ)",
+                  "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-300-hp-l-2025-cz.pdf",
                   "kind": "vyhlasenie"
                 },
                 {
-                  "title": "Katalóg produktov Styrotrade 2023",
+                  "title": "Katalóg produktov Styrotrade 2023 (CZ)",
                   "href": "docs/styrotrade/katalog-produktov-styrotrade-2023-cz.pdf",
                   "kind": "katalog"
                 }
@@ -3427,12 +3488,12 @@
               ],
               "documents": [
                 {
-                  "title": "Vyhlásenie o parametroch – styro XPS 300 SP-I",
-                  "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-300-sp-i-cz.pdf",
+                  "title": "Vyhlásenie o parametroch – styro XPS 300 SP-I (CZ)",
+                  "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-300-sp-i-2025-cz.pdf",
                   "kind": "vyhlasenie"
                 },
                 {
-                  "title": "Katalóg produktov Styrotrade 2023",
+                  "title": "Katalóg produktov Styrotrade 2023 (CZ)",
                   "href": "docs/styrotrade/katalog-produktov-styrotrade-2023-cz.pdf",
                   "kind": "katalog"
                 }
@@ -3461,7 +3522,18 @@
                   "label": "rozmer dosky"
                 }
               ],
-              "documents": []
+              "documents": [
+                {
+                  "title": "Vyhlásenie o parametroch – styro XPS 500 HP-L (CZ)",
+                  "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-500-hp-l-2025-cz.pdf",
+                  "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Katalóg produktov Styrotrade 2023 (CZ)",
+                  "href": "docs/styrotrade/katalog-produktov-styrotrade-2023-cz.pdf",
+                  "kind": "katalog"
+                }
+              ]
             },
             {
               "id": "styro-xps-200-sp-i",
@@ -3488,49 +3560,46 @@
               ],
               "documents": [
                 {
-                  "title": "Katalóg produktov Styrotrade 2023",
+                  "title": "Vyhlásenie o parametroch – styro XPS 200 SP-I (CZ)",
+                  "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-200-sp-i-2025-cz.pdf",
+                  "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Katalóg produktov Styrotrade 2023 (CZ)",
                   "href": "docs/styrotrade/katalog-produktov-styrotrade-2023-cz.pdf",
                   "kind": "katalog"
                 }
               ]
             }
           ],
-          "image": "img/product/styro-xps.webp",
-          "imageOnWhite": true
+          "image": "img/styrotrade/styro-xps-zostava.webp",
+          "imageOnWhite": false
         }
       ],
       "profile": {
         "since": "1990",
-        "country": "Česko",
         "hq": "Čakovičky a Rýmařov",
-        "about": "Český výrobca tepelných izolácií z EPS a XPS, člen skupiny Styrogroup. Vyrába v dvoch závodoch – v Čakovičkách pri Prahe a v Rýmařove (od 2007) – a o sebe uvádza, že je najväčším výrobcom EPS v ČR. Na styro EPS 100 a 150 dáva 50-ročnú garanciu stálosti vlastností, výrobky sú bez HBCD.",
+        "about": "Český výrobca tepelných izolácií, člen skupiny Styrogroup, so závodmi v Čakovičkách pri Prahe a v Rýmařove. Dosky styro XPS vznikajú extrúziou tvrdej polystyrénovej peny a potom sa presne frézujú a brúsia – majú uzavretú bunkovú štruktúru, sú rozmerovo stabilné, odolné voči vlhkosti a ich tepelnoizolačné vlastnosti sa časom nezhoršujú. DAHAX dodáva sortiment XPS: dosky s pevnosťou v tlaku 200, 300 a 500 kPa s hladkým alebo štruktúrovaným povrchom.",
         "facts": [
           {
             "value": "2",
             "label": "výrobné závody v ČR"
           },
           {
-            "value": "50 rokov",
-            "label": "garancia vlastností EPS 100 a 150"
+            "value": "200–500 kPa",
+            "label": "pevnosť v tlaku styro XPS"
           },
           {
             "value": "40–400 mm",
-            "label": "hrúbky Styro XPS 300 · λD 0,034"
+            "label": "hrúbky styro XPS 300 · λD 0,034"
           }
         ],
         "makes": [
-          "Styro XPS 200 · 300 · 500",
-          "Dosky EPS 70 až 250",
-          "Fasádne EPS 70F / 100F",
-          "Sivý EPS styrotherm plus",
-          "Kročajové dosky styrofloor",
-          "Fasádne profily a rímsy z EPS"
+          "styro XPS 300 HP-L · SP-I",
+          "styro XPS 500 HP-L",
+          "styro XPS 200 SP-I"
         ],
         "sources": [
-          {
-            "title": "ČESKÉSTAVBY.cz – Styrotrade",
-            "url": "https://www.ceskestavby.cz/firmy/styrotrade.html"
-          },
           {
             "title": "Styrotrade – história",
             "url": "https://styrotrade.cz/cs/o-spolecnosti/historie/"
@@ -3538,8 +3607,13 @@
           {
             "title": "Styrotrade – o spoločnosti",
             "url": "https://styrotrade.cz/cs/o-spolecnosti/o-spolecnosti/"
+          },
+          {
+            "title": "Styrotrade – extrudovaný polystyrén XPS",
+            "url": "https://styrotrade.cz/cs/produkty/eps-xps/extrudovany-polystyren-xps-/"
           }
-        ]
+        ],
+        "headLogo": "img/brand/styrotrade.webp"
       },
       "tier": "core",
       "website": "https://styrotrade.cz/cs/",
@@ -3550,36 +3624,27 @@
           "kind": "katalog"
         },
         {
-          "title": "Vyhlásenie o parametroch – Styro XPS 300 SP-I (CZ)",
-          "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-300-sp-i-cz.pdf",
+          "title": "Vyhlásenie o parametroch – styro XPS 300 HP-L (CZ)",
+          "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-300-hp-l-2025-cz.pdf",
           "kind": "vyhlasenie"
         },
         {
-          "title": "Vyhlásenie o parametroch – Styro XPS 300 HP-L (CZ)",
-          "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-300-hp-l-cz.pdf",
+          "title": "Vyhlásenie o parametroch – styro XPS 300 SP-I (CZ)",
+          "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-300-sp-i-2025-cz.pdf",
           "kind": "vyhlasenie"
         },
         {
-          "title": "Vyhlásenie o parametroch – styro EPS 100 (CZ)",
-          "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-eps-100-cz.pdf",
+          "title": "Vyhlásenie o parametroch – styro XPS 500 HP-L (CZ)",
+          "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-500-hp-l-2025-cz.pdf",
           "kind": "vyhlasenie"
         },
         {
-          "title": "Vyhlásenie o parametroch – styro EPS 150 (CZ)",
-          "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-eps-150-cz.pdf",
+          "title": "Vyhlásenie o parametroch – styro XPS 200 SP-I (CZ)",
+          "href": "docs/styrotrade/vyhlasenie-o-parametroch-styro-xps-200-sp-i-2025-cz.pdf",
           "kind": "vyhlasenie"
-        },
-        {
-          "title": "Vyhlásenie o parametroch – styrotherm plus 100 (CZ)",
-          "href": "docs/styrotrade/vyhlasenie-o-parametroch-styrotherm-plus-100-cz.pdf",
-          "kind": "vyhlasenie"
-        },
-        {
-          "title": "Certifikát VÚPS – EPS 100 (CZ)",
-          "href": "docs/styrotrade/certifikat-vups-eps-100-cz.pdf",
-          "kind": "certifikat"
         }
-      ]
+      ],
+      "video": "video/styrotrade/styrotrade-firma.mp4"
     },
     {
       "id": "polyform",
@@ -7432,7 +7497,9 @@
     "video/klimas/klimas-firma.mp4": "KLIMAS – profil firmy",
     "video/klimas/klimas-drevostavba.mp4": "drevostavby (realizácia)",
     "video/holcim/holcim-vyroba.mp4": "Ako vzniká kamenná vlna",
-    "video/holcim/holcim-ohen-a1.mp4": "Skúška ohňom – A1"
+    "video/holcim/holcim-ohen-a1.mp4": "Skúška ohňom – A1",
+    "video/synthos/synthos-akademia-xps.mp4": "Akadémia Synthos XPS",
+    "video/synthos/synthos-izolacia-zakladov.mp4": "Izolácia základov XPS PRIME S"
   },
   "videoPosters": {
     "video/klimas/klimas-thermodrive-v2.mp4": "img/klimas/produkty/klimas-thermodrive-v2-8.webp",

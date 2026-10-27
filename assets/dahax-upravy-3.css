@@ -414,3 +414,13 @@
 /* IZOVAT Ploché strechy – zostava (skladba + 2 haly) vyplní biele okno: okraj 16 px namiesto štandardného */
 .media__img.is-white:has(img[src*="izovat-strechy-zostava"]) { padding: 16px; }
 .media__img.is-white:has(img[src*="izovat-strechy-zostava"]) img { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: contain; }
+/* SYNTHOS strana 25 – „hlava a päta“: súhrnné hodnoty (legend) dole v ľavom stĺpci, spodná hrana na spodnej hrane kariet (Programátor 4) */
+.cards__text>.legend{margin-top:auto;padding-top:22px;border-top:1px solid rgba(255,255,255,.14)}
+/* úvodná snímka SYNTHOS (téma navy ako HOLCIM): video vo farbách SYNTHOS #37667E → #1F3D4C (multiply), nie Holcim modrou */
+.brand--navy:has(img[src*="synthos-biele"]) .brand__side:has(.dxv-bg)::after{background:linear-gradient(180deg,rgba(55,102,126,.9) 0%,rgba(31,61,76,.92) 55%,rgba(18,36,45,.97) 100%)}
+/* úvodná snímka STYROTRADE (téma green, farby z loga STYROTRADE): plocha a video ako pri KLIMAS/HOLCIM – čiernobiely obraz
+   zafarbený do zelenej (multiply), dole tmavší pás pre čitateľnosť (návrh Programátora 3) */
+.brand--green .brand__side{background:#2f5a14}
+.brand--green .scope__role{color:#8dc63f}
+.brand--green .dxv-bg{opacity:.92;mix-blend-mode:normal;filter:grayscale(1) contrast(1.5) brightness(1.1)}
+.brand--green .brand__side:has(.dxv-bg)::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:multiply;background:linear-gradient(180deg,rgba(141,198,63,.9) 0%,rgba(80,140,30,.92) 55%,rgba(30,60,12,.97) 100%)}
