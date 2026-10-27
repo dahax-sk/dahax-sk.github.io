@@ -48,6 +48,13 @@
 .media__img.dxpl-obr.dxpl-t-bauder{background:radial-gradient(110% 80% at 50% 42%,#3b3e45 0%,#1d1f23 52%,#0d0e10 100%)}
 .dxpl-skupiny.dxpl-t-bauder .rows > li[data-skupina]::before{color:#ee7002}
 
+/* BAUDER úvod (strana 40): video z fotiek prospektov Bauder naplno, nie stlmené ako pri iných firmách; dolu stmavené
+   pre nadpis firmy, hore oranžová čiara Bauder */
+.brand:has(.brand__hlogo[src*="bauder-logo-biele"]) .dxv-bg{opacity:1;mix-blend-mode:normal;filter:none}
+.brand:has(.brand__hlogo[src*="bauder-logo-biele"]) .brand__side::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(13,14,16,.2) 0%,rgba(13,14,16,0) 30%,rgba(13,14,16,.7) 62%,#0d0e10 90%)}
+.brand:has(.brand__hlogo[src*="bauder-logo-biele"]) .brand__side::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;z-index:3;background:#ee7002}
+
 @media (prefers-reduced-motion:reduce){
   .dxpl__v,.brands2__grid:has(img[src*="img/dkmont/"]) > button img{animation:none}
 }

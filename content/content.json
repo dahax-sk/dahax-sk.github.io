@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.46",
+  "version": "2026-10-27.49",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -4289,6 +4289,187 @@
               "kind": "katalog"
             }
           ]
+        },
+        {
+          "id": "produkty",
+          "name": "Tmely a dosky",
+          "eyebrow": "KNAUF – vybrané produkty",
+          "title": "Tmely a dosky Knauf",
+          "intro": "Overené produkty Knauf pre sadrokartónové konštrukcie – od dosky cez suché tmelenie spojov až po hotové pastovité stierky.",
+          "products": [
+            {
+              "id": "knauf-uniflott",
+              "name": "Knauf Uniflott",
+              "image": "img/knauf/knauf-uniflott.webp",
+              "description": "Sadrový tmel na spoje, pri hrane HRAK aj bez pásky.",
+              "specs": [
+                {
+                  "value": "5 / 25 kg",
+                  "label": "balenie vo vreci",
+                  "accent": true
+                },
+                {
+                  "value": "42 ks",
+                  "label": "vriec 25 kg na palete"
+                },
+                {
+                  "value": "HRAK",
+                  "label": "tmelenie bez výstužnej pásky"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – Knauf Uniflott",
+                  "href": "docs/knauf/technicky-list-knauf-uniflott.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+                  "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            },
+            {
+              "id": "knauf-fugenfuller-leicht",
+              "name": "Knauf Fugenfüller leicht",
+              "image": "img/knauf/knauf-fugenfuller-leicht.webp",
+              "description": "Svetlý práškový tmel na spoje s páskou a lepenie dosiek.",
+              "specs": [
+                {
+                  "value": "3B",
+                  "label": "typ tmelu podľa EN 13963",
+                  "accent": true
+                },
+                {
+                  "value": "Q1 · Q2",
+                  "label": "kvalita tmelenia"
+                },
+                {
+                  "value": "5 / 25 kg",
+                  "label": "balenie vo vreci"
+                },
+                {
+                  "value": "40 ks",
+                  "label": "vriec 25 kg na palete"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – Knauf Fugenfüller leicht",
+                  "href": "docs/knauf/technicky-list-knauf-fugenfuller-leicht.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+                  "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            },
+            {
+              "id": "knauf-white-12-5",
+              "name": "Doska Knauf WHITE 12,5 mm",
+              "image": "img/knauf/knauf-white-paleta.webp",
+              "description": "Sadrokartónová doska pre priečky, podhľady a predsadené steny.",
+              "specs": [
+                {
+                  "value": "12,5 mm",
+                  "label": "hrúbka",
+                  "accent": true
+                },
+                {
+                  "value": "8,5 kg/m²",
+                  "label": "plošná hmotnosť"
+                },
+                {
+                  "value": "2000–3000 mm",
+                  "label": "dĺžka dosky"
+                },
+                {
+                  "value": "56 ks",
+                  "label": "dosiek na palete"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Vyhlásenie o parametroch – doska Knauf WHITE 12,5 mm",
+                  "href": "docs/knauf/vyhlasenie-o-parametroch-knauf-white-12-5.pdf",
+                  "kind": "vyhlasenie"
+                }
+              ]
+            },
+            {
+              "id": "knauf-fill-finish-light",
+              "name": "Knauf Fill & Finish Light",
+              "image": "img/knauf/knauf-fill-finish-light.webp",
+              "description": "Odľahčený pastovitý tmel a stierka, hneď na použitie.",
+              "specs": [
+                {
+                  "value": "−35 %",
+                  "label": "nižšia hmotnosť",
+                  "accent": true
+                },
+                {
+                  "value": "4 / 20 kg",
+                  "label": "balenie vo vedre"
+                },
+                {
+                  "value": "Airless",
+                  "label": "po zriedení aj striekaním"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – Knauf Fill & Finish Light",
+                  "href": "docs/knauf/technicky-list-knauf-fill-finish-light.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+                  "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            },
+            {
+              "id": "knauf-roll-spray-max",
+              "name": "Knauf Roll & Spray MAX",
+              "image": "img/knauf/knauf-roll-spray-max.webp",
+              "description": "Hotová stierka na nanášanie valčekom alebo striekaním.",
+              "specs": [
+                {
+                  "value": "do 5 mm",
+                  "label": "hrúbka vrstvy",
+                  "accent": true
+                },
+                {
+                  "value": "25 kg",
+                  "label": "balenie vo vedre"
+                },
+                {
+                  "value": "33 ks",
+                  "label": "vedier na palete"
+                },
+                {
+                  "value": "EN 15824",
+                  "label": "spĺňa normu"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – Knauf Roll & Spray MAX",
+                  "href": "docs/knauf/technicky-list-knauf-roll-spray-max.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+                  "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            }
+          ]
         }
       ],
       "video": "video/knauf/knauf-firma.mp4"
@@ -4717,7 +4898,7 @@
           "eyebrow": "BAUDER – ploché strechy",
           "title": "Fólie, pásy a parozábrany",
           "intro": "Najpredávanejšie výrobky Bauder pre ploché strechy – PVC fólie THERMOFOL, asfaltové pásy a parozábrany.",
-          "image": "img/sortiment/bauder-asfaltove-pasy.webp",
+          "image": "img/bauder/pas-a-pvc-folia.webp",
           "products": [
             {
               "id": "bauderthermofol-u",
@@ -4974,35 +5155,6 @@
               "od": 4,
               "nazov": "Parozábrany"
             }
-          ],
-          "plavajuce": [
-            {
-              "src": "img/bauder/thermofol-u.webp",
-              "x": 4,
-              "y": 5,
-              "w": 92,
-              "r": -2,
-              "d": 8.5,
-              "z": 1
-            },
-            {
-              "src": "img/bauder/karat.webp",
-              "x": 2,
-              "y": 47,
-              "w": 50,
-              "r": 0,
-              "d": 7,
-              "z": 3
-            },
-            {
-              "src": "img/bauder/tec-ksd.webp",
-              "x": 48,
-              "y": 51,
-              "w": 50,
-              "r": 0,
-              "d": 8,
-              "z": 2
-            }
           ]
         },
         {
@@ -5137,7 +5289,7 @@
               ]
             }
           ],
-          "image": "img/sortiment/bauder-pir-izolacie.webp"
+          "image": "img/bauder/bauderpir-fa-te.webp"
         }
       ],
       "media": [
@@ -5147,46 +5299,7 @@
           "kind": "youtube"
         }
       ],
-      "plavajuceTema": "bauder",
-      "plavajuce": [
-        {
-          "src": "img/bauder/karat.webp",
-          "x": 2,
-          "y": 2,
-          "w": 34,
-          "r": 0,
-          "d": 7,
-          "z": 3
-        },
-        {
-          "src": "img/bauder/flex-k5e.webp",
-          "x": 34,
-          "y": 9,
-          "w": 32,
-          "r": 2,
-          "d": 7.5,
-          "z": 2
-        },
-        {
-          "src": "img/bauder/tec-ksd.webp",
-          "x": 64,
-          "y": 1,
-          "w": 34,
-          "r": -2,
-          "d": 9,
-          "z": 3
-        },
-        {
-          "src": "img/bauder/thermofol-u.webp",
-          "x": 22,
-          "y": 48,
-          "w": 78,
-          "r": -2,
-          "d": 8.5,
-          "z": 1
-        }
-      ],
-      "plavajucePomer": 0.9
+      "video": "video/bauder/bauder-firma.mp4"
     },
     {
       "id": "paroc",
