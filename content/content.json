@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.10",
+  "version": "2026-10-27.11",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -1268,22 +1268,8 @@
         },
         {
           "id": "fasady-etics",
-          "name": "Fasády ETICS",
-          "title": "Kotvenie tepelnej izolácie ETICS",
-          "legend": [
-            {
-              "term": "Skrutkovacia",
-              "text": "oceľový tŕň sa zaskrutkuje – povrchová aj zapustená montáž."
-            },
-            {
-              "term": "Natĺkacia",
-              "text": "tŕň sa zatĺka – rýchla montáž na rovnom podklade."
-            },
-            {
-              "term": "Podklady A – E",
-              "text": "betón, plná a dierovaná tehla, ľahký betón, pórobetón (EAD 330196-01-0604)."
-            }
-          ],
+          "name": "Kotvy ETICS – LFMG-10",
+          "title": "LFMG-10",
           "products": [
             {
               "id": "lfmg-10",
@@ -1330,7 +1316,46 @@
               ],
               "druh": "Natĺkacia",
               "podklady": "ABCDE"
-            },
+            }
+          ],
+          "etics": {
+            "spolu": 3,
+            "podklady": [
+              {
+                "k": "A",
+                "nazov": "Betón",
+                "obr": "img/klimas/etics/podklad-a.webp"
+              },
+              {
+                "k": "B",
+                "nazov": "Plná tehla",
+                "obr": "img/klimas/etics/podklad-b.webp"
+              },
+              {
+                "k": "C",
+                "nazov": "Dierovaná tehla",
+                "obr": "img/klimas/etics/podklad-c.webp"
+              },
+              {
+                "k": "D",
+                "nazov": "Ľahčený betón",
+                "obr": "img/klimas/etics/podklad-d.webp"
+              },
+              {
+                "k": "E",
+                "nazov": "Pórobetón",
+                "obr": "img/klimas/etics/podklad-e.webp"
+              }
+            ],
+            "druhText": "tŕň sa zatĺka – rýchla montáž na rovnom podklade.",
+            "poradie": 1
+          }
+        },
+        {
+          "id": "fasady-etics-wktherm",
+          "name": "Kotvy ETICS – WKTHERM S-8",
+          "title": "WKTHERM S-8",
+          "products": [
             {
               "id": "wktherm-s-8",
               "name": "WKTHERM S-8",
@@ -1373,7 +1398,49 @@
               "video": "video/klimas/klimas-wktherm-s.mp4",
               "druh": "Skrutkovacia",
               "podklady": "ABCDE"
-            },
+            }
+          ],
+          "etics": {
+            "spolu": 3,
+            "podklady": [
+              {
+                "k": "A",
+                "nazov": "Betón",
+                "obr": "img/klimas/etics/podklad-a.webp"
+              },
+              {
+                "k": "B",
+                "nazov": "Plná tehla",
+                "obr": "img/klimas/etics/podklad-b.webp"
+              },
+              {
+                "k": "C",
+                "nazov": "Dierovaná tehla",
+                "obr": "img/klimas/etics/podklad-c.webp"
+              },
+              {
+                "k": "D",
+                "nazov": "Ľahčený betón",
+                "obr": "img/klimas/etics/podklad-d.webp"
+              },
+              {
+                "k": "E",
+                "nazov": "Pórobetón",
+                "obr": "img/klimas/etics/podklad-e.webp"
+              }
+            ],
+            "druhText": "oceľový tŕň sa zaskrutkuje – povrchová aj zapustená montáž.",
+            "poradie": 2,
+            "video": "video/klimas/klimas-wktherm-s-montaz.mp4",
+            "pomer": 1.7777777777777777,
+            "videoNazov": "Montáž WKTHERM S-8"
+          }
+        },
+        {
+          "id": "fasady-etics-thermodrive",
+          "name": "Kotvy ETICS – THERMODRIVE V2-8",
+          "title": "THERMODRIVE V2-8",
+          "products": [
             {
               "id": "thermodrive-v2-8",
               "name": "THERMODRIVE V2-8",
@@ -1427,61 +1494,41 @@
               "podklady": "ABCDE"
             }
           ],
-          "moreTitle": "Ďalšie kotvy a príslušenstvo",
-          "more": [
-            "ECO-DRIVE 8",
-            "ECO-DRIVE S 8",
-            "ECO-DRIVE W 8",
-            "WKTHERM 8",
-            "FIXPLUG-10",
-            "LMX-10",
-            "LTX-10",
-            "LFN-10",
-            "DRIVE S",
-            "TOOL THERMODRIVE V2",
-            "KSV"
-          ],
-          "podklady": [
-            {
-              "k": "A",
-              "nazov": "Betón",
-              "obr": "img/klimas/etics/podklad-a.webp"
-            },
-            {
-              "k": "B",
-              "nazov": "Plná tehla",
-              "obr": "img/klimas/etics/podklad-b.webp"
-            },
-            {
-              "k": "C",
-              "nazov": "Dierovaná tehla",
-              "obr": "img/klimas/etics/podklad-c.webp"
-            },
-            {
-              "k": "D",
-              "nazov": "Ľahčený betón",
-              "obr": "img/klimas/etics/podklad-d.webp"
-            },
-            {
-              "k": "E",
-              "nazov": "Pórobetón",
-              "obr": "img/klimas/etics/podklad-e.webp"
-            }
-          ],
-          "tok": [
-            {
-              "src": "video/klimas/klimas-wktherm-s-montaz.mp4",
-              "nazov": "WKTHERM S-8 – montáž",
-              "kotva": "wktherm-s-8"
-            },
-            {
-              "src": "video/klimas/klimas-thermodrive-v2-shorts.mp4",
-              "nazov": "THERMODRIVE V2",
-              "kotva": "thermodrive-v2-8",
-              "nasirku": false
-            }
-          ],
-          "logo": "img/klimas/klimas-logo-cervene.svg"
+          "etics": {
+            "spolu": 3,
+            "podklady": [
+              {
+                "k": "A",
+                "nazov": "Betón",
+                "obr": "img/klimas/etics/podklad-a.webp"
+              },
+              {
+                "k": "B",
+                "nazov": "Plná tehla",
+                "obr": "img/klimas/etics/podklad-b.webp"
+              },
+              {
+                "k": "C",
+                "nazov": "Dierovaná tehla",
+                "obr": "img/klimas/etics/podklad-c.webp"
+              },
+              {
+                "k": "D",
+                "nazov": "Ľahčený betón",
+                "obr": "img/klimas/etics/podklad-d.webp"
+              },
+              {
+                "k": "E",
+                "nazov": "Pórobetón",
+                "obr": "img/klimas/etics/podklad-e.webp"
+              }
+            ],
+            "druhText": "oceľový tŕň sa zaskrutkuje – povrchová aj zapustená montáž.",
+            "poradie": 3,
+            "video": "video/klimas/klimas-thermodrive-v2-shorts.mp4",
+            "pomer": 0.5625,
+            "videoNazov": "Montáž THERMODRIVE V2-8"
+          }
         },
         {
           "id": "predajne-miesto",

@@ -1,69 +1,63 @@
-/* DAHAX – KLIMAS „Kotvenie tepelnej izolácie ETICS“ (kategória fasady-etics).
-   Nad hotovú snímku (bundle) nakreslí vlastné rozloženie .dxe: hore tri kotvy (obrázok, názov, druh, podklady A – E
-   s piktogramami), dole stále bežiace krátke videá (content.json → tok) a malé červené logo KLIMAS (logo).
-   Pôvodný obsah snímky ostane neviditeľný – ťuknutie na kotvu klikne na pôvodnú kartu, takže sa otvorí detail
-   s celým videom ako doteraz; „‹ KLIMAS“ klikne na pôvodné tlačidlo späť.
-   Na zmeny čaká cez setTimeout (requestAnimationFrame v skrytom okne nebeží). Štýly: assets/dahax-etics.css. */
+/* DAHAX – KLIMAS „Kotvenie tepelnej izolácie ETICS“: 3 snímky, jedna kotva = jedna snímka so svojím videom
+   (27. 10. 2026, želanie používateľa – predtým jedna preplnená snímka; scripts/update-2026-10-27-klimas-etics-3-snimky.mjs).
+   Kategórie s poľom etics (content.json) vykreslí nad hotovú snímku bundla (.s__in.media) vlastné rozloženie .dxe:
+   vľavo obrázok kotvy, v strede názov, druh, popis a 4 parametre, podklady A – E (názvy podkladov raz, v jednom riadku –
+   pri širokom videu pod videom, inak v texte), tlačidlo detailu na spodnej línii obrázka, vpravo video tejto kotvy
+   (stlmené, dokola, hrá len pri viditeľnej snímke a bez otvoreného detailu); LFMG-10 video nemá.
+   Pôvodný obsah snímky ostane neviditeľný – „‹ KLIMAS“ a „Detail produktu a dokumenty“ klikajú na pôvodné tlačidlá
+   (detail s dokumentmi a celým videom ako doteraz). Na zmeny čaká cez setTimeout. Štýly: assets/dahax-etics.css. */
 (() => {
-  const ID = "fasady-etics";
-  let cat = null;
-  const esc = (s) => String(s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  const cats = new Map(); // "#/<firma>/<kategória>" → kategória
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 
   const load = (c) => {
-    for (const m of c.manufacturers || []) for (const k of m.categories || []) if (k.id === ID && k.tok) cat = k;
+    for (const m of c.manufacturers || []) for (const k of m.categories || []) if (k.etics) cats.set("#/" + m.id + "/" + k.id, k);
   };
 
-  // snímka ETICS = karty so všetkými tromi kotvami z kategórie
-  const najdi = () => {
-    if (!cat) return [];
-    const mena = cat.products.map((p) => p.name);
-    return [...document.querySelectorAll(".s__in.cards")].filter((s) => {
-      const n = [...s.querySelectorAll(".pc__name")].map((e) => e.textContent.trim());
-      return mena.every((m) => n.includes(m));
-    });
-  };
+  // snímka bundla tejto kategórie: .s__in.media s nadpisom = názov kotvy
+  const najdi = (k) => [...document.querySelectorAll(".s__in.media")].find((s) => s.querySelector(".cat__title")?.textContent.trim() === k.title);
 
-  const karta = (p) =>
-    '<button type="button" class="dxe-k" data-meno="' + esc(p.name) + '">' +
-    '<span class="dxe-k__img"><img alt="" src="' + esc(p.image) + '"></span>' +
-    '<span class="dxe-k__txt"><b class="dxe-k__n">' + esc(p.name) + "</b>" +
-    '<span class="dxe-k__druh">' + esc(p.druh) + "</span>" +
-    '<span class="dxe-k__p">' + cat.podklady.filter((x) => (p.podklady || "").includes(x.k))
-      .map((x) => '<i title="' + esc(x.nazov) + '"><img alt="" src="' + esc(x.obr) + '"><em>' + x.k + "</em></i>").join("") + "</span>" +
-    '<span class="dxe-k__det">Detail a video ›</span></span></button>';
-
-  const postav = (s) => {
-    const sec = s.parentNode;
-    const back = s.querySelector(".cat__back"), eyebrow = s.querySelector(".cat__head .eyebrow");
+  const postav = (s, k, kluc) => {
+    const p = k.products[0], e = k.etics;
+    const siroke = !!e.video && e.pomer >= 1;
+    const typ = String(p.type || "").replace(new RegExp("^" + (p.druh || "") + "\\s*·\\s*"), "");
+    const sp = (p.specs || []).slice(0, 4);
+    const podklady = '<div class="dxe__podklady"><p class="dxe__h">Podklady</p><ul>' +
+      (e.podklady || []).map((x) => '<li class="' + ((p.podklady || "").includes(x.k) ? "" : "is-off") + '"><img alt="" src="' + esc(x.obr) + '"><b>' + x.k + "</b></li>").join("") +
+      '</ul><p class="dxe__leg">' + (e.podklady || []).map((x) => "<span><b>" + x.k + "</b> " + esc(x.nazov.toLowerCase()) + "</span>").join("") + "</p></div>";
+    const video = e.video
+      ? '<div class="dxe__prava"><figure class="dxe__video"><video muted playsinline loop preload="metadata" src="' + esc(e.video) + '" poster="' +
+        esc(e.video.replace(/\.mp4$/, ".webp")) + '"></video><figcaption><span>Video</span>' + esc(e.videoNazov || p.name) + "</figcaption></figure>" +
+        (siroke ? podklady : "") + "</div>"
+      : "";
     const d = document.createElement("div");
-    d.className = "dxe";
+    d.className = "dxe" + (e.video ? (siroke ? " dxe--siroke" : " dxe--vysoke") : " dxe--bez");
+    d.dataset.k = kluc;
     d.innerHTML =
-      '<header class="dxe-h"><div><button type="button" class="dxe-back">‹ KLIMAS</button>' +
-      '<p class="dxe-eb">' + esc(eyebrow ? eyebrow.textContent : "KLIMAS – Fasády ETICS") + "</p>" +
-      '<h1 class="dxe-t">' + esc(cat.title) + "</h1></div>" +
-      '<ul class="dxe-leg">' + cat.podklady.map((x) => '<li><img alt="" src="' + esc(x.obr) + '"><b>' + x.k + "</b><span>" + esc(x.nazov) + "</span></li>").join("") +
-      '<li class="dxe-leg__n">Podklady podľa EAD 330196</li></ul></header>' +
-      '<div class="dxe-ks">' + cat.products.map(karta).join("") + "</div>" +
-      '<div class="dxe-tok">' + cat.tok.map((v) =>
-        '<figure class="dxe-v' + (v.nasirku === false ? " is-vysoke" : "") + '"><video muted playsinline loop preload="metadata" src="' + esc(v.src) +
-        '" poster="' + esc(v.src.replace(/\.mp4$/, ".webp")) + '"></video><figcaption>' + esc(v.nazov) + "</figcaption></figure>").join("") +
-      '<aside class="dxe-dalsie">' + ((cat.more || []).length ? '<p class="dxe-eb">' + esc(cat.moreTitle || "Ďalšie kotvy") + "</p><ul>" +
-        cat.more.map((m) => "<li>" + esc(m) + "</li>").join("") + "</ul>" : "") +
-      (cat.logo ? '<div class="dxe-logo"><img alt="KLIMAS" src="' + esc(cat.logo) + '"></div>' : "") + "</aside></div>";
-    sec.appendChild(d);
+      '<header class="dxe__hlava"><button type="button" class="dxe__spat">‹ KLIMAS</button>' +
+      '<p class="dxe__eb">KLIMAS · Kotvenie tepelnej izolácie ETICS</p>' +
+      '<p class="dxe__cislo">Kotva <b>' + e.poradie + "</b> / " + e.spolu + "</p></header>" +
+      '<figure class="dxe__obr"><img alt="' + esc(p.name) + '" src="' + esc(p.image) + '"></figure>' +
+      '<div class="dxe__text">' +
+      '<h1 class="dxe__n">' + esc(p.name) + "</h1>" +
+      '<p class="dxe__druh"><span>' + esc(p.druh) + "</span>" + esc(typ) + "</p>" +
+      '<p class="dxe__popis">' + esc(p.description) + "</p>" +
+      (e.druhText ? '<p class="dxe__ako">' + esc(p.druh) + " – " + esc(e.druhText) + "</p>" : "") +
+      '<dl class="dxe__param">' + sp.map((x) => "<div><dt" + (x.accent ? ' class="is-accent"' : "") + ">" + esc(x.value) + "</dt><dd>" + esc(x.label) + "</dd></div>").join("") + "</dl>" +
+      (siroke ? "" : podklady) +
+      '<button type="button" class="btn btn--line dxe__det">Detail produktu a dokumenty ›</button>' +
+      "</div>" + video;
+    s.parentNode.appendChild(d);
     s.classList.add("dxe-skryte");
-    d.querySelector(".dxe-back").addEventListener("click", () => back && back.click());
-    d.querySelectorAll(".dxe-k").forEach((k) => k.addEventListener("click", () => {
-      const pc = [...s.querySelectorAll(".pc")].find((e) => e.querySelector(".pc__name").textContent.trim() === k.dataset.meno);
-      if (pc) pc.click();
-    }));
+    const klik = (sel) => s.querySelector(sel)?.click();
+    d.querySelector(".dxe__spat").addEventListener("click", () => klik(".cat__back"));
+    d.querySelector(".dxe__det").addEventListener("click", () => klik(".media__text > .btn"));
     return d;
   };
 
-  // videá hrajú, len keď je snímka viditeľná (a nie je otvorený detail)
+  // video hrá, len keď je snímka viditeľná a nie je otvorený detail
   const hraj = (d) => {
-    const vid = d.getBoundingClientRect(), on = document.visibilityState === "visible" && vid.width > 0 &&
-      vid.right > 0 && vid.left < innerWidth && !document.querySelector(".sheet");
+    const r = d.getBoundingClientRect(), on = document.visibilityState === "visible" && r.width > 0 && r.right > 0 && r.left < innerWidth && !document.querySelector(".sheet");
     d.querySelectorAll("video").forEach((v) => {
       if (on && v.paused) v.play().catch(() => {});
       if (!on && !v.paused) v.pause();
@@ -71,10 +65,12 @@
   };
 
   const kontrola = () => {
-    najdi().forEach((s) => {
-      const d = s.parentNode.querySelector(":scope > .dxe") || postav(s);
+    for (const [kluc, k] of cats) {
+      const s = najdi(k);
+      if (!s) continue;
+      const d = s.parentNode.querySelector(":scope > .dxe") || postav(s, k, kluc);
       hraj(d);
-    });
+    }
     setTimeout(kontrola, 500);
   };
 
