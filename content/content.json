@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.53",
+  "version": "2026-10-27.54",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -5308,12 +5308,12 @@
       "logo": "img/brand/paroc.webp",
       "role": "Doplnkový sortiment",
       "eyebrow": "Kamenná vlna",
-      "tagline": "Kamenná vlna – systém pre stropy pivníc a garáží.",
+      "tagline": "Kamenná vlna na zateplenie stropov garáží a pivníc.",
       "website": "https://www.paroc.com",
       "profile": {
         "country": "Fínsko",
         "hq": "Helsinki · skupina Owens Corning",
-        "about": "Výrobca izolácií z kamennej vlny so sídlom v Helsinkách a s viac ako 80-ročnými skúsenosťami; závody má vo Fínsku, Švédsku, Litve a Poľsku. Od roku 2018 patrí do skupiny Owens Corning. Poľský závod Trzemeszno taví horninu elektricky, so 100 % elektriny z obnoviteľných zdrojov.",
+        "about": "Fínsky výrobca izolácií z kamennej vlny so sídlom v Helsinkách, od roku 2018 v skupine Owens Corning. Pre Slovensko vyrába v poľskom závode Trzemeszno, kde sa hornina taví elektricky so 100 % elektriny z obnoviteľných zdrojov.",
         "facts": [
           {
             "value": "A1",
@@ -5324,16 +5324,15 @@
             "label": "rokov skúseností s kamennou vlnou"
           },
           {
-            "value": "λD 0,033",
-            "label": "PAROC WAS 35 – odvetrávané fasády"
+            "value": "4",
+            "label": "krajiny výroby – Fínsko, Švédsko, Litva a Poľsko"
           }
         ],
         "makes": [
-          "Stropy pivníc a garáží (CGL, CGS)",
+          "Stropy garáží a pivníc (CGL)",
           "Ploché strechy",
-          "Odvetrávané fasády (WAS)",
-          "ETICS (FAS)",
-          "Univerzálne dosky (eXtra)",
+          "Odvetrávané fasády",
+          "ETICS",
           "Technické izolácie"
         ],
         "sources": [
@@ -5342,10 +5341,15 @@
             "url": "https://www.paroc.com/en-gb/about"
           },
           {
-            "title": "PAROC – Produktkatalog Hochbau 2024 (DE)",
-            "url": "https://www.paroc.com/de/documents/uploads/product-catalogue-building-insulation"
+            "title": "PAROC – stropy garáží a pivníc (PL)",
+            "url": "https://www.paroc.com/pl-pl/applications/building-insulation/ceilings/garage-and-cellar-ceilings"
+          },
+          {
+            "title": "PAROC CGL 20cy (PL)",
+            "url": "https://www.paroc.com/pl-pl/products/cgl-20cy-ceiling-lamella-pgm-100063"
           }
-        ]
+        ],
+        "headLogo": "img/brand/paroc-logo-biele.svg"
       },
       "tier": "plus",
       "tile": {
@@ -5356,151 +5360,94 @@
       "theme": "light",
       "categories": [
         {
-          "id": "stropy-a-konstrukcie",
-          "name": "Stropy a priečky",
-          "eyebrow": "PAROC – stropy a pozemné stavby",
-          "title": "Stropy garáží, podkrovia a priečky",
-          "intro": "Dosky na stropy pivníc a garáží, na strop posledného podlažia a do rámových konštrukcií.",
+          "id": "stropy-garazi",
+          "name": "Stropy garáží a pivníc",
+          "eyebrow": "PAROC – stropy garáží a pivníc",
+          "title": "PAROC CGL 20cy",
+          "intro": "Stropná lamela z kamennej vlny, ktorú predávame na zateplenie stropov garáží a pivníc – lepí sa na betón a omietne nástrekom.",
+          "image": "img/paroc/paroc-cgl-20cy.webp",
+          "imageOnWhite": true,
+          "chips": [
+            "A1\nnehorľavá",
+            "Tlmí hluk\nAFr ≥ 10 kPa·s/m²",
+            "Pod omietku\npredpovrchovaná, skosené hrany"
+          ],
           "products": [
             {
-              "id": "cgl-20cyc",
-              "name": "PAROC CGL 20cyc",
-              "description": "Stropná lamela, obojstranne predpovrchovaná, so skosenými hranami – pivnice, garáže, haly.",
+              "id": "cgl-20cy",
+              "name": "PAROC CGL 20cy",
+              "description": "Lamela 200 × 1200 mm na lepenie na betónové stropy – nehorľavá, paropriepustná, nenasiakavá.",
               "specs": [
                 {
                   "value": "0,037",
-                  "label": "λ menovitá [W/(m·K)]",
+                  "label": "λD [W/(m·K)]",
                   "accent": true
                 },
                 {
-                  "value": "≥ 20 kPa",
-                  "label": "pevnosť v ťahu TR"
+                  "value": "20 kPa",
+                  "label": "pevnosť v ťahu TR a v tlaku CS(Y)"
                 },
                 {
-                  "value": "≥ 20 kPa",
-                  "label": "pevnosť v tlaku CS(Y)"
+                  "value": "50 – 250 mm",
+                  "label": "hrúbky, lamela 200 × 1200 mm"
                 },
                 {
-                  "value": "50–200 mm",
-                  "label": "hrúbky, lamela 1200 × 200 mm"
+                  "value": "5,40",
+                  "label": "R [m²·K/W] pri hrúbke 200 mm"
                 }
               ],
               "documents": [
                 {
-                  "title": "Katalóg produktov – pozemné stavby 2024 (DE)",
-                  "href": "docs/paroc/katalog-produktov-pozemne-stavby-2024-de.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "cgs-1tt",
-              "name": "PAROC CGS 1tt",
-              "description": "Stropná doska s prírodne bielym skleným rúnom na pohľadovej strane.",
-              "specs": [
-                {
-                  "value": "0,033",
-                  "label": "λ menovitá [W/(m·K)]",
-                  "accent": true
+                  "title": "Technický list – PAROC CGL 20cy (PL)",
+                  "href": "docs/paroc/technicky-list-paroc-cgl-20cy-pl.pdf",
+                  "kind": "technicky-list"
                 },
                 {
-                  "value": "biele rúno",
-                  "label": "pohľadová strana"
+                  "title": "Vyhlásenie o parametroch – PAROC CGL 20cy (PL)",
+                  "href": "docs/paroc/vyhlasenie-o-parametroch-paroc-cgl-20cy-pl.pdf",
+                  "kind": "vyhlasenie"
                 },
                 {
-                  "value": "50–200 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg produktov – pozemné stavby 2024 (DE)",
-                  "href": "docs/paroc/katalog-produktov-pozemne-stavby-2024-de.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "ros-30",
-              "name": "PAROC ROS 30",
-              "description": "Izolácia stropu posledného podlažia zhora; s krytom z OSB dosiek je povala príležitostne pochôdzna.",
-              "specs": [
-                {
-                  "value": "≥ 30 kPa",
-                  "label": "pevnosť v tlaku CS(10)",
-                  "accent": true
-                },
-                {
-                  "value": "0,036",
-                  "label": "λ menovitá [W/(m·K)]"
-                },
-                {
-                  "value": "40–160 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg produktov – pozemné stavby 2024 (DE)",
-                  "href": "docs/paroc/katalog-produktov-pozemne-stavby-2024-de.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "ultra-plus",
-              "name": "PAROC Ultra Plus",
-              "description": "Pružná viacúčelová doska – drevené a kovové rámy, priečky, podhľady, krovy a podlahy bez zaťaženia.",
-              "specs": [
-                {
-                  "value": "0,035",
-                  "label": "λ [W/(m·K)]",
-                  "accent": true
-                },
-                {
-                  "value": "≥ 15",
-                  "label": "AFr [kPa·s/m²] – odpor prúdeniu vzduchu"
-                },
-                {
-                  "value": "40–200 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg produktov – pozemné stavby 2024 (DE)",
-                  "href": "docs/paroc/katalog-produktov-pozemne-stavby-2024-de.pdf",
-                  "kind": "katalog"
+                  "title": "Montážny návod PAROC CGL 20 (PL)",
+                  "href": "docs/paroc/montazny-navod-paroc-cgl-20-pl.pdf",
+                  "kind": "ine"
                 }
               ]
             }
-          ],
-          "image": "img/sortiment/paroc-stropy-a-konstrukcie.webp",
-          "imageOnWhite": true
+          ]
         }
       ],
       "documents": [
         {
-          "title": "Katalóg produktov – pozemné stavby 2024 (DE)",
-          "href": "docs/paroc/katalog-produktov-pozemne-stavby-2024-de.pdf",
-          "kind": "katalog"
+          "title": "Návrh systému PAROC CGL 20 (PL)",
+          "href": "docs/paroc/navrhovanie-paroc-cgl-20-system-pl.pdf",
+          "kind": "ine"
         },
         {
-          "title": "Produktový list PAROC WAS 25 (PL)",
-          "href": "docs/paroc/produktovy-list-paroc-was-25-pl.pdf",
-          "kind": "technicky-list"
+          "title": "Montážny návod PAROC CGL 20 (PL)",
+          "href": "docs/paroc/montazny-navod-paroc-cgl-20-pl.pdf",
+          "kind": "ine"
+        }
+      ],
+      "video": "video/paroc/paroc-firma.mp4",
+      "media": [
+        {
+          "src": "img/paroc/paroc-garaz-cgl.webp",
+          "caption": "Strop podzemnej garáže zateplený lamelami PAROC CGL"
+        },
+        {
+          "src": "img/paroc/paroc-strop-cgl.webp",
+          "caption": "Lamely CGL 20cy na strope z dutinových panelov",
+          "onWhite": true
+        },
+        {
+          "src": "img/paroc/paroc-strop-hotovy.webp",
+          "caption": "Hotový strop z lamiel CGL"
+        },
+        {
+          "src": "img/paroc/paroc-cgl-paleta.webp",
+          "caption": "PAROC CGL 20cy – lamely na palete",
+          "onWhite": true
         }
       ]
     },
@@ -5510,17 +5457,17 @@
       "logo": "img/brand/nexler.webp",
       "role": "Doplnkový sortiment",
       "eyebrow": "Hydroizolácie",
-      "tagline": "Hydroizolácia a asfaltové pásy.",
+      "tagline": "Asfaltové pásy SBS na ploché strechy.",
       "profile": {
-        "about": "Poľský výrobca hydroizolácií z Gdyne, založený v roku 1989 ako IZOHAN, od roku 2006 súčasť skupiny ATLAS. Vyrába asfaltové pásy, hydroizolačné hmoty a šindle v závodoch Pomieczyno a Skarszewy. Do nového závodu na asfaltové pásy v Skarszewách investuje viac ako 130 mil. PLN.",
+        "about": "Poľský výrobca hydroizolácií z Gdyne, pôvodne IZOHAN, od roku 2006 súčasť skupiny ATLAS. Asfaltové pásy, hydroizolačné hmoty a šindle vyrába v závodoch Pomieczyno a Skarszewy.",
         "facts": [
           {
             "value": "1989",
             "label": "založenie (ako IZOHAN)"
           },
           {
-            "value": "137",
-            "label": "produktov v 16 kategóriách"
+            "value": "12 rokov",
+            "label": "záruka na samolepiaci pás Stick"
           },
           {
             "value": "130+ mil. PLN",
@@ -5535,7 +5482,6 @@
           "Minerálne hydroizolácie AQUAMINERAL",
           "PU peny a lepidlá"
         ],
-        "since": "1989",
         "country": "Poľsko",
         "hq": "Gdyňa · skupina ATLAS",
         "sources": [
@@ -5547,7 +5493,8 @@
             "title": "NEXLER – produkty",
             "url": "https://nexler.com/produkty"
           }
-        ]
+        ],
+        "headLogo": "img/brand/nexler-logo-biele.webp"
       },
       "tier": "plus",
       "tile": {
@@ -5558,412 +5505,191 @@
       "theme": "light",
       "categories": [
         {
-          "id": "vrchne-pasy",
-          "name": "Vrchné pásy",
-          "eyebrow": "NEXLER – asfaltové pásy",
-          "title": "Vrchné asfaltové pásy",
-          "intro": "Vrchné pásy z asfaltu modifikovaného SBS s oceľovosivým posypom – záruka podľa katalógu NEXLER až 17 rokov.",
+          "id": "asfaltove-pasy",
+          "name": "Asfaltové pásy",
+          "eyebrow": "NEXLER – ploché strechy",
+          "title": "Asfaltové pásy NEXLER",
+          "intro": "Štyri pásy, ktoré predávame – vrchný, samolepiaci a dva podkladové.",
+          "image": "img/nexler/medium-pye-pv250-s52h.webp",
           "products": [
             {
-              "id": "premium-pye-pv250-s56h",
-              "name": "PREMIUM PYE PV250 S56H",
-              "description": "Najhrubší vrchný pás radu PREMIUM na polyesterovom rúne, oceľovosivý posyp.",
+              "id": "medium-pye-pv250-s52h",
+              "name": "MEDIUM PYE PV250 S52H",
+              "description": "Vrchný natavovací pás SBS s polyesterom vystuženým sklenými vláknami, bridlicový posyp",
               "specs": [
                 {
-                  "value": "17 rokov",
-                  "label": "záruka",
+                  "value": "5,2 mm",
+                  "label": "hrúbka",
                   "accent": true
-                },
-                {
-                  "value": "5,6 mm",
-                  "label": "hrúbka (±0,2 mm)"
-                },
-                {
-                  "value": "−25 °C",
-                  "label": "ohybnosť, asfalt modifikovaný SBS"
-                },
-                {
-                  "value": "5 × 1 m",
-                  "label": "rozmer rolky"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
-                  "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "premium-pye-pv250-s53h",
-              "name": "PREMIUM PYE PV250 S53H",
-              "description": "Vrchný pás na polyesterovom rúne, povrchová úprava podľa verzie.",
-              "specs": [
-                {
-                  "value": "17 rokov",
-                  "label": "záruka",
-                  "accent": true
-                },
-                {
-                  "value": "5,3 mm",
-                  "label": "hrúbka (±0,2 mm)"
-                },
-                {
-                  "value": "−25 °C",
-                  "label": "ohybnosť, asfalt modifikovaný SBS"
-                },
-                {
-                  "value": "5 × 1 m",
-                  "label": "rozmer rolky (aj šírka 0,5 m)"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
-                  "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "pj-pye-pv250-s53h",
-              "name": "PJ PYE PV250 S53H",
-              "description": "Vrchný pás na polyesterovom rúne s oceľovosivým posypom.",
-              "specs": [
-                {
-                  "value": "11 rokov",
-                  "label": "záruka",
-                  "accent": true
-                },
-                {
-                  "value": "5,3 mm",
-                  "label": "hrúbka (±10 %)"
-                },
-                {
-                  "value": "−20 °C",
-                  "label": "ohybnosť, asfalt modifikovaný SBS"
-                },
-                {
-                  "value": "5 × 1 m",
-                  "label": "rozmer rolky"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
-                  "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "premium-pye-pv200-s40h",
-              "name": "PREMIUM PYE PV200 S40H",
-              "description": "Vrchný pás na vložke z polyesteru a skleného vlákna, oceľovosivý posyp.",
-              "specs": [
-                {
-                  "value": "10 rokov",
-                  "label": "záruka",
-                  "accent": true
-                },
-                {
-                  "value": "4,0 mm",
-                  "label": "hrúbka (±0,2 mm)"
-                },
-                {
-                  "value": "−20 °C",
-                  "label": "ohybnosť, asfalt modifikovaný SBS"
                 },
                 {
                   "value": "6 × 1 m",
-                  "label": "rozmer rolky"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
-                  "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            }
-          ],
-          "image": "img/sortiment/nexler-vrchne-pasy.webp"
-        },
-        {
-          "id": "podkladove-pasy",
-          "name": "Podkladové pásy",
-          "eyebrow": "NEXLER – asfaltové pásy",
-          "title": "Podkladové asfaltové pásy",
-          "intro": "Podkladové pásy s jemnozrnným posypom alebo fóliou na polyesterovej či sklenej vložke – záruka podľa katalógu až 16 rokov.",
-          "products": [
-            {
-              "id": "premium-pye-pv250-s48",
-              "name": "PREMIUM PYE PV250 S48",
-              "description": "Podkladový pás na polyesterovom rúne s jemnozrnným posypom.",
-              "specs": [
-                {
-                  "value": "16 rokov",
-                  "label": "záruka",
-                  "accent": true
+                  "label": "rozmer kotúča"
                 },
                 {
-                  "value": "4,8 mm",
-                  "label": "hrúbka (±0,2 mm)"
-                },
-                {
-                  "value": "−25 °C",
+                  "value": "−5 °C",
                   "label": "ohybnosť, asfalt modifikovaný SBS"
                 },
                 {
-                  "value": "5 × 1 m",
-                  "label": "rozmer rolky"
+                  "value": "8 rokov",
+                  "label": "záruka"
                 }
               ],
               "documents": [
                 {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
+                  "title": "Katalóg asfaltových pásov NEXLER (CZ/SK)",
                   "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
                   "kind": "katalog"
                 }
-              ]
+              ],
+              "detailObrazok": "img/nexler/medium-pye-pv250-s52h.webp"
             },
             {
-              "id": "premium-pye-pv200-s40",
-              "name": "PREMIUM PYE PV200 S40",
-              "description": "Podkladový pás na vložke z polyesteru a skleného vlákna s jemnozrnným posypom.",
+              "id": "stick",
+              "name": "Stick",
+              "description": "Samolepiaci podkladový pás SBS na sklenej rohoži – bez otvoreného ohňa, aj na EPS",
               "specs": [
                 {
-                  "value": "16 rokov",
-                  "label": "záruka",
+                  "value": "samolepiaci",
+                  "label": "bez horáka",
                   "accent": true
                 },
                 {
-                  "value": "4,0 mm",
-                  "label": "hrúbka (±0,2 mm)"
-                },
-                {
-                  "value": "−25 °C",
-                  "label": "ohybnosť, asfalt modifikovaný SBS"
-                },
-                {
-                  "value": "7,5 × 1 m",
-                  "label": "rozmer rolky"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
-                  "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "pj-pye-pv200-s40-ff",
-              "name": "PJ PYE PV200 S40 FF",
-              "description": "Podkladový pás na vložke z polyesteru a skleného vlákna s fóliou na povrchu.",
-              "specs": [
-                {
-                  "value": "14 rokov",
-                  "label": "záruka",
-                  "accent": true
-                },
-                {
-                  "value": "4,0 mm",
-                  "label": "hrúbka (±10 %)"
-                },
-                {
-                  "value": "−20 °C",
-                  "label": "ohybnosť, asfalt modifikovaný SBS"
-                },
-                {
-                  "value": "7,5 × 1 m",
-                  "label": "rozmer rolky"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
-                  "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "premium-pye-g200-s40",
-              "name": "PREMIUM PYE G200 S40",
-              "description": "Podkladový pás na sklenej tkanine s jemnozrnným posypom.",
-              "specs": [
-                {
-                  "value": "13 rokov",
-                  "label": "záruka",
-                  "accent": true
-                },
-                {
-                  "value": "4,0 mm",
-                  "label": "hrúbka (±0,2 mm)"
-                },
-                {
-                  "value": "−20 °C",
-                  "label": "ohybnosť, asfalt modifikovaný SBS"
-                },
-                {
-                  "value": "5 × 1 m",
-                  "label": "rozmer rolky"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
-                  "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            }
-          ],
-          "image": "img/sortiment/nexler-podkladove-pasy.webp"
-        },
-        {
-          "id": "specialne-pasy",
-          "name": "Špeciálne pásy",
-          "eyebrow": "NEXLER – špeciálne aplikácie",
-          "title": "Špeciálne pásy: zelené strechy a mosty",
-          "intro": "Pásy NEXLER pre zelené strechy, mosty, parkoviská a ochranné vrstvy – na polyesterovom rúne, s asfaltom modifikovaným SBS.",
-          "products": [
-            {
-              "id": "green-roof-pye-pv250-s50",
-              "name": "Green Roof PYE PV250 S50",
-              "description": "Pás radu Green Roof na polyesterovom rúne pre zelené strechy.",
-              "specs": [
-                {
-                  "value": "25 rokov",
-                  "label": "záruka",
-                  "accent": true
-                },
-                {
-                  "value": "5,0 mm",
-                  "label": "hrúbka (±0,2 mm)"
-                },
-                {
-                  "value": "−20 °C",
-                  "label": "ohybnosť, asfalt modifikovaný SBS"
-                },
-                {
-                  "value": "5,5 × 1 m",
-                  "label": "rozmer rolky"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
-                  "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "protection",
-              "name": "Protection",
-              "description": "Špeciálny pás Protection na polyesterovom rúne s asfaltom modifikovaným SBS.",
-              "specs": [
-                {
-                  "value": "18 rokov",
-                  "label": "záruka",
-                  "accent": true
-                },
-                {
-                  "value": "5,2 mm",
-                  "label": "hrúbka (±0,2 mm)"
-                },
-                {
-                  "value": "−25 °C",
-                  "label": "ohybnosť, asfalt modifikovaný SBS"
-                },
-                {
-                  "value": "5 × 1 m",
-                  "label": "rozmer rolky"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
-                  "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "most-plus",
-              "name": "Most+",
-              "description": "Špeciálny pás na polyesterovom rúne, v rolkách 10 alebo 45 m.",
-              "specs": [
-                {
-                  "value": "12 rokov",
-                  "label": "záruka",
-                  "accent": true
-                },
-                {
-                  "value": "≥ 5,0 mm",
+                  "value": "2,5 mm",
                   "label": "hrúbka"
                 },
                 {
-                  "value": "−20 °C",
-                  "label": "ohybnosť, asfalt modifikovaný SBS"
+                  "value": "10 × 1 m",
+                  "label": "rozmer kotúča"
                 },
                 {
-                  "value": "10 / 45 m",
-                  "label": "dĺžka rolky pri šírke 1 m"
+                  "value": "−20 °C",
+                  "label": "ohybnosť, vysoko modifikovaný SBS"
                 }
               ],
               "documents": [
                 {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
+                  "title": "Katalóg asfaltových pásov NEXLER (CZ/SK)",
                   "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
                   "kind": "katalog"
                 }
-              ]
+              ],
+              "detailObrazok": "img/nexler/stick.webp"
             },
             {
-              "id": "parking-plus",
-              "name": "Parking+",
-              "description": "Špeciálny pás Parking+ na polyesterovom rúne s asfaltom modifikovaným SBS.",
+              "id": "medium-pye-g200-s40",
+              "name": "MEDIUM PYE G200 S40",
+              "description": "Podkladový natavovací pás SBS so sklenou tkaninou G200 – aj ako parozábrana a do spodnej stavby",
               "specs": [
                 {
-                  "value": "12 rokov",
-                  "label": "záruka",
+                  "value": "4,0 mm",
+                  "label": "hrúbka",
                   "accent": true
                 },
                 {
-                  "value": "5,5 mm",
-                  "label": "hrúbka (±0,5 mm)"
+                  "value": "7,5 × 1 m",
+                  "label": "rozmer kotúča"
                 },
                 {
-                  "value": "−20 °C",
+                  "value": "1300 N",
+                  "label": "pevnosť v ťahu pozdĺžne / 5 cm"
+                },
+                {
+                  "value": "−5 °C",
                   "label": "ohybnosť, asfalt modifikovaný SBS"
-                },
-                {
-                  "value": "10 × 1 m",
-                  "label": "rozmer rolky"
                 }
               ],
               "documents": [
                 {
-                  "title": "Katalóg asfaltových pásov NEXLER CZ/SK",
+                  "title": "Katalóg asfaltových pásov NEXLER (CZ/SK)",
                   "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
                   "kind": "katalog"
                 }
-              ]
+              ],
+              "detailObrazok": "img/nexler/medium-pye-g200-s40.webp"
+            },
+            {
+              "id": "standard-v60-s35",
+              "name": "STANDARD V60 S35",
+              "description": "Oxidovaný podkladový pás so sklenou rohožou V60 – parozábrana a ochrana proti radónu",
+              "specs": [
+                {
+                  "value": "3,5 mm",
+                  "label": "hrúbka",
+                  "accent": true
+                },
+                {
+                  "value": "10 × 1 m",
+                  "label": "rozmer kotúča"
+                },
+                {
+                  "value": "radón",
+                  "label": "protiradónová bariéra"
+                },
+                {
+                  "value": "8 rokov",
+                  "label": "záruka"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg asfaltových pásov NEXLER (CZ/SK)",
+                  "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
+                  "kind": "katalog"
+                }
+              ],
+              "detailObrazok": "img/nexler/standard-v60-s30.webp"
             }
           ],
-          "image": "img/sortiment/nexler-specialne-pasy.webp"
+          "skupiny": [
+            {
+              "od": 0,
+              "nazov": "Vrchný pás"
+            },
+            {
+              "od": 1,
+              "nazov": "Samolepiaci pás"
+            },
+            {
+              "od": 2,
+              "nazov": "Podkladové pásy"
+            }
+          ],
+          "plavajuce": [
+            {
+              "src": "img/nexler/medium-pye-pv250-s52h.webp",
+              "x": 6,
+              "y": 4,
+              "w": 88,
+              "r": -3,
+              "d": 8.5,
+              "z": 1
+            },
+            {
+              "src": "img/nexler/stick.webp",
+              "x": 2,
+              "y": 52,
+              "w": 60,
+              "r": 2,
+              "d": 7,
+              "z": 3
+            },
+            {
+              "src": "img/nexler/medium-pye-g200-s40.webp",
+              "x": 40,
+              "y": 58,
+              "w": 60,
+              "r": -2,
+              "d": 9,
+              "z": 2
+            }
+          ]
         }
       ],
       "website": "https://nexler.com",
       "documents": [
         {
-          "title": "Katalóg výrobkov NEXLER – asfaltové pásy a záruky (CZ/SK)",
+          "title": "Katalóg asfaltových pásov NEXLER (CZ/SK)",
           "href": "docs/nexler/katalog-asfaltovych-pasov-cz-sk.pdf",
           "kind": "katalog"
         },
@@ -5979,6 +5705,66 @@
           "src": "https://www.youtube.com/watch?v=k4CHMEqAuSk",
           "caption": "NEXLER – NOx Cut",
           "kind": "youtube"
+        },
+        {
+          "src": "img/nexler/medium-pye-pv250-s52h.webp",
+          "caption": "MEDIUM PYE PV250 S52H – vrchný pás",
+          "onWhite": true
+        },
+        {
+          "src": "img/nexler/stick.webp",
+          "caption": "Stick – samolepiaci podkladový pás",
+          "onWhite": true
+        },
+        {
+          "src": "img/nexler/medium-pye-g200-s40.webp",
+          "caption": "MEDIUM PYE G200 S40 – podkladový pás",
+          "onWhite": true
+        },
+        {
+          "src": "img/nexler/standard-v60-s30.webp",
+          "caption": "STANDARD V60 – podkladový pás",
+          "onWhite": true
+        }
+      ],
+      "plavajuceTema": "nexler",
+      "plavajucePomer": 0.9,
+      "plavajuce": [
+        {
+          "src": "img/nexler/medium-pye-pv250-s52h.webp",
+          "x": 0,
+          "y": 2,
+          "w": 56,
+          "r": -4,
+          "d": 8,
+          "z": 2
+        },
+        {
+          "src": "img/nexler/stick.webp",
+          "x": 46,
+          "y": 6,
+          "w": 54,
+          "r": 3,
+          "d": 7,
+          "z": 3
+        },
+        {
+          "src": "img/nexler/medium-pye-g200-s40.webp",
+          "x": 2,
+          "y": 46,
+          "w": 54,
+          "r": 2,
+          "d": 9,
+          "z": 3
+        },
+        {
+          "src": "img/nexler/standard-v60-s30.webp",
+          "x": 46,
+          "y": 50,
+          "w": 54,
+          "r": -3,
+          "d": 7.5,
+          "z": 2
         }
       ]
     },

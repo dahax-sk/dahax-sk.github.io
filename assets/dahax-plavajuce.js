@@ -82,6 +82,8 @@
       if (k.skupiny) {
         const li = s.querySelectorAll(".rows > li");
         s.classList.add("dxpl-skupiny");
+        // dva stĺpce: v každom polovica riadkov (4 výrobky = 2 × 2, 8 výrobkov = 2 × 4)
+        if (li.length) s.style.setProperty("--dxpl-riadky", Math.ceil(li.length / 2));
         for (const g of k.skupiny) if (li[g.od] && li[g.od].dataset.skupina !== g.nazov) li[g.od].dataset.skupina = g.nazov;
       }
     }
