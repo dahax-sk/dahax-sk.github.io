@@ -87,23 +87,23 @@
   /* maska (obrázok kotvy) je v štýle prvku – url v premennej by sa počítala od priečinka assets/ */
   -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; animation: dxt-lesk 7s ease-in-out 1.5s infinite; }
 @keyframes dxt-lesk { 0% { background-position: 160% 0; } 22%, 100% { background-position: -60% 0; } }
-/* blesk (WKTHERM S-8 a THERMODRIVE V2-8, želanie používateľa): jemne zasvieti skrutka (iskra – mäkká žiara bez okraja) a potom
+/* blesk (WKTHERM S-8 a THERMODRIVE V2-8, želanie používateľa): jemne (bez ostrého bieleho stredu) zasvieti skrutka (iskra – mäkká žiara bez okraja) a potom
    svetlo pomaly (3,6 s) prebehne po tvare kotvy zhora nadol (pás 300 % výšky: poloha 75 % = pri skrutke, 0 % = pod hrotom).
    Beží raz, keď dahax-etics.js pridá .is-blesk-on – v nepravidelných odstupoch (etics.top.blesk.pauzy, napr. 5, 9, 16 s). */
 .dxt__bobal { position: absolute; inset: 0; pointer-events: none; --bl: 60, 230, 100;
-  filter: drop-shadow(0 0 2px rgba(var(--bl), .6)) drop-shadow(0 0 8px rgba(var(--bl), .35)); }
+  filter: drop-shadow(0 0 6px rgba(var(--bl), .22)); }
 .dxt__bobal.is-kov { --bl: 120, 180, 255; }
-.dxt__lesk.is-blesk { background: linear-gradient(180deg, rgba(var(--bl), 0) 44%, rgba(var(--bl), .55) 48.4%, rgba(255,255,255,.85) 50%, rgba(var(--bl), .55) 51.6%, rgba(var(--bl), 0) 56%) 0 75% / 100% 300% no-repeat;
+.dxt__lesk.is-blesk { background: linear-gradient(180deg, rgba(var(--bl), 0) 42%, rgba(var(--bl), .3) 47.5%, rgba(255,255,255,.4) 50%, rgba(var(--bl), .3) 52.5%, rgba(var(--bl), 0) 58%) 0 75% / 100% 300% no-repeat;
   opacity: 0; animation: none; }
 .dxt__kotva.is-blesk-on .dxt__lesk.is-blesk { animation: dxt-blesk 3.6s ease-in-out both; }
-@keyframes dxt-blesk { 0%, 6% { background-position: 0 75%; opacity: 0; } 16% { background-position: 0 70%; opacity: .7; }
-  86% { background-position: 0 0; opacity: .7; } 100% { background-position: 0 0; opacity: 0; } }
+@keyframes dxt-blesk { 0%, 6% { background-position: 0 75%; opacity: 0; } 16% { background-position: 0 70%; opacity: .5; }
+  86% { background-position: 0 0; opacity: .5; } 100% { background-position: 0 0; opacity: 0; } }
 .dxt__iskra { position: absolute; left: 50%; top: 7%; width: 130px; height: 130px; transform: translate(-50%, -50%) scale(.5); pointer-events: none; opacity: 0; mix-blend-mode: screen;
   background: radial-gradient(closest-side, rgba(255,255,255,.8) 0%, rgba(150,255,170,.4) 30%, rgba(60,200,90,.12) 62%, rgba(60,200,90,0) 100%); }
 .dxt__kotva.is-blesk-on .dxt__iskra { animation: dxt-iskra 3.6s ease-out both; }
 .dxt__iskra.is-kov { background: radial-gradient(closest-side, rgba(255,255,255,.8) 0%, rgba(200,225,255,.4) 30%, rgba(140,180,255,.12) 62%, rgba(140,180,255,0) 100%); }
-@keyframes dxt-iskra { 0% { opacity: 0; transform: translate(-50%, -50%) scale(.5); } 8% { opacity: .75; transform: translate(-50%, -50%) scale(1); }
-  12% { opacity: .4; } 17% { opacity: .65; } 38% { opacity: 0; transform: translate(-50%, -50%) scale(1.2); } 100% { opacity: 0; } }
+@keyframes dxt-iskra { 0% { opacity: 0; transform: translate(-50%, -50%) scale(.5); } 8% { opacity: .4; transform: translate(-50%, -50%) scale(1); }
+  17% { opacity: .3; } 38% { opacity: 0; transform: translate(-50%, -50%) scale(1.2); } 100% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .dxt__lesk { animation: none; display: none; } .dxt__iskra, .dxt__bobal { animation: none; display: none; } }
 .dxt__obr:not(.is-vyrez) { background: #fff; padding: 34px 24px; }
 .dxt__obr:not(.is-vyrez)::before { display: none; }
@@ -121,19 +121,15 @@
 /* tlačidlo detailu sa zmestí vedľa podkladov do šírky textu (640 px) */
 .dxt .dxe__det { padding-left: 22px; padding-right: 22px; letter-spacing: .12em; }
 
-/* LFMG-10 nemá video: jediná kotva v strede sa pomaly otáča o 360° (želanie používateľa). Dve roviny s tým istým výrezom
-   pootočené o 90°; rovina, ktorá sa natáča bokom, plynule zmizne a druhá sa objaví – kotva je osovo súmerná, takže pôsobí
-   ako otáčajúci sa predmet a nikdy nie je len tenká čiara. Pri obmedzení pohybu stojí. */
-.dxt__obr.is-360 { perspective: 1600px; }
-.dxt__360 { position: relative; display: block; width: 260px; height: 560px; transform-style: preserve-3d; animation: dxt-360 12s linear infinite; }
-.dxt__360 img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; backface-visibility: visible;
-  filter: contrast(1.12) brightness(1.06) drop-shadow(0 0 1px rgba(255,255,255,.3)); }
-.dxt__360a { animation: dxt-360a 12s linear infinite; }
-.dxt__360b { transform: rotateY(90deg); animation: dxt-360b 12s linear infinite; }
-.dxt__obr.is-360::after { content: ""; position: absolute; left: 50%; bottom: 40px; width: 220px; height: 26px; transform: translateX(-50%); pointer-events: none;
-  background: radial-gradient(closest-side, rgba(0,0,0,.7), rgba(0,0,0,0)); }
-@keyframes dxt-360 { from { transform: rotateY(0deg); } to { transform: rotateY(360deg); } }
-/* prelínanie len v krátkom okne okolo 45° (40 – 50°), inak je jedna rovina celá viditeľná */
-@keyframes dxt-360a { 0%, 11%, 39%, 61%, 89%, 100% { opacity: 1; } 14%, 36%, 64%, 86% { opacity: 0; } }
-@keyframes dxt-360b { 0%, 11%, 39%, 61%, 89%, 100% { opacity: 0; } 14%, 36%, 64%, 86% { opacity: 1; } }
-@media (prefers-reduced-motion: reduce) { .dxt__360, .dxt__360a { animation: none; } .dxt__360b { display: none; } }
+/* LFMG-10 nemá video: kotva sa otáča o 360° ako na cz.klimas.com (želanie používateľa) – 80 skutočných snímok Orbitvu
+   (img/klimas/etics-top/lfmg-10-360/, bez bieleho pozadia, podklady/klimas-etics/lfmg-10-360/priprav.py) na canvase.
+   Kotva leží vodorovne ako u KLIMAS, preto zaberie aj voľný stĺpec videa (stĺpce 2 – 3); spodná hrana snímky sa nemení.
+   Sama sa otáča 12 snímok/s, ťahaním myšou alebo prstom sa dá otočiť (ťah neprepína snímky). Pri obmedzení pohybu stojí. */
+.dxt--bez .dxt__obr.is-360 { grid-column: 2 / -1; }
+.dxt__obr.is-360::before { width: 900px; height: 460px; }
+.dxt__360 { position: relative; display: block; width: 100%; max-width: 800px; height: auto; cursor: grab; touch-action: none;
+  filter: contrast(1.12) brightness(1.06) drop-shadow(0 0 1px rgba(255,255,255,.3)) drop-shadow(0 26px 30px rgba(0,0,0,.65)); }
+.dxt__360.is-tah { cursor: grabbing; }
+.dxt__360-znak { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); display: flex; align-items: center; gap: 10px; pointer-events: none;
+  color: rgba(255,255,255,.6); font: 700 12px/1 var(--f-d); letter-spacing: .2em; text-transform: uppercase; white-space: nowrap; }
+.dxt__360-znak b { padding: 5px 8px 4px; border: 1.5px solid rgba(255,255,255,.35); color: #fff; letter-spacing: .08em; }

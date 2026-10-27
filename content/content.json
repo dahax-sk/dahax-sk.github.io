@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.27",
+  "version": "2026-10-27.30",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -1357,7 +1357,6 @@
                 "od": "140",
                 "do": "300"
               },
-              "otocka": true,
               "vyhody": [
                 {
                   "t": "Dlhá expanzná zóna",
@@ -1381,7 +1380,13 @@
                   "v": "0,002 W/K",
                   "l": "bodový prestup tepla od"
                 }
-              ]
+              ],
+              "otocka360": {
+                "cesta": "img/klimas/etics-top/lfmg-10-360/",
+                "pocet": 80,
+                "sirka": 800,
+                "vyska": 257
+              }
             }
           }
         },
@@ -2322,6 +2327,13 @@
               "name": "FASAD COTTAGE",
               "description": "Fasádna doska z čadičovej vlny, nehorľavá."
             }
+          ],
+          "documents": [
+            {
+              "title": "Technický list – IZOVAT FASAD 10, rozmery a balenie na palete (CZ)",
+              "href": "docs/izovat/technicky-list-izovat-fasad-10-cz.pdf",
+              "kind": "technicky-list"
+            }
           ]
         },
         {
@@ -2517,10 +2529,51 @@
           "name": "Fasády ETICS",
           "eyebrow": "HOLCIM – fasády ETICS",
           "title": "Kamenná vlna pre fasády ETICS",
-          "intro": "Štyri fasádne dosky HOLCIM FACADE – od najnižšej λD 0,034 po tuhú dosku S. Všetky nehorľavé A1, hydrofóbne a paropriepustné.",
+          "intro": "PRO FACADE 35 so zvýšenou pevnosťou a rad HOLCIM FACADE od λD 0,034 po tuhú dosku S – všetky A1, hydrofóbne a paropriepustné.",
           "image": "img/holcim/holcim-balik-fasada.webp",
           "imageCaption": "Kamenná vlna HOLCIM pre fasády ETICS",
           "products": [
+            {
+              "id": "pro-facade-35",
+              "name": "HOLCIM PRO FACADE 35",
+              "description": "ETICS so zvýšenou mechanickou odolnosťou – aj sokle, nižšie podlažia a pasívne domy.",
+              "specs": [
+                {
+                  "value": "0,035",
+                  "label": "λD [W/(m·K)]",
+                  "accent": true
+                },
+                {
+                  "value": "30 kPa",
+                  "label": "pevnosť v tlaku CS(10)"
+                },
+                {
+                  "value": "≥ 200 N",
+                  "label": "bodové zaťaženie PL(5)"
+                },
+                {
+                  "value": "50 – 250 mm",
+                  "label": "hrúbky, doska 1200 × 600 mm"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Vyhlásenie o parametroch – HOLCIM PRO FACADE 35 (PL)",
+                  "href": "docs/holcim/vyhlasenie-o-parametroch-dop-pro-facade-35.pdf",
+                  "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Certifikát 1454-CPR-0292 – kamenná vlna",
+                  "href": "docs/holcim/certifikat-1454-cpr-0292-kamenna-vlna.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "EPD – environmentálne vyhlásenie, kamenná vlna",
+                  "href": "docs/holcim/epd-environmentalne-vyhlasenie-kamenna-vlna.pdf",
+                  "kind": "ine"
+                }
+              ]
+            },
             {
               "id": "facade-34",
               "name": "HOLCIM FACADE 34",
@@ -2676,8 +2729,8 @@
           ],
           "specs": [
             {
-              "value": "0,034",
-              "label": "λD [W/(m·K)] – HOLCIM FACADE 34",
+              "value": "0,035",
+              "label": "λD [W/(m·K)] – PRO FACADE 35",
               "accent": true
             },
             {
@@ -2867,15 +2920,15 @@
         "since": "1912",
         "country": "Švajčiarsko · Poľsko",
         "hq": "Zug (skupina) · kamenná vlna z Poľska",
-        "about": "Holcim je globálna skupina stavebných riešení. Holcim Polska vyrába kamennú vlnu z prírodného kameňa – taví ho, rozvlákňuje a lisuje do dosiek pre fasády ETICS a ploché strechy. Od roku 2025 vlastní závod na kamennú vlnu vo Wykrotach v Dolnosliezskom vojvodstve.",
+        "about": "Kamenná vlna HOLCIM z prírodného kameňa – z poľského závodu globálnej skupiny Holcim. Nosná doska PRO FACADE 35 spája λD 0,035 s pevnosťou 30 kPa pre náročné fasády ETICS, rad ROOF zvládne strechy až po 80 kPa. Všetko nehorľavé A1, hydrofóbne a paropriepustné; plný kamión 22 paliet.",
         "facts": [
+          {
+            "value": "0,035",
+            "label": "λD [W/(m·K)] – HOLCIM PRO FACADE 35"
+          },
           {
             "value": "A1",
             "label": "nehorľavé – všetky dosky"
-          },
-          {
-            "value": "0,034",
-            "label": "λD [W/(m·K)] – HOLCIM FACADE 34"
           },
           {
             "value": "80 kPa",
@@ -2883,10 +2936,14 @@
           }
         ],
         "makes": [
-          "Fasády ETICS – FACADE 34, 35, 39, S",
+          "Fasády ETICS – PRO FACADE 35, FACADE 34, 35, 39, S",
           "Ploché strechy – ROOF BASE, TOP, SOLO"
         ],
         "sources": [
+          {
+            "title": "Holcim Polska – HOLCIM PRO FACADE 35",
+            "url": "https://www.holcim.pl/en/holcim-pro-facade-35"
+          },
           {
             "title": "Holcim Polska – kamenná vlna, výrobky",
             "url": "https://www.holcim.pl/welna-skalna/produkty"

@@ -5,7 +5,7 @@
    v pozadí vpravo fotka fasády (etics.top.foto, stmavená do čiernej), vľavo názov, druh, hlavná veta (claim), 3 výhody
    s číslami (pri THERMODRIVE 3 spôsoby montáže s nákresmi), 3 kľúčové čísla s červeným akcentom, podklady A – E a tlačidlo
    detailu; v strede kotva bez bieleho pozadia (etics.top.kotva) s jemným svetlom, ktoré sa prelína do fotky, a s bielym leskom, ktorý cez ňu sem-tam prebehne (len po jej tvare); vpravo dole video tejto kotvy (stlmené, dokola, hrá len pri viditeľnej snímke
-   a bez otvoreného detailu;) – LFMG-10 video nemá, na jeho mieste sa v karte pomaly otáča kotva (etics.top.otocka). Pôvodný obsah snímky ostane neviditeľný – „‹ KLIMAS“ a „Detail produktu
+   a bez otvoreného detailu;) – LFMG-10 video nemá, kotva sa otáča o 360° z 80 snímok ako na cz.klimas.com (etics.top.otocka360). Pôvodný obsah snímky ostane neviditeľný – „‹ KLIMAS“ a „Detail produktu
    a dokumenty“ klikajú na pôvodné tlačidlá (detail s dokumentmi a celým videom). Štýly: assets/dahax-etics.css. */
 (() => {
   const cats = new Map(); // "#/<firma>/<kategória>" → kategória
@@ -33,6 +33,50 @@
       setTimeout(tik, (pauzy[i++ % pauzy.length] + Math.random() * 2 - 1) * 1000);
     };
     setTimeout(tik, 1500);
+  };
+
+  // kotva 360° (etics.top.otocka360 = { cesta, pocet, sirka, vyska }): snímky cesta/00.webp … na canvase, sama sa otáča
+  // 12 snímok/s (ako Orbitvu na cz.klimas.com) len pri viditeľnej snímke bez otvoreného detailu; ťahaním sa otočí ručne
+  // a po 2,5 s sa znova otáča sama. Ťah nesmie prepnúť snímku prezentácie (stopPropagation). setTimeout, nie rAF.
+  const otacka360 = (d, cfg) => {
+    const cv = d.querySelector(".dxt__360"), g = cv.getContext("2d"), n = cfg.pocet;
+    const snimky = Array.from({ length: n }, (_, i) => { const im = new Image(); im.decoding = "async"; im.src = cfg.cesta + dve(i) + ".webp"; return im; });
+    let i = 0, ukazana = -1, tah = null, pokoj = 0;
+    const kresli = () => {
+      const im = snimky[i];
+      if (ukazana === i || !im.complete || !im.naturalWidth) return;
+      g.clearRect(0, 0, cv.width, cv.height);
+      g.drawImage(im, 0, 0, cv.width, cv.height);
+      ukazana = i;
+    };
+    snimky[0].onload = kresli;
+    const stoj = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const tik = () => {
+      if (!d.isConnected) return;
+      const r = cv.getBoundingClientRect();
+      const on = document.visibilityState === "visible" && r.width > 0 && r.right > 0 && r.left < innerWidth && !document.querySelector(".sheet");
+      if (on && !stoj && !tah && Date.now() > pokoj) i = (i + 1) % n;
+      kresli();
+      setTimeout(tik, on ? 83 : 500);
+    };
+    const x = (ev) => (ev.touches ? ev.touches[0].clientX : ev.clientX);
+    const zaciatok = (ev) => { ev.stopPropagation(); tah = { x: x(ev), i }; cv.classList.add("is-tah"); };
+    const pohyb = (ev) => {
+      if (!tah) return;
+      ev.stopPropagation();
+      if (ev.cancelable && ev.type === "touchmove") ev.preventDefault();
+      const krok = Math.round((x(ev) - tah.x) / (cv.getBoundingClientRect().width / n * 1.2)); // ~ 1 otáčka na šírku kotvy
+      i = (((tah.i - krok) % n) + n) % n;
+      kresli();
+    };
+    const koniec = (ev) => { if (!tah) return; ev.stopPropagation(); tah = null; pokoj = Date.now() + 2500; cv.classList.remove("is-tah"); };
+    cv.addEventListener("pointerdown", (ev) => { zaciatok(ev); cv.setPointerCapture?.(ev.pointerId); });
+    cv.addEventListener("pointermove", pohyb);
+    cv.addEventListener("pointerup", koniec);
+    cv.addEventListener("pointercancel", koniec);
+    for (const t of ["touchstart", "touchmove", "touchend", "mousedown", "mousemove", "mouseup", "click"]) cv.addEventListener(t, (ev) => ev.stopPropagation(), { passive: t !== "touchmove" });
+    cv.addEventListener("touchmove", (ev) => { if (ev.cancelable) ev.preventDefault(); }, { passive: false });
+    tik();
   };
 
   const postav = (s, k, kluc) => {
@@ -67,10 +111,10 @@
       (e.podklady || []).map((x) => '<li class="' + ((p.podklady || "").includes(x.k) ? "" : "is-off") + '" title="' + esc(x.nazov) + '"><img alt="" src="' + esc(x.obr) + '"><b>' + x.k + "</b></li>").join("") +
       '</ul></div><button type="button" class="btn btn--line dxe__det">Detail produktu a dokumenty ›</button></div>' +
       "</div>" +
-      (t.otocka && t.kotva
-        // jedna kotva otáčajúca sa o 360°: dve roviny pootočené o 90°, ktoré sa pri otáčaní prelínajú (tá, ktorá ide bokom, zmizne)
-        ? '<figure class="dxt__obr is-vyrez is-360"><span class="dxt__360">' +
-          '<img class="dxt__360a" alt="' + esc(p.name) + '" src="' + esc(t.kotva) + '"><img class="dxt__360b" alt="" src="' + esc(t.kotva) + '">' + "</span></figure>"
+      (t.otocka360
+        // kotva 360° ako na cz.klimas.com: snímky Orbitvu na canvase (otacka360)
+        ? '<figure class="dxt__obr is-vyrez is-360"><canvas class="dxt__360" role="img" aria-label="' + esc(p.name) + ' 360°" width="' + t.otocka360.sirka +
+          '" height="' + t.otocka360.vyska + '"></canvas><p class="dxt__360-znak"><b>360°</b>Potiahnite a otočte</p></figure>'
         : '<figure class="dxt__obr' + (t.kotva ? " is-vyrez" : "") + '"><span class="dxt__kotva"><img alt="' + esc(p.name) + '" src="' + esc(t.kotva || p.image) + '">' +
           // blesk (etics.top.blesk): zasvieti zelená skrutka hore (iskra) a svetlo prebehne po tvare kotvy nadol
           (t.kotva && t.blesk ? '<i class="dxt__iskra' + (t.blesk.kov ? " is-kov" : "") + '" style="top:' + (+t.blesk.y || 7) + '%"></i>' : "") +
@@ -86,6 +130,7 @@
     d.querySelector(".dxe__spat").addEventListener("click", () => klik(".cat__back"));
     d.querySelector(".dxe__det").addEventListener("click", () => klik(".media__text > .btn"));
     if (t.blesk) blesk(d, t.blesk);
+    if (t.otocka360) otacka360(d, t.otocka360);
     return d;
   };
 
