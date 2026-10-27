@@ -401,3 +401,16 @@
 .dx-len-web .sheet--settings .dxu--hlavna{max-width:560px}
 .dx-len-web .sheet--settings .dxu--hlavna>.eyebrow{display:none}
 .dx-len-web .sheet--settings .dxu__v{font-size:18px;line-height:1.5}
+/* fotka bez pozadia (výrez, gallery[].bezPozadia) – bez bielej plochy a rámu; jediná fotka pod zoznamom je väčšia (IZOVAT balík) */
+.dxg__t.is-vyrez { background: none; border: 0; overflow: visible; }
+.dxg__t.is-vyrez img { object-fit: contain; object-position: left bottom; filter: drop-shadow(0 10px 14px rgba(0,0,0,.55)); }
+.dxg--jeden .dxg__h { display: none; }
+/* jediná fotka (IZOVAT balík): ľavá hrana na línii textu (700 px), spodná na spodnej línii bieleho panela (948 px),
+   výška = priestor pod zoznamom dosiek mínus 40 px medzera (613 + 40 → 948 = 295 px → šírka 482 px pri 314 : 192) */
+.media__text > .dxg--jeden { margin-top: auto; padding-top: 16px; } /* 16 px + 24 px okraj zoznamu = 40 px medzera */
+.dxg--jeden .dxg__grid { grid-template-columns: minmax(0, 482px); }
+.dxg--jeden .dxg__t { aspect-ratio: 314 / 192; }
+.dxg__t.is-vyrez:hover img { transform: scale(1.03); }
+/* IZOVAT Ploché strechy – zostava (skladba + 2 haly) vyplní biele okno: okraj 16 px namiesto štandardného */
+.media__img.is-white:has(img[src*="izovat-strechy-zostava"]) { padding: 16px; }
+.media__img.is-white:has(img[src*="izovat-strechy-zostava"]) img { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: contain; }

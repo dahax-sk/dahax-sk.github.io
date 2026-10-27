@@ -198,13 +198,13 @@
       if (cur) cur.remove();
       const text = s.querySelector(":scope > .media__text"), fig = s.querySelector(":scope > .media__img");
       if (!d || !text) return;
-      const box = el("div", "dxg");
+      const box = el("div", "dxg" + (d.fotky.length === 2 ? " dxg--jeden" : ""));
       box.dataset.k = kluc;
       ["pointerdown", "pointerup"].forEach((t) => box.addEventListener(t, stop));
       box.append(el("p", "eyebrow dxg__h", "Fotografie"));
       const grid = el("div", "dxg__grid");
       d.fotky.slice(1, 5).forEach((g, n) => {
-        const b = el("button", "dxg__t" + (g.biele ? " is-white" : ""));
+        const b = el("button", "dxg__t" + (g.vyrez ? " is-vyrez" : g.biele ? " is-white" : ""));
         b.type = "button";
         const img = el("img");
         img.src = g.src;
@@ -246,7 +246,7 @@
     for (const m of (c && c.manufacturers) || []) for (const k of m.categories || []) {
       if (!Array.isArray(k.gallery) || !k.gallery.length) continue;
       const fotky = (k.image ? [{ typ: "foto", src: k.image, popis: k.imageCaption || k.title || "", biele: true }] : [])
-        .concat(k.gallery.filter((g) => g && g.src && g.kind !== "video").map((g) => ({ typ: "foto", src: g.src, popis: g.caption || "", biele: !!g.onWhite })));
+        .concat(k.gallery.filter((g) => g && g.src && g.kind !== "video").map((g) => ({ typ: "foto", src: g.src, popis: g.caption || "", biele: !!g.onWhite, vyrez: !!g.bezPozadia })));
       kat.set("#/" + m.id + "/" + k.id, { titul: k.title, fotky });
     }
     ozdobMedia();

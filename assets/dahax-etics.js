@@ -19,6 +19,22 @@
   // snímka bundla tejto kategórie: .s__in.media s nadpisom = názov kotvy
   const najdi = (k) => [...document.querySelectorAll(".s__in.media")].find((s) => s.querySelector(".cat__title")?.textContent.trim() === k.title);
 
+  // blesk po kotve: spustí animáciu (.is-blesk-on) raz a ďalšiu po nepravidelnej pauze (± 1 s); setTimeout, nie rAF
+  // (rAF v skrytom okne nebeží); pri obmedzení pohybu nič
+  const blesk = (d, cfg) => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const k = d.querySelector(".dxt__kotva"), pauzy = cfg.pauzy || [5, 9, 16, 7, 12, 10];
+    let i = 0;
+    const tik = () => {
+      if (!d.isConnected) return;
+      k.classList.remove("is-blesk-on");
+      void k.offsetWidth; // nový beh tej istej animácie
+      k.classList.add("is-blesk-on");
+      setTimeout(tik, (pauzy[i++ % pauzy.length] + Math.random() * 2 - 1) * 1000);
+    };
+    setTimeout(tik, 1500);
+  };
+
   const postav = (s, k, kluc) => {
     const p = k.products[0], e = k.etics, t = e.top || {};
     const typ = String(p.type || "").replace(new RegExp("^" + (p.druh || "") + "\\s*·\\s*"), "");
@@ -56,16 +72,20 @@
         ? '<figure class="dxt__obr is-vyrez is-360"><span class="dxt__360">' +
           '<img class="dxt__360a" alt="' + esc(p.name) + '" src="' + esc(t.kotva) + '"><img class="dxt__360b" alt="" src="' + esc(t.kotva) + '">' + "</span></figure>"
         : '<figure class="dxt__obr' + (t.kotva ? " is-vyrez" : "") + '"><span class="dxt__kotva"><img alt="' + esc(p.name) + '" src="' + esc(t.kotva || p.image) + '">' +
-          (t.kotva ? '<i class="dxt__lesk" style="-webkit-mask-image:url(&quot;' + esc(t.kotva) + '&quot;);mask-image:url(&quot;' + esc(t.kotva) + '&quot;)"></i>' : "") + "</span></figure>") +
+          // blesk (etics.top.blesk): zasvieti zelená skrutka hore (iskra) a svetlo prebehne po tvare kotvy nadol
+          (t.kotva && t.blesk ? '<i class="dxt__iskra' + (t.blesk.kov ? " is-kov" : "") + '" style="top:' + (+t.blesk.y || 7) + '%"></i>' : "") +
+          // pri blesku je lesk v obale so žiarou (filter obalu svieti aj kúsok za tvar kotvy, maska je až na lesku)
+          (t.kotva ? (t.blesk ? '<i class="dxt__bobal' + (t.blesk.kov ? " is-kov" : "") + '">' : "") + '<i class="dxt__lesk' + (t.blesk ? " is-blesk" : "") + '" style="-webkit-mask-image:url(&quot;' + esc(t.kotva) + '&quot;);mask-image:url(&quot;' + esc(t.kotva) + '&quot;)"></i>' + (t.blesk ? "</i>" : "") : "") + "</span></figure>") +
       (e.video
         ? '<figure class="dxt__video"><video muted playsinline loop preload="metadata" src="' + esc(e.video) + '" poster="' + esc(e.video.replace(/\.mp4$/, ".webp")) +
-          '"></video><figcaption><span>Video</span>' + esc(e.videoNazov || p.name) + "</figcaption></figure>"
+          '"></video>' + (e.videoPopis === false ? "" : "<figcaption><span>Video</span>" + esc(e.videoNazov || p.name) + "</figcaption>") + "</figure>"
         : "");
     sec.appendChild(d);
     s.classList.add("dxe-skryte");
     const klik = (sel) => s.querySelector(sel)?.click();
     d.querySelector(".dxe__spat").addEventListener("click", () => klik(".cat__back"));
     d.querySelector(".dxe__det").addEventListener("click", () => klik(".media__text > .btn"));
+    if (t.blesk) blesk(d, t.blesk);
     return d;
   };
 
