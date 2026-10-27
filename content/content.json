@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.39",
+  "version": "2026-10-27.40",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -4039,8 +4039,6 @@
       "tagline": "Sadrokartónové dosky a systémy – priečky, podhľady, predsadené steny.",
       "website": "https://knauf.com/sk-SK",
       "profile": {
-        "since": "1932",
-        "country": "Nemecko",
         "hq": "Iphofen, Bavorsko",
         "about": "Rodinnú firmu so sídlom v Iphofene založili v roku 1932 bratia Alfons a Karl Knauf. Na Slovensku pôsobí od začiatku 90. rokov; divízia Knauf Insulation vyrába v Novej Bani kamennú minerálnu vlnu. Sortiment: sadrokartón, sadrové omietky, profily a systémy priečok a podhľadov.",
         "facts": [
@@ -4069,10 +4067,65 @@
           {
             "title": "Knauf – Our History",
             "url": "https://careers.knauf.co.uk/pages/history"
+          },
+          {
+            "title": "Knauf SK – Uniflott",
+            "url": "https://knauf.com/sk-SK/p/produkt/uniflott-10132_0105"
+          },
+          {
+            "title": "Knauf SK – Fugenfüller leicht",
+            "url": "https://knauf.com/sk-SK/p/produkt/fugenfuller-leicht-10719_0105"
+          },
+          {
+            "title": "Knauf SK – Fill & Finish Light",
+            "url": "https://knauf.com/sk-SK/p/produkt/fill-finish-light-11409_0105"
+          },
+          {
+            "title": "Knauf SK – Roll & Spray MAX",
+            "url": "https://knauf.com/sk-SK/p/produkt/roll-spray-max-29624_0105"
+          },
+          {
+            "title": "Knauf SK – doska Knauf WHITE 12,5 mm",
+            "url": "https://knauf.com/sk-SK/p/produkt/doska-knauf-white-12-5-mm-10003_0105"
+          },
+          {
+            "title": "Knauf SK – fotografie (knauf.com/sk-SK)",
+            "url": "https://knauf.com/sk-SK"
           }
-        ]
+        ],
+        "headLogo": "img/brand/knauf-biele.webp"
       },
       "documents": [
+        {
+          "title": "Vyhlásenie o parametroch – doska Knauf WHITE 12,5 mm",
+          "href": "docs/knauf/vyhlasenie-o-parametroch-knauf-white-12-5.pdf",
+          "kind": "vyhlasenie"
+        },
+        {
+          "title": "Technický list – Knauf Uniflott",
+          "href": "docs/knauf/technicky-list-knauf-uniflott.pdf",
+          "kind": "technicky-list"
+        },
+        {
+          "title": "Technický list – Knauf Fugenfüller leicht",
+          "href": "docs/knauf/technicky-list-knauf-fugenfuller-leicht.pdf",
+          "kind": "technicky-list"
+        },
+        {
+          "title": "Technický list – Knauf Fill & Finish Light",
+          "href": "docs/knauf/technicky-list-knauf-fill-finish-light.pdf",
+          "kind": "technicky-list"
+        },
+        {
+          "title": "Technický list – Knauf Roll & Spray MAX",
+          "href": "docs/knauf/technicky-list-knauf-roll-spray-max.pdf",
+          "kind": "technicky-list"
+        },
+        {
+          "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+          "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+          "kind": "katalog"
+        },
         {
           "title": "Knauf Slovensko – produkty (web)",
           "href": "https://knauf.com/sk-SK/p/produkty/dosky-30337/sadrokartonove-dosky-26684",
@@ -4092,19 +4145,163 @@
         "fit": "contain"
       },
       "scope": [],
-      "theme": "light",
+      "theme": "navy",
       "categories": [
         {
-          "id": "sdk-dosky",
-          "name": "SDK dosky",
-          "eyebrow": "KNAUF – sadrokartónové dosky",
-          "title": "Štandardné a impregnované dosky",
-          "intro": "Dosky pre základné systémy suchej výstavby – priečky, podhľady, predsadené steny a suché omietky.",
+          "id": "sadrokarton-a-sadry",
+          "name": "Sadrokartón a sadry",
+          "eyebrow": "KNAUF – suchá výstavba",
+          "title": "Sadrokartón, suché a mokré sadrové tmely",
+          "intro": "Sadrokartónové dosky pre priečky, podhľady a predsadené steny a k nim tmely na spoje a celoplošné stierky – suché sadrové na zamiešanie s vodou aj mokré pastovité, pripravené na okamžité použitie.",
+          "image": "img/knauf/knauf-sadrokarton-a-sadry.webp",
+          "imageOnWhite": false,
+          "products": [
+            {
+              "id": "sadrokartonove-dosky",
+              "name": "Sadrokartónové dosky",
+              "description": "WHITE 12,5 a 15 mm · GREEN impregnovaná · DIAMANT tvrdená · FIREBOARD protipožiarna",
+              "specs": [
+                {
+                  "value": "12,5 mm",
+                  "label": "štandardná hrúbka dosky WHITE",
+                  "accent": true
+                },
+                {
+                  "value": "8,5 kg/m²",
+                  "label": "plošná hmotnosť WHITE 12,5 mm"
+                },
+                {
+                  "value": "A1",
+                  "label": "reakcia na oheň FIREBOARD"
+                },
+                {
+                  "value": "70 %",
+                  "label": "max. relatívna vlhkosť pre GREEN"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Vyhlásenie o parametroch – doska Knauf WHITE 12,5 mm",
+                  "href": "docs/knauf/vyhlasenie-o-parametroch-knauf-white-12-5.pdf",
+                  "kind": "vyhlasenie"
+                }
+              ]
+            },
+            {
+              "id": "suche-sadrove-tmely",
+              "name": "Suché sadrové tmely",
+              "description": "Uniflott · Fugenfüller leicht – prášok na zamiešanie s vodou, vrecia 5 a 25 kg",
+              "specs": [
+                {
+                  "value": "5 / 25 kg",
+                  "label": "balenie vo vreci",
+                  "accent": true
+                },
+                {
+                  "value": "3B",
+                  "label": "typ tmelu Fugenfüller podľa EN 13963"
+                },
+                {
+                  "value": "HRAK",
+                  "label": "Uniflott aj bez výstužnej pásky"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – Knauf Uniflott",
+                  "href": "docs/knauf/technicky-list-knauf-uniflott.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Technický list – Knauf Fugenfüller leicht",
+                  "href": "docs/knauf/technicky-list-knauf-fugenfuller-leicht.pdf",
+                  "kind": "technicky-list"
+                }
+              ]
+            },
+            {
+              "id": "mokre-pastovite-tmely",
+              "name": "Mokré pastovité tmely",
+              "description": "Fill & Finish Light · Roll & Spray MAX – hotové na okamžité použitie, ručne, valčekom aj strojom Airless",
+              "specs": [
+                {
+                  "value": "hotové",
+                  "label": "pripravené na okamžité použitie",
+                  "accent": true
+                },
+                {
+                  "value": "−35 %",
+                  "label": "nižšia hmotnosť Fill & Finish Light"
+                },
+                {
+                  "value": "do 5 mm",
+                  "label": "vrstva Roll & Spray MAX"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – Knauf Fill & Finish Light",
+                  "href": "docs/knauf/technicky-list-knauf-fill-finish-light.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Technický list – Knauf Roll & Spray MAX",
+                  "href": "docs/knauf/technicky-list-knauf-roll-spray-max.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+                  "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            }
+          ],
+          "documents": [
+            {
+              "title": "Vyhlásenie o parametroch – doska Knauf WHITE 12,5 mm",
+              "href": "docs/knauf/vyhlasenie-o-parametroch-knauf-white-12-5.pdf",
+              "kind": "vyhlasenie"
+            },
+            {
+              "title": "Technický list – Knauf Uniflott",
+              "href": "docs/knauf/technicky-list-knauf-uniflott.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Technický list – Knauf Fugenfüller leicht",
+              "href": "docs/knauf/technicky-list-knauf-fugenfuller-leicht.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Technický list – Knauf Fill & Finish Light",
+              "href": "docs/knauf/technicky-list-knauf-fill-finish-light.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Technický list – Knauf Roll & Spray MAX",
+              "href": "docs/knauf/technicky-list-knauf-roll-spray-max.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+              "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+              "kind": "katalog"
+            }
+          ]
+        },
+        {
+          "id": "suche-tmely-a-dosky",
+          "name": "Suché tmely a dosky",
+          "eyebrow": "KNAUF – sadrokartón a suché tmely",
+          "title": "Doska WHITE, Uniflott a Fugenfüller",
+          "intro": "Sadrokartónová doska a suché sadrové tmely na zamiešanie s vodou – na tmelenie spojov, pretmelenie skrutiek a lepenie dosiek.",
           "products": [
             {
               "id": "knauf-white-12-5",
-              "name": "Knauf WHITE 12,5 mm",
-              "description": "Štandardná sadrokartónová doska pre základné systémy suchej výstavby",
+              "name": "Doska Knauf WHITE 12,5 mm",
+              "image": "img/knauf/knauf-white-paleta.webp",
+              "description": "Sadrokartónová doska (GKB) pre priečky, podhľady, predsadené steny a suché omietky v interiéri – ohýbateľná, v optimalizovaných formátoch.",
               "specs": [
                 {
                   "value": "12,5 mm",
@@ -4116,179 +4313,175 @@
                   "label": "plošná hmotnosť"
                 },
                 {
-                  "value": "1250 mm",
-                  "label": "šírka (hrana HRAK)"
+                  "value": "2000–3000 mm",
+                  "label": "dĺžka dosky"
                 },
                 {
                   "value": "56 ks",
-                  "label": "kusov na palete"
+                  "label": "dosiek na palete"
                 }
               ],
-              "documents": []
+              "documents": [
+                {
+                  "title": "Vyhlásenie o parametroch – doska Knauf WHITE 12,5 mm",
+                  "href": "docs/knauf/vyhlasenie-o-parametroch-knauf-white-12-5.pdf",
+                  "kind": "vyhlasenie"
+                }
+              ]
             },
             {
-              "id": "knauf-white-15",
-              "name": "Knauf WHITE 15 mm",
-              "description": "Hrubšia štandardná doska pre vyššie nároky na tuhosť konštrukcie",
+              "id": "knauf-uniflott",
+              "name": "Knauf Uniflott",
+              "image": "img/knauf/knauf-uniflott.webp",
+              "description": "Sadrový tmel na ručné tmelenie spojov sadrokartónových dosiek, pri hrane HRAK aj bez výstužnej pásky. Minimálne zmrašťovanie a vysoká odolnosť proti prasklinám.",
               "specs": [
                 {
-                  "value": "15 mm",
-                  "label": "hrúbka",
+                  "value": "5 / 25 kg",
+                  "label": "balenie vo vreci",
                   "accent": true
                 },
                 {
-                  "value": "11,2 kg/m²",
-                  "label": "plošná hmotnosť"
+                  "value": "42 ks",
+                  "label": "vriec 25 kg na palete"
                 },
                 {
-                  "value": "2000–3000",
-                  "label": "dĺžky dosky (mm), šírka 1250 mm"
-                },
-                {
-                  "value": "46 ks",
-                  "label": "kusov na palete"
+                  "value": "HRAK",
+                  "label": "tmelenie bez výstužnej pásky"
                 }
               ],
-              "documents": []
+              "documents": [
+                {
+                  "title": "Technický list – Knauf Uniflott",
+                  "href": "docs/knauf/technicky-list-knauf-uniflott.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+                  "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+                  "kind": "katalog"
+                }
+              ]
             },
             {
-              "id": "knauf-green-12-5",
-              "name": "Knauf GREEN 12,5 mm",
-              "description": "Impregnovaná doska so zníženou nasiakavosťou do vlhších interiérov",
+              "id": "knauf-fugenfuller-leicht",
+              "name": "Knauf Fugenfüller leicht",
+              "image": "img/knauf/knauf-fugenfuller-leicht.webp",
+              "description": "Práškový sadrový tmel svetlej farby na základné tmelenie spojov s výstužnou páskou, pretmelenie skrutiek a lepenie dosiek na rovný podklad.",
               "specs": [
                 {
-                  "value": "12,5 mm",
-                  "label": "hrúbka",
+                  "value": "3B",
+                  "label": "typ tmelu podľa EN 13963",
                   "accent": true
                 },
                 {
-                  "value": "8,6 kg/m²",
-                  "label": "plošná hmotnosť"
+                  "value": "Q1 · Q2",
+                  "label": "kvalita tmelenia"
                 },
                 {
-                  "value": "70 %",
-                  "label": "max. relatívna vlhkosť vzduchu"
+                  "value": "5 / 25 kg",
+                  "label": "balenie vo vreci"
+                },
+                {
+                  "value": "40 ks",
+                  "label": "vriec 25 kg na palete"
                 }
               ],
-              "documents": []
+              "documents": [
+                {
+                  "title": "Technický list – Knauf Fugenfüller leicht",
+                  "href": "docs/knauf/technicky-list-knauf-fugenfuller-leicht.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+                  "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+                  "kind": "katalog"
+                }
+              ]
             }
-          ],
-          "specs": [
-            {
-              "value": "12,5 mm",
-              "label": "štandardná hrúbka dosky",
-              "accent": true
-            },
-            {
-              "value": "8,5 kg/m²",
-              "label": "plošná hmotnosť dosky WHITE 12,5 mm"
-            },
-            {
-              "value": "70 %",
-              "label": "relatívna vlhkosť pre GREEN"
-            }
-          ],
-          "image": "img/brand/knauf.webp",
-          "imageOnWhite": true
+          ]
         },
         {
-          "id": "specialne-dosky",
-          "name": "Špeciálne dosky",
-          "eyebrow": "KNAUF – špeciálne dosky",
-          "title": "Tvrdené a protipožiarne dosky",
-          "intro": "Dosky pre vysoké mechanické zaťaženie a požiarnu ochranu – DIAMANT a FIREBOARD.",
+          "id": "mokre-tmely",
+          "name": "Mokré tmely",
+          "eyebrow": "KNAUF – pastovité tmely a stierky",
+          "title": "Fill & Finish Light a Roll & Spray MAX",
+          "intro": "Hotové pastovité tmely a stierky pripravené na okamžité použitie – ručne, valčekom aj strojom Airless pre dokonale hladké steny a stropy.",
           "products": [
             {
-              "id": "knauf-diamant-12-5",
-              "name": "Knauf DIAMANT 12,5 mm",
-              "description": "Tvrdená doska s vysokou plošnou hmotnosťou pre namáhané steny",
+              "id": "knauf-fill-finish-light",
+              "name": "Knauf Fill & Finish Light",
+              "image": "img/knauf/knauf-fill-finish-light.webp",
+              "description": "Odľahčený pastovitý tmel a celoplošná stierka pripravená na okamžité použitie – na spoje s páskou, finálne tmelenie aj hladké povrchy, ručne i strojovo.",
               "specs": [
                 {
-                  "value": "12,5 mm",
-                  "label": "hrúbka",
+                  "value": "−35 %",
+                  "label": "nižšia hmotnosť",
                   "accent": true
                 },
                 {
-                  "value": "12,8 kg/m²",
-                  "label": "plošná hmotnosť"
+                  "value": "4 / 20 kg",
+                  "label": "balenie vo vedre"
                 },
                 {
-                  "value": "2000/2500",
-                  "label": "dĺžky dosky (mm)"
+                  "value": "Airless",
+                  "label": "po zriedení aj striekaním"
                 }
               ],
-              "documents": []
+              "documents": [
+                {
+                  "title": "Technický list – Knauf Fill & Finish Light",
+                  "href": "docs/knauf/technicky-list-knauf-fill-finish-light.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+                  "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+                  "kind": "katalog"
+                }
+              ]
             },
             {
-              "id": "knauf-fireboard-15",
-              "name": "Knauf FIREBOARD 15 mm",
-              "description": "Nehorľavá protipožiarna doska s hranou VK",
+              "id": "knauf-roll-spray-max",
+              "name": "Knauf Roll & Spray MAX",
+              "image": "img/knauf/knauf-roll-spray-max.webp",
+              "description": "Hotová polymérová stierka na dokonalé vyhladenie stien a stropov – nanáša sa valčekom, striekaním Airless alebo ručne nerezovým hladidlom.",
               "specs": [
                 {
-                  "value": "A1",
-                  "label": "reakcia na oheň podľa STN EN 13501",
+                  "value": "do 5 mm",
+                  "label": "hrúbka vrstvy",
                   "accent": true
                 },
                 {
-                  "value": "15 mm",
-                  "label": "hrúbka"
+                  "value": "25 kg",
+                  "label": "balenie vo vedre"
                 },
                 {
-                  "value": "12,3 kg/m²",
-                  "label": "plošná hmotnosť"
+                  "value": "33 ks",
+                  "label": "vedier na palete"
                 },
                 {
-                  "value": "1250×2000",
-                  "label": "formát dosky (mm)"
+                  "value": "EN 15824",
+                  "label": "spĺňa normu"
                 }
               ],
-              "documents": []
-            },
-            {
-              "id": "knauf-fireboard-30",
-              "name": "Knauf FIREBOARD 30 mm",
-              "description": "Hrubá protipožiarna doska s hranou VK pre náročné požiarne konštrukcie",
-              "specs": [
+              "documents": [
                 {
-                  "value": "30 mm",
-                  "label": "hrúbka",
-                  "accent": true
+                  "title": "Technický list – Knauf Roll & Spray MAX",
+                  "href": "docs/knauf/technicky-list-knauf-roll-spray-max.pdf",
+                  "kind": "technicky-list"
                 },
                 {
-                  "value": "24,6 kg/m²",
-                  "label": "plošná hmotnosť"
-                },
-                {
-                  "value": "1250×2000",
-                  "label": "formát dosky (mm)"
-                },
-                {
-                  "value": "20 ks",
-                  "label": "kusov na palete"
+                  "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+                  "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+                  "kind": "katalog"
                 }
-              ],
-              "documents": []
+              ]
             }
-          ],
-          "specs": [
-            {
-              "value": "A1",
-              "label": "reakcia na oheň FIREBOARD",
-              "accent": true
-            },
-            {
-              "value": "12,8 kg/m²",
-              "label": "plošná hmotnosť dosky DIAMANT"
-            },
-            {
-              "value": "15–30 mm",
-              "label": "hrúbky dosiek FIREBOARD"
-            }
-          ],
-          "image": "img/brand/knauf.webp",
-          "imageOnWhite": true
+          ]
         }
-      ]
+      ],
+      "video": "video/knauf/knauf-firma.mp4"
     },
     {
       "id": "saint-gobain",
