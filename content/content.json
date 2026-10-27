@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.51",
+  "version": "2026-10-27.52",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -6326,48 +6326,66 @@
       "name": "STYROPROFILE",
       "logo": "img/brand/styroprofile.webp",
       "role": "Doplnkový sortiment",
-      "eyebrow": "Profily",
-      "tagline": "Profily pre suchú výstavbu a zatepľovacie systémy.",
+      "eyebrow": "SDK profily",
+      "tagline": "Pozinkované profily CD, UD, CW a UW pre sadrokartónové konštrukcie.",
       "profile": {
-        "country": "Česko",
-        "hq": "Bruntál · Styroprofile SK od 2009",
-        "about": "Český výrobca príslušenstva pre ETICS, sadrokartónové konštrukcie a tieniacu techniku, sesterská firma Styrotrade v skupine Styrogroup. Vyrába v Bruntáli v areáli s rozlohou 47 000 m². Pre slovenský trh založila v roku 2009 spoločnosť Styroprofile SK.",
+        "hq": "Bruntál, Česko · Styroprofile SK od 2009",
+        "about": "Styroprofile, a. s. je významný český výrobca stavebných profilov pre zatepľovacie systémy ETICS, sadrokartónové konštrukcie a strojové omietanie, člen skupiny Styrogroup spolu so Styrotrade. Výrobný závod je v Bruntáli na Morave. Pre slovenský trh založil v roku 2009 spoločnosť Styroprofile SK. DAHAX dodáva pozinkované SDK profily CD, UD, CW a UW.",
         "facts": [
           {
             "value": "2008",
-            "label": "založenie Styroprofile"
+            "label": "vznik Styroprofile a. s. v Bruntáli"
           },
           {
-            "value": "47 000 m²",
-            "label": "areál výroby a logistiky"
+            "value": "DX51 Z100",
+            "label": "pozinkovaný plech SDK profilov"
           },
           {
-            "value": "0,6 mm",
-            "label": "plech DX51 Z100 – SDK profily"
+            "value": "EN · DIN",
+            "label": "profily podľa EN 14195 aj DIN 18182-1"
           }
         ],
         "makes": [
-          "SDK profily UD · CD · CW · UW · UA",
-          "Zakladacie a ukončovacie lišty ETICS",
-          "Rohové profily s mriežkou",
-          "Balkónové profily",
-          "Rýchloomietniky"
+          "Profil CD – centrálny stropný",
+          "Profil UD – obvodový stropný",
+          "Profil CW – centrálny stenový",
+          "Profil UW – vodiaci stenový"
         ],
         "sources": [
-          {
-            "title": "ČESKÉSTAVBY.cz – Styrotrade",
-            "url": "https://www.ceskestavby.cz/firmy/styrotrade.html"
-          },
           {
             "title": "Styroprofile – o spoločnosti",
             "url": "https://styroprofile.cz/cs/o-spolecnosti/o-spolecnosti/"
           },
           {
-            "title": "Styroprofile – katalóg",
-            "url": "https://styroprofile.cz/cs/nas-obchod/katalog-profilu-a-prislusenstvi/"
+            "title": "Styroprofile – história",
+            "url": "https://styroprofile.cz/cs/o-spolecnosti/historie/"
+          },
+          {
+            "title": "Styroprofile – profil CD",
+            "url": "https://styroprofile.cz/cs/produkty/podhledy/sadrokartonove-konstrukce-/cd/"
+          },
+          {
+            "title": "Styroprofile – profil UD",
+            "url": "https://styroprofile.cz/cs/produkty/podhledy/sadrokartonove-konstrukce-/ud/"
+          },
+          {
+            "title": "Styroprofile – profil CW",
+            "url": "https://styroprofile.cz/cs/produkty/steny/sadrokartonove-konstrukce/cw/"
+          },
+          {
+            "title": "Styroprofile – profil UW",
+            "url": "https://styroprofile.cz/cs/produkty/steny/sadrokartonove-konstrukce/uw/"
+          },
+          {
+            "title": "Styroprofile – prehlásenia o vlastnostiach",
+            "url": "https://styroprofile.cz/cs/nas-obchod/dokumenty-ke-stazeni/prohlaseni-o-vlastnostech/"
+          },
+          {
+            "title": "Styroprofile – certifikáty",
+            "url": "https://styroprofile.cz/cs/nas-obchod/dokumenty-ke-stazeni/certifikaty/"
           }
         ],
-        "since": "2008"
+        "headLogo": "img/brand/styroprofile-logo-zelene.webp"
       },
       "tier": "plus",
       "tile": {
@@ -6375,398 +6393,285 @@
         "fit": "contain"
       },
       "scope": [],
-      "theme": "light",
+      "theme": "green",
       "categories": [
         {
-          "id": "profily-etics",
-          "name": "Profily ETICS",
-          "eyebrow": "STYROPROFILE – zatepľovacie systémy",
-          "title": "Zakladacie a ukončovacie lišty ETICS",
-          "intro": "Hliníkové profily na založenie, bočné a horné ukončenie zatepľovacieho systému ETICS a balkónové okapničky.",
+          "id": "sdk-profily",
+          "name": "SDK profily",
+          "eyebrow": "STYROPROFILE – sadrokartónové konštrukcie",
+          "title": "Profily CD, UD, CW a UW",
+          "intro": "Pozinkované profily z plechu DX51 Z100 pre podhľady a steny podľa EN 14195 aj DIN 18182-1.",
+          "image": "img/styroprofile/styroprofile-sdk-profily.webp",
+          "imageOnWhite": false,
           "products": [
             {
-              "id": "los-alu",
-              "name": "LOS ALU",
-              "description": "Lišta na vodorovné založenie izolačných dosiek; okapnička zaručí odkvapkávanie vody zo spodnej časti ETICS.",
+              "id": "cd",
+              "name": "Profil CD 60",
+              "description": "Centrálny profil pre sadrokartónové podhľady.",
               "specs": [
                 {
-                  "value": "20–250 mm",
-                  "label": "hrúbka izolantu",
+                  "value": "CD 60",
+                  "label": "rozmer profilu",
                   "accent": true
                 },
                 {
-                  "value": "0,6–1,2 mm",
-                  "label": "hrúbka hliníka"
+                  "value": "12 ks",
+                  "label": "v balení · 216 ks v autobalíku"
                 },
                 {
-                  "value": "2,0 / 2,5 m",
-                  "label": "dĺžky profilu"
+                  "value": "0,57 ± 0,04 mm",
+                  "label": "hrúbka plechu podľa EN 14195 (DIN: 0,6 mm)"
                 }
               ],
               "documents": [
                 {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "lob-alu",
-              "name": "LOB ALU",
-              "description": "Profil na bočné založenie izolačných dosiek ETICS, chráni bočnú časť systému pred poškodením.",
-              "specs": [
-                {
-                  "value": "30–200 mm",
-                  "label": "hrúbka izolantu",
-                  "accent": true
-                },
-                {
-                  "value": "0,8 / 1,0 mm",
-                  "label": "hrúbka hliníka"
-                },
-                {
-                  "value": "2,5 m",
-                  "label": "dĺžka profilu"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "loh",
-              "name": "LOH",
-              "description": "Horné ukončenie izolačných dosiek ETICS; okapnička pomáha odkvapkávaniu vody vo zvislom smere.",
-              "specs": [
-                {
-                  "value": "70–200 mm",
-                  "label": "hrúbka izolantu",
-                  "accent": true
-                },
-                {
-                  "value": "0,8 / 1,0 mm",
-                  "label": "hrúbka hliníka"
-                },
-                {
-                  "value": "2,5 m",
-                  "label": "dĺžka profilu"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "balkonovy-profil",
-              "name": "Balkónový profil",
-              "description": "Eloxovaný hliník s ochrannou fóliou, okapnička balkónov, lodžií a terás s perforovanou hornou hranou.",
-              "specs": [
-                {
-                  "value": "3 odtiene",
-                  "label": "RAL 9010 · RAL 7001 · RAL 8017",
-                  "accent": true
-                },
-                {
-                  "value": "10 ks/20 m",
-                  "label": "balenie"
-                },
-                {
-                  "value": "1 400 m",
-                  "label": "na palete"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            }
-          ],
-          "image": "img/sortiment/styroprofile-profily-etics.webp",
-          "imageOnWhite": true
-        },
-        {
-          "id": "sadrokarton",
-          "name": "Suchá výstavba",
-          "eyebrow": "STYROPROFILE – suchá výstavba",
-          "title": "Profily pre sadrokartónové konštrukcie",
-          "products": [
-            {
-              "id": "cw-uw",
-              "name": "CW / UW",
-              "description": "Stenové nosné (CW) a obvodové (UW) profily pre sadrokartónové priečky a predsadené steny.",
-              "specs": [
-                {
-                  "value": "50–150 mm",
-                  "label": "šírky profilov",
-                  "accent": true
-                },
-                {
-                  "value": "0,57 mm",
-                  "label": "plech podľa ČSN EN 14195"
-                },
-                {
-                  "value": "0,6 mm",
-                  "label": "plech vo verzii DIN 18182-1"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW",
+                  "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW (SK)",
                   "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-sk.pdf",
                   "kind": "vyhlasenie"
                 },
                 {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
+                  "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW, HUT 2026 (CZ)",
+                  "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-hut-2026-cz.pdf",
+                  "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Certifikát – profily podľa EN 14195 (CZ)",
+                  "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-en-14195-cz.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Certifikát – profily podľa DIN 18182-1 (CZ)",
+                  "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-din-18182-cz.pdf",
+                  "kind": "certifikat"
                 }
               ]
             },
             {
-              "id": "cd-ud",
-              "name": "CD 60 / UD 30",
-              "description": "Nosný (CD) a vodiaci (UD) profil – rošt na upevnenie sadrokartónových a sadrovláknitých dosiek.",
+              "id": "ud",
+              "name": "Profil UD 30",
+              "description": "Obvodový stropný profil pre sadrokartónové podhľady.",
               "specs": [
                 {
-                  "value": "0,57 mm",
-                  "label": "plech podľa ČSN EN 14195",
+                  "value": "UD 30",
+                  "label": "rozmer profilu",
                   "accent": true
                 },
                 {
-                  "value": "0,6 mm",
-                  "label": "plech vo verzii DIN 18182-1"
+                  "value": "16 ks",
+                  "label": "v balení · 256 ks v autobalíku"
                 },
                 {
-                  "value": "DX51 Z100",
-                  "label": "pozinkovaný plech"
+                  "value": "0,57 ± 0,04 mm",
+                  "label": "hrúbka plechu podľa EN 14195 (DIN: 0,6 mm)"
                 }
               ],
               "documents": [
                 {
-                  "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW",
+                  "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW (SK)",
                   "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-sk.pdf",
                   "kind": "vyhlasenie"
                 },
                 {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "ua",
-              "name": "UA ZN",
-              "description": "Stenový profil s vyššou nosnosťou – výstuha pre zárubne, závesné WC a ohrievače vody, aj nosný profil podhľadov.",
-              "specs": [
-                {
-                  "value": "2,0 mm",
-                  "label": "hrúbka plechu",
-                  "accent": true
-                },
-                {
-                  "value": "50–150 mm",
-                  "label": "šírky profilov"
-                },
-                {
-                  "value": "DX51 Z100",
-                  "label": "pozinkovaný plech"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Vyhlásenie o parametroch – profily UA",
-                  "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ua-sk.pdf",
+                  "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW, HUT 2026 (CZ)",
+                  "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-hut-2026-cz.pdf",
                   "kind": "vyhlasenie"
                 },
                 {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
+                  "title": "Certifikát – profily podľa EN 14195 (CZ)",
+                  "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-en-14195-cz.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Certifikát – profily podľa DIN 18182-1 (CZ)",
+                  "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-din-18182-cz.pdf",
+                  "kind": "certifikat"
                 }
               ]
             },
             {
-              "id": "hut",
-              "name": "HUT profil",
-              "description": "Priama montáž sadrokartónových, sadrovláknitých alebo OSB dosiek na rovný strop či stenu.",
+              "id": "cw",
+              "name": "Profil CW",
+              "description": "Centrálny profil pre sadrokartónové steny a priečky.",
               "specs": [
                 {
-                  "value": "0,50 mm",
-                  "label": "hrúbka plechu",
+                  "value": "50–150",
+                  "label": "šírky CW 50, 75, 100, 125, 150",
                   "accent": true
                 },
                 {
-                  "value": "DX51 Z100",
-                  "label": "pozinkovaný plech"
-                },
-                {
-                  "value": "10 ks",
-                  "label": "v balíku"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            }
-          ],
-          "image": "img/sortiment/styroprofile-sadrokarton.webp",
-          "imageOnWhite": true
-        },
-        {
-          "id": "rohy-omietky",
-          "name": "Rohy a omietky",
-          "eyebrow": "STYROPROFILE – lišty",
-          "title": "Rohové lišty a rýchloomietniky",
-          "intro": "Hliníkové a pozinkované lišty na ochranu rohov sadrokartónových konštrukcií a profily na omietanie vnútorných stien.",
-          "products": [
-            {
-              "id": "lps-alu-ce",
-              "name": "LPS ALU CE",
-              "description": "Hliníková rohová lišta s prelisom podľa EN 14353:2007+A1:2010 s označením CE.",
-              "specs": [
-                {
-                  "value": "0,4 mm",
-                  "label": "min. hrúbka hliníka",
-                  "accent": true
-                },
-                {
-                  "value": "23 / 25 mm",
-                  "label": "veľkosť ramien"
-                },
-                {
-                  "value": "2,5 / 3,0 m",
-                  "label": "dĺžky lišty"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "lps-alu-pix",
-              "name": "LPS ALU PIX",
-              "description": "Pixelovaný povrch pre lepšiu priľnavosť stierkových tmelov, bez následnej deformácie profilu.",
-              "specs": [
-                {
-                  "value": "23×23 mm",
-                  "label": "rozmer ramien",
-                  "accent": true
-                },
-                {
-                  "value": "0,3/0,33 mm",
-                  "label": "hrúbka hliníka"
-                },
-                {
-                  "value": "200 ks",
+                  "value": "8 ks",
                   "label": "v balení"
+                },
+                {
+                  "value": "120 / 72 ks",
+                  "label": "v autobalíku (CW 50–100 / 125–150)"
+                },
+                {
+                  "value": "0,57 ± 0,04 mm",
+                  "label": "hrúbka plechu podľa EN 14195 (DIN: 0,6 mm)"
                 }
               ],
               "documents": [
                 {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
+                  "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW (SK)",
+                  "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-sk.pdf",
+                  "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW, HUT 2026 (CZ)",
+                  "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-hut-2026-cz.pdf",
+                  "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Certifikát – profily podľa EN 14195 (CZ)",
+                  "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-en-14195-cz.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Certifikát – profily podľa DIN 18182-1 (CZ)",
+                  "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-din-18182-cz.pdf",
+                  "kind": "certifikat"
                 }
               ]
             },
             {
-              "id": "lps-zn-30",
-              "name": "LPS ZN 30",
-              "description": "Pozinkovaná rohová lišta z plechu DX51 Z275 na ochranu rohov sadrokartónových konštrukcií.",
+              "id": "uw",
+              "name": "Profil UW",
+              "description": "Vodiaci stenový profil pre sadrokartónové steny a priečky.",
               "specs": [
                 {
-                  "value": "30×30 mm",
-                  "label": "rozmer ramien",
+                  "value": "50–150",
+                  "label": "šírky UW 50, 75, 100, 125, 150",
                   "accent": true
                 },
                 {
-                  "value": "0,4 mm",
-                  "label": "hrúbka plechu"
+                  "value": "8 ks",
+                  "label": "v balení"
                 },
                 {
-                  "value": "2,5 / 3,0 m",
-                  "label": "dĺžky lišty"
+                  "value": "120 / 72 ks",
+                  "label": "v autobalíku (UW 50–100 / 125–150)"
+                },
+                {
+                  "value": "0,57 ± 0,04 mm",
+                  "label": "hrúbka plechu podľa EN 14195 (DIN: 0,6 mm)"
                 }
               ],
               "documents": [
                 {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "rychloomietnik-zn",
-              "name": "Rýchloomietnik ZN",
-              "description": "Pozinkovaný profil pre ručné aj strojové omietanie vnútorných stien.",
-              "specs": [
-                {
-                  "value": "6/10/13 mm",
-                  "label": "menovitá hrúbka omietky",
-                  "accent": true
+                  "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW (SK)",
+                  "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-sk.pdf",
+                  "kind": "vyhlasenie"
                 },
                 {
-                  "value": "2,5–3,0 m",
-                  "label": "dĺžky profilu"
+                  "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW, HUT 2026 (CZ)",
+                  "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-hut-2026-cz.pdf",
+                  "kind": "vyhlasenie"
                 },
                 {
-                  "value": "DX51 Z275",
-                  "label": "pozinkovaný plech"
-                }
-              ],
-              "documents": [
+                  "title": "Certifikát – profily podľa EN 14195 (CZ)",
+                  "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-en-14195-cz.pdf",
+                  "kind": "certifikat"
+                },
                 {
-                  "title": "Katalóg profilov Styroprofile 2023",
-                  "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-                  "kind": "katalog"
+                  "title": "Certifikát – profily podľa DIN 18182-1 (CZ)",
+                  "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-din-18182-cz.pdf",
+                  "kind": "certifikat"
                 }
               ]
             }
           ],
-          "image": "img/sortiment/styroprofile-rohy-omietky.webp",
-          "imageOnWhite": true
+          "gallery": [
+            {
+              "src": "img/styroprofile/styroprofile-pouzitie-cd.webp",
+              "caption": "Profil CD v podhľade"
+            },
+            {
+              "src": "img/styroprofile/styroprofile-pouzitie-ud.webp",
+              "caption": "Profil UD v podhľade"
+            },
+            {
+              "src": "img/styroprofile/styroprofile-pouzitie-cw.webp",
+              "caption": "Profil CW v priečke"
+            },
+            {
+              "src": "img/styroprofile/styroprofile-pouzitie-uw.webp",
+              "caption": "Profil UW v priečke"
+            }
+          ],
+          "documents": [
+            {
+              "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW (SK)",
+              "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-sk.pdf",
+              "kind": "vyhlasenie"
+            },
+            {
+              "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW, HUT 2026 (CZ)",
+              "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-hut-2026-cz.pdf",
+              "kind": "vyhlasenie"
+            },
+            {
+              "title": "Certifikát – profily podľa EN 14195 (CZ)",
+              "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-en-14195-cz.pdf",
+              "kind": "certifikat"
+            },
+            {
+              "title": "Certifikát – profily podľa DIN 18182-1 (CZ)",
+              "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-din-18182-cz.pdf",
+              "kind": "certifikat"
+            },
+            {
+              "title": "Skúška pevnosti v ťahu – profily EN (CZ)",
+              "href": "docs/styroprofile/skuska-pevnost-v-tahu-profily-ud-cd-cw-uw-en-cz.pdf",
+              "kind": "certifikat"
+            },
+            {
+              "title": "Skúška pevnosti v ťahu – profily DIN (CZ)",
+              "href": "docs/styroprofile/skuska-pevnost-v-tahu-profily-ud-cd-cw-uw-din-cz.pdf",
+              "kind": "certifikat"
+            }
+          ]
         }
       ],
       "website": "https://styroprofile.cz/cs/",
       "documents": [
         {
-          "title": "Katalóg profilov a príslušenstva 2023 (CZ)",
-          "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
-          "kind": "katalog"
-        },
-        {
-          "title": "Vyhlásenie o parametroch – profily UD/CD/CW/UW (SK)",
+          "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW (SK)",
           "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-sk.pdf",
           "kind": "vyhlasenie"
         },
         {
-          "title": "Vyhlásenie o parametroch – profily UA (SK)",
-          "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ua-sk.pdf",
+          "title": "Vyhlásenie o parametroch – profily UD, CD, CW, UW, HUT 2026 (CZ)",
+          "href": "docs/styroprofile/vyhlasenie-o-parametroch-profily-ud-cd-cw-uw-hut-2026-cz.pdf",
           "kind": "vyhlasenie"
+        },
+        {
+          "title": "Certifikát – profily podľa EN 14195 (CZ)",
+          "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-en-14195-cz.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Certifikát – profily podľa DIN 18182-1 (CZ)",
+          "href": "docs/styroprofile/certifikat-profily-ud-cd-cw-uw-hut-din-18182-cz.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Skúška pevnosti v ťahu – profily EN (CZ)",
+          "href": "docs/styroprofile/skuska-pevnost-v-tahu-profily-ud-cd-cw-uw-en-cz.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Skúška pevnosti v ťahu – profily DIN (CZ)",
+          "href": "docs/styroprofile/skuska-pevnost-v-tahu-profily-ud-cd-cw-uw-din-cz.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Katalóg profilov a príslušenstva 2023 (CZ)",
+          "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
+          "kind": "katalog"
         }
-      ]
+      ],
+      "video": "video/styroprofile/styroprofile-firma.mp4"
     },
     {
       "id": "koda",

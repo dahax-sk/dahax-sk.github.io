@@ -456,3 +456,8 @@
 .cards__grid--5{grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:minmax(0,1fr) auto auto minmax(0,1fr) auto auto}
 .cards__grid--5>.pc{grid-column:span 2}
 .cards__grid--5>.pc:nth-child(4){grid-column:2/span 2}
+
+/* STYROPROFILE strana profilov – galéria použitia sa musí zmestiť pod zoznam a tlačidlo dokumentov: nižšie náhľady 2 : 1, bez tlačidla „všetky“ (každý náhľad sa otvorí) */
+.s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg{margin-top:22px}
+.s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg__t{aspect-ratio:2/1}
+.s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg__all{display:none}
