@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.49",
+  "version": "2026-10-27.51",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -4899,6 +4899,7 @@
           "title": "Fólie, pásy a parozábrany",
           "intro": "Najpredávanejšie výrobky Bauder pre ploché strechy – PVC fólie THERMOFOL, asfaltové pásy a parozábrany.",
           "image": "img/bauder/pas-a-pvc-folia.webp",
+          "imageOnWhite": true,
           "products": [
             {
               "id": "bauderthermofol-u",
