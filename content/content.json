@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.37",
+  "version": "2026-10-27.38",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -4346,6 +4346,63 @@
               "r": 12,
               "d": 6.5,
               "z": 1
+            }
+          ]
+        },
+        {
+          "id": "sdk-system",
+          "name": "SDK systém PROFIFIX",
+          "eyebrow": "DK MONT – celý sortiment",
+          "title": "Profesionálny SDK systém PROFIFIX®",
+          "intro": "Celý sortiment DK MONT na jednom plagáte, s kódmi výrobkov pre objednávku.",
+          "image": "img/dkmont/plagat-profifix-sdk-system.webp",
+          "imageOnWhite": false,
+          "products": [
+            {
+              "id": "sortiment-profifix",
+              "name": "Celý sortiment PROFIFIX®",
+              "description": "Spojky, závesy, Nonius, kotviace prvky, klipy a skrutky z jedného systému",
+              "specs": [
+                {
+                  "value": "DIN 18168-2",
+                  "label": "závesy a nosné prvky podľa normy",
+                  "accent": true
+                },
+                {
+                  "value": "EN 14195",
+                  "label": "kovové diely pre SDK"
+                },
+                {
+                  "value": "C5",
+                  "label": "vybrané diely s ochranou proti korózii"
+                },
+                {
+                  "value": "Made in EU",
+                  "label": "vyrobené v Európskej únii"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg produktov PROFIFIX / DK MONT (CZ)",
+                  "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
+                  "kind": "katalog"
+                },
+                {
+                  "title": "Katalóg produktov PROFIFIX (EN)",
+                  "href": "docs/sucha-vystavba/katalog-produktov-profifix-en.pdf",
+                  "kind": "katalog"
+                },
+                {
+                  "title": "PROFIFIX – produkty s ochranou C5 (CZ)",
+                  "href": "docs/sucha-vystavba/profifix-produkty-s-ochranou-c5-cz.pdf",
+                  "kind": "ine"
+                },
+                {
+                  "title": "PROFIFIX – novinky 2023 (EN)",
+                  "href": "docs/sucha-vystavba/profifix-novinky-2023-en.pdf",
+                  "kind": "ine"
+                }
+              ]
             }
           ]
         }
