@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.7",
+  "version": "2026-10-27.10",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -1327,7 +1327,9 @@
                   "href": "docs/klimas/technicky-list-lfmg-10-sk.pdf",
                   "kind": "technicky-list"
                 }
-              ]
+              ],
+              "druh": "Natĺkacia",
+              "podklady": "ABCDE"
             },
             {
               "id": "wktherm-s-8",
@@ -1368,7 +1370,9 @@
                   "kind": "technicky-list"
                 }
               ],
-              "video": "video/klimas/klimas-wktherm-s.mp4"
+              "video": "video/klimas/klimas-wktherm-s.mp4",
+              "druh": "Skrutkovacia",
+              "podklady": "ABCDE"
             },
             {
               "id": "thermodrive-v2-8",
@@ -1418,7 +1422,9 @@
                   "kind": "technicky-list"
                 }
               ],
-              "video": "video/klimas/klimas-thermodrive-v2.mp4"
+              "video": "video/klimas/klimas-thermodrive-v2.mp4",
+              "druh": "Skrutkovacia",
+              "podklady": "ABCDE"
             }
           ],
           "moreTitle": "Ďalšie kotvy a príslušenstvo",
@@ -1434,7 +1440,48 @@
             "DRIVE S",
             "TOOL THERMODRIVE V2",
             "KSV"
-          ]
+          ],
+          "podklady": [
+            {
+              "k": "A",
+              "nazov": "Betón",
+              "obr": "img/klimas/etics/podklad-a.webp"
+            },
+            {
+              "k": "B",
+              "nazov": "Plná tehla",
+              "obr": "img/klimas/etics/podklad-b.webp"
+            },
+            {
+              "k": "C",
+              "nazov": "Dierovaná tehla",
+              "obr": "img/klimas/etics/podklad-c.webp"
+            },
+            {
+              "k": "D",
+              "nazov": "Ľahčený betón",
+              "obr": "img/klimas/etics/podklad-d.webp"
+            },
+            {
+              "k": "E",
+              "nazov": "Pórobetón",
+              "obr": "img/klimas/etics/podklad-e.webp"
+            }
+          ],
+          "tok": [
+            {
+              "src": "video/klimas/klimas-wktherm-s-montaz.mp4",
+              "nazov": "WKTHERM S-8 – montáž",
+              "kotva": "wktherm-s-8"
+            },
+            {
+              "src": "video/klimas/klimas-thermodrive-v2-shorts.mp4",
+              "nazov": "THERMODRIVE V2",
+              "kotva": "thermodrive-v2-8",
+              "nasirku": false
+            }
+          ],
+          "logo": "img/klimas/klimas-logo-cervene.svg"
         },
         {
           "id": "predajne-miesto",
@@ -2066,11 +2113,18 @@
           "kind": "technicky-list"
         }
       ],
-      "video": "video/klimas/klimas-firma-prezentacia.mp4",
-      "videoRange": [
-        1.6,
-        223
-      ]
+      "video": "video/klimas/klimas-firma-logo.mp4",
+      "videoLogo": {
+        "src": "img/klimas/klimas-logo-cervene.svg",
+        "pauzy": [
+          8,
+          10,
+          7,
+          12,
+          9,
+          11
+        ]
+      }
     },
     {
       "id": "izovat",

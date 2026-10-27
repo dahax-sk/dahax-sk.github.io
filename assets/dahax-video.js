@@ -20,7 +20,7 @@
     names = new Map(Object.entries(c.videoNames || {}));
     posters = new Map(Object.entries(c.videoPosters || {}));
     for (const m of c.manufacturers || []) {
-      if (m.video) brands.set(norm(m.name), { src: m.video, range: m.videoRange, rate: m.videoRate });
+      if (m.video) brands.set(norm(m.name), { src: m.video, range: m.videoRange, rate: m.videoRate, blik: m.videoLogo });
       if ((m.media || []).length && m.media.every((x) => x.kind === "video")) onlyVideo.add(norm(m.name));
       for (const cat of m.categories || []) {
         for (const t of cat.tiles || []) if (t.video) byName.set(norm(t.name), t.video);
@@ -176,6 +176,32 @@
     v.addEventListener("pause", () => host.classList.remove("dxv-playing"));
     host.append(b, logo(v));
   };
+  // malé logo výrobcu na bielom štítku sa na paneli s videom nepravidelne objaví a zmizne (content.json → videoLogo
+  // { src, pauzy: [s, …] }, napr. KLIMAS). Štýly sú inline, na zmeny čaká cez setTimeout; pri prefers-reduced-motion nič.
+  const BLIK_MIESTA = [{ left: "64px", top: "64px" }, { right: "52px", top: "210px" }, { left: "64px", top: "330px" }, { right: "52px", top: "96px" }];
+  const blik = (side, cfg) => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const d = document.createElement("div"), pauzy = cfg.pauzy && cfg.pauzy.length ? cfg.pauzy : [8, 10];
+    d.className = "dxv-blik";
+    d.setAttribute("aria-hidden", "true");
+    d.innerHTML = '<img alt="" src="' + cfg.src + '">';
+    Object.assign(d.style, { position: "absolute", zIndex: 3, padding: "10px 14px", background: "#fff", boxShadow: "0 10px 30px rgba(0,0,0,.35)",
+      opacity: 0, transform: "translateY(10px) scale(.94)", transition: "opacity .7s ease, transform .7s ease", pointerEvents: "none" });
+    Object.assign(d.firstChild.style, { display: "block", width: "150px", height: "auto" });
+    side.appendChild(d);
+    let k = 0;
+    const krok = () => {
+      if (!d.isConnected) return;
+      const m = BLIK_MIESTA[k % BLIK_MIESTA.length];
+      Object.assign(d.style, { left: m.left || "auto", right: m.right || "auto", top: m.top });
+      d.style.opacity = 1;
+      d.style.transform = "none";
+      setTimeout(() => { d.style.opacity = 0; d.style.transform = "translateY(10px) scale(.94)"; }, 2800);
+      setTimeout(krok, (pauzy[k++ % pauzy.length] + 2.8) * 1000);
+    };
+    setTimeout(krok, pauzy[0] * 1000);
+  };
+
   const rel = (src) => (src || "").replace(location.href.replace(/[#?].*$/, "").replace(/[^/]*$/, ""), "");
 
   const decorate = () => {
@@ -221,6 +247,7 @@
         side.prepend(v);
         auto(v);
       }
+      if (bv && side && bv.blik && !side.querySelector(":scope > .dxv-blik")) blik(side, bv.blik);
     });
     // firma len s videami: tlačidlo na úvodnej snímke a nadpis okna „Videá“ (v okne sú len videá)
     const VIDEA = "Videá";
