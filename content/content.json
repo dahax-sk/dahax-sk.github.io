@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.41",
+  "version": "2026-10-27.42",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -4488,35 +4488,32 @@
       "name": "SAINT-GOBAIN",
       "logo": "img/brand/saint-gobain.webp",
       "role": "Doplnkový sortiment",
-      "eyebrow": "Lepidlá a omietky",
-      "tagline": "Lepidlá a omietky – značka Weber zo skupiny Saint-Gobain.",
+      "eyebrow": "Lepidlá, mriežka a omietky",
+      "tagline": "Fasáda od lepidla po omietku – Weber zo skupiny Saint-Gobain, vyrobené v Bratislave.",
       "website": "https://www.sk.weber/",
       "profile": {
         "since": "1665",
-        "country": "Francúzsko",
-        "hq": "Paríž – La Défense",
-        "about": "Skupina Saint-Gobain bola založená v roku 1665. Weber na Slovensku vyrába v Bratislave omietky a lepiace stierky od roku 1991, závod na suché zmesi otvoril v roku 2008; k skupine patrí od roku 1996. Cenník 2026 má 15 kapitol – od ETICS a omietok po hydroizolácie a podlahy.",
+        "country": "Francúzsko · Slovensko",
+        "hq": "Paríž (skupina) · Weber Bratislava",
+        "about": "Weber zo skupiny Saint-Gobain vyrába v Bratislave lepiace malty a omietky od roku 1991. Pre fasády ETICS od nás dostanete celú vrstvu nad izolantom: lepiace a výstužné malty webertherm KPS a leparm, najpredávanejšiu sklovláknitú mriežku Vertex a pastovité omietky weberpas.",
         "facts": [
           {
-            "value": "76",
-            "label": "krajín"
+            "value": "od 1991",
+            "label": "Weber vyrába v Bratislave"
           },
           {
-            "value": "159 000+",
-            "label": "zamestnancov (2023)"
+            "value": "55 m²",
+            "label": "rolka mriežky Vertex – najpredávanejšia"
           },
           {
             "value": "360+",
-            "label": "rokov tradície"
+            "label": "rokov skupiny Saint-Gobain (1665)"
           }
         ],
         "makes": [
-          "Zatepľovacie systémy ETICS (webertherm, Enveo)",
-          "Lepiace a výstužné malty",
-          "Fasádne omietky a nátery",
-          "Lepidlá na obklady a dlažby",
-          "Hydroizolácie",
-          "Podlahy a sanácie"
+          "Lepiace a výstužné malty – webertherm KPS, leparm",
+          "Sklovláknitá mriežka Vertex",
+          "Fasádne omietky weberpas"
         ],
         "sources": [
           {
@@ -4530,8 +4527,25 @@
           {
             "title": "Weber SK – cenník",
             "url": "https://www.sk.weber/cennik"
+          },
+          {
+            "title": "Saint-Gobain Weber Slovensko (YouTube) – Weber: Inšpirujeme stavať lepšie",
+            "url": "https://www.youtube.com/watch?v=VUtMV7SU2Pc"
+          },
+          {
+            "title": "Weber SK – webertherm KPS",
+            "url": "https://www.sk.weber/webertherm-kps"
+          },
+          {
+            "title": "Weber SK – webertherm leparm",
+            "url": "https://www.sk.weber/webertherm-leparm"
+          },
+          {
+            "title": "Weber SK – referencia Zelený Háj, Zvolen",
+            "url": "https://www.sk.weber/referencie/bytovy-subor-zeleny-haj-zvolen"
           }
-        ]
+        ],
+        "headLogo": "img/brand/saint-gobain-weber-biele.webp"
       },
       "documents": [
         {
@@ -4557,131 +4571,50 @@
         "fit": "contain"
       },
       "scope": [],
-      "theme": "light",
+      "theme": "dark",
       "categories": [
         {
-          "id": "lepiace-malty-etics",
-          "name": "Lepiace malty",
-          "eyebrow": "WEBER – zatepľovacie systémy",
-          "title": "Lepiace a výstužné malty ETICS",
-          "intro": "Systémové malty weber.therm na lepenie a stierkovanie EPS, XPS a minerálnej vlny – vyrobené na Slovensku.",
+          "id": "fasada",
+          "name": "Lepidlo, mriežka, omietka",
+          "eyebrow": "WEBER – fasáda ETICS",
+          "title": "Lepidlo, mriežka a omietka",
+          "intro": "Všetko nad izolantom z jedného miesta – vyrobené na Slovensku.",
+          "image": "img/saint-gobain/saint-gobain-fasada-zeleny-haj.webp",
+          "imageCaption": "Referencia Weber – Zelený Háj, Zvolen",
+          "legend": [
+            {
+              "term": "1 · lepidlo",
+              "text": "lepenie a stierkovanie izolantu"
+            },
+            {
+              "term": "2 · mriežka",
+              "text": "Vertex vložená do stierky"
+            },
+            {
+              "term": "3 · omietka",
+              "text": "weberpas v odtieni podľa vzorkovníka"
+            }
+          ],
           "products": [
             {
               "id": "webertherm-kps",
               "name": "webertherm KPS",
-              "description": "Profesionálna cementová malta pre biely a sivý EPS, XPS aj minerálnu vlnu",
+              "type": "lepiaca a výstužná malta",
+              "image": "img/saint-gobain/saint-gobain-webertherm-kps.webp",
+              "description": "Systémová malta pre biely a sivý EPS, XPS aj minerálnu vlnu.",
               "specs": [
                 {
-                  "value": "7–11 kg/m²",
+                  "value": "7 – 11 kg/m²",
                   "label": "orientačná spotreba",
                   "accent": true
                 },
                 {
                   "value": "25 kg",
-                  "label": "vrece"
+                  "label": "vrece, 48 ks na palete"
                 },
                 {
-                  "value": "48 ks",
-                  "label": "vriec na palete"
-                },
-                {
-                  "value": "EPD",
-                  "label": "environmentálne vyhlásenie"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "webertherm-elastik",
-              "name": "webertherm elastik",
-              "description": "Mimoriadne flexibilná malta pre sokle a drevostavby, aj na OSB a sadrovláknité dosky",
-              "specs": [
-                {
-                  "value": "7–11 kg/m²",
-                  "label": "orientačná spotreba",
-                  "accent": true
-                },
-                {
-                  "value": "25 kg",
-                  "label": "vrece"
-                },
-                {
-                  "value": "48 ks",
-                  "label": "vriec na palete"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "webertherm-minus-7",
-              "name": "webertherm minus 7",
-              "description": "Zimná mrazuvzdorná cementová malta na lepenie a stierkovanie v chladnom počasí",
-              "specs": [
-                {
-                  "value": "−7 °C",
-                  "label": "spracovateľná do teploty",
-                  "accent": true
-                },
-                {
-                  "value": "7–11 kg/m²",
-                  "label": "orientačná spotreba"
-                },
-                {
-                  "value": "25 kg",
-                  "label": "vrece"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "webertherm-clima",
-              "name": "webertherm clima",
-              "description": "Vysoko paropriepustná flexibilná malta, vhodná aj na difúzne otvorené drevostavby",
-              "specs": [
-                {
-                  "value": "7–11 kg/m²",
-                  "label": "orientačná spotreba",
-                  "accent": true
-                },
-                {
-                  "value": "25 kg",
-                  "label": "vrece"
-                },
-                {
-                  "value": "42 ks",
-                  "label": "vriec na palete"
-                }
-              ],
-              "documents": []
-            }
-          ],
-          "image": "img/sortiment/weber-lepiace-malty-etics.webp",
-          "imageOnWhite": true
-        },
-        {
-          "id": "fasadne-omietky",
-          "name": "Fasádne omietky",
-          "eyebrow": "WEBER – fasádne omietky",
-          "title": "Tenkovrstvové fasádne omietky",
-          "intro": "Pastovité omietky pripravené na priame použitie – silikónové, silikátové, akrylátové aj hydrofilná aquaBalance.",
-          "products": [
-            {
-              "id": "weberpas-aquabalance",
-              "name": "weberpas aquaBalance",
-              "description": "Hydrofilná omietka bez biocídov, znižuje riziko rastu rias a plesní",
-              "specs": [
-                {
-                  "value": "1,0–3,0 mm",
-                  "label": "zrnitosť (roztieraná)",
-                  "accent": true
-                },
-                {
-                  "value": "1,5–4 kg/m²",
-                  "label": "spotreba podľa zrnitosti"
-                },
-                {
-                  "value": "25 kg",
-                  "label": "vedro"
+                  "value": "weber.therm",
+                  "label": "súčasť certifikovaného ETICS"
                 },
                 {
                   "value": "EPD",
@@ -4690,25 +4623,107 @@
               ],
               "documents": [
                 {
-                  "title": "Vzorkovník color.line – fasádne omietky",
-                  "href": "docs/saint-gobain/vzorkovnik-fasadnych-omietok-a-naterov-colorline.pdf",
+                  "title": "Technický list – webertherm KPS (SK)",
+                  "href": "https://www.sk.weber/files/sk/2025-05/webertherm%20KPS_technick%C3%BD%20list.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – webertherm KPS (SK)",
+                  "href": "https://www.sk.weber/files/sk/2026-04/Vyjadrenie_webertherm%20KPS.pdf",
+                  "kind": "vyhlasenie",
+                  "external": true
+                },
+                {
+                  "title": "Produktový cenník Weber 2026 (SK)",
+                  "href": "docs/saint-gobain/produktovy-cennik-weber-2026-sk-platny-od-15-5-2026.pdf",
                   "kind": "katalog"
                 }
               ]
             },
             {
-              "id": "weberpas-nova-s",
-              "name": "weberpas nova S",
-              "description": "Hydrofóbna silikónová omietka, ručné aj strojové spracovanie",
+              "id": "webertherm-leparm",
+              "name": "webertherm leparm",
+              "type": "lepiaca a výstužná malta",
+              "image": "img/saint-gobain/saint-gobain-webertherm-leparm.webp",
+              "description": "Výhodná malta pre rodinné domy – biely EPS a minerálna vlna.",
               "specs": [
                 {
-                  "value": "1,0–3,0 mm",
-                  "label": "zrnitosť (roztieraná)",
+                  "value": "3 – 4 kg/m²",
+                  "label": "lepenie EPS",
                   "accent": true
                 },
                 {
-                  "value": "1,5–4 kg/m²",
-                  "label": "spotreba podľa zrnitosti"
+                  "value": "4 – 5 kg/m²",
+                  "label": "stierkovanie EPS"
+                },
+                {
+                  "value": "A1",
+                  "label": "reakcia na oheň"
+                },
+                {
+                  "value": "25 kg",
+                  "label": "vrece, 48 ks na palete"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – webertherm leparm (SK)",
+                  "href": "https://www.sk.weber/files/sk/2025-03/webertherm%20leparm_technick%C3%BD%20list_0.pdf",
+                  "kind": "technicky-list",
+                  "external": true
+                },
+                {
+                  "title": "Produktový cenník Weber 2026 (SK)",
+                  "href": "docs/saint-gobain/produktovy-cennik-weber-2026-sk-platny-od-15-5-2026.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            },
+            {
+              "id": "vertex",
+              "name": "Mriežka Vertex",
+              "type": "sklovláknitá, odolná proti alkáliám",
+              "image": "img/saint-gobain/saint-gobain-vertex-mriezka.webp",
+              "description": "Najpredávanejšia mriežka do výstužnej vrstvy ETICS.",
+              "specs": [
+                {
+                  "value": "154 g/m²",
+                  "label": "plošná hmotnosť",
+                  "accent": true
+                },
+                {
+                  "value": "55 m²",
+                  "label": "rolka 1,1 × 50 m"
+                },
+                {
+                  "value": "4 × 4,5 mm",
+                  "label": "veľkosť oka (cca)"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Produktový cenník Weber 2026 (SK)",
+                  "href": "docs/saint-gobain/produktovy-cennik-weber-2026-sk-platny-od-15-5-2026.pdf",
+                  "kind": "katalog"
+                }
+              ]
+            },
+            {
+              "id": "weberpas",
+              "name": "Omietky weberpas",
+              "type": "pastovité fasádne omietky",
+              "image": "img/saint-gobain/saint-gobain-weberpas-omietka.webp",
+              "description": "aquaBalance, silikónová, nova S, silikátová a akrylátová.",
+              "specs": [
+                {
+                  "value": "1,5 – 4 kg/m²",
+                  "label": "spotreba podľa zrnitosti",
+                  "accent": true
+                },
+                {
+                  "value": "1,0 – 3,0 mm",
+                  "label": "zrnitosť"
                 },
                 {
                   "value": "25 kg",
@@ -4717,166 +4732,40 @@
               ],
               "documents": [
                 {
-                  "title": "Vzorkovník color.line – fasádne omietky",
-                  "href": "docs/saint-gobain/vzorkovnik-fasadnych-omietok-a-naterov-colorline.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "weberpas-silikatova",
-              "name": "weberpas silikátová",
-              "description": "Tradičná silikátová omietka na báze vodného skla, vhodná aj na sanácie",
-              "specs": [
-                {
-                  "value": "1,5 / 2,0 mm",
-                  "label": "zrnitosť (roztieraná)",
-                  "accent": true
+                  "title": "Technický list – weberpas silikónová (SK)",
+                  "href": "https://www.sk.weber/files/sk/2025-07/weberpas%20silikonova%20omietka_technicky%20list.pdf",
+                  "kind": "technicky-list",
+                  "external": true
                 },
                 {
-                  "value": "2,5–3,2 kg",
-                  "label": "spotreba na m² (zrnitosť 1,5 / 2,0 mm)"
+                  "title": "Technický list – weberpas aquaBalance (SK)",
+                  "href": "https://www.sk.weber/files/sk/2025-07/weberpas%20aquaBalance_technicky%20list.pdf",
+                  "kind": "technicky-list",
+                  "external": true
                 },
                 {
-                  "value": "25 kg",
-                  "label": "vedro"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Vzorkovník color.line – fasádne omietky",
-                  "href": "docs/saint-gobain/vzorkovnik-fasadnych-omietok-a-naterov-colorline.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "weberpas-akrylatova",
-              "name": "weberpas akrylátová",
-              "description": "Vysoko vodoodpudivá akrylátová omietka s jednoduchou spracovateľnosťou",
-              "specs": [
-                {
-                  "value": "1,5 / 2,0 mm",
-                  "label": "zrnitosť (roztieraná)",
-                  "accent": true
+                  "title": "Technický list – weberpas silikátová (SK)",
+                  "href": "https://www.sk.weber/files/sk/2025-06/weberpas%20silikatova_technicky%20list.pdf",
+                  "kind": "technicky-list",
+                  "external": true
                 },
                 {
-                  "value": "2,5–3,2 kg",
-                  "label": "spotreba na m² (zrnitosť 1,5 / 2,0 mm)"
+                  "title": "Technický list – weberpas akrylátová (SK)",
+                  "href": "https://www.sk.weber/files/sk/2025-07/weberpas%20akrylatova%20omietka_technicky%20list.pdf",
+                  "kind": "technicky-list",
+                  "external": true
                 },
                 {
-                  "value": "25 kg",
-                  "label": "vedro"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Vzorkovník color.line – fasádne omietky",
+                  "title": "Vzorkovník fasádnych omietok a náterov Colorline",
                   "href": "docs/saint-gobain/vzorkovnik-fasadnych-omietok-a-naterov-colorline.pdf",
                   "kind": "katalog"
                 }
               ]
             }
-          ],
-          "image": "img/sortiment/weber-fasadne-omietky.webp",
-          "imageOnWhite": true
-        },
-        {
-          "id": "lepidla-obklady",
-          "name": "Lepidlá na obklady",
-          "eyebrow": "WEBER – obklady a dlažby",
-          "title": "Lepidlá na obklady a dlažby",
-          "intro": "Cementové lepidlá webercol od štandardu C1T po flexibilné C2TE S1 pre veľkoformáty, balkóny a podlahové kúrenie.",
-          "products": [
-            {
-              "id": "webercol-evoflex",
-              "name": "webercol evoflex",
-              "description": "Nízkoprašné flexibilné lepidlo, aj na veľkoformáty a podlahové kúrenie",
-              "specs": [
-                {
-                  "value": "C2TE S1",
-                  "label": "trieda lepidla",
-                  "accent": true
-                },
-                {
-                  "value": "4 kg/m²",
-                  "label": "orientačná spotreba"
-                },
-                {
-                  "value": "25 kg",
-                  "label": "vrece"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "webercol-flex-premium",
-              "name": "webercol flex premium",
-              "description": "Flexibilné mrazuvzdorné lepidlo do interiéru i exteriéru, na balkóny a terasy",
-              "specs": [
-                {
-                  "value": "C2TE S1",
-                  "label": "trieda lepidla",
-                  "accent": true
-                },
-                {
-                  "value": "4 kg/m²",
-                  "label": "orientačná spotreba"
-                },
-                {
-                  "value": "25 kg",
-                  "label": "vrece"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "webercol-flex",
-              "name": "webercol flex",
-              "description": "Lepidlo so zníženým sklzom pre obklady a kameň s nasiakavosťou > 3 %",
-              "specs": [
-                {
-                  "value": "C2TE",
-                  "label": "trieda lepidla",
-                  "accent": true
-                },
-                {
-                  "value": "4 kg/m²",
-                  "label": "orientačná spotreba"
-                },
-                {
-                  "value": "25 kg",
-                  "label": "vrece"
-                }
-              ],
-              "documents": []
-            },
-            {
-              "id": "webercol-standard",
-              "name": "webercol standard",
-              "description": "Tenkovrstvové lepidlo na bežné nasiakavé obklady, ideálne do interiéru",
-              "specs": [
-                {
-                  "value": "C1T",
-                  "label": "trieda lepidla",
-                  "accent": true
-                },
-                {
-                  "value": "4 kg/m²",
-                  "label": "orientačná spotreba"
-                },
-                {
-                  "value": "25 kg",
-                  "label": "vrece"
-                }
-              ],
-              "documents": []
-            }
-          ],
-          "image": "img/sortiment/weber-lepidla-obklady.webp",
-          "imageOnWhite": true
+          ]
         }
-      ]
+      ],
+      "video": "video/saint-gobain/saint-gobain-firma-prezentacia.mp4"
     },
     {
       "id": "bauder",

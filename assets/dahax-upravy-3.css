@@ -442,3 +442,10 @@
 /* DK MONT strana 34 – plagát „Profesionální SDK systém“ PROFIFIX vypĺňa celé pole obrázka (pomer 0,70 ako pole), bez bieleho rámčeka */
 .media__img:has(img[src*="plagat-profifix-sdk-system"]){padding:0;background:#0d2c63}
 .media__img:has(img[src*="plagat-profifix-sdk-system"]) img{width:100%;height:100%;object-fit:cover;object-position:center top}
+
+/* SAINT-GOBAIN strana fasády – 4 karty vedľa fotky (.cards--photo); bundle má len --2 a --3 (návrh P4, podklady/saint-gobain-css-strana-40.css) */
+.cards__grid--4{grid-template-columns:repeat(4,1fr)}
+
+/* SAINT-GOBAIN úvod – video ako pri KLIMAS: čiernobiele zafarbené do žltej Weber (#FFE600) z loga, dole tmavé pod nadpis (návrh P4) */
+.brand:has(img[src*="saint-gobain-weber-biele"]) .dxv-bg{opacity:.92;mix-blend-mode:normal;filter:grayscale(1) contrast(1.45) brightness(1.05)}
+.brand:has(img[src*="saint-gobain-weber-biele"]) .brand__side:has(.dxv-bg)::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:multiply;background:linear-gradient(180deg,rgba(255,230,0,.95) 0%,rgba(205,180,0,.93) 45%,rgba(40,34,0,.97) 100%)}
