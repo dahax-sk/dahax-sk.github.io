@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.52",
+  "version": "2026-10-27.53",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -5987,42 +5987,59 @@
       "name": "HOCH XPS",
       "logo": "img/brand/hoch-xps.webp",
       "role": "Doplnkový sortiment",
-      "eyebrow": "XPS",
-      "tagline": "Extrudovaný polystyrén.",
+      "eyebrow": "Extrudovaný polystyrén",
+      "tagline": "Poľský XPS 300, 500 a 700 kPa – základy, podlahy, parkoviská aj obrátené strechy.",
       "profile": {
-        "about": "HOCH XPS vyrába poľská spoločnosť HOCH Sp. z o.o. z Nowého Barkoczyna, známa aj komínovými systémami. Extrudovaný polystyrén ponúka v triedach 300, 500 a 700 kPa podľa EN 13164, s hranami I, L a PW, v hrúbkach 20–200 mm. XPS 300 má λD od 0,032 W/(m·K) a reakciu na oheň triedy F.",
+        "about": "HOCH XPS vyrába poľská rodinná firma HOCH z Nowého Barkoczyna na Kašubách, známa aj komínovými systémami. Dosky z extrudovaného polystyrénu s uzavretými bunkami takmer neprijímajú vodu, odolávajú mrazu a zaťaženiu – od základov rodinného domu po parkovisko. V ponuke sú pevnosti 300, 500 a 700 kPa s hranou I, L alebo PW.",
         "facts": [
           {
             "value": "300 · 500 · 700",
-            "label": "kPa – pevnostné triedy"
+            "label": "kPa – pevnosť v tlaku CS(10/Y)"
           },
           {
-            "value": "λD 0,032",
-            "label": "XPS 300, hrúbka 40 mm [W/(m·K)]"
+            "value": "0,032",
+            "label": "λD [W/(m·K)] – XPS 300, 40–60 mm"
           },
           {
-            "value": "20–200 mm",
-            "label": "hrúbky dosiek"
+            "value": "≤ 0,7 %",
+            "label": "nasiakavosť pri dlhodobom ponorení WL(T)"
           }
         ],
         "makes": [
-          "HOCH XPS 200 (20–30 mm)",
-          "HOCH XPS 300 a 300 W",
-          "HOCH XPS 500 – podlahy, parkoviská",
-          "HOCH XPS 700 – vysoké zaťaženie"
+          "HOCH XPS 300 – základy, pivnice, podlahy",
+          "HOCH XPS 500 – parkoviská, garáže, terasy",
+          "HOCH XPS 700 – vysoké dynamické zaťaženie",
+          "HOCH XPS 300 W, 200 a Long"
         ],
         "country": "Poľsko",
         "hq": "Nowy Barkoczyn, Pomoransko",
         "sources": [
           {
-            "title": "HOCH XPS 300",
-            "url": "https://xps.hoch.com.pl/hoch-xps-300/"
+            "title": "HOCH XPS – oficiálny web (SK)",
+            "url": "https://xps.hoch.com.pl/sk/"
+          },
+          {
+            "title": "HOCH XPS 300 (SK)",
+            "url": "https://xps.hoch.com.pl/sk/hoch-xps-300/"
+          },
+          {
+            "title": "HOCH XPS 500 (SK)",
+            "url": "https://xps.hoch.com.pl/sk/hoch-xps-500/"
+          },
+          {
+            "title": "HOCH XPS 700 (SK)",
+            "url": "https://xps.hoch.com.pl/sk/hoch-xps-700/"
           },
           {
             "title": "HOCH XPS – na stiahnutie",
-            "url": "https://xps.hoch.com.pl/do-pobrania/"
+            "url": "https://xps.hoch.com.pl/sk/do-pobrania/"
+          },
+          {
+            "title": "HOCH (YouTube) – niezawodne materiały izolacyjne XPS",
+            "url": "https://www.youtube.com/watch?v=cM9HDCR_5kE"
           }
-        ]
+        ],
+        "headLogo": "img/brand/hoch-xps-biele.webp"
       },
       "tier": "plus",
       "tile": {
@@ -6030,23 +6047,23 @@
         "fit": "contain"
       },
       "scope": [],
-      "theme": "light",
+      "theme": "navy",
       "categories": [
         {
-          "id": "xps-200-300",
-          "name": "XPS 200 / 300",
-          "eyebrow": "HOCH XPS – extrudovaný polystyrén",
-          "title": "XPS na základy, podlahy a strechy",
-          "intro": "Poľský XPS podľa EN 13164 s uzavretými bunkami – nízka nasiakavosť, stabilné izolačné vlastnosti, hrany I, L a PW.",
+          "id": "dosky-xps",
+          "name": "Dosky HOCH XPS",
+          "eyebrow": "HOCH XPS – výrobky",
+          "title": "Tri pevnosti XPS",
+          "intro": "300, 500 a 700 kPa – rovnaká odolnosť voči vode a mrazu.",
           "products": [
             {
               "id": "hoch-xps-300",
               "name": "HOCH XPS 300",
-              "description": "Univerzálna doska na základy a steny suterénu, podlahy, fasády, obrátené strechy, terasy a balkóny.",
+              "description": "Základy a steny pivníc, podlahy na zemi, sendvičové murivo, obrátené strechy a tepelné mosty.",
               "specs": [
                 {
                   "value": "≥ 300 kPa",
-                  "label": "pevnosť v tlaku CS(10\\Y)",
+                  "label": "pevnosť v tlaku CS(10/Y)",
                   "accent": true
                 },
                 {
@@ -6072,105 +6089,24 @@
                   "title": "Vyhlásenie o parametroch – HOCH XPS 300",
                   "href": "docs/hoch-xps/vyhlasenie-o-parametroch-xps-300-pl.pdf",
                   "kind": "vyhlasenie"
-                }
-              ]
-            },
-            {
-              "id": "hoch-xps-300-w",
-              "name": "HOCH XPS 300 W",
-              "description": "Doska s vaflovou štruktúrou povrchu, aj v dlhom formáte Long 2400 mm.",
-              "specs": [
-                {
-                  "value": "≥ 300 kPa",
-                  "label": "pevnosť v tlaku CS(10\\Y)",
-                  "accent": true
                 },
                 {
-                  "value": "0,032 W/mK",
-                  "label": "λD max. pri hrúbkach 40–60 mm"
-                },
-                {
-                  "value": "40–120 mm",
-                  "label": "hrúbky dosiek"
-                },
-                {
-                  "value": "150",
-                  "label": "faktor difúzneho odporu MU"
+                  "title": "Leták HOCH XPS (PL)",
+                  "href": "docs/hoch-xps/letak-hoch-xps-pl.pdf",
+                  "kind": "katalog"
                 }
               ],
-              "documents": [
-                {
-                  "title": "Technický list HOCH XPS 300 W 2026",
-                  "href": "docs/hoch-xps/technicky-list-hoch-xps-300-w-2026-pl.pdf",
-                  "kind": "technicky-list"
-                }
-              ]
+              "image": "img/hoch-xps/hoch-xps-300-l.webp",
+              "type": "univerzálna doska · hrana L"
             },
-            {
-              "id": "hoch-xps-200",
-              "name": "HOCH XPS 200",
-              "description": "Tenké dosky 20 a 30 mm pre izoláciu s malou stavebnou výškou.",
-              "specs": [
-                {
-                  "value": "≥ 200 kPa",
-                  "label": "pevnosť v tlaku CS(10\\Y)",
-                  "accent": true
-                },
-                {
-                  "value": "0,034 W/mK",
-                  "label": "súčiniteľ tepelnej vodivosti λD max."
-                },
-                {
-                  "value": "20–30 mm",
-                  "label": "hrúbky dosiek"
-                },
-                {
-                  "value": "≤ 3,0 %",
-                  "label": "nasiakavosť pri dlhodobom ponorení WL(T)"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Technický list HOCH XPS 01/2026",
-                  "href": "docs/hoch-xps/technicky-list-hoch-xps-01-2026-pl.pdf",
-                  "kind": "technicky-list"
-                }
-              ]
-            }
-          ],
-          "specs": [
-            {
-              "value": "0,032 W/mK",
-              "label": "najnižšie λD (XPS 300, 40–60 mm)",
-              "accent": true
-            },
-            {
-              "value": "≥ 400 kPa",
-              "label": "pevnosť v ťahu TR (XPS 300)"
-            },
-            {
-              "value": "1250×600 mm",
-              "label": "formát dosky s rovnou hranou I"
-            }
-          ],
-          "image": "img/sortiment/hoch-xps-200-300.webp",
-          "imageOnWhite": true
-        },
-        {
-          "id": "xps-500-700",
-          "name": "XPS 500 / 700",
-          "eyebrow": "HOCH XPS – vysoká pevnosť",
-          "title": "XPS s pevnosťou 500 a 700 kPa",
-          "intro": "Dosky s pevnosťou v tlaku 500 a 700 kPa a nasiakavosťou do 0,7 % – hrúbky 50–120 mm, aj v dlhom formáte Long.",
-          "products": [
             {
               "id": "hoch-xps-500",
               "name": "HOCH XPS 500",
-              "description": "Doska s pevnosťou v tlaku 500 kPa, dodávaná s hranou I, L alebo PW.",
+              "description": "Parkoviská, garáže, podlahy a terasy, obrátené strechy s parkovaním.",
               "specs": [
                 {
                   "value": "≥ 500 kPa",
-                  "label": "pevnosť v tlaku CS(10\\Y)",
+                  "label": "pevnosť v tlaku CS(10/Y)",
                   "accent": true
                 },
                 {
@@ -6197,16 +6133,18 @@
                   "href": "docs/hoch-xps/technicky-list-hoch-xps-01-2026-pl.pdf",
                   "kind": "technicky-list"
                 }
-              ]
+              ],
+              "image": "img/hoch-xps/hoch-xps-500-pw.webp",
+              "type": "vyššie zaťaženie · hrana PW"
             },
             {
               "id": "hoch-xps-700",
               "name": "HOCH XPS 700",
-              "description": "Najpevnejšia doska radu HOCH XPS s pevnosťou v tlaku 700 kPa.",
+              "description": "Parkoviská a podlahy s vysokým dynamickým zaťažením.",
               "specs": [
                 {
                   "value": "≥ 700 kPa",
-                  "label": "pevnosť v tlaku CS(10\\Y)",
+                  "label": "pevnosť v tlaku CS(10/Y)",
                   "accent": true
                 },
                 {
@@ -6233,58 +6171,82 @@
                   "href": "docs/hoch-xps/technicky-list-hoch-xps-01-2026-pl.pdf",
                   "kind": "technicky-list"
                 }
-              ]
-            },
-            {
-              "id": "hoch-xps-long",
-              "name": "HOCH XPS Long",
-              "description": "Dlhý formát dosiek s hranou I alebo L v hrúbkach 50 a 100 mm – menej škár na ploche.",
-              "specs": [
-                {
-                  "value": "2400×600 mm",
-                  "label": "rozmer Long I (Long L 2415 × 615 mm)",
-                  "accent": true
-                },
-                {
-                  "value": "50 / 100 mm",
-                  "label": "hrúbky dosiek"
-                },
-                {
-                  "value": "138,24 m²",
-                  "label": "na palete pri hrúbke 50 mm"
-                }
               ],
-              "documents": [
-                {
-                  "title": "Technický list HOCH XPS 01/2026",
-                  "href": "docs/hoch-xps/technicky-list-hoch-xps-01-2026-pl.pdf",
-                  "kind": "technicky-list"
-                },
-                {
-                  "title": "Leták HOCH XPS",
-                  "href": "docs/hoch-xps/letak-hoch-xps-pl.pdf",
-                  "kind": "katalog"
-                }
-              ]
+              "image": "img/hoch-xps/hoch-xps-700-i.webp",
+              "type": "najpevnejšia · hrana I"
             }
           ],
-          "specs": [
+          "legend": [
             {
-              "value": "700 kPa",
-              "label": "najvyššia pevnosť v tlaku",
-              "accent": true
+              "term": "I",
+              "text": "rovná hrana, 1250 × 600 mm"
             },
             {
-              "value": "≤ 0,7 %",
-              "label": "nasiakavosť WL(T) XPS 500 a 700"
+              "term": "L",
+              "text": "polodrážka, 1265 × 615 mm"
             },
             {
-              "value": "EN 13164",
-              "label": "harmonizovaná norma výrobku"
+              "term": "PW",
+              "text": "pero a drážka, 1265 × 615 mm"
             }
           ],
-          "image": "img/sortiment/hoch-xps-500-700.webp",
-          "imageOnWhite": true
+          "note": "Ďalej v ponuke: HOCH XPS 300 W s vaflovým povrchom, tenký XPS 200 (20 a 30 mm) a dlhý formát Long 2400 × 600 mm."
+        },
+        {
+          "id": "pouzitie",
+          "name": "Použitie",
+          "eyebrow": "HOCH XPS – použitie",
+          "title": "Kde sa HOCH XPS používa",
+          "image": "img/hoch-xps/hoch-xps-pouzitie-pivnica.webp",
+          "features": [
+            {
+              "title": "Základy a steny pivníc",
+              "text": "Izolácia pod úrovňou terénu – voda ani mráz dosku nepoškodia."
+            },
+            {
+              "title": "Podlaha na zemi",
+              "text": "Pod betónovú dosku aj podlahu na teréne, XPS 300 až 700."
+            },
+            {
+              "title": "Sendvičové murivo",
+              "text": "Izolácia v jadre trojvrstvovej steny."
+            },
+            {
+              "title": "Obrátená strecha",
+              "text": "Doska nad hydroizoláciou chráni ju pred mrazom aj poškodením."
+            },
+            {
+              "title": "Tepelné mosty",
+              "text": "Vence, preklady, parapety a balkóny."
+            },
+            {
+              "title": "Podlahy a parkoviská",
+              "text": "XPS 500 a 700 pre garáže, terasy a pojazdné plochy."
+            }
+          ],
+          "gallery": [
+            {
+              "src": "img/hoch-xps/hoch-xps-pouzitie-podlaha-na-zemi.webp",
+              "caption": "Izolácia podlahy na zemi"
+            },
+            {
+              "src": "img/hoch-xps/hoch-xps-pouzitie-obratena-strecha.webp",
+              "caption": "Izolácia obrátenej strechy"
+            },
+            {
+              "src": "img/hoch-xps/hoch-xps-pouzitie-sendvicove-murivo.webp",
+              "caption": "Izolácia sendvičového muriva"
+            },
+            {
+              "src": "img/hoch-xps/hoch-xps-pouzitie-tepelne-mosty.webp",
+              "caption": "Izolácia tepelných mostov"
+            },
+            {
+              "src": "img/hoch-xps/hoch-xps-pouzitie-podlaha.webp",
+              "caption": "Izolácia podlahy"
+            }
+          ],
+          "products": []
         }
       ],
       "website": "https://xps.hoch.com.pl/",
@@ -6318,6 +6280,61 @@
           "title": "Vyhlásenie o parametroch – XPS 700 (PL)",
           "href": "docs/hoch-xps/vyhlasenie-o-parametroch-xps-700-pl.pdf",
           "kind": "vyhlasenie"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – XPS 300 W (PL)",
+          "href": "docs/hoch-xps/vyhlasenie-o-parametroch-xps-300-w-pl.pdf",
+          "kind": "vyhlasenie"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – XPS 200 (PL)",
+          "href": "docs/hoch-xps/vyhlasenie-o-parametroch-xps-200-pl.pdf",
+          "kind": "vyhlasenie"
+        }
+      ],
+      "video": "video/hoch-xps/hoch-xps-firma-prezentacia.mp4",
+      "media": [
+        {
+          "kind": "video",
+          "src": "video/hoch-xps/hoch-xps-vyroba.mp4",
+          "caption": "Ako vzniká HOCH XPS"
+        },
+        {
+          "kind": "video",
+          "src": "video/hoch-xps/hoch-xps-test-nasiakavosti.mp4",
+          "caption": "Test nasiakavosti – 28 dní pod vodou: XPS 0,5 %, EPS 5,4 %"
+        },
+        {
+          "src": "img/hoch-xps/hoch-xps-doska-voda.webp",
+          "caption": "HOCH XPS – odolnosť voči vode"
+        },
+        {
+          "src": "img/hoch-xps/hoch-xps-balik.webp",
+          "caption": "Balík dosiek HOCH XPS"
+        },
+        {
+          "src": "img/hoch-xps/hoch-xps-pouzitie-pivnica.webp",
+          "caption": "Izolácia základov a stien pivníc"
+        },
+        {
+          "src": "img/hoch-xps/hoch-xps-pouzitie-podlaha-na-zemi.webp",
+          "caption": "Izolácia podlahy na zemi"
+        },
+        {
+          "src": "img/hoch-xps/hoch-xps-pouzitie-sendvicove-murivo.webp",
+          "caption": "Izolácia sendvičového muriva"
+        },
+        {
+          "src": "img/hoch-xps/hoch-xps-pouzitie-obratena-strecha.webp",
+          "caption": "Izolácia obrátenej strechy"
+        },
+        {
+          "src": "img/hoch-xps/hoch-xps-pouzitie-tepelne-mosty.webp",
+          "caption": "Izolácia tepelných mostov"
+        },
+        {
+          "src": "img/hoch-xps/hoch-xps-pouzitie-podlaha.webp",
+          "caption": "Izolácia podlahy"
         }
       ]
     },
@@ -6678,30 +6695,30 @@
       "name": "KODA",
       "logo": "img/brand/koda.webp",
       "role": "Doplnkový sortiment",
-      "eyebrow": "Profily",
-      "tagline": "Výroba profilov CD, UD, CW, UW a ďalších profilov.",
+      "eyebrow": "Profily pre sadrokartón",
+      "tagline": "SDK profily CD, UD, CW a UW z Košíc – aj v neštandardných dĺžkach na objednávku.",
       "profile": {
         "country": "Slovensko",
-        "about": "Košická firma KODA spol. s r.o., založená v roku 1992, spracúva hutnícky materiál. Od roku 2002 pozdĺžne delí oceľové zvitky na pásy, od roku 2006 vyrába profily pre sadrokartón z plechu hrúbky 0,55–0,6 mm, na objednávku aj v neštandardných dĺžkach.",
+        "about": "Košická firma KODA spol. s r.o. spracúva hutnícky materiál od roku 1992 – od roku 2002 pozdĺžne delí oceľové zvitky na pásy a od roku 2006 z nich vyrába profily pre sadrokartón. Stropné CD a UD a stenové CW a UW z pozinkovaného plechu 0,55–0,6 mm podľa EN 14195, na objednávku aj v neštandardných dĺžkach.",
         "facts": [
           {
-            "value": "1992",
-            "label": "založenie v Košiciach"
+            "value": "od 2006",
+            "label": "výroba SDK profilov v Košiciach"
           },
           {
-            "value": "2006",
-            "label": "začiatok výroby SDK profilov"
+            "value": "0,55 – 0,6 mm",
+            "label": "hrúbka pozinkovaného plechu"
           },
           {
-            "value": "0,55–0,6 mm",
-            "label": "hrúbka plechu profilov"
+            "value": "A1",
+            "label": "reakcia na oheň – EN 14195"
           }
         ],
         "makes": [
-          "Stropné profily UD 28, CD 60",
-          "Stenové profily UW 50/75/100",
-          "Stenové profily CW 50/75/100",
-          "Delené oceľové pásy 0,4–2,0 mm"
+          "Stropné profily CD 60 a UD 28",
+          "Stenové profily CW 50, 75, 100",
+          "Stenové profily UW 50, 75, 100",
+          "Neštandardné dĺžky na objednávku"
         ],
         "since": "1992",
         "hq": "Košice, Južná trieda 78",
@@ -6713,8 +6730,17 @@
           {
             "title": "KODA – produkty",
             "url": "https://koda.sk/produkty/"
+          },
+          {
+            "title": "KODA – dokumenty",
+            "url": "https://koda.sk/dokumenty/"
+          },
+          {
+            "title": "KODA – galéria",
+            "url": "https://koda.sk/galeria/"
           }
-        ]
+        ],
+        "headLogo": "img/brand/koda-biele.webp"
       },
       "tier": "plus",
       "tile": {
@@ -6722,112 +6748,174 @@
         "fit": "contain"
       },
       "scope": [],
-      "theme": "light",
+      "theme": "navy",
       "categories": [
         {
-          "id": "profily-cw",
-          "name": "Profily CW",
+          "id": "sdk-profily",
+          "name": "SDK profily",
           "eyebrow": "KODA – profily pre sadrokartón",
-          "title": "Stenové profily CW",
-          "intro": "Nosné stojky z Košíc pre priečky a predsadené steny, z plechu hrúbky 0,55–0,6 mm. Neštandardné dĺžky na objednávku.",
+          "title": "Profily CD, UD, CW a UW",
+          "intro": "Stropné a stenové profily z pozinkovaného plechu 0,55–0,6 mm.",
           "products": [
             {
-              "id": "koda-cw50",
-              "name": "CW 50",
-              "description": "Stenový profil pre nosné stojky priečok",
+              "id": "cd-60",
+              "name": "CD 60",
+              "type": "stropný profil",
+              "image": "img/koda/koda-profil-cd-60.webp",
+              "description": "Nosný profil podhľadov a predsadených stien.",
               "specs": [
                 {
-                  "value": "50 mm",
-                  "label": "šírka profilu",
+                  "value": "60 mm",
+                  "label": "šírka",
                   "accent": true
                 },
                 {
-                  "value": "2,75–4 m",
-                  "label": "dĺžky (2,75 / 3 / 3,5 / 4 m)"
+                  "value": "3 · 4 m",
+                  "label": "dĺžky"
                 },
                 {
-                  "value": "192 ks",
-                  "label": "zväzok (8 ks / balík)"
+                  "value": "12 ks",
+                  "label": "v balíku, 180 ks vo zväzku"
+                },
+                {
+                  "value": "EN 14195",
+                  "label": "harmonizovaná norma"
                 }
               ],
-              "documents": []
+              "documents": [
+                {
+                  "title": "Vyhlásenie o parametroch – CD (SK)",
+                  "href": "docs/koda/vyhlasenie-o-parametroch-cd.pdf",
+                  "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Protokol o skúške č. 428 – UD, CD (SK)",
+                  "href": "docs/koda/protokol-o-skuske-428-ud-cd.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Protokol o skúške č. 70 06 0040-1 – UD, CD (SK)",
+                  "href": "docs/koda/protokol-o-skuske-70-06-0040-1-ud-cd.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Protokol o skúške č. 70 06 0040-2 – UD, CD (SK)",
+                  "href": "docs/koda/protokol-o-skuske-70-06-0040-2-ud-cd.pdf",
+                  "kind": "certifikat"
+                }
+              ]
             },
             {
-              "id": "koda-cw75",
-              "name": "CW 75",
-              "description": "Stenový profil pre nosné stojky priečok",
+              "id": "ud-28",
+              "name": "UD 28",
+              "type": "stropný profil",
+              "image": "img/koda/koda-profil-ud-28.webp",
+              "description": "Obvodový profil podhľadu na stenu, vedenie CD.",
               "specs": [
                 {
-                  "value": "75 mm",
-                  "label": "šírka profilu",
+                  "value": "28 mm",
+                  "label": "šírka",
                   "accent": true
                 },
                 {
-                  "value": "2,75–4 m",
-                  "label": "dĺžky (2,75 / 3 / 3,5 / 4 m)"
+                  "value": "3 · 4 m",
+                  "label": "dĺžky"
                 },
                 {
-                  "value": "128 ks",
-                  "label": "zväzok (8 ks / balík)"
+                  "value": "16 ks",
+                  "label": "v balíku, 288 ks vo zväzku"
+                },
+                {
+                  "value": "EN 14195",
+                  "label": "harmonizovaná norma"
                 }
               ],
-              "documents": []
+              "documents": [
+                {
+                  "title": "Vyhlásenie o parametroch – UD (SK)",
+                  "href": "docs/koda/vyhlasenie-o-parametroch-ud.pdf",
+                  "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Protokol o skúške č. 428 – UD, CD (SK)",
+                  "href": "docs/koda/protokol-o-skuske-428-ud-cd.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Protokol o skúške č. 70 06 0040-1 – UD, CD (SK)",
+                  "href": "docs/koda/protokol-o-skuske-70-06-0040-1-ud-cd.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Protokol o skúške č. 70 06 0040-2 – UD, CD (SK)",
+                  "href": "docs/koda/protokol-o-skuske-70-06-0040-2-ud-cd.pdf",
+                  "kind": "certifikat"
+                }
+              ]
             },
             {
-              "id": "koda-cw100",
-              "name": "CW 100",
-              "description": "Stenový profil pre nosné stojky hrubších priečok",
+              "id": "cw",
+              "name": "CW 50 · 75 · 100",
+              "type": "stenový profil",
+              "image": "img/koda/koda-profil-cw.webp",
+              "description": "Zvislý stĺpik priečok a predsadených stien.",
               "specs": [
                 {
-                  "value": "100 mm",
-                  "label": "šírka profilu",
+                  "value": "50 · 75 · 100 mm",
+                  "label": "šírky",
                   "accent": true
                 },
                 {
-                  "value": "2,75–4 m",
-                  "label": "dĺžky (2,75 / 3 / 3,5 / 4 m)"
+                  "value": "2,75 – 4 m",
+                  "label": "dĺžky 2,75 / 3 / 3,5 / 4 m"
                 },
                 {
-                  "value": "96 ks",
-                  "label": "zväzok (8 ks / balík)"
+                  "value": "8 ks",
+                  "label": "v balíku, 192 / 128 / 96 ks vo zväzku"
+                },
+                {
+                  "value": "≥ 270 MPa",
+                  "label": "medza klzu plechu"
                 }
               ],
-              "documents": []
-            }
-          ],
-          "specs": [
-            {
-              "value": "0,55–0,6 mm",
-              "label": "hrúbka materiálu profilov",
-              "accent": true
+              "documents": [
+                {
+                  "title": "Vyhlásenie o parametroch – CW (SK)",
+                  "href": "docs/koda/vyhlasenie-o-parametroch-cw.pdf",
+                  "kind": "vyhlasenie"
+                },
+                {
+                  "title": "Protokol o skúške č. 70-15-0082 – CW 50 (SK)",
+                  "href": "docs/koda/protokol-o-skuske-70-15-0082-cw-50.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Protokol o skúške č. 70-15-0083 – CW 75 (SK)",
+                  "href": "docs/koda/protokol-o-skuske-70-15-0083-cw-75.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Protokol o skúške č. 70-15-0084 – CW 100 (SK)",
+                  "href": "docs/koda/protokol-o-skuske-70-15-0084-cw-100.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Protokol o skúške plechu č. 15-206116 01 – UW, CW (SK)",
+                  "href": "docs/koda/protokol-o-skuske-15-206116-01-uw-cw.pdf",
+                  "kind": "certifikat"
+                }
+              ]
             },
             {
-              "value": "50–100 mm",
-              "label": "šírky profilov CW"
-            },
-            {
-              "value": "2,75–4 m",
-              "label": "štandardné dĺžky CW"
-            }
-          ],
-          "image": "img/sortiment/koda-profily-cw.webp",
-          "imageOnWhite": true
-        },
-        {
-          "id": "profily-uw-ud-cd",
-          "name": "UW, UD a CD",
-          "eyebrow": "KODA – profily pre sadrokartón",
-          "title": "Profily UW, UD a CD",
-          "intro": "Obvodové a stropné profily pre priečky a podhľady. KODA vyrába aj pozdĺžne delené oceľové pásy hrúbky 0,4–2,0 mm.",
-          "products": [
-            {
-              "id": "koda-uw",
-              "name": "UW 50 / 75 / 100",
-              "description": "Obvodové stenové profily k CW stojkám",
+              "id": "uw",
+              "name": "UW 50 · 75 · 100",
+              "type": "stenový profil",
+              "image": "img/koda/koda-profil-uw.webp",
+              "description": "Vodorovný profil k podlahe a stropu, vedenie CW.",
               "specs": [
                 {
-                  "value": "50–100 mm",
-                  "label": "šírky profilu",
+                  "value": "50 · 75 · 100 mm",
+                  "label": "šírky",
                   "accent": true
                 },
                 {
@@ -6835,83 +6923,171 @@
                   "label": "dĺžka"
                 },
                 {
-                  "value": "160–180 ks",
-                  "label": "zväzok (podľa šírky)"
+                  "value": "12 · 12 · 8 ks",
+                  "label": "v balíku, 180 / 180 / 160 ks vo zväzku"
+                },
+                {
+                  "value": "≥ 270 MPa",
+                  "label": "medza klzu plechu"
                 }
               ],
-              "documents": []
-            },
-            {
-              "id": "koda-cd60",
-              "name": "CD 60",
-              "description": "Stropný nosný profil pre podhľady a predsadené steny",
-              "specs": [
+              "documents": [
                 {
-                  "value": "60 mm",
-                  "label": "šírka profilu",
-                  "accent": true
+                  "title": "Vyhlásenie o parametroch – UW (SK)",
+                  "href": "docs/koda/vyhlasenie-o-parametroch-uw.pdf",
+                  "kind": "vyhlasenie"
                 },
                 {
-                  "value": "3 / 4 m",
-                  "label": "dĺžky"
+                  "title": "Protokol o skúške č. 70-15-0085 – UW 50 (SK)",
+                  "href": "docs/koda/protokol-o-skuske-70-15-0085-uw-50.pdf",
+                  "kind": "certifikat"
                 },
                 {
-                  "value": "180 ks",
-                  "label": "zväzok (12 ks / balík)"
+                  "title": "Protokol o skúške č. 70-15-0086 – UW 75 (SK)",
+                  "href": "docs/koda/protokol-o-skuske-70-15-0086-uw-75.pdf",
+                  "kind": "certifikat"
                 },
                 {
-                  "value": "0,55–0,6 mm",
-                  "label": "hrúbka materiálu"
+                  "title": "Protokol o skúške č. 70-15-0087 – UW 100 (SK)",
+                  "href": "docs/koda/protokol-o-skuske-70-15-0087-uw-100.pdf",
+                  "kind": "certifikat"
+                },
+                {
+                  "title": "Protokol o skúške plechu č. 15-206116 01 – UW, CW (SK)",
+                  "href": "docs/koda/protokol-o-skuske-15-206116-01-uw-cw.pdf",
+                  "kind": "certifikat"
                 }
-              ],
-              "documents": []
-            },
-            {
-              "id": "koda-ud28",
-              "name": "UD 28",
-              "description": "Obvodový stropný profil k CD profilom",
-              "specs": [
-                {
-                  "value": "28 mm",
-                  "label": "šírka profilu",
-                  "accent": true
-                },
-                {
-                  "value": "3 / 4 m",
-                  "label": "dĺžky"
-                },
-                {
-                  "value": "288 ks",
-                  "label": "zväzok (16 ks / balík)"
-                },
-                {
-                  "value": "0,55–0,6 mm",
-                  "label": "hrúbka materiálu"
-                }
-              ],
-              "documents": []
+              ]
             }
           ],
-          "specs": [
+          "legend": [
             {
-              "value": "0,55–0,6 mm",
-              "label": "hrúbka materiálu profilov",
-              "accent": true
+              "term": "Z100",
+              "text": "zinkový povlak podľa EN 14195"
             },
             {
-              "value": "3 / 4 m",
-              "label": "dĺžky CD a UD"
+              "term": "A1",
+              "text": "reakcia na oheň"
             },
             {
-              "value": "0,4–2,0 mm",
-              "label": "hrúbky delených oceľových pásov"
+              "term": "na mieru",
+              "text": "neštandardné dĺžky po dohode"
             }
-          ],
-          "image": "img/sortiment/koda-profily-uw-ud-cd.webp",
-          "imageOnWhite": true
+          ]
         }
       ],
-      "website": "https://koda.sk/"
+      "website": "https://koda.sk/",
+      "video": "video/koda/koda-firma-prezentacia.mp4",
+      "documents": [
+        {
+          "title": "Vyhlásenie o parametroch – CD (SK)",
+          "href": "docs/koda/vyhlasenie-o-parametroch-cd.pdf",
+          "kind": "vyhlasenie"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – UD (SK)",
+          "href": "docs/koda/vyhlasenie-o-parametroch-ud.pdf",
+          "kind": "vyhlasenie"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – CW (SK)",
+          "href": "docs/koda/vyhlasenie-o-parametroch-cw.pdf",
+          "kind": "vyhlasenie"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – UW (SK)",
+          "href": "docs/koda/vyhlasenie-o-parametroch-uw.pdf",
+          "kind": "vyhlasenie"
+        },
+        {
+          "title": "Protokol o skúške č. 428 – UD, CD (SK)",
+          "href": "docs/koda/protokol-o-skuske-428-ud-cd.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Protokol o skúške č. 70 06 0040-1 – UD, CD (SK)",
+          "href": "docs/koda/protokol-o-skuske-70-06-0040-1-ud-cd.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Protokol o skúške č. 70 06 0040-2 – UD, CD (SK)",
+          "href": "docs/koda/protokol-o-skuske-70-06-0040-2-ud-cd.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Protokol o skúške plechu č. 15-206116 01 – UW, CW (SK)",
+          "href": "docs/koda/protokol-o-skuske-15-206116-01-uw-cw.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Protokol o skúške č. 70-15-0082 – CW 50 (SK)",
+          "href": "docs/koda/protokol-o-skuske-70-15-0082-cw-50.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Protokol o skúške č. 70-15-0083 – CW 75 (SK)",
+          "href": "docs/koda/protokol-o-skuske-70-15-0083-cw-75.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Protokol o skúške č. 70-15-0084 – CW 100 (SK)",
+          "href": "docs/koda/protokol-o-skuske-70-15-0084-cw-100.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Protokol o skúške č. 70-15-0085 – UW 50 (SK)",
+          "href": "docs/koda/protokol-o-skuske-70-15-0085-uw-50.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Protokol o skúške č. 70-15-0086 – UW 75 (SK)",
+          "href": "docs/koda/protokol-o-skuske-70-15-0086-uw-75.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Protokol o skúške č. 70-15-0087 – UW 100 (SK)",
+          "href": "docs/koda/protokol-o-skuske-70-15-0087-uw-100.pdf",
+          "kind": "certifikat"
+        }
+      ],
+      "media": [
+        {
+          "src": "img/koda/koda-hala-kosice.webp",
+          "caption": "Výrobná hala KODA, Košice"
+        },
+        {
+          "src": "img/koda/koda-odvijanie-zvitku.webp",
+          "caption": "Odvíjanie oceľového zvitku"
+        },
+        {
+          "src": "img/koda/koda-deliaca-linka.webp",
+          "caption": "Deliaca linka NOP 1250 – pásy 15–600 mm"
+        },
+        {
+          "src": "img/koda/koda-odvijac-zvitkov.webp",
+          "caption": "Odvíjač zvitkov"
+        },
+        {
+          "src": "img/koda/koda-valcovanie-profilov.webp",
+          "caption": "Valcovanie SDK profilov"
+        },
+        {
+          "src": "img/koda/koda-pas-na-valcovacej-linke.webp",
+          "caption": "Pás plechu na valcovacej linke"
+        },
+        {
+          "src": "img/koda/koda-valcovacia-linka.webp",
+          "caption": "Valcovacia linka na profily"
+        },
+        {
+          "src": "img/koda/koda-sklad-profilov.webp",
+          "caption": "Sklad profilov"
+        },
+        {
+          "src": "img/koda/koda-hala-vstup.webp",
+          "caption": "Expedícia"
+        }
+      ]
     }
   ],
   "supplementary": {
@@ -7149,7 +7325,9 @@
     "video/holcim/holcim-vyroba.mp4": "Ako vzniká kamenná vlna",
     "video/holcim/holcim-ohen-a1.mp4": "Skúška ohňom – A1",
     "video/synthos/synthos-akademia-xps.mp4": "Akadémia Synthos XPS",
-    "video/synthos/synthos-izolacia-zakladov.mp4": "Izolácia základov XPS PRIME S"
+    "video/synthos/synthos-izolacia-zakladov.mp4": "Izolácia základov XPS PRIME S",
+    "video/hoch-xps/hoch-xps-vyroba.mp4": "Ako vzniká HOCH XPS",
+    "video/hoch-xps/hoch-xps-test-nasiakavosti.mp4": "Test nasiakavosti XPS a EPS"
   },
   "videoPosters": {
     "video/klimas/klimas-thermodrive-v2.mp4": "img/klimas/produkty/klimas-thermodrive-v2-8.webp",
