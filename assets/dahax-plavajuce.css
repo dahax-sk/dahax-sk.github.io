@@ -1,0 +1,47 @@
+/* DAHAX – plávajúce výrobky (DK MONT, assets/dahax-plavajuce.js). Farby DK MONT: tmavomodrá #031025 → #034174 (dkmont.cz). */
+.dxpl{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.dxpl__v{position:absolute;display:block;transform:rotate(var(--r));animation:dxpl-plav var(--d) ease-in-out var(--o) infinite alternate;will-change:transform}
+.dxpl__v img{display:block;width:100%;height:auto;filter:drop-shadow(0 22px 22px rgba(0,0,0,.5)) drop-shadow(0 0 1px rgba(255,255,255,.25))}
+@keyframes dxpl-plav{
+  from{transform:translate3d(0,-7px,0) rotate(calc(var(--r) - 1.4deg))}
+  to{transform:translate3d(0,9px,0) rotate(calc(var(--r) + 1.4deg))}
+}
+
+.dxpl__box{position:absolute;inset:0}
+.dxpl--uvod{display:flex;align-items:center;justify-content:center}
+.dxpl--uvod .dxpl__box{position:relative;inset:auto;flex:none}
+
+/* úvod firmy: ľavý panel vo farbách DK MONT, výrobky v páse medzi logom a nadpisom (výšku a polohu pásu nastaví JS) */
+.brand__side.dxpl-side{overflow:hidden;background:radial-gradient(130% 60% at 50% 42%,#0c3f78 0%,#06204a 50%,#040f22 100%)}
+.brand__side.dxpl-side::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;z-index:3;background:#e30613}
+.brand__side.dxpl-side > :not(.dxpl){position:relative;z-index:2}
+.dxpl--uvod{z-index:1;bottom:auto;overflow:visible}
+
+/* obrázok kategórie: plávajúce výrobky na tmavomodrom */
+.media__img.dxpl-obr{position:relative;overflow:hidden;background:radial-gradient(110% 80% at 50% 42%,#0c3f78 0%,#06204a 52%,#040f22 100%)}
+.media__img.dxpl-obr > img{opacity:0}
+.dxpl--obr .dxpl__v:has(img[src*="skrutky"]) img{filter:drop-shadow(0 0 14px rgba(170,205,255,.28)) drop-shadow(0 20px 20px rgba(0,0,0,.5))}
+
+/* zoznam výrobkov v dvoch stĺpcoch so skupinami (Závesy · Skrutky) */
+.dxpl-skupiny .rows{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(4,auto);grid-auto-flow:column;column-gap:36px;margin-top:26px}
+.dxpl-skupiny .rows > li[data-skupina]::before{content:attr(data-skupina);display:block;padding:16px 0 12px;color:#e30613;
+  font:700 14px/1 var(--f-d,inherit);letter-spacing:.16em;text-transform:uppercase}
+
+/* Kompletný systém: dlaždice galérie s výrobkami DK MONT vo farbách DK MONT, výrobok v nich pláva */
+.brands2__grid:has(img[src*="img/dkmont/"]) > button{position:relative;overflow:hidden;
+  background:radial-gradient(110% 85% at 50% 40%,#0c3f78 0%,#06204a 55%,#040f22 100%)}
+.brands2__grid:has(img[src*="img/dkmont/"]) > button img{object-fit:contain;padding:14% 13% 24%;box-sizing:border-box;--r:0deg;
+  animation:dxpl-plav 7.5s ease-in-out infinite alternate;filter:drop-shadow(0 22px 20px rgba(0,0,0,.55))}
+.brands2__grid:has(img[src*="img/dkmont/"]) > button:nth-child(2) img{animation-duration:8.5s;animation-delay:-2.4s}
+.brands2__grid:has(img[src*="img/dkmont/"]) > button:nth-child(3) img{animation-duration:9s;animation-delay:-4.1s}
+.brands2__grid:has(img[src*="img/dkmont/"]) > button:nth-child(4) img{animation-duration:7s;animation-delay:-1.2s;
+  filter:drop-shadow(0 0 14px rgba(170,205,255,.28)) drop-shadow(0 20px 20px rgba(0,0,0,.5))}
+.brands2__grid:has(img[src*="img/dkmont/"]) > button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#e30613;
+  transform:scaleX(.16);transform-origin:left;transition:transform .35s ease}
+.brands2__grid:has(img[src*="img/dkmont/"]) > button:hover::after{transform:scaleX(1)}
+.brands2__grid:has(img[src*="img/dkmont/"]) > button[data-popis]::before{content:attr(data-popis);position:absolute;left:22px;bottom:20px;z-index:1;
+  color:#fff;font:700 20px/1.1 var(--f-d,inherit);letter-spacing:.04em;text-transform:uppercase;text-align:left}
+
+@media (prefers-reduced-motion:reduce){
+  .dxpl__v,.brands2__grid:has(img[src*="img/dkmont/"]) > button img{animation:none}
+}

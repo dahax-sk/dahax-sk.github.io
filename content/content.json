@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.35",
+  "version": "2026-10-27.36",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -3863,29 +3863,28 @@
           ],
           "gallery": [
             {
-              "src": "img/product/dkmont-zaves-01.webp",
-              "caption": "DK MONT"
+              "src": "img/dkmont/zaves-cd.webp",
+              "caption": "Závesy PROFIFIX®"
             },
             {
-              "src": "img/product/dkmont-zaves-02.webp",
-              "caption": "DK MONT"
+              "src": "img/dkmont/spojka.webp",
+              "caption": "Spojky a kotvenie"
             },
             {
-              "src": "img/product/dkmont-profily.webp",
-              "caption": "DK MONT"
+              "src": "img/dkmont/profily.webp",
+              "caption": "Profily pre SDK"
             },
             {
-              "src": "img/product/profifix-skrutky.webp",
-              "caption": "Systém PROFIFIX® – skrutky do sadrokartónu",
-              "onWhite": true
+              "src": "img/dkmont/skrutky-profifix.webp",
+              "caption": "Skrutky PROFIFIX®"
             }
           ]
         },
         {
           "id": "zavesy-a-kotvenie",
-          "name": "Závesy",
-          "eyebrow": "DK MONT – závesné prvky PROFIFIX®",
-          "title": "Závesy a kotvenie pre SDK konštrukcie",
+          "name": "Závesy a skrutky",
+          "eyebrow": "DK MONT – závesy a spojovací materiál PROFIFIX®",
+          "title": "Závesy a skrutky pre SDK konštrukcie",
           "products": [
             {
               "id": "priamy-zaves-cd",
@@ -4010,18 +4009,7 @@
                   "kind": "katalog"
                 }
               ]
-            }
-          ],
-          "image": "img/product/dkmont-zaves-01.webp",
-          "imageOnWhite": true
-        },
-        {
-          "id": "skrutky-sdk",
-          "name": "Skrutky",
-          "eyebrow": "DK MONT – spojovací materiál PROFIFIX®",
-          "title": "Skrutky do sadrokartónu a plechu",
-          "intro": "Fosfátované a pozinkované skrutky s drážkou PH2 – na upevnenie dosiek do tenkostenných profilov, dreva aj hrubostenných profilov UA.",
-          "products": [
+            },
             {
               "id": "tn-profi",
               "name": "TN-PROFI",
@@ -4051,7 +4039,8 @@
                   "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
                   "kind": "katalog"
                 }
-              ]
+              ],
+              "detailObrazok": "img/dkmont/skrutky-profifix.webp"
             },
             {
               "id": "tx",
@@ -4082,7 +4071,8 @@
                   "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
                   "kind": "katalog"
                 }
-              ]
+              ],
+              "detailObrazok": "img/dkmont/skrutky-profifix.webp"
             },
             {
               "id": "tb",
@@ -4113,7 +4103,8 @@
                   "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
                   "kind": "katalog"
                 }
-              ]
+              ],
+              "detailObrazok": "img/dkmont/skrutky-profifix.webp"
             },
             {
               "id": "tex",
@@ -4144,11 +4135,50 @@
                   "href": "docs/sucha-vystavba/katalog-produktov-profifix-dk-mont-cz.pdf",
                   "kind": "katalog"
                 }
-              ]
+              ],
+              "detailObrazok": "img/dkmont/skrutky-profifix.webp"
             }
           ],
-          "image": "img/product/profifix-skrutky.webp",
-          "imageOnWhite": true
+          "image": "img/dkmont/zaves-cd.webp",
+          "skupiny": [
+            {
+              "od": 0,
+              "nazov": "Závesy a kotvenie"
+            },
+            {
+              "od": 4,
+              "nazov": "Skrutky do SDK a plechu"
+            }
+          ],
+          "plavajuce": [
+            {
+              "src": "img/dkmont/zaves-cd.webp",
+              "x": 22,
+              "y": 6,
+              "w": 56,
+              "r": 0,
+              "d": 7.5,
+              "z": 2
+            },
+            {
+              "src": "img/dkmont/skrutky-profifix.webp",
+              "x": 9,
+              "y": 57,
+              "w": 82,
+              "r": -3,
+              "d": 8.5,
+              "z": 3
+            },
+            {
+              "src": "img/dkmont/hmozdinka-natlkacia.webp",
+              "x": 62,
+              "y": 40,
+              "w": 34,
+              "r": 12,
+              "d": 6.5,
+              "z": 1
+            }
+          ]
         }
       ],
       "profile": {
@@ -4197,21 +4227,20 @@
       },
       "media": [
         {
-          "src": "img/product/dkmont-zaves-01.webp",
-          "caption": "DK MONT"
+          "src": "img/dkmont/zaves-cd.webp",
+          "caption": "Závesy PROFIFIX®"
         },
         {
-          "src": "img/product/dkmont-zaves-02.webp",
-          "caption": "DK MONT"
+          "src": "img/dkmont/spojka.webp",
+          "caption": "Spojky a kotvenie"
         },
         {
-          "src": "img/product/dkmont-profily.webp",
-          "caption": "DK MONT – profily"
+          "src": "img/dkmont/profily.webp",
+          "caption": "Profily pre SDK"
         },
         {
-          "src": "img/product/profifix-skrutky.webp",
-          "caption": "PROFIFIX® skrutky",
-          "onWhite": true
+          "src": "img/dkmont/skrutky-profifix.webp",
+          "caption": "Skrutky PROFIFIX®"
         }
       ],
       "tier": "core",
@@ -4250,6 +4279,53 @@
           "title": "Katalóg profilov Styroprofile 2023 (CZ)",
           "href": "docs/sucha-vystavba/katalog-profilov-styroprofile-2023-cz.pdf",
           "kind": "katalog"
+        }
+      ],
+      "plavajuce": [
+        {
+          "src": "img/dkmont/zaves-cd.webp",
+          "x": 3,
+          "y": 6,
+          "w": 27,
+          "r": -3,
+          "d": 7,
+          "z": 3
+        },
+        {
+          "src": "img/dkmont/profily.webp",
+          "x": 23,
+          "y": 0,
+          "w": 36,
+          "r": 0,
+          "d": 8.5,
+          "z": 1
+        },
+        {
+          "src": "img/dkmont/hmozdinka-klinova.webp",
+          "x": 38,
+          "y": 44,
+          "w": 32,
+          "r": -4,
+          "d": 6.5,
+          "z": 4
+        },
+        {
+          "src": "img/dkmont/nonius.webp",
+          "x": 57,
+          "y": 2,
+          "w": 29,
+          "r": 4,
+          "d": 9,
+          "z": 2
+        },
+        {
+          "src": "img/dkmont/paska-profifix.webp",
+          "x": 76,
+          "y": 30,
+          "w": 22,
+          "r": 0,
+          "d": 7.5,
+          "z": 3
         }
       ]
     },
