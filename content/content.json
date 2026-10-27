@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.55",
+  "version": "2026-10-27.56",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -5376,7 +5376,7 @@
             {
               "id": "cgl-20cy",
               "name": "PAROC CGL 20cy",
-              "description": "Lamela 200 × 1200 mm na lepenie na betónové stropy – nehorľavá, paropriepustná, nenasiakavá.",
+              "description": "Lamela 200 × 1200 mm na lepenie na betónové stropy – paropriepustná a nenasiakavá.",
               "specs": [
                 {
                   "value": "0,037",
