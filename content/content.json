@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.42",
+  "version": "2026-10-27.45",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -4776,14 +4776,13 @@
       "tagline": "Systémy pre ploché a šikmé strechy – hydroizolácie, PIR izolácie, zelené strechy.",
       "website": "https://www.bauder.sk/sk/bauder-slovensko.html",
       "profile": {
-        "since": "1857",
         "country": "Nemecko",
         "hq": "Stuttgart · Bauder s.r.o. Bratislava",
-        "about": "Nemecká rodinná firma založená v roku 1857 v Stuttgarte, dnes ju vedie 4. generácia. Vyrába v Bochume, Landsbergu, Schwepnitzi, Hertene a v rakúskom Bruck an der Leitha a má certifikáty ISO 9001, 14001 a 50001. Na Slovensku pôsobí cez Bauder s.r.o. v Bratislave.",
+        "about": "Nemecká rodinná firma založená v roku 1857 v Stuttgarte, dnes ju vedie 4. generácia. Na Slovensku pôsobí cez Bauder s.r.o. v Bratislave.",
         "facts": [
           {
-            "value": "1857",
-            "label": "založenie v Stuttgarte"
+            "value": "5",
+            "label": "výrobných závodov v Nemecku a Rakúsku"
           },
           {
             "value": "λ 0,022",
@@ -4819,7 +4818,8 @@
             "title": "Bauder SK – certifikácie",
             "url": "https://www.bauder.sk/sk/spolocnost/o-nas/nasa-buducnost/kvalitativny-energeticky-a-ekologicky-manazment.html"
           }
-        ]
+        ],
+        "headLogo": "img/brand/bauder-logo-biele.webp"
       },
       "documents": [
         {
@@ -4902,12 +4902,87 @@
       "theme": "light",
       "categories": [
         {
-          "id": "asfaltove-pasy",
-          "name": "Asfaltové pásy",
+          "id": "hydroizolacie",
+          "name": "Hydroizolácie",
           "eyebrow": "BAUDER – ploché strechy",
-          "title": "Vrchné asfaltové pásy",
-          "intro": "Nataviteľné modifikované asfaltové pásy s bridlicovým posypom pre viacvrstvové hydroizolácie plochých striech.",
+          "title": "Fólie, pásy a parozábrany",
+          "intro": "Najpredávanejšie výrobky Bauder pre ploché strechy – PVC fólie THERMOFOL, asfaltové pásy a parozábrany.",
+          "image": "img/sortiment/bauder-asfaltove-pasy.webp",
           "products": [
+            {
+              "id": "bauderthermofol-u",
+              "name": "THERMOFOL U 15 / 18 / 20",
+              "description": "PVC strešná fólia na voľné kladenie – mechanicky kotvená alebo pod priťaženie, pre novostavby aj sanácie",
+              "specs": [
+                {
+                  "value": "1,5 · 1,8 · 2,0 mm",
+                  "label": "hrúbka U 15 / U 18 / U 20",
+                  "accent": true
+                },
+                {
+                  "value": "1,5 × 20 m",
+                  "label": "rozmer kotúča"
+                },
+                {
+                  "value": "PVC-P",
+                  "label": "so syntetickou vložkou, svetlosivá"
+                },
+                {
+                  "value": "FFL",
+                  "label": "odolná proti prerastaniu koreňov"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – BauderTHERMOFOL U 15 (02/2021)",
+                  "href": "docs/bauder/technicky-list-bauderthermofol-u-15-0221-sk.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Technický list – BauderTHERMOFOL U 18 (02/2021)",
+                  "href": "docs/bauder/technicky-list-bauderthermofol-u-18-0221-sk.pdf",
+                  "kind": "technicky-list"
+                },
+                {
+                  "title": "Technický list – BauderTHERMOFOL U 20 (02/2021)",
+                  "href": "docs/bauder/technicky-list-bauderthermofol-u-20-0221-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ],
+              "detailObrazok": "img/bauder/thermofol-u.webp"
+            },
+            {
+              "id": "bauderthermofol-d",
+              "name": "THERMOFOL D",
+              "description": "Bezvložková PVC fólia na detaily, napojenia a prestupy k fólii THERMOFOL U",
+              "specs": [
+                {
+                  "value": "1,8 mm",
+                  "label": "hrúbka",
+                  "accent": true
+                },
+                {
+                  "value": "0,5 / 1,5 m",
+                  "label": "šírka kotúča"
+                },
+                {
+                  "value": "10 m",
+                  "label": "dĺžka kotúča"
+                },
+                {
+                  "value": "PVC-P",
+                  "label": "bez vložky, svetlosivá"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Technický list – BauderTHERMOFOL D 18 (02/2021)",
+                  "href": "docs/bauder/technicky-list-bauderthermofol-d-18-0221-sk.pdf",
+                  "kind": "technicky-list"
+                }
+              ],
+              "detailObrazok": "img/bauder/thermofol-d.webp"
+            },
             {
               "id": "bauderkarat",
               "name": "BauderKARAT",
@@ -4941,69 +5016,8 @@
                   "href": "docs/bauder/technicky-list-bauderkarat-05-2026-sk.pdf",
                   "kind": "technicky-list"
                 }
-              ]
-            },
-            {
-              "id": "bauderkarat-air",
-              "name": "BauderKARAT Air+",
-              "description": "Pás s fotokatalytickým povrchom rozkladajúcim NOx, ideálny pod fotovoltiku",
-              "specs": [
-                {
-                  "value": "1450 N",
-                  "label": "najväčšia ťahová sila / 50 mm",
-                  "accent": true
-                },
-                {
-                  "value": "5,2 mm",
-                  "label": "hrúbka pásu"
-                },
-                {
-                  "value": "≤ −40 °C",
-                  "label": "ohybnosť pri nízkej teplote (spodná strana)"
-                },
-                {
-                  "value": "≥ +150 °C",
-                  "label": "odolnosť pri zvýšenej teplote (horná strana)"
-                }
               ],
-              "documents": [
-                {
-                  "title": "Ploché strechy – prehľad výrobkov (SK)",
-                  "href": "docs/bauder/ploche-strechy-prehlad-vyrobkov-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "baudersmaragd",
-              "name": "BauderSMARAGD",
-              "description": "Vrchný pás s integrovanou ochranou proti prerastaniu koreňov pre zelené strechy",
-              "specs": [
-                {
-                  "value": "FLL",
-                  "label": "odolnosť proti koreňom",
-                  "accent": true
-                },
-                {
-                  "value": "5,2 mm",
-                  "label": "hrúbka pásu"
-                },
-                {
-                  "value": "1450 N",
-                  "label": "najväčšia ťahová sila / 50 mm"
-                },
-                {
-                  "value": "≤ −40 °C",
-                  "label": "ohybnosť pri nízkej teplote (spodná strana)"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Ploché strechy – prehľad výrobkov (SK)",
-                  "href": "docs/bauder/ploche-strechy-prehlad-vyrobkov-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
+              "detailObrazok": "img/bauder/karat.webp"
             },
             {
               "id": "bauderflex-k5e",
@@ -5030,144 +5044,156 @@
               ],
               "documents": [
                 {
+                  "title": "Technický list – BauderFLEX K5E (05/2022)",
+                  "href": "docs/bauder/technicky-list-bauderflex-k5e-0522-sk.pdf",
+                  "kind": "technicky-list"
+                },
+                {
                   "title": "Vyhlásenie o parametroch – BauderFLEX K5E (2026)",
                   "href": "docs/bauder/vyhlasenie-o-parametroch-bauderflex-k5e-2026-sk.pdf",
                   "kind": "vyhlasenie"
                 }
-              ]
-            }
-          ],
-          "image": "img/sortiment/bauder-asfaltove-pasy.webp"
-        },
-        {
-          "id": "fpo-folie",
-          "name": "FPO fólie",
-          "eyebrow": "BAUDER – umelohmotné hydroizolácie",
-          "title": "BauderTHERMOPLAN – FPO fólie",
-          "intro": "Fólie FPO-PP bez halogénov a zmäkčovadiel, zvárané horúcim vzduchom – pre ľahké, halové aj vegetačné strechy.",
-          "products": [
+              ],
+              "detailObrazok": "img/bauder/flex-k5e.webp"
+            },
             {
-              "id": "thermoplan-t",
-              "name": "THERMOPLAN T 12–20",
-              "description": "Fólia vystužená syntetickou tkaninou na mechanické kotvenie alebo pod priťaženie",
+              "id": "bauder-eva-35",
+              "name": "Bauder EVA 35",
+              "description": "Nataviteľná parozábrana z elastomérového asfaltu s vložkou hliník-polyester a jemným posypom",
               "specs": [
                 {
-                  "value": "1,2–2,0 mm",
-                  "label": "hrúbky fólie",
+                  "value": "3,5 mm",
+                  "label": "hrúbka",
                   "accent": true
                 },
                 {
-                  "value": "20 m",
-                  "label": "dĺžka rolky"
+                  "value": "8 × 1 m",
+                  "label": "rozmer kotúča"
                 },
                 {
-                  "value": "1,5 m",
-                  "label": "max. šírka rolky"
+                  "value": "≥ 400 N",
+                  "label": "najväčšia ťahová sila / 50 mm"
                 },
                 {
-                  "value": "−30 °C",
+                  "value": "≤ −15 °C",
                   "label": "ohybnosť pri nízkej teplote"
                 }
               ],
               "documents": [
                 {
-                  "title": "BauderTHERMOPLAN – prospekt (SK)",
-                  "href": "docs/bauder/bauderthermoplan-fpo-prospekt-sk.pdf",
-                  "kind": "katalog"
+                  "title": "Technický list – Bauder EVA 35 (04/2021)",
+                  "href": "docs/bauder/technicky-list-bauder-eva-35-0421-sk.pdf",
+                  "kind": "technicky-list"
                 }
               ]
             },
             {
-              "id": "thermoplan-t-v",
-              "name": "THERMOPLAN T V",
-              "description": "Fólia s kašírovaným rúnom na lepenie a sanáciu starých asfaltových striech",
+              "id": "bauder-eva-40",
+              "name": "Bauder EVA 40",
+              "description": "Hrubšia nataviteľná parozábrana z SBS asfaltu s vložkou hliník-polyester a skleným rúnom",
               "specs": [
                 {
-                  "value": "1,5–2,0 mm",
-                  "label": "hrúbka fólie (+ 2 mm rúna)",
+                  "value": "4,0 mm",
+                  "label": "hrúbka",
                   "accent": true
                 },
                 {
-                  "value": "20 m",
-                  "label": "dĺžka rolky"
+                  "value": "≥ 1500 m",
+                  "label": "ekvivalentná difúzna hrúbka sd"
                 },
                 {
-                  "value": "1,5 m",
-                  "label": "šírka rolky"
+                  "value": "8 × 1 m",
+                  "label": "rozmer kotúča"
                 },
                 {
-                  "value": ">550 mm",
-                  "label": "odolnosť proti nárazu (tvrdý podklad)"
+                  "value": "≤ −15 °C",
+                  "label": "ohybnosť pri nízkej teplote"
                 }
               ],
               "documents": [
                 {
-                  "title": "BauderTHERMOPLAN – prospekt (SK)",
-                  "href": "docs/bauder/bauderthermoplan-fpo-prospekt-sk.pdf",
-                  "kind": "katalog"
+                  "title": "Technický list – Bauder EVA 40 (02/2023)",
+                  "href": "docs/bauder/technicky-list-bauder-eva-40-0223-sk.pdf",
+                  "kind": "technicky-list"
                 }
               ]
             },
             {
-              "id": "thermoplan-tl",
-              "name": "THERMOPLAN TL",
-              "description": "Bezvložková fólia na detaily, napojenia a prestupy všetkých veľkostí",
+              "id": "baudertec-ksd",
+              "name": "BauderTEC KSD",
+              "description": "Za studena samolepiaca parozábrana bez horáka – rýchla pokládka na trapézový plech a drevo",
               "specs": [
                 {
-                  "value": ">500 %",
-                  "label": "ťažnosť",
+                  "value": "za studena",
+                  "label": "samolepiaca, bez horáka",
                   "accent": true
                 },
                 {
                   "value": "1,5 mm",
-                  "label": "hrúbka fólie"
+                  "label": "hrúbka"
                 },
                 {
-                  "value": "10 m",
-                  "label": "dĺžka rolky"
+                  "value": "15 × 1 m",
+                  "label": "rozmer kotúča"
                 },
                 {
-                  "value": "−30 °C",
+                  "value": "≤ −30 °C",
                   "label": "ohybnosť pri nízkej teplote"
                 }
               ],
               "documents": [
                 {
-                  "title": "BauderTHERMOPLAN – prospekt (SK)",
-                  "href": "docs/bauder/bauderthermoplan-fpo-prospekt-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
-              "id": "bauderfpo-wwb",
-              "name": "BauderFPO WWB",
-              "description": "Protišmyková chodníková fólia na údržbové a únikové cesty",
-              "specs": [
-                {
-                  "value": "2,3 mm",
-                  "label": "hrúbka fólie",
-                  "accent": true
-                },
-                {
-                  "value": "0,75 m",
-                  "label": "šírka fólie"
-                },
-                {
-                  "value": "10 m",
-                  "label": "dĺžka rolky"
+                  "title": "Technický list – BauderTEC KSD (04/2021)",
+                  "href": "docs/bauder/technicky-list-baudertec-ksd-0421-sk.pdf",
+                  "kind": "technicky-list"
                 }
               ],
-              "documents": [
-                {
-                  "title": "BauderTHERMOPLAN – prospekt (SK)",
-                  "href": "docs/bauder/bauderthermoplan-fpo-prospekt-sk.pdf",
-                  "kind": "katalog"
-                }
-              ]
+              "detailObrazok": "img/bauder/tec-ksd.webp"
             }
           ],
-          "image": "img/sortiment/bauder-fpo-folie.webp"
+          "skupiny": [
+            {
+              "od": 0,
+              "nazov": "PVC fólie THERMOFOL"
+            },
+            {
+              "od": 2,
+              "nazov": "Asfaltové pásy"
+            },
+            {
+              "od": 4,
+              "nazov": "Parozábrany"
+            }
+          ],
+          "plavajuce": [
+            {
+              "src": "img/bauder/thermofol-u.webp",
+              "x": 4,
+              "y": 5,
+              "w": 92,
+              "r": -2,
+              "d": 8.5,
+              "z": 1
+            },
+            {
+              "src": "img/bauder/karat.webp",
+              "x": 2,
+              "y": 47,
+              "w": 50,
+              "r": 0,
+              "d": 7,
+              "z": 3
+            },
+            {
+              "src": "img/bauder/tec-ksd.webp",
+              "x": 48,
+              "y": 51,
+              "w": 50,
+              "r": 0,
+              "d": 8,
+              "z": 2
+            }
+          ]
         },
         {
           "id": "pir-izolacie",
@@ -5310,7 +5336,47 @@
           "caption": "BAUDER – video",
           "kind": "youtube"
         }
-      ]
+      ],
+      "plavajuceTema": "bauder",
+      "plavajuce": [
+        {
+          "src": "img/bauder/karat.webp",
+          "x": 2,
+          "y": 2,
+          "w": 34,
+          "r": 0,
+          "d": 7,
+          "z": 3
+        },
+        {
+          "src": "img/bauder/flex-k5e.webp",
+          "x": 34,
+          "y": 9,
+          "w": 32,
+          "r": 2,
+          "d": 7.5,
+          "z": 2
+        },
+        {
+          "src": "img/bauder/tec-ksd.webp",
+          "x": 64,
+          "y": 1,
+          "w": 34,
+          "r": -2,
+          "d": 9,
+          "z": 3
+        },
+        {
+          "src": "img/bauder/thermofol-u.webp",
+          "x": 22,
+          "y": 48,
+          "w": 78,
+          "r": -2,
+          "d": 8.5,
+          "z": 1
+        }
+      ],
+      "plavajucePomer": 0.9
     },
     {
       "id": "paroc",

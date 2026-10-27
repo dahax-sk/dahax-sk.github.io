@@ -5,7 +5,7 @@
     - kategória.skupiny = [{ od, nazov }] → nadpisy skupín v zozname výrobkov (data-skupina pri riadku, text kreslí CSS),
     - výrobok.detailObrazok → obrázok v detaile výrobku (pole image by pri 2 a viac výrobkoch prepol snímku na karty).
    Položka: { src, x, y, w (v % šírky plochy; na úvode plocha s pomerom strán 0,4), r (natočenie °), d (dĺžka pohybu s), z }.
-   Pri obmedzení pohybu stoja.
+   Pri obmedzení pohybu stoja. firma.plavajucePomer = iný pomer strán plochy na úvode (napr. bez loga v paneli). firma.plavajuceTema (napr. "bauder") = farby panela a pozadí (trieda dxpl-t-<tema>), bez nej DK MONT.
    Galéria kategórie s obrázkami img/dkmont/ (dlaždice vo farbách DK MONT) je v CSS, JS jej dá len popisy (data-popis).
    Štýly: assets/dahax-plavajuce.css. */
 (() => {
@@ -17,7 +17,7 @@
     for (const m of c.manufacturers || []) {
       if (m.plavajuce && m.logo) firmy.push(m);
       for (const k of m.categories || []) {
-        if (k.plavajuce || k.skupiny) kat.push(k);
+        if (k.plavajuce || k.skupiny) kat.push({ k, t: m.plavajuceTema });
         for (const p of k.products || []) if (p.detailObrazok) detaily.set(m.id + "/" + k.id + "/" + p.id, p.detailObrazok);
       }
     }
@@ -53,6 +53,7 @@
       let v = side.querySelector(":scope > .dxpl");
       if (!v) {
         side.classList.add("dxpl-side");
+        if (m.plavajuceTema) side.classList.add("dxpl-t-" + m.plavajuceTema);
         v = vrstva(m.plavajuce, "dxpl--uvod");
         side.prepend(v);
       }
@@ -61,19 +62,21 @@
       const logo = side.querySelector(".brand__logo"), id = side.querySelector(".brand__id"), eb = id?.querySelector(".eyebrow");
       if (logo && id) {
         const hore = logo.offsetTop + logo.offsetHeight, dole = id.offsetTop + (eb ? eb.offsetTop : 0), pas = Math.max(0, dole - hore);
-        const sirka = Math.min(side.clientWidth - 24, pas / POMER), box = v.firstChild;
+        const pom = +m.plavajucePomer || POMER, sirka = Math.min(side.clientWidth - 24, pas / pom), box = v.firstChild;
         v.style.top = hore + "px";
         v.style.height = pas + "px";
         box.style.width = Math.round(sirka) + "px";
-        box.style.height = Math.round(sirka * POMER) + "px";
+        box.style.height = Math.round(sirka * pom) + "px";
       }
     }
-    for (const k of kat) {
+    for (const { k, t } of kat) {
       const s = [...document.querySelectorAll(".s__in.media")].find((x) => x.querySelector(".cat__title")?.textContent.trim() === k.title);
       if (!s) continue;
+      if (t) s.classList.add("dxpl-t-" + t);
       const fig = s.querySelector(".media__img");
       if (k.plavajuce && fig && !fig.querySelector(":scope > .dxpl")) {
         fig.classList.add("dxpl-obr");
+        if (t) fig.classList.add("dxpl-t-" + t);
         fig.appendChild(vrstva(k.plavajuce, "dxpl--obr"));
       }
       if (k.skupiny) {

@@ -1,4 +1,4 @@
-/* DAHAX – plávajúce výrobky (DK MONT, assets/dahax-plavajuce.js). Farby DK MONT: tmavomodrá #031025 → #034174 (dkmont.cz). */
+/* DAHAX – plávajúce výrobky (DK MONT, BAUDER; assets/dahax-plavajuce.js). Farby DK MONT: tmavomodrá #031025 → #034174 (dkmont.cz). */
 .dxpl{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .dxpl__v{position:absolute;display:block;transform:rotate(var(--r));animation:dxpl-plav var(--d) ease-in-out var(--o) infinite alternate;will-change:transform}
 .dxpl__v img{display:block;width:100%;height:auto;filter:drop-shadow(0 22px 22px rgba(0,0,0,.5)) drop-shadow(0 0 1px rgba(255,255,255,.25))}
@@ -41,6 +41,12 @@
 .brands2__grid:has(img[src*="img/dkmont/"]) > button:hover::after{transform:scaleX(1)}
 .brands2__grid:has(img[src*="img/dkmont/"]) > button[data-popis]::before{content:attr(data-popis);position:absolute;left:22px;bottom:20px;z-index:1;
   color:#fff;font:700 20px/1.1 var(--f-d,inherit);letter-spacing:.04em;text-transform:uppercase;text-align:left}
+
+/* farby BAUDER (firma.plavajuceTema = "bauder"): grafit a oranžová #ee7002 z loga Bauder */
+.brand__side.dxpl-side.dxpl-t-bauder{background:radial-gradient(130% 60% at 50% 42%,#3b3e45 0%,#1d1f23 50%,#0d0e10 100%)}
+.brand__side.dxpl-side.dxpl-t-bauder::before{background:#ee7002}
+.media__img.dxpl-obr.dxpl-t-bauder{background:radial-gradient(110% 80% at 50% 42%,#3b3e45 0%,#1d1f23 52%,#0d0e10 100%)}
+.dxpl-skupiny.dxpl-t-bauder .rows > li[data-skupina]::before{color:#ee7002}
 
 @media (prefers-reduced-motion:reduce){
   .dxpl__v,.brands2__grid:has(img[src*="img/dkmont/"]) > button img{animation:none}

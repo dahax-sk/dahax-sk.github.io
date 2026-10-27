@@ -449,3 +449,5 @@
 /* SAINT-GOBAIN úvod – video ako pri KLIMAS: čiernobiele zafarbené do žltej Weber (#FFE600) z loga, dole tmavé pod nadpis (návrh P4) */
 .brand:has(img[src*="saint-gobain-weber-biele"]) .dxv-bg{opacity:.92;mix-blend-mode:normal;filter:grayscale(1) contrast(1.45) brightness(1.05)}
 .brand:has(img[src*="saint-gobain-weber-biele"]) .brand__side:has(.dxv-bg)::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:multiply;background:linear-gradient(180deg,rgba(255,230,0,.95) 0%,rgba(205,180,0,.93) 45%,rgba(40,34,0,.97) 100%)}
+/* SAINT-GOBAIN strana fasády – väčšie obrázky výrobkov v kartách, menší okraj (návrh P4) */
+.cards:has(img[src*="saint-gobain-fasada"]) .pc__img{padding:8px 8px 0}
