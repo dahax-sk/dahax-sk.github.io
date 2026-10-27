@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.33",
+  "version": "2026-10-27.34",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -3497,7 +3497,7 @@
       ],
       "eyebrow": "POLYFORM – EPS",
       "tagline": "Výrobca expandovaného polystyrénu, člen skupiny HIRSCH Servo Group.",
-      "theme": "light",
+      "theme": "red",
       "categories": [
         {
           "id": "eps",
@@ -3526,6 +3526,33 @@
               "id": "spodna-stavba",
               "name": "Spodná stavba",
               "description": "Soklové dosky EPS 150 / 200 · Perimeter"
+            }
+          ],
+          "documents": [
+            {
+              "title": "Technický list – EPS 70 F (fasáda)",
+              "href": "docs/polyform/technicky-list-eps-70-f-fasada.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Technický list – EPS 100",
+              "href": "docs/polyform/technicky-list-eps-100.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Technický list – EPS 150 NEO sivý",
+              "href": "docs/polyform/technicky-list-eps-150-neo-sivy.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Odporúčané použitie tepelných a zvukových izolácií",
+              "href": "docs/polyform/odporucane-pouzitie-tepelnych-a-zvukovych-izolacii.pdf",
+              "kind": "ine"
+            },
+            {
+              "title": "Balenie a doprava 2025",
+              "href": "docs/polyform/balenie-a-doprava-2025.pdf",
+              "kind": "ine"
             }
           ]
         },
@@ -3666,12 +3693,34 @@
               ]
             }
           ],
-          "image": "img/sortiment/polyform-spadove-strechy.webp"
+          "image": "img/sortiment/polyform-strechy-zostava.webp",
+          "imageOnWhite": false,
+          "documents": [
+            {
+              "title": "Technický list – EPS 100",
+              "href": "docs/polyform/technicky-list-eps-100.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Technický list – EPS 150 NEO sivý",
+              "href": "docs/polyform/technicky-list-eps-150-neo-sivy.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Katalóg výrobkov POLYFORM 04/2024",
+              "href": "docs/polyform/katalog-vyrobkov-polyform-04-2024.pdf",
+              "kind": "katalog"
+            },
+            {
+              "title": "Balenie a doprava 2025",
+              "href": "docs/polyform/balenie-a-doprava-2025.pdf",
+              "kind": "ine"
+            }
+          ]
         }
       ],
       "profile": {
         "since": "1993",
-        "country": "Slovensko",
         "hq": "Podolínec, Prešovský kraj",
         "about": "POLYFORM vyrába od roku 1993 v Podolínci tepelné a zvukové izolácie a obaly z EPS. Od januára 2006 je členom rakúskej HIRSCH Servo Group, zamestnáva viac ako 70 ľudí v dvoch závodoch. Dosky sú samozhášavé s retardérom PFR, sivý EPS 150 NEO dosahuje λD 0,031.",
         "facts": [
@@ -3710,8 +3759,17 @@
           {
             "title": "POLYFORM – katalóg 04/2024",
             "url": "https://www.polyform.sk/wp-content/uploads/2024/03/Polyform_katalog_3.2024_compressed.pdf"
+          },
+          {
+            "title": "POLYFORM – o spoločnosti (fotografie závodu)",
+            "url": "https://www.polyform.sk/o-spolocnosti"
+          },
+          {
+            "title": "POLYFORM – izolácia strechy",
+            "url": "https://polyform.sk/izolacia-strechy"
           }
-        ]
+        ],
+        "headLogo": "img/brand/polyform.webp"
       },
       "tier": "core",
       "website": "https://www.polyform.sk",
@@ -3751,7 +3809,8 @@
           "href": "docs/polyform/balenie-a-doprava-2025.pdf",
           "kind": "ine"
         }
-      ]
+      ],
+      "video": "video/polyform/polyform-firma.mp4"
     },
     {
       "id": "sucha-vystavba",
