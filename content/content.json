@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.32",
+  "version": "2026-10-27.33",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -2528,15 +2528,15 @@
           "id": "fasady",
           "name": "Fasády ETICS",
           "eyebrow": "HOLCIM – fasády ETICS",
-          "title": "Kamenná vlna pre fasády ETICS",
-          "intro": "PRO FACADE 35 so zvýšenou pevnosťou a rad HOLCIM FACADE od λD 0,034 po tuhú dosku S – všetky A1, hydrofóbne a paropriepustné.",
+          "title": "HOLCIM PRO FACADE 35",
+          "intro": "Doska, ktorú predávame na zateplenie fasád ETICS.",
           "image": "img/holcim/holcim-balik-fasada.webp",
-          "imageCaption": "Kamenná vlna HOLCIM pre fasády ETICS",
+          "imageCaption": "Kamenná vlna HOLCIM – balenie fasádnych dosiek",
           "products": [
             {
               "id": "pro-facade-35",
               "name": "HOLCIM PRO FACADE 35",
-              "description": "ETICS so zvýšenou mechanickou odolnosťou – aj sokle, nižšie podlažia a pasívne domy.",
+              "description": "Zvýšená pevnosť pre sokle, nižšie podlažia aj pasívne domy.",
               "specs": [
                 {
                   "value": "0,035",
@@ -2573,177 +2573,14 @@
                   "kind": "ine"
                 }
               ]
-            },
-            {
-              "id": "facade-34",
-              "name": "HOLCIM FACADE 34",
-              "description": "Vrchol línie – najlepšia izolácia pri najmenšej hrúbke steny.",
-              "specs": [
-                {
-                  "value": "0,034",
-                  "label": "λD [W/(m·K)]",
-                  "accent": true
-                },
-                {
-                  "value": "≥ 20 kPa",
-                  "label": "pevnosť v tlaku CS(10)"
-                },
-                {
-                  "value": "≥ 10 kPa",
-                  "label": "pevnosť v ťahu TR"
-                },
-                {
-                  "value": "50 – 250 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Technický list – HOLCIM FACADE 34 (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-facade-34_0.pdf",
-                  "kind": "technicky-list",
-                  "external": true
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – HOLCIM FACADE 34 (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-facade-34-pl.pdf",
-                  "kind": "vyhlasenie",
-                  "external": true
-                }
-              ]
-            },
-            {
-              "id": "facade-35",
-              "name": "HOLCIM FACADE 35",
-              "description": "Pre náročné systémy ETICS a nízkoenergetické domy – výrazne znižuje tepelné straty budovy.",
-              "specs": [
-                {
-                  "value": "0,035",
-                  "label": "λD [W/(m·K)]",
-                  "accent": true
-                },
-                {
-                  "value": "≥ 20 kPa",
-                  "label": "pevnosť v tlaku CS(10)"
-                },
-                {
-                  "value": "≥ 200 N",
-                  "label": "bodové zaťaženie PL(5)"
-                },
-                {
-                  "value": "50 – 250 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Technický list – HOLCIM FACADE 35 (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-facade-35.pdf",
-                  "kind": "technicky-list",
-                  "external": true
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – HOLCIM FACADE 35 (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-facade-35-pl.pdf",
-                  "kind": "vyhlasenie",
-                  "external": true
-                }
-              ]
-            },
-            {
-              "id": "facade-39",
-              "name": "HOLCIM FACADE 39",
-              "description": "Overená doska pre bežné ETICS – tepelná aj zvuková izolácia, vyššia pevnosť.",
-              "specs": [
-                {
-                  "value": "0,039",
-                  "label": "λD [W/(m·K)]",
-                  "accent": true
-                },
-                {
-                  "value": "≥ 40 kPa",
-                  "label": "pevnosť v tlaku CS(10)"
-                },
-                {
-                  "value": "≥ 15 kPa",
-                  "label": "pevnosť v ťahu TR"
-                },
-                {
-                  "value": "20 – 200 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Technický list – HOLCIM FACADE 39 (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-facade-39.pdf",
-                  "kind": "technicky-list",
-                  "external": true
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – HOLCIM FACADE 39 (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-facade-39-pl.pdf",
-                  "kind": "vyhlasenie",
-                  "external": true
-                }
-              ]
-            },
-            {
-              "id": "facade-s",
-              "name": "HOLCIM FACADE S",
-              "description": "Tenká tuhá doska s nepravidelnou štruktúrou vlákien, odolnejšia voči poškodeniu.",
-              "specs": [
-                {
-                  "value": "0,037",
-                  "label": "λD [W/(m·K)], hrúbka < 50 mm",
-                  "accent": true
-                },
-                {
-                  "value": "≥ 30 kPa",
-                  "label": "pevnosť v tlaku CS(10)"
-                },
-                {
-                  "value": "≥ 15 kPa",
-                  "label": "pevnosť v ťahu TR"
-                },
-                {
-                  "value": "20 – 50 mm",
-                  "label": "hrúbky, doska 1200 × 600 mm"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Technický list – HOLCIM FACADE S (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/karta-techniczna-holcim-facade-s.pdf",
-                  "kind": "technicky-list",
-                  "external": true
-                },
-                {
-                  "title": "Vyhlásenie o parametroch – HOLCIM FACADE S (PL)",
-                  "href": "https://www.holcim.pl/sites/poland2/files/docs/dwu-holcim-facade-s-pl.pdf",
-                  "kind": "vyhlasenie",
-                  "external": true
-                }
-              ]
             }
           ],
-          "specs": [
-            {
-              "value": "0,035",
-              "label": "λD [W/(m·K)] – PRO FACADE 35",
-              "accent": true
-            },
-            {
-              "value": "A1",
-              "label": "nehorľavé dosky",
-              "accent": true
-            },
-            {
-              "value": "20 – 250 mm",
-              "label": "rozsah hrúbok, doska 1200 × 600 mm"
-            }
-          ],
-          "imageOnWhite": true
+          "imageOnWhite": true,
+          "chips": [
+            "A1\nnehorľavá",
+            "Hydrofóbna\nWS ≤ 1 kg/m²",
+            "Paropriepustná\nμ = 1"
+          ]
         },
         {
           "id": "ploche-strechy",
@@ -2936,7 +2773,7 @@
           }
         ],
         "makes": [
-          "Fasády ETICS – PRO FACADE 35, FACADE 34, 35, 39, S",
+          "Fasády ETICS – HOLCIM PRO FACADE 35",
           "Ploché strechy – ROOF BASE, TOP, SOLO"
         ],
         "sources": [

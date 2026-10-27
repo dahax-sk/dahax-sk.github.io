@@ -424,3 +424,14 @@
 .brand--green .scope__role{color:#8dc63f}
 .brand--green .dxv-bg{opacity:.92;mix-blend-mode:normal;filter:grayscale(1) contrast(1.5) brightness(1.1)}
 .brand--green .brand__side:has(.dxv-bg)::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:multiply;background:linear-gradient(180deg,rgba(141,198,63,.9) 0%,rgba(80,140,30,.92) 55%,rgba(30,60,12,.97) 100%)}
+
+/* HOLCIM strana 22 (PRO FACADE 35) – ikonky vlastností v .chips. Návrh P4 pre hlavného programátora
+   (zdieľané CSS, napr. dahax-upravy-3.css). Obmedzené na snímku s obrázkom holcim-balik-fasada,
+   ostatné .chips v aplikácii sa nemenia. Ikonky: aplikacia/img/holcim/holcim-ikona-*.svg. */
+.media:has(img[src*="holcim-balik-fasada"]) .media__text{justify-content:center}
+.media:has(img[src*="holcim-balik-fasada"]) .chips{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+.media:has(img[src*="holcim-balik-fasada"]) .chips li{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:18px 18px 16px;background:rgba(4,187,241,.08);border:1px solid rgba(4,187,241,.35);color:#fff;font:700 18px/1.25 var(--f-d);letter-spacing:.03em;white-space:pre-line}
+.media:has(img[src*="holcim-balik-fasada"]) .chips li::before{content:"";width:44px;height:44px;background:center/contain no-repeat}
+.media:has(img[src*="holcim-balik-fasada"]) .chips li:nth-child(1)::before{background-image:url(../img/holcim/holcim-ikona-a1.svg)}
+.media:has(img[src*="holcim-balik-fasada"]) .chips li:nth-child(2)::before{background-image:url(../img/holcim/holcim-ikona-hydrofobna.svg)}
+.media:has(img[src*="holcim-balik-fasada"]) .chips li:nth-child(3)::before{background-image:url(../img/holcim/holcim-ikona-paropriepustna.svg)}
