@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.34",
+  "version": "2026-10-27.35",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -3769,7 +3769,7 @@
             "url": "https://polyform.sk/izolacia-strechy"
           }
         ],
-        "headLogo": "img/brand/polyform.webp"
+        "headLogo": "img/brand/polyform-cervene.webp"
       },
       "tier": "core",
       "website": "https://www.polyform.sk",

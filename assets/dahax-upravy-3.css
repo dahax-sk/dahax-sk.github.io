@@ -435,3 +435,6 @@
 .media:has(img[src*="holcim-balik-fasada"]) .chips li:nth-child(1)::before{background-image:url(../img/holcim/holcim-ikona-a1.svg)}
 .media:has(img[src*="holcim-balik-fasada"]) .chips li:nth-child(2)::before{background-image:url(../img/holcim/holcim-ikona-hydrofobna.svg)}
 .media:has(img[src*="holcim-balik-fasada"]) .chips li:nth-child(3)::before{background-image:url(../img/holcim/holcim-ikona-paropriepustna.svg)}
+
+/* POLYFORM – v hlavičke úvodu len červený nápis bez bielej plochy (img/brand/polyform-cervene.webp, 724 × 99); výška ako červený nápis v pôvodnom logu */
+.brand__hlogo[src*="polyform-cervene"]{height:78px}
