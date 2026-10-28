@@ -143,16 +143,26 @@
     });
   };
 
-  const kontrola = () => {
+  const postavVsetko = () => {
+    const out = [];
     for (const [kluc, k] of cats) {
       const s = najdi(k);
-      if (!s) continue;
-      const d = s.parentNode.querySelector(":scope > .dxe") || postav(s, k, kluc);
-      hraj(d);
+      if (s) out.push(s.parentNode.querySelector(":scope > .dxe") || postav(s, k, kluc));
     }
+    return out;
+  };
+  const kontrola = () => {
+    postavVsetko().forEach(hraj);
     setTimeout(kontrola, 500);
   };
+  // 28. 10. 2026: rozloženie kotvy sa postaví hneď, keď bundle vloží snímku (MutationObserver beží pred vykreslením),
+  // nie až pri ďalšej kontrole o ≤ 0,5 s – inak po prekliknutí na chvíľu prebleskla pôvodná snímka a okná „preskočili“
+  const start = (c) => {
+    load(c);
+    new MutationObserver(() => { if (cats.size) postavVsetko(); }).observe(document.documentElement, { childList: true, subtree: true });
+    kontrola();
+  };
 
-  if (window.__DAHAX_CONTENT__) { load(window.__DAHAX_CONTENT__); kontrola(); }
-  else fetch("content/content.json", { cache: "no-cache" }).then((r) => r.json()).then((c) => { load(c); kontrola(); }).catch(() => {});
+  if (window.__DAHAX_CONTENT__) start(window.__DAHAX_CONTENT__);
+  else fetch("content/content.json", { cache: "no-cache" }).then((r) => r.json()).then(start).catch(() => {});
 })();
