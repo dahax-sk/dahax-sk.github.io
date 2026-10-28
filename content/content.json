@@ -1,8 +1,8 @@
 {
-  "version": "2026-10-28.7",
+  "version": "2026-10-28.8",
   "company": {
     "name": "DAHAX SK, s.r.o.",
-    "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
+    "slogan": "Izolácie a stavebné systémy od overených európskych výrobcov.",
     "web": "www.dahax.sk",
     "phone": "+421 908 927 459",
     "email": "dahaxsk@dahaxsk.sk",
@@ -18,7 +18,30 @@
         "address": "Areál bývalého poľnohospodárskeho družstva, 935 24 Čajkov, okr. Levice"
       }
     ],
-    "delivery": "Doprava po celom Slovensku a Česku"
+    "delivery": "Doprava po celom Slovensku a Česku",
+    "uvod": {
+      "kicker": "Oficiálny dovozca pre SK a CZ",
+      "nadpisKratky": "Izolácie a stavebné systémy – priamo od výrobcov.",
+      "podnadpis": "Priamy dovoz, stabilné ceny a istota dodávky – pre predajne stavebnín, firmy aj realizačné tímy na Slovensku a v Česku.",
+      "cisla": [
+        {
+          "value": "15",
+          "label": "značiek"
+        },
+        {
+          "value": "2",
+          "label": "sklady"
+        },
+        {
+          "value": "SK + CZ",
+          "label": "doprava"
+        },
+        {
+          "value": "1",
+          "label": "kontakt na všetko"
+        }
+      ]
+    }
   },
   "why": {
     "eyebrow": "Veľkoobchodný partner",
@@ -6993,7 +7016,7 @@
   },
   "realizations": {
     "eyebrow": "Naše realizácie",
-    "title": "KLIMAS v stavebninách",
+    "title": "KLIMAS u našich zákazníkov",
     "intro": "Skutočné predajne, ktoré DAHAX vybavil sortimentom KLIMAS – všetky fotografie na jednom mieste.",
     "statement": "Každá realizácia je šitá na mieru predajni",
     "photos": [

@@ -310,8 +310,6 @@
 .deck.dxr-open .rail{transform:none;box-shadow:-18px 0 50px rgba(0,0,0,.55)}
 .deck::after{content:"";position:absolute;right:0;top:50%;z-index:29;width:4px;height:88px;margin-top:-4px;background:var(--red);opacity:.55;pointer-events:none;transition:opacity .3s}
 .deck.dxr-open::after{opacity:0}
-/* číslo snímky vpravo dole („12 / 72“) – dahax-cislo.js */
-.dxc{position:absolute;right:14px;bottom:12px;z-index:28;padding:4px 9px 3px;background:rgba(10,11,13,.62);color:rgba(255,255,255,.78);font:600 13px/1 var(--f-d);letter-spacing:.08em;font-variant-numeric:tabular-nums;pointer-events:none}
 
 /* KLIMAS – TOP doplnky (panely z regálu) a snímka 6 – návrh 2 Programátora 2: panel 980 px s bežiacou bielou linkou, menšie texty, Video pri šípke */
 @property --dxa { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
