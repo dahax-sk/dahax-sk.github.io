@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-27.59",
+  "version": "2026-10-28.1",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -3501,21 +3501,16 @@
       "categories": [
         {
           "id": "eps",
-          "name": "EPS pre celý dom",
+          "name": "EPS a ploché strechy",
           "title": "EPS pre celý dom",
-          "intro": "Výrobca expandovaného polystyrénu, člen skupiny HIRSCH Servo Group.",
-          "image": "img/product/polyform-eps.webp",
-          "imageOnWhite": true,
+          "intro": "Biely aj sivý EPS NEO, samozhášavý s retardérom horenia PFR.",
+          "image": "img/sortiment/polyform-strechy-zostava.webp",
+          "imageOnWhite": false,
           "products": [
             {
               "id": "fasady",
               "name": "Fasády",
               "description": "EPS 70 F · EPS 80 F · NEO · NSP"
-            },
-            {
-              "id": "ploche-strechy",
-              "name": "Ploché strechy",
-              "description": "EPS 100 · EPS 150 · EPS 100 NEO"
             },
             {
               "id": "podlahy",
@@ -3526,46 +3521,16 @@
               "id": "spodna-stavba",
               "name": "Spodná stavba",
               "description": "Soklové dosky EPS 150 / 200 · Perimeter"
-            }
-          ],
-          "documents": [
-            {
-              "title": "Technický list – EPS 70 F (fasáda)",
-              "href": "docs/polyform/technicky-list-eps-70-f-fasada.pdf",
-              "kind": "technicky-list"
             },
             {
-              "title": "Technický list – EPS 100",
-              "href": "docs/polyform/technicky-list-eps-100.pdf",
-              "kind": "technicky-list"
+              "id": "ploche-strechy",
+              "name": "Ploché strechy",
+              "description": "EPS 100 · EPS 150 · EPS 100 NEO"
             },
-            {
-              "title": "Technický list – EPS 150 NEO sivý",
-              "href": "docs/polyform/technicky-list-eps-150-neo-sivy.pdf",
-              "kind": "technicky-list"
-            },
-            {
-              "title": "Odporúčané použitie tepelných a zvukových izolácií",
-              "href": "docs/polyform/odporucane-pouzitie-tepelnych-a-zvukovych-izolacii.pdf",
-              "kind": "ine"
-            },
-            {
-              "title": "Balenie a doprava 2025",
-              "href": "docs/polyform/balenie-a-doprava-2025.pdf",
-              "kind": "ine"
-            }
-          ]
-        },
-        {
-          "id": "spadove-strechy",
-          "name": "Ploché strechy",
-          "eyebrow": "POLYFORM – ploché strechy",
-          "title": "Spádové dosky EPS a multi ROOF",
-          "products": [
             {
               "id": "eps-spadove-dosky",
               "name": "EPS spádové dosky",
-              "description": "Jedno- a dvojspádové dosky a atikové kliny z EPS 100/150/200 pre nové aj rekonštruované strechy, terasy a balkóny.",
+              "description": "Jedno- a dvojspádové dosky a atikové kliny z EPS 100 – 200.",
               "specs": [
                 {
                   "value": "2 % / 1 %",
@@ -3601,7 +3566,7 @@
             {
               "id": "eps-spadove-dosky-neo",
               "name": "Spádové dosky NEO",
-              "description": "Spádové dosky zo sivého EPS 100 NEO, 150 NEO a 200 NEO s nižšou tepelnou vodivosťou.",
+              "description": "Zo sivého EPS NEO s nižšou tepelnou vodivosťou.",
               "specs": [
                 {
                   "value": "0,031",
@@ -3635,36 +3600,9 @@
               ]
             },
             {
-              "id": "ukladaci-plan",
-              "name": "Ukladací plán spádovania",
-              "description": "Návrh spádovania strechy s kusovníkom a 3D modelom pre realizačné firmy a projektantov.",
-              "specs": [
-                {
-                  "value": "3D model",
-                  "label": "súčasť ukladacieho plánu",
-                  "accent": true
-                },
-                {
-                  "value": "JSD · DSD",
-                  "label": "jedno- a dvojspádové riešenie"
-                },
-                {
-                  "value": "15 – 30 kg/m³",
-                  "label": "objemová hmotnosť EPS skladby"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Katalóg výrobkov POLYFORM 04/2024",
-                  "href": "docs/polyform/katalog-vyrobkov-polyform-04-2024.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            },
-            {
               "id": "multi-roof",
               "name": "POLYFORM multi ROOF",
-              "description": "Ľahký skladaný plášť: trapézový plech, minerálna izolácia, EPS a PVC fólia alebo asfaltové pásy.",
+              "description": "Ľahký skladaný strešný plášť na trapézovom plechu.",
               "specs": [
                 {
                   "value": "REI 30",
@@ -3691,11 +3629,41 @@
                   "kind": "katalog"
                 }
               ]
+            },
+            {
+              "id": "ukladaci-plan",
+              "name": "Ukladací plán spádovania",
+              "description": "Návrh spádovania s kusovníkom a 3D modelom.",
+              "specs": [
+                {
+                  "value": "3D model",
+                  "label": "súčasť ukladacieho plánu",
+                  "accent": true
+                },
+                {
+                  "value": "JSD · DSD",
+                  "label": "jedno- a dvojspádové riešenie"
+                },
+                {
+                  "value": "15 – 30 kg/m³",
+                  "label": "objemová hmotnosť EPS skladby"
+                }
+              ],
+              "documents": [
+                {
+                  "title": "Katalóg výrobkov POLYFORM 04/2024",
+                  "href": "docs/polyform/katalog-vyrobkov-polyform-04-2024.pdf",
+                  "kind": "katalog"
+                }
+              ]
             }
           ],
-          "image": "img/sortiment/polyform-strechy-zostava.webp",
-          "imageOnWhite": false,
           "documents": [
+            {
+              "title": "Technický list – EPS 70 F (fasáda)",
+              "href": "docs/polyform/technicky-list-eps-70-f-fasada.pdf",
+              "kind": "technicky-list"
+            },
             {
               "title": "Technický list – EPS 100",
               "href": "docs/polyform/technicky-list-eps-100.pdf",
@@ -3707,14 +3675,30 @@
               "kind": "technicky-list"
             },
             {
-              "title": "Katalóg výrobkov POLYFORM 04/2024",
-              "href": "docs/polyform/katalog-vyrobkov-polyform-04-2024.pdf",
-              "kind": "katalog"
+              "title": "Odporúčané použitie tepelných a zvukových izolácií",
+              "href": "docs/polyform/odporucane-pouzitie-tepelnych-a-zvukovych-izolacii.pdf",
+              "kind": "ine"
             },
             {
               "title": "Balenie a doprava 2025",
               "href": "docs/polyform/balenie-a-doprava-2025.pdf",
               "kind": "ine"
+            },
+            {
+              "title": "Katalóg výrobkov POLYFORM 04/2024",
+              "href": "docs/polyform/katalog-vyrobkov-polyform-04-2024.pdf",
+              "kind": "katalog"
+            }
+          ],
+          "eyebrow": "POLYFORM – EPS a ploché strechy",
+          "skupiny": [
+            {
+              "od": 0,
+              "nazov": "Tepelné izolácie"
+            },
+            {
+              "od": 4,
+              "nazov": "Spádové strechy"
             }
           ]
         }
@@ -4148,154 +4132,11 @@
       "theme": "navy",
       "categories": [
         {
-          "id": "sadrokarton-a-sadry",
-          "name": "Sadrokartón a sadry",
-          "eyebrow": "KNAUF – suchá výstavba",
-          "title": "Sadrokartón, suché sadrové a pastovité tmely",
-          "intro": "Sadrokartónové dosky pre priečky, podhľady a predsadené steny a k nim tmely na spoje a celoplošné stierky – suché sadrové na zamiešanie s vodou aj mokré pastovité, pripravené na okamžité použitie.",
-          "image": "img/knauf/knauf-sadrokarton-a-sadry.webp",
-          "imageOnWhite": false,
-          "products": [
-            {
-              "id": "sadrokartonove-dosky",
-              "name": "Sadrokartónové dosky",
-              "description": "WHITE 12,5 a 15 mm · GREEN impregnovaná · DIAMANT tvrdená · FIREBOARD protipožiarna",
-              "specs": [
-                {
-                  "value": "12,5 mm",
-                  "label": "štandardná hrúbka dosky WHITE",
-                  "accent": true
-                },
-                {
-                  "value": "8,5 kg/m²",
-                  "label": "plošná hmotnosť WHITE 12,5 mm"
-                },
-                {
-                  "value": "A1",
-                  "label": "reakcia na oheň FIREBOARD"
-                },
-                {
-                  "value": "70 %",
-                  "label": "max. relatívna vlhkosť pre GREEN"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Vyhlásenie o parametroch – doska Knauf WHITE 12,5 mm",
-                  "href": "docs/knauf/vyhlasenie-o-parametroch-knauf-white-12-5.pdf",
-                  "kind": "vyhlasenie"
-                }
-              ]
-            },
-            {
-              "id": "suche-sadrove-tmely",
-              "name": "Suché sadrové tmely",
-              "description": "Uniflott · Fugenfüller leicht – prášok na zamiešanie s vodou, vrecia 5 a 25 kg",
-              "specs": [
-                {
-                  "value": "5 / 25 kg",
-                  "label": "balenie vo vreci",
-                  "accent": true
-                },
-                {
-                  "value": "3B",
-                  "label": "typ tmelu Fugenfüller podľa EN 13963"
-                },
-                {
-                  "value": "HRAK",
-                  "label": "Uniflott aj bez výstužnej pásky"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Technický list – Knauf Uniflott",
-                  "href": "docs/knauf/technicky-list-knauf-uniflott.pdf",
-                  "kind": "technicky-list"
-                },
-                {
-                  "title": "Technický list – Knauf Fugenfüller leicht",
-                  "href": "docs/knauf/technicky-list-knauf-fugenfuller-leicht.pdf",
-                  "kind": "technicky-list"
-                }
-              ]
-            },
-            {
-              "id": "mokre-pastovite-tmely",
-              "name": "Mokré pastovité tmely",
-              "description": "Fill & Finish Light · Roll & Spray MAX – hotové na okamžité použitie, ručne, valčekom aj strojom Airless",
-              "specs": [
-                {
-                  "value": "hotové",
-                  "label": "pripravené na okamžité použitie",
-                  "accent": true
-                },
-                {
-                  "value": "−35 %",
-                  "label": "nižšia hmotnosť Fill & Finish Light"
-                },
-                {
-                  "value": "do 5 mm",
-                  "label": "vrstva Roll & Spray MAX"
-                }
-              ],
-              "documents": [
-                {
-                  "title": "Technický list – Knauf Fill & Finish Light",
-                  "href": "docs/knauf/technicky-list-knauf-fill-finish-light.pdf",
-                  "kind": "technicky-list"
-                },
-                {
-                  "title": "Technický list – Knauf Roll & Spray MAX",
-                  "href": "docs/knauf/technicky-list-knauf-roll-spray-max.pdf",
-                  "kind": "technicky-list"
-                },
-                {
-                  "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
-                  "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
-                  "kind": "katalog"
-                }
-              ]
-            }
-          ],
-          "documents": [
-            {
-              "title": "Vyhlásenie o parametroch – doska Knauf WHITE 12,5 mm",
-              "href": "docs/knauf/vyhlasenie-o-parametroch-knauf-white-12-5.pdf",
-              "kind": "vyhlasenie"
-            },
-            {
-              "title": "Technický list – Knauf Uniflott",
-              "href": "docs/knauf/technicky-list-knauf-uniflott.pdf",
-              "kind": "technicky-list"
-            },
-            {
-              "title": "Technický list – Knauf Fugenfüller leicht",
-              "href": "docs/knauf/technicky-list-knauf-fugenfuller-leicht.pdf",
-              "kind": "technicky-list"
-            },
-            {
-              "title": "Technický list – Knauf Fill & Finish Light",
-              "href": "docs/knauf/technicky-list-knauf-fill-finish-light.pdf",
-              "kind": "technicky-list"
-            },
-            {
-              "title": "Technický list – Knauf Roll & Spray MAX",
-              "href": "docs/knauf/technicky-list-knauf-roll-spray-max.pdf",
-              "kind": "technicky-list"
-            },
-            {
-              "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
-              "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
-              "kind": "katalog"
-            }
-          ]
-        },
-        {
           "id": "produkty",
-          "name": "Tmely a dosky",
-          "eyebrow": "KNAUF – vybrané produkty",
-          "title": "Tmely a dosky Knauf",
-          "intro": "Overené produkty Knauf pre sadrokartónové konštrukcie – od dosky cez suché tmelenie spojov až po hotové pastovité stierky.",
+          "name": "Sadrokartón a tmely",
+          "eyebrow": "KNAUF – suchá výstavba",
+          "title": "Sadrokartón a tmely Knauf",
+          "intro": "Dosky WHITE, GREEN, DIAMANT a FIREBOARD a k nim tmely – od suchého tmelenia spojov po hotové pastovité stierky.",
           "products": [
             {
               "id": "knauf-uniflott",
@@ -4468,6 +4309,38 @@
                   "kind": "katalog"
                 }
               ]
+            }
+          ],
+          "documents": [
+            {
+              "title": "Vyhlásenie o parametroch – doska Knauf WHITE 12,5 mm",
+              "href": "docs/knauf/vyhlasenie-o-parametroch-knauf-white-12-5.pdf",
+              "kind": "vyhlasenie"
+            },
+            {
+              "title": "Technický list – Knauf Uniflott",
+              "href": "docs/knauf/technicky-list-knauf-uniflott.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Technický list – Knauf Fugenfüller leicht",
+              "href": "docs/knauf/technicky-list-knauf-fugenfuller-leicht.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Technický list – Knauf Fill & Finish Light",
+              "href": "docs/knauf/technicky-list-knauf-fill-finish-light.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Technický list – Knauf Roll & Spray MAX",
+              "href": "docs/knauf/technicky-list-knauf-roll-spray-max.pdf",
+              "kind": "technicky-list"
+            },
+            {
+              "title": "Brožúra Knauf – tmelenie a strojové stierkovanie",
+              "href": "docs/knauf/brozura-knauf-tmelenie-a-strojove-stierkovanie.pdf",
+              "kind": "katalog"
             }
           ]
         }
@@ -5883,7 +5756,29 @@
                 }
               ],
               "image": "img/hoch-xps/hoch-xps-300-l.webp",
-              "type": "univerzálna doska · hrana L"
+              "type": "univerzálna doska · hrana L",
+              "gallery": [
+                {
+                  "src": "img/hoch-xps/hoch-xps-pouzitie-pivnica.webp",
+                  "caption": "Izolácia základov a stien pivníc"
+                },
+                {
+                  "src": "img/hoch-xps/hoch-xps-pouzitie-podlaha-na-zemi.webp",
+                  "caption": "Izolácia podlahy na zemi"
+                },
+                {
+                  "src": "img/hoch-xps/hoch-xps-pouzitie-sendvicove-murivo.webp",
+                  "caption": "Izolácia sendvičového muriva"
+                },
+                {
+                  "src": "img/hoch-xps/hoch-xps-pouzitie-obratena-strecha.webp",
+                  "caption": "Izolácia obrátenej strechy"
+                },
+                {
+                  "src": "img/hoch-xps/hoch-xps-pouzitie-tepelne-mosty.webp",
+                  "caption": "Izolácia tepelných mostov"
+                }
+              ]
             },
             {
               "id": "hoch-xps-500",
@@ -5921,7 +5816,13 @@
                 }
               ],
               "image": "img/hoch-xps/hoch-xps-500-pw.webp",
-              "type": "vyššie zaťaženie · hrana PW"
+              "type": "vyššie zaťaženie · hrana PW",
+              "gallery": [
+                {
+                  "src": "img/hoch-xps/hoch-xps-pouzitie-podlaha.webp",
+                  "caption": "Izolácia podlahy"
+                }
+              ]
             },
             {
               "id": "hoch-xps-700",
@@ -5959,7 +5860,13 @@
                 }
               ],
               "image": "img/hoch-xps/hoch-xps-700-i.webp",
-              "type": "najpevnejšia · hrana I"
+              "type": "najpevnejšia · hrana I",
+              "gallery": [
+                {
+                  "src": "img/hoch-xps/hoch-xps-pouzitie-podlaha.webp",
+                  "caption": "Izolácia podlahy"
+                }
+              ]
             }
           ],
           "legend": [
@@ -5977,62 +5884,6 @@
             }
           ],
           "note": "Ďalej v ponuke: HOCH XPS 300 W s vaflovým povrchom, tenký XPS 200 (20 a 30 mm) a dlhý formát Long 2400 × 600 mm."
-        },
-        {
-          "id": "pouzitie",
-          "name": "Použitie",
-          "eyebrow": "HOCH XPS – použitie",
-          "title": "Kde sa HOCH XPS používa",
-          "image": "img/hoch-xps/hoch-xps-pouzitie-pivnica.webp",
-          "features": [
-            {
-              "title": "Základy a steny pivníc",
-              "text": "Izolácia pod úrovňou terénu – voda ani mráz dosku nepoškodia."
-            },
-            {
-              "title": "Podlaha na zemi",
-              "text": "Pod betónovú dosku aj podlahu na teréne, XPS 300 až 700."
-            },
-            {
-              "title": "Sendvičové murivo",
-              "text": "Izolácia v jadre trojvrstvovej steny."
-            },
-            {
-              "title": "Obrátená strecha",
-              "text": "Doska nad hydroizoláciou ju chráni pred mrazom aj poškodením."
-            },
-            {
-              "title": "Tepelné mosty",
-              "text": "Vence, preklady, parapety a balkóny."
-            },
-            {
-              "title": "Podlahy a parkoviská",
-              "text": "XPS 500 a 700 pre garáže, terasy a pojazdné plochy."
-            }
-          ],
-          "gallery": [
-            {
-              "src": "img/hoch-xps/hoch-xps-pouzitie-podlaha-na-zemi.webp",
-              "caption": "Izolácia podlahy na zemi"
-            },
-            {
-              "src": "img/hoch-xps/hoch-xps-pouzitie-obratena-strecha.webp",
-              "caption": "Izolácia obrátenej strechy"
-            },
-            {
-              "src": "img/hoch-xps/hoch-xps-pouzitie-sendvicove-murivo.webp",
-              "caption": "Izolácia sendvičového muriva"
-            },
-            {
-              "src": "img/hoch-xps/hoch-xps-pouzitie-tepelne-mosty.webp",
-              "caption": "Izolácia tepelných mostov"
-            },
-            {
-              "src": "img/hoch-xps/hoch-xps-pouzitie-podlaha.webp",
-              "caption": "Izolácia podlahy"
-            }
-          ],
-          "products": []
         }
       ],
       "website": "https://xps.hoch.com.pl/",

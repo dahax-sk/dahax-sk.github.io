@@ -457,11 +457,22 @@
 .cards__grid--5>.pc{grid-column:span 2}
 .cards__grid--5>.pc:nth-child(4){grid-column:2/span 2}
 
-/* STYROPROFILE strana profilov – galéria použitia sa musí zmestiť pod zoznam a tlačidlo dokumentov: nižšie náhľady 2 : 1, bez tlačidla „všetky“ (každý náhľad sa otvorí) */
-.s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg{margin-top:22px}
-.s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg__t{aspect-ratio:2/1}
+/* STYROPROFILE strana profilov – galéria použitia pod zoznamom a tlačidlom dokumentov: celé štvorcové fotky 164 px – spodná hrana lícuje s obrázkom vľavo (zelený profil je hore aj dole), bez nadpisu a tlačidla „všetky“ (každý náhľad sa otvorí) */
+.s__in.media:has(img[src*="styroprofile-sdk-profily"]) .docbtn{margin-top:4px}
+.s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg{margin-top:4px}
+.s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg__h{display:none}
+.s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg__grid{grid-template-columns:repeat(4,164px)}
+.s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg__t{aspect-ratio:1/1}
 .s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg__all{display:none}
 /* audit 2026-10-27: kontrast zeleného štítku na bielom (WCAG ≥ 4,5:1), pomer strán plávajúcej kotvy DK MONT, čitateľnosť nadpisu na farebnom banneri KLIMAS */
 .brand--green .scope__role{color:#3b7a1a}
 img[src*="img/dkmont/"]{object-fit:contain}
 .dxk-sl__h{text-shadow:0 1px 3px rgba(0,0,0,.45)}
+
+/* KNAUF – jedna strana s 5 kartami (28. 10. 2026): výrobok v bielom okienku v jednej ploche s kartou, celý (contain) s rovnakým okrajom, jemný tieň pod ním – pôsobí prirodzene ako na fotografii */
+.cards:has(img[src*="img/knauf/knauf-"]) .pc__img{background:#fff;padding:18px 22px 6px;box-sizing:border-box}
+.cards:has(img[src*="img/knauf/knauf-"]) .pc__img img{object-fit:contain;filter:drop-shadow(0 8px 10px rgba(15,23,41,.16))}
+
+/* skupiny výrobkov v dvoch stĺpcoch (POLYFORM, NEXLER …): riadok vyplní celú výšku riadka mriežky, aby deliace čiary ľavého a pravého stĺpca boli v rovnakej výške */
+.dxpl-skupiny .rows > li{display:flex;flex-direction:column}
+.dxpl-skupiny .rows > li > *{flex:1 1 auto}
