@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-28.12",
+  "version": "2026-10-28.13",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -4192,54 +4192,8 @@
           "kind": "ine"
         }
       ],
-      "plavajuce": [
-        {
-          "src": "img/dkmont/zaves-cd.webp",
-          "x": 3,
-          "y": 6,
-          "w": 27,
-          "r": -3,
-          "d": 7,
-          "z": 3
-        },
-        {
-          "src": "img/dkmont/profily.webp",
-          "x": 23,
-          "y": 0,
-          "w": 36,
-          "r": 0,
-          "d": 8.5,
-          "z": 1
-        },
-        {
-          "src": "img/dkmont/hmozdinka-klinova.webp",
-          "x": 38,
-          "y": 44,
-          "w": 32,
-          "r": -4,
-          "d": 6.5,
-          "z": 4
-        },
-        {
-          "src": "img/dkmont/nonius.webp",
-          "x": 57,
-          "y": 2,
-          "w": 29,
-          "r": 4,
-          "d": 9,
-          "z": 2
-        },
-        {
-          "src": "img/dkmont/paska-profifix.webp",
-          "x": 76,
-          "y": 30,
-          "w": 22,
-          "r": 0,
-          "d": 7.5,
-          "z": 3
-        }
-      ],
-      "website": "https://www.dkmont.cz/cz/"
+      "website": "https://www.dkmont.cz/cz/",
+      "video": "video/dkmont/dkmont-firma.mp4"
     },
     {
       "id": "knauf",

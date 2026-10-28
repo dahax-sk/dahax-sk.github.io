@@ -500,3 +500,9 @@ img[src*="img/dkmont/"]{object-fit:contain}
 /* Realizácie (28. 10. 2026): 16 fotiek bez firemnej predajne Wkręt-met – 8 stĺpcov = 2 celé riadky na výšku (3 : 4), nič nekončí pod okrajom strany */
 .dxr-grid{grid-template-columns:repeat(8,1fr)}
 .dxr-grid .dxr-t{aspect-ratio:3/4}
+/* výrez fotiek v dlaždiciach 3 : 4 – na to podstatné: stojan je vľavo, ulička vpravo, fotky 9 : 16 bez stropu */
+.dxr-grid .dxr-t img[src*="predajna-20"]{object-position:26% 50%}
+.dxr-grid .dxr-t img[src*="regal-06"]{object-position:68% 50%}
+.dxr-grid .dxr-t img[src*="predajna-14"]{object-position:58% 50%}
+.dxr-grid .dxr-t img[src*="predajna-07"]{object-position:30% 50%}
+.dxr-grid .dxr-t img:is([src*="predajna-12"],[src*="predajna-15"],[src*="predajna-16"],[src*="predajna-17"]){object-position:50% 62%}
