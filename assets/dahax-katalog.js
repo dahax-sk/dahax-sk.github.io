@@ -1,6 +1,6 @@
 // DAHAX – snímka „Katalóg výrobkov“ podľa sk.e-klimas.com (scripts/update-2026-10-26-klimas-katalog.mjs).
 // Kategória s poľom `katalog` (content.json) sa vykreslí ako:
-//  - pás 7 snímok: fotka, nadpis na farebnom páse, podnadpis, „pozri produkty ›“; čísla 01–07, šípky,
+//  - pás 7 snímok: fotka, nadpis na farebnom páse, podnadpis, „zobraziť produkty ›“; čísla 01–07, šípky,
 //    potiahnutie prstom, automatický posun 5 s, pri dotyku pauza,
 //  - mriežka 16 kategórií: 1. ťuknutie otvorí panel s podkategóriami, ďalšie (alebo podkategória, tlačidlo)
 //    otvorí sk.e-klimas.com v novej karte; bez internetu len hláška.
@@ -12,7 +12,12 @@
     decorate();
   };
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
-  const light = (hex) => { const n = parseInt(hex.slice(1), 16); return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255 > 0.6; };
+  // tmavý text, keď biely nemá na farbe kontrast aspoň 3 : 1 (WCAG, veľký text)
+  const light = (hex) => {
+    const n = parseInt(hex.slice(1), 16);
+    const l = [n >> 16, (n >> 8) & 255, n & 255].map((c) => ((c /= 255) <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4));
+    return 1.05 / (0.2126 * l[0] + 0.7152 * l[1] + 0.0722 * l[2] + 0.05) < 3;
+  };
   const pocet = (n) => `${n.toLocaleString("sk-SK")} ${n === 1 ? "výrobok" : n < 5 ? "výrobky" : "výrobkov"}`;
   const stop = (e) => e.stopPropagation();
 
@@ -38,7 +43,7 @@
       const h = el("h2", "dxk-sl__h", b.nadpis);
       h.style.background = b.farba;
       h.style.color = light(b.farba) ? "#0a0b0d" : "#fff";
-      const btn = el("button", "dxk-sl__btn", "pozri produkty ›");
+      const btn = el("button", "dxk-sl__btn", "zobraziť produkty ›");
       btn.type = "button";
       btn.addEventListener("click", (e) => { stop(e); go(b.odkaz, msg); });
       txt.append(h, el("p", "dxk-sl__p", b.podnadpis), btn);

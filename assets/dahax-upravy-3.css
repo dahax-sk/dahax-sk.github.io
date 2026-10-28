@@ -283,7 +283,7 @@
 .dxk-car__a:active{background:var(--red)}
 .dxk-gw{position:relative;min-height:0}
 .dxk-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:8px;height:100%}
-.dxk-t{position:relative;overflow:hidden;min-height:0;background:#15171b;border-bottom:6px solid var(--c);text-align:left}
+.dxk-t{position:relative;overflow:hidden;min-height:0;background:#15171b;border-bottom:3px solid var(--c);text-align:left}
 .dxk-t img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
 .dxk-t::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,11,13,0) 38%,rgba(10,11,13,.88) 100%)}
 .dxk-t__n{position:absolute;left:12px;right:12px;bottom:10px;z-index:1;color:#fff;font:600 15px/1.22 var(--f-b);text-wrap:balance}
@@ -464,10 +464,9 @@
 .s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg__grid{grid-template-columns:repeat(4,164px)}
 .s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg__t{aspect-ratio:1/1}
 .s__in.media:has(img[src*="styroprofile-sdk-profily"]) .dxg__all{display:none}
-/* audit 2026-10-27: kontrast zeleného štítku na bielom (WCAG ≥ 4,5:1), pomer strán plávajúcej kotvy DK MONT, čitateľnosť nadpisu na farebnom banneri KLIMAS */
+/* audit 2026-10-27: kontrast zeleného štítku na bielom (WCAG ≥ 4,5:1), pomer strán plávajúcej kotvy DK MONT; nadpis banneru KLIMAS: kontrast rieši dahax-katalog.js (tmavý text pod 3 : 1) */
 .brand--green .scope__role{color:#3b7a1a}
 img[src*="img/dkmont/"]{object-fit:contain}
-.dxk-sl__h{text-shadow:0 1px 3px rgba(0,0,0,.45)}
 
 /* KNAUF – jedna strana s 5 kartami (28. 10. 2026): výrobok v bielom okienku v jednej ploche s kartou, celý (contain) s rovnakým okrajom, jemný tieň pod ním – pôsobí prirodzene ako na fotografii */
 .cards:has(img[src*="img/knauf/knauf-"]) .pc__img{background:#fff;padding:18px 22px 6px;box-sizing:border-box}
@@ -480,3 +479,7 @@ img[src*="img/dkmont/"]{object-fit:contain}
 /* NEXLER strana pásov – galéria reálnych referencií pod zoznamom: bez tlačidla „všetky“ (každý náhľad sa otvorí), spodná hrana lícuje s fotkou strechy vľavo */
 .s__in.media:has(img[src*="nexler/realizacie/welnopol-2"]) .dxg{margin-top:41px}
 .s__in.media:has(img[src*="nexler/realizacie/welnopol-2"]) .dxg__all{display:none}
+
+/* tmavé karty s 3 – 4 výrobkami (SYNTHOS, HOCH XPS, KODA; audit 28. 10. Y5, X2, O1): štvorcové okienko namiesto vysokého tmavého rámu, v ktorom bol vodorovný výrobok malý; karty sú vycentrované na výšku plochy */
+.cards__grid--3:has(>.pc--navy),.cards__grid--4:has(>.pc--navy){grid-template-rows:auto auto auto;align-content:center}
+.cards__grid--3>.pc--navy .pc__img,.cards__grid--4>.pc--navy .pc__img{aspect-ratio:1/1}
