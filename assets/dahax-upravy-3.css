@@ -483,3 +483,18 @@ img[src*="img/dkmont/"]{object-fit:contain}
 /* tmavé karty s 3 – 4 výrobkami (SYNTHOS, HOCH XPS, KODA; audit 28. 10. Y5, X2, O1): štvorcové okienko namiesto vysokého tmavého rámu, v ktorom bol vodorovný výrobok malý; karty sú vycentrované na výšku plochy */
 .cards__grid--3:has(>.pc--navy),.cards__grid--4:has(>.pc--navy){grid-template-rows:auto auto auto;align-content:center}
 .cards__grid--3>.pc--navy .pc__img,.cards__grid--4>.pc--navy .pc__img{aspect-ratio:1/1}
+
+/* panel Dokumenty (dahax-dokumenty.js): zoznam firiem, ponuka firmy sa rozbalí po ťuknutí na celú šírku v 2 stĺpcoch; počet = dokumenty bez duplicít */
+.pane.dxdok .dg{gap:0;padding:14px 18px}
+.pane.dxdok .dg__head{cursor:pointer;user-select:none}
+.pane.dxdok .dg__head::after{content:"";flex:none;width:10px;height:10px;margin:0 6px 0 4px;border-right:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(255,255,255,.7);transform:rotate(45deg) translateY(-3px);transition:transform .25s}
+.pane.dxdok .dg[data-open="1"] .dg__head::after{transform:rotate(-135deg) translateY(-3px)}
+.pane.dxdok .dg__n{font-size:0}
+.pane.dxdok .dg__n[data-n]::after{content:attr(data-n);font:700 17px var(--f-d)}
+.pane.dxdok .dg .docs__list{display:none}
+.pane.dxdok .dg[data-open="1"]{grid-column:1/-1;gap:16px;padding:20px}
+.pane.dxdok .dg[data-open="1"] .docs__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 22px}
+
+/* stav pripojenia vpravo hore len ako bodka (28. 10. 2026): zelená = pripojené, červená = bez internetu; text ostáva pre čítačky obrazovky */
+.status{font-size:0;gap:0;margin-right:10px}
+.status.is-off:before{background:#de1f26;box-shadow:0 0 0 4px rgba(222,31,38,.18)}

@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-28.6",
+  "version": "2026-10-28.7",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -2100,11 +2100,6 @@
           "kind": "certifikat"
         },
         {
-          "title": "KLIMAS – kotvenie ETICS (EN)",
-          "href": "docs/klimas/prezentacia-klimas-kotvenie-etics-en.pdf",
-          "kind": "ine"
-        },
-        {
           "title": "Vyhlásenie o parametroch – THERMODRIVE V2 (SK)",
           "href": "docs/klimas/vyhlasenie-o-parametroch-thermodrive-v2-sk.pdf",
           "kind": "certifikat"
@@ -2293,6 +2288,11 @@
           "title": "Technický list – WDBLP 10 (SK)",
           "href": "docs/klimas/technicky-list-wdblp-10-sk.pdf",
           "kind": "technicky-list"
+        },
+        {
+          "title": "KLIMAS – kotvenie ETICS (EN)",
+          "href": "docs/klimas/prezentacia-klimas-kotvenie-etics-en.pdf",
+          "kind": "ine"
         }
       ],
       "video": "video/klimas/klimas-firma-logo.mp4",
@@ -2576,11 +2576,6 @@
               "kind": "certifikat"
             },
             {
-              "title": "Vyhlásenie o parametroch – IZOVAT 110, 100 – 220 mm, plochá strecha (CZ)",
-              "href": "docs/izovat/dop-470-izovat-110-100-220mm-cz.pdf",
-              "kind": "certifikat"
-            },
-            {
               "title": "Vyhlásenie o parametroch – IZOVAT 160, 100 – 150 mm, plochá strecha (SK)",
               "href": "docs/izovat/dop-550-izovat-160-100-150mm-sk.pdf",
               "kind": "certifikat"
@@ -2593,6 +2588,11 @@
             {
               "title": "Vyhlásenie o parametroch – IZOVAT 160 INC, spádové dosky (SK)",
               "href": "docs/izovat/dop-553-izovat-160-inc-20-150mm-sk.pdf",
+              "kind": "certifikat"
+            },
+            {
+              "title": "Vyhlásenie o parametroch – IZOVAT 110, 100 – 220 mm, plochá strecha (CZ)",
+              "href": "docs/izovat/dop-470-izovat-110-100-220mm-cz.pdf",
               "kind": "certifikat"
             }
           ]
@@ -2699,11 +2699,6 @@
           "kind": "certifikat"
         },
         {
-          "title": "Vyhlásenie o parametroch – IZOVAT 125, 30 – 190 mm (CZ)",
-          "href": "docs/izovat/dop-522-izovat-125-30-190mm-cz.pdf",
-          "kind": "certifikat"
-        },
-        {
           "title": "Vyhlásenie o parametroch – IZOVAT 135, 30 – 180 mm (SK)",
           "href": "docs/izovat/dop-535-izovat-135-30-180mm-sk.pdf",
           "kind": "certifikat"
@@ -2711,11 +2706,6 @@
         {
           "title": "Vyhlásenie o parametroch – IZOVAT 100, 100 – 240 mm, plochá strecha (SK)",
           "href": "docs/izovat/dop-453-izovat-100-100-240mm-sk.pdf",
-          "kind": "certifikat"
-        },
-        {
-          "title": "Vyhlásenie o parametroch – IZOVAT 110, 100 – 220 mm, plochá strecha (CZ)",
-          "href": "docs/izovat/dop-470-izovat-110-100-220mm-cz.pdf",
           "kind": "certifikat"
         },
         {
@@ -2738,6 +2728,16 @@
           "href": "https://www.environdec.com/library/epd27478",
           "kind": "ine",
           "external": true
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 125, 30 – 190 mm (CZ)",
+          "href": "docs/izovat/dop-522-izovat-125-30-190mm-cz.pdf",
+          "kind": "certifikat"
+        },
+        {
+          "title": "Vyhlásenie o parametroch – IZOVAT 110, 100 – 220 mm, plochá strecha (CZ)",
+          "href": "docs/izovat/dop-470-izovat-110-100-220mm-cz.pdf",
+          "kind": "certifikat"
         }
       ],
       "website": "https://www.izovat.ua/en/",
@@ -3042,6 +3042,12 @@
       },
       "documents": [
         {
+          "title": "Technické listy a vyhlásenia o parametroch – všetky dosky (holcim.pl)",
+          "href": "https://www.holcim.pl/welna-skalna/produkty",
+          "kind": "technicky-list",
+          "external": true
+        },
+        {
           "title": "Certifikát 1454-CPR-0292 – kamenná vlna (PL)",
           "href": "docs/holcim/certifikat-1454-cpr-0292-kamenna-vlna.pdf",
           "kind": "certifikat"
@@ -3070,12 +3076,6 @@
           "title": "Vyhlásenie o parametroch – HOLCIM ROOF TOP 50 (PL)",
           "href": "docs/holcim/vyhlasenie-o-parametroch-dop-roof-top-50.pdf",
           "kind": "vyhlasenie"
-        },
-        {
-          "title": "Technické listy a vyhlásenia o parametroch – všetky dosky (holcim.pl)",
-          "href": "https://www.holcim.pl/welna-skalna/produkty",
-          "kind": "technicky-list",
-          "external": true
         }
       ],
       "media": [
@@ -3222,14 +3222,14 @@
               ],
               "documents": [
                 {
-                  "title": "Technický list – XPS PRIME G (PL)",
-                  "href": "docs/synthos/technicky-list-xps-prime-g-pl.pdf",
-                  "kind": "technicky-list"
-                },
-                {
                   "title": "Osvedčenie 230833A – XPS PRIME G",
                   "href": "docs/synthos/osvedcenie-230833a-xps-prime-g.pdf",
                   "kind": "certifikat"
+                },
+                {
+                  "title": "Technický list – XPS PRIME G (PL)",
+                  "href": "docs/synthos/technicky-list-xps-prime-g-pl.pdf",
+                  "kind": "technicky-list"
                 }
               ]
             },
@@ -3268,14 +3268,14 @@
                   "kind": "technicky-list"
                 },
                 {
-                  "title": "Vyhlásenie o parametroch – XPS PRIME D 30 (PL)",
-                  "href": "docs/synthos/vyhlasenie-o-parametroch-xps-prime-d-30-pl.pdf",
-                  "kind": "vyhlasenie"
-                },
-                {
                   "title": "Osvedčenie 230833C – XPS PRIME D",
                   "href": "docs/synthos/osvedcenie-230833c-xps-prime-d.pdf",
                   "kind": "certifikat"
+                },
+                {
+                  "title": "Vyhlásenie o parametroch – XPS PRIME D 30 (PL)",
+                  "href": "docs/synthos/vyhlasenie-o-parametroch-xps-prime-d-30-pl.pdf",
+                  "kind": "vyhlasenie"
                 }
               ]
             }
@@ -3424,12 +3424,12 @@
           "kind": "katalog"
         },
         {
-          "title": "Technický list XPS PRIME S (SK, 09/2026)",
+          "title": "Technický list – XPS PRIME S (SK, 09/2026)",
           "href": "docs/synthos/technicky-list-xps-prime-s-sk-09-2026.pdf",
           "kind": "technicky-list"
         },
         {
-          "title": "Technický list XPS PRIME D (SK, 09/2026)",
+          "title": "Technický list – XPS PRIME D (SK, 09/2026)",
           "href": "docs/synthos/technicky-list-xps-prime-d-sk-09-2026.pdf",
           "kind": "technicky-list"
         },
@@ -3449,7 +3449,7 @@
           "kind": "certifikat"
         },
         {
-          "title": "Technický list XPS PRIME G (PL)",
+          "title": "Technický list – XPS PRIME G (PL)",
           "href": "docs/synthos/technicky-list-xps-prime-g-pl.pdf",
           "kind": "technicky-list"
         },
@@ -4013,17 +4013,17 @@
           "kind": "ine"
         },
         {
-          "title": "Technický list EPS 100",
+          "title": "Technický list – EPS 100",
           "href": "docs/polyform/technicky-list-eps-100.pdf",
           "kind": "technicky-list"
         },
         {
-          "title": "Technický list EPS 70 F (fasáda)",
+          "title": "Technický list – EPS 70 F (fasáda)",
           "href": "docs/polyform/technicky-list-eps-70-f-fasada.pdf",
           "kind": "technicky-list"
         },
         {
-          "title": "Technický list EPS 150 NEO (sivý)",
+          "title": "Technický list – EPS 150 NEO sivý",
           "href": "docs/polyform/technicky-list-eps-150-neo-sivy.pdf",
           "kind": "technicky-list"
         },
@@ -4180,11 +4180,6 @@
           "kind": "katalog"
         },
         {
-          "title": "PROFIFIX – novinky 2023 (EN)",
-          "href": "docs/sucha-vystavba/profifix-novinky-2023-en.pdf",
-          "kind": "ine"
-        },
-        {
           "title": "PROFIFIX – produkty s ochranou C5 (CZ)",
           "href": "docs/sucha-vystavba/profifix-produkty-s-ochranou-c5-cz.pdf",
           "kind": "ine"
@@ -4197,6 +4192,11 @@
         {
           "title": "Revízne dvierka a klapky (CZ)",
           "href": "docs/sucha-vystavba/revizne-dvierka-a-klapky-cz.pdf",
+          "kind": "ine"
+        },
+        {
+          "title": "PROFIFIX – novinky 2023 (EN)",
+          "href": "docs/sucha-vystavba/profifix-novinky-2023-en.pdf",
           "kind": "ine"
         }
       ],
@@ -4734,7 +4734,7 @@
                   "external": true
                 },
                 {
-                  "title": "Produktový cenník Weber 2026 (SK)",
+                  "title": "Produktový cenník Weber 2026 (SK, platný od 15. 5. 2026)",
                   "href": "docs/saint-gobain/produktovy-cennik-weber-2026-sk-platny-od-15-5-2026.pdf",
                   "kind": "katalog"
                 }
@@ -4773,7 +4773,7 @@
                   "external": true
                 },
                 {
-                  "title": "Produktový cenník Weber 2026 (SK)",
+                  "title": "Produktový cenník Weber 2026 (SK, platný od 15. 5. 2026)",
                   "href": "docs/saint-gobain/produktovy-cennik-weber-2026-sk-platny-od-15-5-2026.pdf",
                   "kind": "katalog"
                 }
@@ -4802,7 +4802,7 @@
               ],
               "documents": [
                 {
-                  "title": "Produktový cenník Weber 2026 (SK)",
+                  "title": "Produktový cenník Weber 2026 (SK, platný od 15. 5. 2026)",
                   "href": "docs/saint-gobain/produktovy-cennik-weber-2026-sk-platny-od-15-5-2026.pdf",
                   "kind": "katalog"
                 }
@@ -4949,12 +4949,12 @@
           "kind": "ine"
         },
         {
-          "title": "Technický list BauderKARAT (05/2026, SK)",
+          "title": "Technický list – BauderKARAT (05/2026)",
           "href": "docs/bauder/technicky-list-bauderkarat-05-2026-sk.pdf",
           "kind": "technicky-list"
         },
         {
-          "title": "Vyhlásenie o parametroch BauderFLEX K5E (2026, SK)",
+          "title": "Vyhlásenie o parametroch – BauderFLEX K5E (2026)",
           "href": "docs/bauder/vyhlasenie-o-parametroch-bauderflex-k5e-2026-sk.pdf",
           "kind": "vyhlasenie"
         },
@@ -5949,7 +5949,7 @@
                   "kind": "technicky-list"
                 },
                 {
-                  "title": "Vyhlásenie o parametroch – HOCH XPS 300 (PL)",
+                  "title": "Vyhlásenie o parametroch – XPS 300 (PL)",
                   "href": "docs/hoch-xps/vyhlasenie-o-parametroch-xps-300-pl.pdf",
                   "kind": "vyhlasenie"
                 },
@@ -6009,7 +6009,7 @@
               ],
               "documents": [
                 {
-                  "title": "Vyhlásenie o parametroch – HOCH XPS 500 (PL)",
+                  "title": "Vyhlásenie o parametroch – XPS 500 (PL)",
                   "href": "docs/hoch-xps/vyhlasenie-o-parametroch-xps-500-pl.pdf",
                   "kind": "vyhlasenie"
                 },
@@ -6053,7 +6053,7 @@
               ],
               "documents": [
                 {
-                  "title": "Vyhlásenie o parametroch – HOCH XPS 700 (PL)",
+                  "title": "Vyhlásenie o parametroch – XPS 700 (PL)",
                   "href": "docs/hoch-xps/vyhlasenie-o-parametroch-xps-700-pl.pdf",
                   "kind": "vyhlasenie"
                 },
