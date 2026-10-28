@@ -476,3 +476,7 @@ img[src*="img/dkmont/"]{object-fit:contain}
 /* skupiny výrobkov v dvoch stĺpcoch (POLYFORM, NEXLER …): riadok vyplní celú výšku riadka mriežky, aby deliace čiary ľavého a pravého stĺpca boli v rovnakej výške */
 .dxpl-skupiny .rows > li{display:flex;flex-direction:column}
 .dxpl-skupiny .rows > li > *{flex:1 1 auto}
+
+/* NEXLER strana pásov – galéria reálnych referencií pod zoznamom: bez tlačidla „všetky“ (každý náhľad sa otvorí), spodná hrana lícuje s fotkou strechy vľavo */
+.s__in.media:has(img[src*="nexler/realizacie/welnopol-2"]) .dxg{margin-top:41px}
+.s__in.media:has(img[src*="nexler/realizacie/welnopol-2"]) .dxg__all{display:none}

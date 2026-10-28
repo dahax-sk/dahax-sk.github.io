@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-28.1",
+  "version": "2026-10-28.2",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -5383,7 +5383,7 @@
           "eyebrow": "NEXLER – ploché strechy",
           "title": "Asfaltové pásy NEXLER",
           "intro": "Štyri asfaltové pásy – jeden vrchný a tri podkladové, z toho jeden samolepiaci.",
-          "image": "img/nexler/medium-pye-pv250-s52h.webp",
+          "image": "img/nexler/realizacie/welnopol-2.webp",
           "products": [
             {
               "id": "medium-pye-pv250-s52h",
@@ -5528,33 +5528,23 @@
               "nazov": "Podkladové pásy"
             }
           ],
-          "plavajuce": [
+          "imageOnWhite": false,
+          "gallery": [
             {
-              "src": "img/nexler/medium-pye-pv250-s52h.webp",
-              "x": 6,
-              "y": 4,
-              "w": 88,
-              "r": -3,
-              "d": 8.5,
-              "z": 1
+              "src": "img/nexler/realizacie/welnopol-1.webp",
+              "caption": "Pradiareň Wełnopol – ploché strechy z výšky"
             },
             {
-              "src": "img/nexler/stick.webp",
-              "x": 2,
-              "y": 52,
-              "w": 60,
-              "r": 2,
-              "d": 7,
-              "z": 3
+              "src": "img/nexler/realizacie/welnopol-3.webp",
+              "caption": "Pradiareň Wełnopol – detail strešného plášťa"
             },
             {
-              "src": "img/nexler/medium-pye-g200-s40.webp",
-              "x": 40,
-              "y": 58,
-              "w": 60,
-              "r": -2,
-              "d": 9,
-              "z": 2
+              "src": "img/nexler/realizacie/resovia-1.webp",
+              "caption": "Športová škola Resovia v Rzeszowe – strecha z výšky"
+            },
+            {
+              "src": "img/nexler/realizacie/resovia-3.webp",
+              "caption": "Športová škola Resovia v Rzeszowe – referencia NEXLER"
             }
           ]
         }
@@ -5580,6 +5570,31 @@
           "kind": "youtube"
         },
         {
+          "src": "https://www.youtube.com/watch?v=SMmGiDAJXIQ",
+          "caption": "NEXLER – ako správne natavovať pás (PL)",
+          "kind": "youtube"
+        },
+        {
+          "src": "img/nexler/realizacie/welnopol-2.webp",
+          "caption": "Strecha revitalizovanej pradiarne Wełnopol – referencia NEXLER"
+        },
+        {
+          "src": "img/nexler/realizacie/welnopol-1.webp",
+          "caption": "Pradiareň Wełnopol – ploché strechy z výšky"
+        },
+        {
+          "src": "img/nexler/realizacie/welnopol-3.webp",
+          "caption": "Pradiareň Wełnopol – detail strešného plášťa"
+        },
+        {
+          "src": "img/nexler/realizacie/resovia-1.webp",
+          "caption": "Športová škola Resovia v Rzeszowe – strecha z výšky"
+        },
+        {
+          "src": "img/nexler/realizacie/resovia-3.webp",
+          "caption": "Športová škola Resovia v Rzeszowe – referencia NEXLER"
+        },
+        {
           "src": "img/nexler/medium-pye-pv250-s52h.webp",
           "caption": "MEDIUM PYE PV250 S52H – vrchný pás",
           "onWhite": true
@@ -5601,45 +5616,7 @@
         }
       ],
       "plavajuceTema": "nexler",
-      "plavajucePomer": 0.9,
-      "plavajuce": [
-        {
-          "src": "img/nexler/medium-pye-pv250-s52h.webp",
-          "x": 0,
-          "y": 2,
-          "w": 56,
-          "r": -4,
-          "d": 8,
-          "z": 2
-        },
-        {
-          "src": "img/nexler/stick.webp",
-          "x": 46,
-          "y": 6,
-          "w": 54,
-          "r": 3,
-          "d": 7,
-          "z": 3
-        },
-        {
-          "src": "img/nexler/medium-pye-g200-s40.webp",
-          "x": 2,
-          "y": 46,
-          "w": 54,
-          "r": 2,
-          "d": 9,
-          "z": 3
-        },
-        {
-          "src": "img/nexler/standard-v60-s30.webp",
-          "x": 46,
-          "y": 50,
-          "w": 54,
-          "r": -3,
-          "d": 7.5,
-          "z": 2
-        }
-      ]
+      "video": "video/nexler/nexler-firma-prezentacia.mp4"
     },
     {
       "id": "hoch-xps",
