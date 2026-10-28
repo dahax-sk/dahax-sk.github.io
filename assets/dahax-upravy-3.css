@@ -474,9 +474,9 @@ img[src*="img/dkmont/"]{object-fit:contain}
 .dxpl-skupiny .rows > li{display:flex;flex-direction:column}
 .dxpl-skupiny .rows > li > *{flex:1 1 auto}
 
-/* NEXLER strana pásov – galéria reálnych referencií pod zoznamom: bez tlačidla „všetky“ (každý náhľad sa otvorí), spodná hrana lícuje s fotkou strechy vľavo */
-.s__in.media:has(img[src*="nexler/realizacie/welnopol-2"]) .dxg{margin-top:41px}
-.s__in.media:has(img[src*="nexler/realizacie/welnopol-2"]) .dxg__all{display:none}
+/* NEXLER strana pásov – galéria reálnych referencií pod zoznamom: bez tlačidla „všetky“ (každý náhľad sa otvorí), spodná hrana lícuje s obrázkom rolky vľavo */
+.s__in.media:has(img[src*="nexler/nexler-rolka-nox-cut"]) .dxg{margin-top:41px}
+.s__in.media:has(img[src*="nexler/nexler-rolka-nox-cut"]) .dxg__all{display:none}
 
 /* tmavé karty s 3 – 4 výrobkami (SYNTHOS, HOCH XPS, KODA; audit 28. 10. Y5, X2, O1): štvorcové okienko namiesto vysokého tmavého rámu, v ktorom bol vodorovný výrobok malý; karty sú vycentrované na výšku plochy */
 .cards__grid--3:has(>.pc--navy),.cards__grid--4:has(>.pc--navy){grid-template-rows:auto auto auto;align-content:center}

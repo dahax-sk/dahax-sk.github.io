@@ -1,8 +1,8 @@
 {
-  "version": "2026-10-28.8",
+  "version": "2026-10-28.9",
   "company": {
     "name": "DAHAX SK, s.r.o.",
-    "slogan": "Izolácie a stavebné systémy od overených európskych výrobcov.",
+    "slogan": "Oficiálny dovozca izolácií a stavebných systémov",
     "web": "www.dahax.sk",
     "phone": "+421 908 927 459",
     "email": "dahaxsk@dahaxsk.sk",
@@ -18,30 +18,7 @@
         "address": "Areál bývalého poľnohospodárskeho družstva, 935 24 Čajkov, okr. Levice"
       }
     ],
-    "delivery": "Doprava po celom Slovensku a Česku",
-    "uvod": {
-      "kicker": "Oficiálny dovozca pre SK a CZ",
-      "nadpisKratky": "Izolácie a stavebné systémy – priamo od výrobcov.",
-      "podnadpis": "Priamy dovoz, stabilné ceny a istota dodávky – pre predajne stavebnín, firmy aj realizačné tímy na Slovensku a v Česku.",
-      "cisla": [
-        {
-          "value": "15",
-          "label": "značiek"
-        },
-        {
-          "value": "2",
-          "label": "sklady"
-        },
-        {
-          "value": "SK + CZ",
-          "label": "doprava"
-        },
-        {
-          "value": "1",
-          "label": "kontakt na všetko"
-        }
-      ]
-    }
+    "delivery": "Doprava po celom Slovensku a Česku"
   },
   "why": {
     "eyebrow": "Veľkoobchodný partner",
@@ -5615,6 +5592,10 @@
           {
             "title": "NEXLER – produkty",
             "url": "https://nexler.com/produkty"
+          },
+          {
+            "title": "NEXLER – banner NOx Cut (domovská stránka, obrázok rolky)",
+            "url": "https://nexler.com/"
           }
         ],
         "headLogo": "img/brand/nexler-logo-biele.webp"
@@ -5633,7 +5614,9 @@
           "eyebrow": "NEXLER – ploché strechy",
           "title": "Asfaltové pásy NEXLER",
           "intro": "Štyri asfaltové pásy – jeden vrchný a tri podkladové, z toho jeden samolepiaci.",
-          "image": "img/nexler/realizacie/welnopol-2.webp",
+          "image": "img/nexler/nexler-rolka-nox-cut.webp",
+          "imageOnWhite": false,
+          "imageCaption": "Rolka asfaltového pásu NEXLER s technológiou NOx Cut · obrázok výrobcu, upravený AI",
           "products": [
             {
               "id": "medium-pye-pv250-s52h",
@@ -5778,7 +5761,6 @@
               "nazov": "Podkladové pásy"
             }
           ],
-          "imageOnWhite": false,
           "gallery": [
             {
               "src": "img/nexler/realizacie/welnopol-1.webp",

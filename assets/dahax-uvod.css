@@ -197,21 +197,3 @@
 @keyframes dxl-lesk{from{background-position:130% 0}to{background-position:-30% 0}}
 @media (prefers-reduced-motion:reduce){.why__feature::after{display:none}}
 
-/* úvod – nový text (28. 10. 2026, dahax-titul.js): malý nápis, nadpis, podnadpis, riadok čísel */
-.s--title .dhx-t-kicker{margin:40px 0 0;color:var(--red,#de1f26);font:700 15px/1 var(--f-d);letter-spacing:.32em;text-transform:uppercase}
-.s--title .title__slogan.dhx-t-h,.s--title .dhx-t-h--kratky{margin-top:16px;max-width:860px;color:#fff;font:600 42px/1.18 var(--f-b);letter-spacing:-.005em;text-wrap:balance}
-.s--title .dhx-t-h--kratky{display:none}
-.s--title .dhx-t-sub{margin:20px 0 0;max-width:740px;color:rgba(255,255,255,.66);font:400 20px/1.5 var(--f-b);text-wrap:pretty}
-.s--title .dhx-t-cisla{display:flex;gap:0;margin:34px 0 0;padding:0;list-style:none}
-.s--title .dhx-t-cisla li{display:flex;flex-direction:column;gap:8px;padding:0 34px;border-left:1px solid rgba(255,255,255,.18)}
-.s--title .dhx-t-cisla li:first-child{padding-left:0;border-left:0}
-.s--title .dhx-t-cisla b{color:#fff;font:700 34px/1 var(--f-d);white-space:nowrap}
-.s--title .dhx-t-cisla span{color:rgba(255,255,255,.58);font:600 13px/1.2 var(--f-d);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
-/* nižšia obrazovka (1366 × 768, 1280 × 800): kratší nadpis, menšie medzery */
-@media (max-height:860px){
-  .s--title .title__slogan.dhx-t-h{display:none}
-  .s--title .dhx-t-h--kratky{display:block}
-  .s--title .dhx-t-kicker{margin-top:30px}
-  .s--title .dhx-t-sub{margin-top:14px;font-size:18px}
-  .s--title .dhx-t-cisla{margin-top:24px}
-}
