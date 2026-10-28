@@ -496,3 +496,7 @@ img[src*="img/dkmont/"]{object-fit:contain}
 /* stav pripojenia vpravo hore len ako bodka (28. 10. 2026): zelená = pripojené, červená = bez internetu; text ostáva pre čítačky obrazovky */
 .status{font-size:0;gap:0;margin-right:10px}
 .status.is-off:before{background:#de1f26;box-shadow:0 0 0 4px rgba(222,31,38,.18)}
+
+/* Realizácie (28. 10. 2026): 16 fotiek bez firemnej predajne Wkręt-met – 8 stĺpcov = 2 celé riadky na výšku (3 : 4), nič nekončí pod okrajom strany */
+.dxr-grid{grid-template-columns:repeat(8,1fr)}
+.dxr-grid .dxr-t{aspect-ratio:3/4}

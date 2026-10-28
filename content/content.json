@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-28.11",
+  "version": "2026-10-28.12",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -1680,14 +1680,6 @@
             {
               "src": "img/klimas/predajne/predajna-14.webp",
               "caption": "Realizácia DAHAX – 7 farebných sekcií"
-            },
-            {
-              "src": "img/klimas/predajne/predajna-19.webp",
-              "caption": "Wkręt-met KLIMAS – predajný pult"
-            },
-            {
-              "src": "img/klimas/predajne/predajna-18.webp",
-              "caption": "Firemná predajňa Wkręt-met KLIMAS"
             },
             {
               "src": "img/klimas/predajne/predajna-12.webp",
@@ -7011,10 +7003,6 @@
         "caption": "KLIMAS v stavebninách"
       },
       {
-        "src": "img/klimas/predajne/predajna-19.webp",
-        "caption": "Realizácia DAHAX"
-      },
-      {
         "src": "img/klimas/predajne/predajna-20.webp",
         "caption": "Realizácia DAHAX"
       },
@@ -7113,18 +7101,6 @@
         "typ": "foto",
         "src": "img/klimas/predajne/predajna-17.webp",
         "popis": "Realizácia DAHAX",
-        "firma": "klimas"
-      },
-      {
-        "typ": "foto",
-        "src": "img/klimas/predajne/predajna-18.webp",
-        "popis": "Firemná predajňa Wkręt-met KLIMAS",
-        "firma": "klimas"
-      },
-      {
-        "typ": "foto",
-        "src": "img/klimas/predajne/predajna-19.webp",
-        "popis": "Wkręt-met KLIMAS – predajný pult",
         "firma": "klimas"
       },
       {
