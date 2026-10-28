@@ -161,7 +161,7 @@
 .dhx-mapa__bok{position:absolute;left:64px;top:596px;z-index:1;display:grid;gap:10px;width:380px;animation:dhx-nabeh .8s ease-out .9s both}
 .dhx-mapa__bok .dhx-mapa__titul{position:static;animation:none;margin-bottom:6px;white-space:nowrap}
 .dhx-mapa__bok .dhx-mapa__popis{position:static;width:auto;transform:none;grid-template-columns:24px 1fr;column-gap:12px;row-gap:3px;align-items:start}
-.dhx-mapa__popis i{grid-row:span 2;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--red);border:2px solid #fff;color:#fff;font:700 12px/1 var(--f-d);font-style:normal}
+.dhx-mapa__popis i{grid-row:span 2;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--red);border:1.5px solid #fff;color:#fff;font:700 12px/1 var(--f-d);font-style:normal}
 .dhx-mapa__cislo{font:700 8.5px var(--f-d);fill:#fff;text-anchor:middle;pointer-events:none}
 .dhx-mapa__stat{paint-order:stroke;stroke:#0b0c0e;stroke-width:5px;stroke-linejoin:round}
 .dhx-mapa__vozidlo{position:absolute;left:0;top:0;offset-rotate:auto;offset-anchor:50% 50%;offset-distance:0%;opacity:0}

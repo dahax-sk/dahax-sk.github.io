@@ -354,7 +354,7 @@
 .dxr-filtre{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px}
 .dxr-f__sk{display:flex;flex-wrap:wrap;gap:8px}
 .dxr-f{display:inline-flex;align-items:center;gap:10px;height:40px;padding:0 16px;border:1.5px solid rgba(255,255,255,.22);background:#0e0f12;color:rgba(255,255,255,.82);font:700 13px/1 var(--f-d);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
-.dxr-f b{font-weight:800;color:rgba(255,255,255,.5);letter-spacing:0}
+.dxr-f b{font-weight:800;color:rgba(255,255,255,.72);letter-spacing:0}
 .dxr-f.is-on{background:var(--red,#de1f26);border-color:var(--red,#de1f26);color:#fff}
 .dxr-f.is-on b{color:rgba(255,255,255,.85)}
 .dxr-grid{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:min-content;gap:10px;padding:0 6px 6px 0;align-content:start;padding-bottom:44px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.3) transparent;touch-action:pan-y}
