@@ -243,9 +243,11 @@
       const n = b.querySelector(".brand__name"), side = b.querySelector(".brand__side"), bv = n && side && brands.get(norm(n.textContent));
       if (bv && side && !side.querySelector(":scope > video.dxv-bg")) {
         const v = make(bv.src, "dxv-bg");
+        v.preload = "auto"; // celé hneď (nie len metadáta) – po prekliknutí sa rozbehne bez čakania
         segment(v, bv.range, bv.rate);
         side.prepend(v);
         auto(v);
+        if (document.visibilityState === "visible") v.play().catch(() => {}); // nečaká na IntersectionObserver
       }
       if (bv && side && bv.blik && !side.querySelector(":scope > .dxv-blik")) blik(side, bv.blik);
     });
@@ -275,6 +277,46 @@
     });
   };
 
+  // úvodné video susednej firmy vopred (28. 10. 2026): videá sa neukladajú do tabletu (OFFLINE_MEDIA = false v sw.js),
+  // preto sa pri strane firmy (a pri „Výrobcovia“ / „Doplnkový sortiment“) v pozadí načíta úvodné video tejto, ďalšej
+  // a predchádzajúcej firmy – po prekliknutí ho prehliadač už má. Najviac 4 rozpracované videá naraz.
+  let poradie = [], posledna = -1;
+  const pool = new Map();
+  const zohrej = (src) => {
+    if (!src || pool.has(src)) return;
+    const v = document.createElement("video");
+    Object.assign(v, { muted: true, preload: "auto", src });
+    v.load();
+    pool.set(src, v);
+    while (pool.size > 4) {
+      const [k, o] = pool.entries().next().value;
+      o.removeAttribute("src");
+      o.load();
+      pool.delete(k);
+    }
+  };
+  const susedia = () => {
+    const id = (decodeURIComponent(location.hash).match(/^#\/([^/?~]+)/) || [])[1];
+    let i = poradie.findIndex((m) => m.id === id);
+    if (i >= 0) posledna = i;
+    else if (id === "vyrobcovia") i = -1;
+    else i = posledna; // iná spoločná strana (napr. doplnkový sortiment) – ďalšia firma po naposledy zobrazenej
+    for (const j of [i, i + 1, i - 1]) if (poradie[j] && poradie[j].video) zohrej(poradie[j].video);
+  };
+  addEventListener("hashchange", () => setTimeout(susedia, 300));
+  // po prekliknutí na úvod firmy spustiť video hneď – počas animácie prechodu ho IntersectionObserver ešte nepustí
+  // (snímka je mimo plochy), preto niekoľko pokusov počas 1,5 s
+  addEventListener("hashchange", () => {
+    let n = 0;
+    const kick = () => {
+      const v = document.querySelector(".screen .brand video.dxv-bg");
+      if (v && v.paused && document.visibilityState === "visible") v.play().catch(() => {});
+      if ((!v || v.paused) && ++n < 15) setTimeout(kick, 100);
+    };
+    setTimeout(kick, 60);
+  });
+  const loadPoradie = (c) => { poradie = (c.manufacturers || []).map((m) => ({ id: m.id, video: m.video })); susedia(); };
+
   let queued = false;
   new MutationObserver(() => {
     if (queued) return;
@@ -282,6 +324,7 @@
     setTimeout(() => { queued = false; decorate(); }, 40);
   }).observe(document.documentElement, { childList: true, subtree: true });
 
-  if (window.__DAHAX_CONTENT__) load(window.__DAHAX_CONTENT__);
-  else fetch("content/content.json", { cache: "no-cache" }).then((r) => r.json()).then(load).catch(() => {});
+  const start = (c) => { load(c); loadPoradie(c); };
+  if (window.__DAHAX_CONTENT__) start(window.__DAHAX_CONTENT__);
+  else fetch("content/content.json", { cache: "no-cache" }).then((r) => r.json()).then(start).catch(() => {});
 })();
