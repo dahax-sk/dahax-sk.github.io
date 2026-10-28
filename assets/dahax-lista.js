@@ -1,10 +1,13 @@
 // DAHAX – pravá lišta firiem sa vysúva len na požiadanie (scripts/update-2026-10-26-lista.mjs).
 // Lišta (.rail) je skrytá za pravým okrajom a snímky majú celú šírku. Vysunie sa:
 //  - myšou: kurzor pri pravom okraji obrazovky; zasunie sa, keď kurzor lištu opustí,
-//  - prstom: ťah od pravého okraja doľava; zasunie sa ťuknutím mimo lišty alebo po výbere firmy.
+//  - prstom: ťah doľava v páse pri pravom okraji; zasunie sa ťuknutím mimo lišty alebo po výbere firmy.
 // Na okraji ostáva tenká značka, aby bolo vidno, kde lišta je.
+// 28. 10. 2026: pás pre prst rozšírený na 150 px (~4 cm na tablete) – úzky okraj zachytí obal tabletu alebo gesto
+// systému a ťah sa potom bral ako posun snímky. Ťuknutia v páse fungujú ďalej, prepnutie snímky ťahom v ňom nie.
 (() => {
-  const EDGE = 28; // px od pravého okraja obrazovky
+  const EDGE = 28; // myš: px od pravého okraja obrazovky
+  const EDGE_DOTYK = (window.__dxListaOkraj = 150); // prst: px od pravého okraja (zdieľa dahax-dotyk.js)
   const deck = () => document.querySelector(".deck");
   const rail = () => document.querySelector(".rail");
   let timer = null;
@@ -25,7 +28,7 @@
   let s = null;
   addEventListener("touchstart", (e) => {
     const p = e.touches[0];
-    s = e.touches.length === 1 && p.clientX >= innerWidth - EDGE ? { x: p.clientX, y: p.clientY } : null;
+    s = e.touches.length === 1 && !isOpen() && p.clientX >= innerWidth - EDGE_DOTYK ? { x: p.clientX, y: p.clientY } : null;
     if (isOpen() && !inRail(e.target)) close();
   }, { passive: true, capture: true });
   addEventListener("touchmove", (e) => {
