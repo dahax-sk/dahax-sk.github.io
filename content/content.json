@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-28.15",
+  "version": "2026-11-04.2",
   "company": {
     "name": "DAHAX SK, s.r.o.",
     "slogan": "Stabilizujeme ceny a dodávky produktov – pre lepší predaj, rýchlejší rast a kvalitnejší servis.",
@@ -18,7 +18,14 @@
         "address": "Areál bývalého poľnohospodárskeho družstva, 935 24 Čajkov, okr. Levice"
       }
     ],
-    "delivery": "Doprava po celom Slovensku a Česku"
+    "delivery": "Doprava po celom Slovensku a Česku",
+    "prehravanie": {
+      "strana": 8,
+      "otocka": 12,
+      "foto": 4,
+      "videoMax": 300,
+      "nacitanie": 8
+    }
   },
   "why": {
     "eyebrow": "Veľkoobchodný partner",

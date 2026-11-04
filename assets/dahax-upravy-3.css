@@ -506,3 +506,42 @@ img[src*="img/dkmont/"]{object-fit:contain}
 .dxr-grid .dxr-t img[src*="predajna-14"]{object-position:58% 50%}
 .dxr-grid .dxr-t img[src*="predajna-07"]{object-position:30% 50%}
 .dxr-grid .dxr-t img:is([src*="predajna-12"],[src*="predajna-15"],[src*="predajna-16"],[src*="predajna-17"]){object-position:50% 62%}
+
+/* výber firiem (dahax-vyber.js): tlačidlo v hlavičke menu a panel so zaškrtnutím */
+.menu__head .dxv-btn{margin-left:auto;margin-right:14px;gap:10px}
+.menu__head .dxv-btn span{color:rgba(255,255,255,.72);font-weight:700}
+.menu.dxv-open>.menu__body{display:none}
+.dxv-vyber{display:flex;flex-direction:column;gap:22px;min-height:0;flex:1}
+.dxv-vyber__head h2{margin:6px 0 8px;font:700 44px/1 var(--f-d);text-transform:uppercase;color:#fff}
+.dxv-vyber__head p:last-child{margin:0;max-width:760px;color:rgba(255,255,255,.7);font-size:17px;line-height:1.45}
+.dxv-vyber__grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;overflow-y:auto;min-height:0}
+.dxv-f{position:relative;display:flex;flex-direction:column;gap:10px;padding:12px;background:#15171b;border:1.5px solid rgba(255,255,255,.14);cursor:pointer;transition:border-color .2s,opacity .2s}
+.dxv-f input{position:absolute;opacity:0;pointer-events:none}
+.dxv-f__logo{display:flex;align-items:center;justify-content:center;height:70px;padding:10px 14px}
+.dxv-f__logo img{max-width:100%;max-height:100%;object-fit:contain}
+.dxv-f b{font:700 15px/1.1 var(--f-d);letter-spacing:.06em;text-transform:uppercase;color:#fff;padding-right:30px}
+.dxv-f::after{content:"";position:absolute;right:12px;bottom:12px;width:20px;height:20px;border:1.5px solid rgba(255,255,255,.5);background:transparent}
+.dxv-f:has(input:checked){border-color:var(--red,#de1f26)}
+.dxv-f:has(input:checked)::after{background:var(--red,#de1f26) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E") center/16px no-repeat;border-color:var(--red,#de1f26)}
+.dxv-f:not(:has(input:checked)){opacity:.55}
+.dxv-vyber__akcie{display:flex;align-items:center;gap:12px}
+.dxv-vyber__pocet{margin-left:auto;color:rgba(255,255,255,.72);font:600 15px var(--f-d);letter-spacing:.08em;text-transform:uppercase}
+.dxv-vyber__ok{background:var(--red,#de1f26);border-color:var(--red,#de1f26);color:#fff}
+.dxv-vyber__ok:disabled{opacity:.4;pointer-events:none}
+
+/* prehrávanie (dahax-play.js): ▶ v lište, počas prehrávania skrytá lišta, tenký priebeh dole, fotky a videá cez celú obrazovku */
+.dxp-btn[hidden]{display:none}
+.dxp-btn.is-on{background:var(--red,#de1f26);border-color:var(--red,#de1f26)}
+.dxp-btn svg path{fill:currentColor;stroke:currentColor}
+.dxp-btn svg path[d^="M8 5v14"]{fill:none;stroke-width:3}
+.dxp-hra .top,.dxp-hra .rail,.dxp-hra .deck::after{transition:opacity .6s ease}
+.dxp-hra.dxp-skryte .top,.dxp-hra.dxp-skryte .deck::after{opacity:0;pointer-events:none}
+.dxp-hra .deck.dxr-open .rail{transform:translateX(100%)}
+.dxp-pruh{position:absolute;left:0;right:0;bottom:0;z-index:80;height:3px;background:var(--red,#de1f26);transform-origin:0 50%;transform:scaleX(0);transition:transform .1s linear;pointer-events:none}
+.dxp-stoj .dxp-pruh{opacity:.5}
+.dxp-ov{position:absolute;inset:0;z-index:38;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;animation:dxp-in .5s ease both}
+.dxp-ov__m{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.dxp-ov__m img,.dxp-ov__m video{width:100%;height:100%;object-fit:contain;animation:dxp-in .6s ease both}
+.dxp-ov__p{position:absolute;left:56px;bottom:40px;z-index:1;margin:0;padding:8px 14px;background:rgba(10,11,13,.72);color:#fff;font:600 17px/1.3 var(--f-b);max-width:70%}
+.dxp-ov__p:empty{display:none}
+@keyframes dxp-in{from{opacity:0}to{opacity:1}}
