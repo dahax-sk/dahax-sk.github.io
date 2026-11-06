@@ -52,6 +52,7 @@
 
   // ── odosielanie ──
   const h = location.hostname;
+  if (window.__dxWeb) return; // webový režim (dahax.com): štatistiky len so súhlasom majiteľa – zatiaľ vypnuté
   if (!GC || location.protocol === "file:" || h === "localhost" || h === "127.0.0.1" || h === "[::1]" || /\.localhost$/.test(h)) return;
 
   // GoatCounter „odkiaľ“ čistí ako adresu (odreže časť pred dvojbodkou, zakóduje diakritiku a medzery), preto

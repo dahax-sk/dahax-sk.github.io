@@ -7,6 +7,7 @@
 //  - ECB vydáva kurzy v pracovné dni okolo 16:00 SEČ; cez víkend a sviatky platí posledný kurz
 // Štýly: dahax-upravy-3.css („kalkulačka mien“).
 (() => {
+  if (window.__dxWeb) return; // webový režim (dahax.com): kalkulačka je len pre tablet – žiadne požiadavky na cudzie servery
   const MENY = [
     { k: "EUR", n: "Euro", s: "€", d: 2 },
     { k: "CZK", n: "Česká koruna", s: "Kč", d: 2 },

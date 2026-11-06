@@ -9,6 +9,7 @@
 (() => {
   const web = /^https?:$/.test(location.protocol) && !/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
   if (!web && !/[?&]stav=1\b/.test(location.search)) return;
+  if (window.__dxWeb) return; // webový režim (dahax.com, assets/dahax-web.js) – verejný web sa nevypína
   const html = document.documentElement;
   html.classList.add("dx-stav-cakam");
   const st = document.createElement("style");
