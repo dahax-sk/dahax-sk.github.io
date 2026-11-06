@@ -10,6 +10,9 @@
 //  - po 10 minútach nečinnosti sa admin sám zamkne (token zostáva len v pamäti, kým je admin otvorený).
 // Časti: Firmy na prezentáciu (panel z assets/dahax-vyber.js, z verejného menu je preč) a Štatistiky (GoatCounter API,
 // CORS povolené, limit 4 požiadavky/s → požiadavky idú po jednej). Štýly: dahax-upravy-3.css („admin“).
+// Admin len pre majiteľa (6. 11. 2026, „admin chcem len ja“): nastaviť sa dá len s platným tokenom GoatCountera
+// (overí sa priamo v GoatCounteri – token má len majiteľ), a tlačidlo Admin v Nastaveniach vidno len na zariadení,
+// kde je admin nastavený, alebo po otvorení odkazu s ?admin (napr. https://dahax-sk.github.io/?admin).
 (() => {
   const GC = "https://dahax.goatcounter.com";
   const KLUC = "dahax-admin", ITER = 310000, NECINNOST = 10 * 60 * 1000;
@@ -62,13 +65,13 @@
   const klik = (fn) => { ov.onclick = (e) => { const a = e.target.closest("[data-a]"); if (!a) return; if (a.dataset.a === "zavriet") { tajne ? (ov.remove(), (ov = null)) : zamkni(); return; } fn(a.dataset.a, a, e); }; };
 
   // ── prvé nastavenie ──
-  const nastavenie = (chyba) => {
+  const nastavenie = (chyba, pred) => {
     ov.innerHTML = ram(
       '<form class="dxa__form" autocomplete="off"><p class="eyebrow">Prvé nastavenie na tomto zariadení</p><h2>Nastaviť admin</h2>' +
-      "<p>Zvoľte si heslo (aspoň 8 znakov) a vložte API token GoatCountera len na čítanie. Token sa uloží zašifrovaný týmto heslom iba v tomto zariadení. Heslo ani token nikomu neposielajte.</p>" +
+      "<p>Admin je len pre majiteľa účtu GoatCounter: nastaví sa iba s platným API tokenom (len na čítanie). Zvoľte si heslo (aspoň 8 znakov) – token sa uloží zašifrovaný týmto heslom iba v tomto zariadení. Heslo ani token nikomu neposielajte.</p>" +
       '<label>Heslo<input name="h1" type="password" minlength="8" required autocomplete="new-password"></label>' +
       '<label>Heslo znova<input name="h2" type="password" minlength="8" required autocomplete="new-password"></label>' +
-      '<label>API token GoatCountera <small>(môžete doplniť aj neskôr)</small><input name="tok" type="password" autocomplete="off" spellcheck="false"></label>' +
+      '<label>API token GoatCountera<input name="tok" type="password" required autocomplete="off" spellcheck="false"></label>' +
       '<p class="dxa__err" aria-live="polite">' + esc(chyba || "") + "</p>" +
       '<div class="dxa__akcie"><button class="btn dxa__ok" type="submit">Uložiť a otvoriť</button></div></form>');
     klik(() => {});
@@ -78,11 +81,14 @@
       const h1 = f.h1.value, h2 = f.h2.value, tok = f.tok.value.trim();
       if (h1.length < 8) return nastavenie("Heslo musí mať aspoň 8 znakov.");
       if (h1 !== h2) return nastavenie("Heslá sa nezhodujú.");
-      f.querySelector("button").disabled = true;
+      if (!tok) return nastavenie("Vložte API token GoatCountera.");
+      const b = f.querySelector("button"); b.disabled = true; b.textContent = "Overujem token…";
+      const over = await overToken(tok);
+      if (over) return nastavenie(over, { h1, h2 });
       try { await zasifruj(h1, { token: tok }); tajne = { token: tok }; heslo = h1; aktivita(); hlavny("firmy"); }
       catch (err) { nastavenie("Uloženie zlyhalo (" + (err && err.name) + ")."); }
     };
-    f.h1.focus();
+    if (pred) { f.h1.value = pred.h1; f.h2.value = pred.h2; f.tok.focus(); } else f.h1.focus();
   };
 
   // ── prihlásenie ──
@@ -142,8 +148,21 @@
   const ulozToken = async (c) => {
     const tok = c.querySelector("input[name=tok]").value.trim();
     if (!tok) return tokenCast(c, "Vložte token.");
+    const over = await overToken(tok);
+    if (over) return tokenCast(c, over);
     try { await zasifruj(heslo, { token: tok }); tajne = { token: tok }; tokenCast(c, "Token je uložený."); }
     catch (e) { tokenCast(c, "Uloženie zlyhalo."); }
+  };
+
+  // token platí, keď s ním GoatCounter vráti štatistiky (vráti text chyby alebo "")
+  const overToken = async (tok) => {
+    try {
+      const r = await fetch(GC + "/api/v0/stats/total", { headers: { Authorization: "Bearer " + tok, "Content-Type": "application/json" }, cache: "no-store" });
+      if (r.ok) return "";
+      if (r.status === 401 || r.status === 403) return "Token nie je platný pre dahax.goatcounter.com alebo nemá oprávnenie „Read statistics“.";
+      if (r.status === 429) { await cakaj(1500); return overToken(tok); }
+      return "GoatCounter odpovedal chybou " + r.status + ". Skúste znova.";
+    } catch (e) { return "Token sa nedá overiť – zariadenie je offline alebo GoatCounter nedostupný."; }
   };
 
   // ── štatistiky ──
@@ -274,7 +293,11 @@
   };
 
   // ── tlačidlo v Nastaveniach ──
+  // tlačidlo Admin len na zariadení s nastaveným adminom alebo po odkaze ?admin (platí do zatvorenia karty)
+  try { if (/(^|[?&])admin(=|&|$)/.test(location.search.slice(1))) sessionStorage.setItem("dahax-admin-vstup", "1"); } catch (e) {}
+  const viditelny = () => { try { return !!citaj() || sessionStorage.getItem("dahax-admin-vstup") === "1"; } catch (e) { return false; } };
   const karta = () => {
+    if (!viditelny()) return;
     for (const s of document.querySelectorAll(".sheet--settings")) {
       if (s.querySelector(".dxa-karta")) continue;
       const za = s.querySelector(".dxz") || s.querySelector(".dxu");
