@@ -14,6 +14,17 @@
     { k: "HUF", n: "Maďarský forint", s: "Ft", d: 0 },
     { k: "USD", n: "Americký dolár", s: "$", d: 2 },
   ];
+  // vlajky ako SVG (emoji vlajky Windows nezobrazí); okrúhly výrez cez CSS
+  const hviezda = (cx, cy, r) => { let p = ''; for (let i = 0; i < 10; i++) { const u = -Math.PI / 2 + (i * Math.PI) / 5, q = i % 2 ? r * 0.4 : r; p += (i ? 'L' : 'M') + (cx + q * Math.cos(u)).toFixed(2) + ' ' + (cy + q * Math.sin(u)).toFixed(2); } return p + 'Z'; };
+  const VLAJKY = {
+    EUR: '<rect width="30" height="30" fill="#039"/><path fill="#fc0" d="' + Array.from({ length: 12 }, (_, i) => hviezda(15 + 9 * Math.cos((i * Math.PI) / 6), 15 + 9 * Math.sin((i * Math.PI) / 6), 1.9)).join('') + '"/>',
+    CZK: '<rect width="30" height="15" fill="#fff"/><rect y="15" width="30" height="15" fill="#d7141a"/><path d="M0 0L16 15L0 30Z" fill="#11457e"/>',
+    PLN: '<rect width="30" height="15" fill="#fff"/><rect y="15" width="30" height="15" fill="#dc143c"/>',
+    HUF: '<rect width="30" height="10" fill="#ce2939"/><rect y="10" width="30" height="10" fill="#fff"/><rect y="20" width="30" height="10" fill="#477050"/>',
+    USD: Array.from({ length: 13 }, (_, i) => '<rect y="' + ((i * 30) / 13).toFixed(3) + '" width="30" height="' + (30 / 13 + 0.05).toFixed(3) + '" fill="' + (i % 2 ? '#fff' : '#b22234') + '"/>').join('') +
+      '<rect width="15" height="16.15" fill="#3c3b6e"/><g fill="#fff">' + [[3, 3], [7.5, 3], [12, 3], [5.2, 6], [9.8, 6], [3, 9], [7.5, 9], [12, 9], [5.2, 12], [9.8, 12]].map(([x, y]) => '<circle cx="' + x + '" cy="' + y + '" r="0.9"/>').join('') + '</g>',
+  };
+  const vlajka = (k) => '<svg viewBox="0 0 30 30" aria-hidden="true">' + VLAJKY[k] + '</svg>';
   const KLUC = "dahax-kurzy", STARE = 60 * 60 * 1000; // po hodine sa skúsi stiahnuť nový kurz
   const ZDROJE = [
     async () => {
@@ -117,8 +128,8 @@
       '<div class="dxm__h"><b>Kalkulačka mien</b><button type="button" class="dxm__obnov" data-a="obnov" aria-label="Aktualizovať kurzy" title="Aktualizovať kurzy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg></button>' +
       '<button type="button" class="dxm__x" data-a="zavri" aria-label="Zavrieť">×</button></div>' +
       '<div class="dxm__meny">' + MENY.map((m) =>
-        '<button type="button" class="dxm-r" data-m="' + m.k + '"><span class="dxm-r__s">' + m.s + '</span><span class="dxm-r__t"><b>' + m.k +
-        '</b><small class="dxm-r__k"></small></span><span class="dxm-r__v"></span></button>').join("") + "</div>" +
+        '<button type="button" class="dxm-r" data-m="' + m.k + '"><span class="dxm-r__s">' + vlajka(m.k) + '</span><span class="dxm-r__t"><b>' + m.k +
+        '</b><small class="dxm-r__k"></small></span><span class="dxm-r__c"><span class="dxm-r__v"></span><span class="dxm-r__z">' + m.s + '</span></span></button>').join("") + "</div>" +
       '<div class="dxm__kl">' + ["7", "8", "9", "C", "4", "5", "6", "⌫", "1", "2", "3", ",", "0", "000"].map((t) =>
         '<button type="button" data-t="' + t + '"' + (t === "0" || t === "000" ? ' class="dxm__0"' : t === "C" || t === "⌫" ? ' class="dxm__f"' : "") +
         (t === "⌫" ? ' aria-label="Zmazať číslicu"' : t === "C" ? ' aria-label="Zmazať všetko"' : "") + ">" + t + "</button>").join("") + "</div>" +
