@@ -144,6 +144,7 @@
       else if (b.dataset.a === "obnov") { stav = ""; stiahni(); vykresli(); }
     });
     document.body.appendChild(ov);
+    poloha();
     document.querySelector(".dxm-btn")?.classList.add("is-on");
     if (!data || Date.now() - (data.cas || 0) > STARE) stiahni();
     vykresli();
@@ -164,6 +165,16 @@
     } else if (k !== "Tab") return;
     if (k !== "Tab") { e.preventDefault(); e.stopImmediatePropagation(); }
   }, true);
+  // panel vždy priamo pod tlačidlom € (aj keď je snímka v okne inej veľkosti posunutá)
+  const poloha = () => {
+    const b = document.querySelector(".dxm-btn"), p = ov && ov.querySelector(".dxm__p");
+    if (!b || !p) return;
+    const r = b.getBoundingClientRect(), top = Math.round(r.bottom + 8);
+    p.style.top = top + "px";
+    p.style.right = Math.max(16, Math.round(innerWidth - r.right)) + "px";
+    p.style.maxHeight = "calc(100vh - " + (top + 16) + "px)";
+  };
+  addEventListener("resize", () => { requestAnimationFrame(poloha); setTimeout(poloha, 250); });
   addEventListener("hashchange", zavri);
 
   const tlacidlo = () => {
