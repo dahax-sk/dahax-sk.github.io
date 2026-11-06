@@ -3,8 +3,9 @@
 // predtým, ako ho prečíta bundle a ostatné skripty: firmy mimo výberu dostanú hidden: true (bundle ich vynechá zo strán,
 // z bočnej lišty, z menu aj z počítadla), z Doplnkového sortimentu a Realizácií ostanú len vybrané firmy
 // (prázdne Realizácie sa skryjú – úprava bundla scripts/update-2026-11-04-vyber-firiem-jadro.mjs).
-// Výber je v localStorage „dahax-vyber“ (pole id firiem; nič = všetky). Mení sa v menu (ikona mriežky) tlačidlom
-// „Výber firiem“ – po potvrdení sa prezentácia načíta znova (pri jednej firme rovno na jej strane).
+// Výber je v localStorage „dahax-vyber“ (pole id firiem; nič = všetky). Od 6. 11. 2026 sa mení len v Nastavenia → Admin
+// (za heslom, assets/dahax-admin.js volá window.__dxVyberPanel) – z verejného menu je tlačidlo preč, aby ho zákazník
+// nemohol meniť. Po potvrdení sa prezentácia načíta znova (pri jednej firme rovno na jej strane).
 // window.__dxFirmy = všetky firmy [{ id, name, logo, bg }] pred výberom (pre menu a prehrávanie).
 // Štýly: dahax-upravy-3.css („výber firiem“).
 (() => {
@@ -53,7 +54,7 @@
     location.hash = ids.length === 1 ? "#/" + ids[0] : "#/";
     location.reload();
   };
-  const panel = (menu) => {
+  const panel = (host, spat) => {
     const firmy = window.__dxFirmy || [];
     const zvolene = new Set(vyber || firmy.map((f) => f.id));
     const d = document.createElement("div");
@@ -65,7 +66,8 @@
       firmy.map((f) => '<label class="dxv-f"><input type="checkbox" value="' + esc(f.id) + '"' + (zvolene.has(f.id) ? " checked" : "") + '><span class="dxv-f__logo" style="background:' + esc(f.bg) + '"><img alt="" src="' + esc(f.logo) + '"></span><b>' + esc(f.name) + "</b></label>").join("") +
       "</div>" +
       '<div class="dxv-vyber__akcie"><button type="button" class="btn btn--line" data-a="vsetky">Vybrať všetky</button><button type="button" class="btn btn--line" data-a="nic">Zrušiť výber</button>' +
-      '<span class="dxv-vyber__pocet"></span><button type="button" class="btn btn--line" data-a="spat">Späť</button><button type="button" class="btn dxv-vyber__ok" data-a="ok">Prezentovať výber</button></div>';
+      '<span class="dxv-vyber__pocet"></span>' + (spat ? '<button type="button" class="btn btn--line" data-a="spat">Späť</button>' : "") + '<button type="button" class="btn dxv-vyber__ok" data-a="ok">Prezentovať výber</button></div>' +
+      '<p class="dxv-vyber__pozn">Výber platí pre toto zariadenie.</p>';
     const boxy = () => [...d.querySelectorAll("input[type=checkbox]")];
     const pocet = () => {
       const n = boxy().filter((b) => b.checked).length;
@@ -78,25 +80,13 @@
       if (!a) return;
       if (a.dataset.a === "vsetky") boxy().forEach((b) => (b.checked = true));
       if (a.dataset.a === "nic") boxy().forEach((b) => (b.checked = false));
-      if (a.dataset.a === "spat") { menu.classList.remove("dxv-open"); d.remove(); return; }
+      if (a.dataset.a === "spat") { d.remove(); spat(); return; }
       if (a.dataset.a === "ok") ulozit(boxy().filter((b) => b.checked).map((b) => b.value));
       pocet();
     });
     pocet();
-    menu.appendChild(d);
-    menu.classList.add("dxv-open");
+    host.appendChild(d);
+    return d;
   };
-  const ozdob = () => {
-    const menu = document.querySelector(".ov--menu .menu");
-    const head = menu && menu.querySelector(".menu__head");
-    if (!head || head.querySelector(".dxv-btn")) return;
-    const n = (window.__dxFirmy || []).length, k = vyber ? vyber.length : n;
-    const b = document.createElement("button");
-    b.type = "button";
-    b.className = "btn btn--line dxv-btn";
-    b.innerHTML = "Výber firiem <span>" + k + " / " + n + "</span>";
-    b.addEventListener("click", () => panel(menu));
-    head.insertBefore(b, head.lastElementChild);
-  };
-  new MutationObserver(ozdob).observe(document.documentElement, { childList: true, subtree: true });
+  window.__dxVyberPanel = panel;
 })();
